@@ -46,6 +46,7 @@ a{
   src: url("../fonts/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
 }
 
-@import 'normalize';
-@import 'footer';
+@import "normalize";
+@import "footer";
 @import "header";
+@import "glavnaya";
