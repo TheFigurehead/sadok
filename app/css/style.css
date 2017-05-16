@@ -413,7 +413,7 @@ th {
       text-align: left;
       position: relative;
       background-color: #fff;
-      padding: 15px 0; }
+      padding: 10px 0; }
       .footer-contacts-wrapper .footer-contacts-wrapper-content .footer-contacts-text::before {
         content: '';
         display: block;
