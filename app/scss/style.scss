@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+.container{
+  max-width: 90%;
+  margin: auto;
+}
+.container-fluid{
+  width: 100%;
+}
+.container-fluid::after,
+.container::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+//some kind of resets
+a{
+  color: inherit;
+  text-decoration: unset;
+}
+
+@import 'normalize';
+@import 'footer';
