@@ -1,12 +1,9 @@
 {
-  "name": "jurist_site",
+  "name": "sadok",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "scripts": {
-    "alex": "chmod -R 777 ./ && gulp watch"
-  },
-  "author": "",
+  "author": "Ann",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.2",
@@ -19,7 +16,5 @@
     "gulp-imagemin": "^3.1.1",
     "gulp-sass": "^2.3.2",
     "gulp-uglifyjs": "^0.6.2"
-  },
-  "dependencies": {
   }
 }
