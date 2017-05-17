@@ -621,10 +621,12 @@ header .secondary_nav .secondary_head li a {
   font-weight: 700; }
 
 header .main_nav .main_head li:not(.phone):not(.language):hover a,
-header .main_nav .main_head li:not(.phone):not(.language):active a,
+header .main_nav .main_head li:not(.phone):not(.language):active a {
+  color: #e40254;
+  cursor: pointer; }
+
 header .secondary_nav .secondary_head li:not(.logo):not(.language):hover a,
 header .secondary_nav .secondary_head li:not(.logo):not(.language):active a {
-  color: #e40254;
   cursor: pointer; }
 
 header .main_nav .main_head li .fa {
@@ -710,11 +712,11 @@ header .secondary_nav .secondary_head li:not(.logo):before {
 
 header .secondary_nav .secondary_head li:not(.logo):hover:before,
 header .secondary_nav .secondary_head li:not(.logo):active:before {
-  border: 3px solid #e40254; }
+  opacity: 1; }
 
 main .top-slider-wrapper {
   overflow: hidden;
-  height: 850px;
+  height: 100%;
   position: relative; }
 
 main .top-slider-wrapper .top-slider .top-slider-item {
