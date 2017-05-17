@@ -1,3 +1,69 @@
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/MuseoSans/MuseoSansLight/MuseoSansLight.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansLight/MuseoSansLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Raleway/RalewayMedium/RalewayMedium.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayMedium/RalewayMedium.woff") format("woff"), url("../fonts/Raleway/RalewayMedium/RalewayMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Raleway/RalewayLight/RalewayLight.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayLight/RalewayLight.woff") format("woff"), url("../fonts/Raleway/RalewayLight/RalewayLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.woff") format("woff"), url("../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Raleway/RalewayBold/RalewayBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/Raleway/RalewayBold/RalewayBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"); }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,7 +73,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Museo Sans Cyrl", sans-serif;
+  font-family: "MuseoSansRegular", sans-serif;
   font-size: 14px;
   color: #000000;
   margin: 0; }
@@ -33,18 +99,6 @@ main {
 a {
   color: inherit;
   text-decoration: unset; }
-
-@font-face {
-  font-family: "MuseoSansRegular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot") format("embedded-opentype"), url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "RalewayRegular";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype"); }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -540,8 +594,7 @@ header .secondary_nav {
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff; }
+          align-items: center; }
 
 header .main_nav .main_head,
 header .secondary_nav .secondary_head {
@@ -609,7 +662,7 @@ header .main_nav .main_head li .hidden {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #fff;
-  z-index: 10; }
+  z-index: 20; }
 
 header .main_nav .main_head li .hidden2 {
   top: 40px; }
@@ -625,7 +678,12 @@ header .secondary_nav {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: #000000;
-  opacity: 0.75; }
+  opacity: 0.75;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 10; }
 
 header .secondary_nav .secondary_head {
   width: 95%;
@@ -650,5 +708,62 @@ header .secondary_nav .secondary_head li:not(.logo):before {
   border: 3px solid #fff;
   opacity: 0.4; }
 
-main .top-slider-wrapper .top-slider img {
-  width: 100%; }
+header .secondary_nav .secondary_head li:not(.logo):hover:before,
+header .secondary_nav .secondary_head li:not(.logo):active:before {
+  border: 3px solid #e40254; }
+
+main .top-slider-wrapper {
+  overflow: hidden;
+  height: 850px;
+  position: relative; }
+
+main .top-slider-wrapper .top-slider .top-slider-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+main .top-slider-wrapper .top-slider {
+  position: relative; }
+
+main .top-slider-wrapper .top-slider .slick-dots {
+  position: absolute;
+  z-index: 30;
+  bottom: 30px; }
+
+main .top-slider-wrapper .top-slider .slick-dots li button:before {
+  color: #ffffff;
+  font-size: 20px; }
+
+main .top-slider-wrapper .paranja {
+  z-index: 5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+main .top-slider-wrapper .top-slider .top-slider-item .text-item {
+  position: absolute;
+  z-index: 25;
+  color: #ffffff;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 500px; }
+
+main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 29px; }
+
+main .top-slider-wrapper .top-slider .top-slider-item .text-item p {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 100;
+  margin: 0; }
+
+main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
+  left: 225px; }
+
+main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
+  right: 225px; }
