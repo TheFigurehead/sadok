@@ -112,6 +112,9 @@ button {
     text-transform: uppercase;
     font-weight: 200; }
 
+button:hover {
+  opacity: 0.8; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -817,12 +820,7 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
   height: 370px; }
 
 #main .menu {
-  background: url(../img/32.png) 50% 100% no-repeat, url(../img/31.png) 50% 100% no-repeat; }
-
-#main .menu {
-  background-size: cover;
-  background-position: 0% 50%;
-  background-repeat: no-repeat; }
+  background: url(../img/32.png) 0% 0% no-repeat, url(../img/31.png) 0% 505% no-repeat; }
 
 #main .nav_menu .title-block-wrapper .title-block span::after {
   content: none; }
@@ -920,6 +918,34 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+#main .restaurant_order .restaurant_order-block-wrapper .title-block-wrapper {
+  width: 100%; }
+
+#main .restaurant_order .restaurant_order-block-wrapper {
+  height: 490px;
+  width: 20%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 150px;
+  box-sizing: border-box;
+  box-shadow: 4px 13px 45px rgba(0, 0, 0, 0.33); }
+
+#main .restaurant_order .order1 {
+  background-image: url(../img/34.png), linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%); }
+
+#main .restaurant_order .order2 {
+  background-image: url(../img/37.png), linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%); }
 
 #header .secondary_nav.relative {
   position: relative;
