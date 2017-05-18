@@ -1,0 +1,166 @@
+<style>
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Whole page */
+html, body {
+  margin: 0;
+  height: 100%;
+    overflow:hidden;
+    font-family: "Open Sans";
+}
+
+
+/* Container */
+#container {
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+    left: 0;
+    -webkit-transition: left 0.5s ease-in-out;
+    -moz-transition: left 0.5s ease-in-out;
+    -ms-transition: left 0.5s ease-in-out;
+    -o-transition: left 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
+}
+#container.open-panel {
+  left: 240px;
+}
+#swipe-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background-color: #000;*/
+  box-sizing: border-box;
+  z-index: 100;
+}
+#panel-toggle {
+  display: block;
+    position: fixed;
+    margin: 0px 25px;
+    float: left;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: cornflowerblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.bar-wrapper{
+  position: absolute;
+    margin-left: 15px;
+    margin-top: 17px;
+}
+#panel-toggle .bar{
+    display: block;
+    width: 18px;
+    margin-bottom: 4px;
+    height: 2px;
+    background-color: white;
+    border-radius: 1px;
+    transition: all 1s ease-out 0s;
+}
+#panel-toggle:hover .bar{
+  background-color: #3498db;
+}
+/* Side panel */
+section#panel {
+  position: absolute;
+  left: -240px;
+  width: 290px;
+  height: 100%;
+  background-color: rgba(39,34,44,0.85);
+  box-sizing: border-box;
+}
+
+nav ul li {
+  display: block;
+  line-height: 3em;
+  border-bottom: 1px solid #fff;
+}
+nav ul li a {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+nav ul li:hover a {
+  color: #3498db;
+}
+
+/* Main */
+main {
+  /*background-color: #000;*/
+  position: relative;
+  margin-left: 30px;
+  width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+main #page {
+  width: 100%;
+  height: 100%;
+  padding: 6px 46px 0 10px;
+}
+
+</style>
+<div id="container">
+  <section id="panel">
+
+   <nav>
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Gallery</a></li>
+       <li><a href="#">Blog</a></li>
+       <li><a href="#">Contacts</a></li>
+     </ul>
+   </nav>
+  </section>
+
+ <div id="swipe-area"></div>
+   <a href="#" data-toggle="#container" id="panel-toggle">
+  <div class="bar-wrapper">
+   <span class="bar"></span>
+   <span class="bar"></span>
+   <span class="bar"></span>
+   </div>
+ </a>
+
+<main>
+  <section id="page">
+
+  </section>
+</main>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js">
+</script>
+
+<script>
+  $(document).ready(function() {
+  $("[data-toggle]").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-panel");
+  });
+    $("#swipe-area").swipe({
+    swipeStatus:function(event, phase, direction, distance, duration, fingers)
+        {
+            if (phase=="move" && direction =="right") {
+                 $("#container").addClass("open-panel");
+                 return false;
+            }
+            if (phase=="move" && direction =="left") {
+                 $("#container").removeClass("open-panel");
+                 return false;
+            }
+        }
+  });
+});
+</script>
