@@ -1,6 +1,34 @@
 <style>
   @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
+    
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
 /* Whole page */
 html, body {
   margin: 0;
@@ -49,11 +77,18 @@ html, body {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
     background-color: #ffffff;
     border-radius: 35px;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
 }
 .bar-wrapper{
-  position: absolute;
-    margin-left: 16px;
-    margin-top: 10px;
+  position: relative;
+    margin-left: 0px;
+    margin-top: 11px;
 }
 #panel-toggle .bar{
     display: block;
@@ -66,6 +101,7 @@ html, body {
 }
 #panel-toggle:hover .bar{
   background-color: #3498db;
+    
 }
 /* Side panel */
 section#panel {
@@ -78,6 +114,12 @@ section#panel {
   box-sizing: border-box;
 }
 
+    #panel nav{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
 nav ul li {
   display: block;
   line-height: 3em;
@@ -87,10 +129,27 @@ nav ul li a {
   color: #fff;
   font-size: 1.2em;
   text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
 }
-nav ul li:hover a {
+   nav ul li a:after {
+  content: ' ';
+  height:1px;
+  width:0;
+  left:0;
+  background:#fff;
+  position:absolute;
+  bottom:-1px;
+  transition:width 0.2s ;
+}
+nav ul li a:hover:after {
+  width:100%;
+}
+    
+
+/*nav ul li:hover a {
   color: #3498db;
-}
+}*/
 
 /* Main */
 main {
@@ -240,9 +299,7 @@ main #page {
 <script>
   $(document).ready(function() {
       
-//      $('#nav-icon2').click(function() {
-//        $(this).toggleClass('open');
-//  });
+
       $('#panel-toggle').click(function() {
        $('#nav-icon2').toggleClass('open');
   });
