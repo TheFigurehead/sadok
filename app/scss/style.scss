@@ -1,0 +1,119 @@
+// fonts
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/MuseoSans/MuseoSansLight/MuseoSansLight.eot") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansLight/MuseoSansLight.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansLight/MuseoSansLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway/RalewayRegular/RalewayRegular.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/Raleway/RalewayRegular/RalewayRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Raleway/RalewayMedium/RalewayMedium.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayMedium/RalewayMedium.woff") format("woff"), url("../fonts/Raleway/RalewayMedium/RalewayMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Raleway/RalewayLight/RalewayLight.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayLight/RalewayLight.woff") format("woff"), url("../fonts/Raleway/RalewayLight/RalewayLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.woff") format("woff"), url("../fonts/Raleway/RalewayExtraLight/RalewayExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Raleway/RalewayBold/RalewayBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/Raleway/RalewayBold/RalewayBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "MuseoSansRegular", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  margin: 0;
+  padding-left: 50px;
+}
+main {
+  flex: 1 0 auto;
+}
+.container{
+  max-width: 90%;
+  margin: auto;
+}
+.container-fluid{
+  width: 100%;
+}
+.container-fluid::after,
+.container::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+//some kind of resets
+a{
+  color: inherit;
+  text-decoration: unset;
+}
+
+@import "normalize";
+@import "common";
+@import "footer";
+@import "header";
+@import "glavnaya";
+@import "fitness";
+@import "menu";
