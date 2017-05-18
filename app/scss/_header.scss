@@ -39,8 +39,8 @@ header .main_nav .main_head li:not(.phone):not(.language):active a {
 	cursor: pointer;
 }
 
-header .secondary_nav .secondary_head li:not(.logo):not(.language):hover a,
-header .secondary_nav .secondary_head li:not(.logo):not(.language):active a {
+header .secondary_nav .secondary_head li:not(.logo):not(.language):hover,
+header .secondary_nav .secondary_head li:not(.logo):not(.language):active {
 	cursor: pointer;
 }
 
