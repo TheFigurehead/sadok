@@ -1,31 +1,32 @@
-main .top-slider-wrapper {
-	overflow: hidden;
-	height: 100%;
+#main .top-slider-wrapper {
+	height: 100vh;
+	min-height: 100%;
 	position: relative;
 }
 
-main .top-slider-wrapper .top-slider .top-slider-item {
+#main .top-slider-wrapper .top-slider .top-slider-item {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
 
-main .top-slider-wrapper .top-slider {
+#main .top-slider-wrapper .top-slider {
 	position: relative;
+	overflow: hidden;
 }
 
-main .top-slider-wrapper .top-slider .slick-dots {
+#main .top-slider-wrapper .top-slider .slick-dots {
 	position: absolute;
 	z-index: 30;
 	bottom: 30px;
 }
 
-main .top-slider-wrapper .top-slider .slick-dots li button:before {
+#main .top-slider-wrapper .top-slider .slick-dots li button:before {
 	color: #ffffff;
 	font-size: 20px;
 }
 
-main .top-slider-wrapper .paranja {
+#main .top-slider-wrapper .paranja {
 	z-index: 5;
 	position: absolute;
 	height: 100%;
@@ -33,7 +34,7 @@ main .top-slider-wrapper .paranja {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item {
 	position: absolute;
 	z-index: 25;
 	color: #ffffff;
@@ -42,24 +43,28 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item {
 	width: 500px;
 }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
 	font-size: 36px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin: 0 0 29px;
 }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item p {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item p {
 	font-size: 24px;
 	line-height: 26px;
 	font-weight: 100;
 	margin: 0;
 }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
 	left: 225px;
 }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 	right: 225px;
+}
+
+#main .top-slider .slick-initialized .slick-slider {
+	margin-bottom: 0;
 }

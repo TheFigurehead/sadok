@@ -100,6 +100,18 @@ a {
   color: inherit;
   text-decoration: unset; }
 
+button {
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
+  border: none; }
+  button a {
+    color: #fefefe;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 200; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -625,8 +637,8 @@ header .main_nav .main_head li:not(.phone):not(.language):active a {
   color: #e40254;
   cursor: pointer; }
 
-header .secondary_nav .secondary_head li:not(.logo):not(.language):hover a,
-header .secondary_nav .secondary_head li:not(.logo):not(.language):active a {
+header .secondary_nav .secondary_head li:not(.logo):not(.language):hover,
+header .secondary_nav .secondary_head li:not(.logo):not(.language):active {
   cursor: pointer; }
 
 header .main_nav .main_head li .fa {
@@ -714,36 +726,37 @@ header .secondary_nav .secondary_head li:not(.logo):hover:before,
 header .secondary_nav .secondary_head li:not(.logo):active:before {
   opacity: 1; }
 
-main .top-slider-wrapper {
-  overflow: hidden;
-  height: 100%;
+#main .top-slider-wrapper {
+  height: 100vh;
+  min-height: 100%;
   position: relative; }
 
-main .top-slider-wrapper .top-slider .top-slider-item {
+#main .top-slider-wrapper .top-slider .top-slider-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
-main .top-slider-wrapper .top-slider {
-  position: relative; }
+#main .top-slider-wrapper .top-slider {
+  position: relative;
+  overflow: hidden; }
 
-main .top-slider-wrapper .top-slider .slick-dots {
+#main .top-slider-wrapper .top-slider .slick-dots {
   position: absolute;
   z-index: 30;
   bottom: 30px; }
 
-main .top-slider-wrapper .top-slider .slick-dots li button:before {
+#main .top-slider-wrapper .top-slider .slick-dots li button:before {
   color: #ffffff;
   font-size: 20px; }
 
-main .top-slider-wrapper .paranja {
+#main .top-slider-wrapper .paranja {
   z-index: 5;
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3); }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item {
   position: absolute;
   z-index: 25;
   color: #ffffff;
@@ -752,20 +765,183 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item {
           transform: translateY(-50%);
   width: 500px; }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 29px; }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item p {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item p {
   font-size: 24px;
   line-height: 26px;
   font-weight: 100;
   margin: 0; }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
   left: 225px; }
 
-main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
+#main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   right: 225px; }
+
+#main .top-slider .slick-initialized .slick-slider {
+  margin-bottom: 0; }
+
+.breadcrumbs ul {
+  margin: 0 0;
+  text-align: left;
+  padding: 10px 0; }
+  .breadcrumbs ul li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #e40254;
+    display: inline-block; }
+    .breadcrumbs ul li a {
+      text-decoration: none;
+      color: inherit; }
+    .breadcrumbs ul li:not(:first-of-type):before {
+      content: '/';
+      display: inline-block;
+      color: #464954;
+      padding: 0 10px; }
+    .breadcrumbs ul li:last-of-type {
+      color: #464954; }
+    .breadcrumbs ul li:not(:last-of-type):hover {
+      text-decoration: underline; }
+
+#main .nav_menu .nav_menu_wrapper {
+  width: 90vw;
+  margin: 0 auto; }
+
+#main .nav_menu {
+  height: 370px; }
+
+#main .menu {
+  background: url(../img/32.png) 50% 100% no-repeat, url(../img/31.png) 50% 100% no-repeat; }
+
+#main .menu {
+  background-size: cover;
+  background-position: 0% 50%;
+  background-repeat: no-repeat; }
+
+#main .nav_menu .title-block-wrapper .title-block span::after {
+  content: none; }
+
+#main .nav_menu .nav-menu-block-wrapper ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+#main .nav_menu .nav-menu-block-wrapper ul li {
+  list-style-type: none;
+  width: 215px;
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#main .nav_menu .nav-menu-block-wrapper ul li:hover,
+#main .nav_menu .nav-menu-block-wrapper ul li:active {
+  background-color: #cccaca;
+  cursor: pointer; }
+
+#main .nav_menu .nav-menu-block-wrapper ul li .img {
+  height: 120;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+#main .nav_menu .nav-menu-block-wrapper ul li a {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+#main .content_menu {
+  height: 495px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#main .content_menu .content-menu-block-wrapper {
+  height: 395px;
+  width: 65%;
+  padding-right: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-box;
+  box-shadow: 4px 13px 20px 18px rgba(0, 0, 0, 0.33);
+  background-color: #ffffff; }
+
+#main .content_menu .content-menu-block-wrapper h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 40px 0;
+  width: 100%;
+  text-align: right; }
+
+#main .restaurant_order {
+  height: 685px;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#header .secondary_nav.relative {
+  position: relative;
+  left: unset;
+  top: unset; }
+
+.title-block-wrapper .title-block {
+  padding: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 300; }
+  .title-block-wrapper .title-block span {
+    display: inline-block;
+    padding-bottom: 3px;
+    position: relative; }
+    .title-block-wrapper .title-block span::after {
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 90px;
+      height: 2px;
+      display: block;
+      background-image: linear-gradient(96deg, #cf1520 0%, #e40254 100%);
+      content: ''; }
