@@ -24,6 +24,29 @@ $(document).ready(function(){
   cssEase: 'linear',
   autoplay: true
   });
+
+  // menu serg
+
+$('#panel-toggle').click(function() {
+  $('#nav-icon').toggleClass('open');
+  $('#panel').toggleClass('open');
+});
+// $('body').swipe({
+//   swipeStatus:function(event, phase, direction, distance, duration, fingers)
+//   {
+//     if (phase=="move" && direction =="right") {
+//       $('#nav-icon').addClass('open');
+//       $('#panel').toggleClass('open');
+//       return false;
+//     }
+//     if (phase=="move" && direction =="left") {
+//       $('#nav-icon').removeClass('open');
+//       $('#panel').toggleClass('open');
+//       return false;
+//     }
+//   }
+// });
+
 });
 
 // ---------------
