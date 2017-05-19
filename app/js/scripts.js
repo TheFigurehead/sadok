@@ -43,3 +43,30 @@ Lazy.scroll = function() {
 		}
 	});
 }
+
+// ---------------
+// ***carousel****
+// ---------------
+
+$(document).ready(function(){
+  $('.top-slider').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true
+  });
+
+  // menu serg
+
+$('#panel-toggle').click(function() {
+  $('#nav-icon').toggleClass('open');
+  $('#panel').toggleClass('open');
+});
+
+});
+
+// ---------------
+// *End carousel**
+// ---------------

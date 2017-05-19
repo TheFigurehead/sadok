@@ -3,13 +3,101 @@
     <meta charset="utf-8" />
     <title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://use.fontawesome.com/f011440108.js"></script>
   </head>
   <body>
-    <header></header>
+  <section id="panel">
+     <nav>
+       <ul>
+         <li><a href="#">ПРО ГОТЕЛЬ</a></li>
+         <li><a href="#">ПРОГРАМИ</a></li>
+         <li><a href="#">НОМЕРИ</a></li>
+         <li><a href="#">ГАЛЕРЕЯ</a></li>
+         <li><a href="#">КОНТАКТИ</a></li>
+       </ul>
+     </nav>
+      <a href="#" id="panel-toggle">
+        <div id="swipe-area"></div>
+          <div class="bar-wrapper">
+            <div id="nav-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+      </a>
+  </section>
+  <header>
+    <nav class="main_nav">
+      <ul class="main_head">
+        <li><a href="#">Про комплекс</a></li>
+        <li><a href="#">Новини</a></li>
+        <li><a href="#">Контакти</a></li>
+        <li class="address">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <a href="#">Адреса комплексу</a>
+        </li>
+        <li class="phone">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <a href="#">+38(093)000-00-00</a>
+          <a href="#" class="hidden hidden1">+38(093)111-11-11</a>
+          <a href="#" class="hidden hidden2">+38(093)222-22-22</a>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </li>
+        <li class="language">
+          <a href="#">УКР</a>
+          <a href="#" class="hidden hidden1">РУС</a>
+          <a href="#" class="hidden hidden2">EN</a>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+    <nav class="secondary_nav">
+      <ul class="secondary_head">
+        <li class="logo">
+          <a href="#">
+            <img src="img/logo-white.png" alt="">
+          </a>
+        </li>
+        <li><a href="#">Клуб</a></li>
+        <li><a href="#">Ресторан</a></li>
+        <li><a href="#">Готель</a></li>
+        <li><a href="#">Заходи</a></li>
+      </ul>
+    </nav>
+  </header>
     <main id="main">
       <div class="top-slider-wrapper">
-        <div class="top-slider">
-          <img src="img/slide.png" alt="slide">
+        	<div class="top-slider">
+          <div class="top-slider-item item1"  style="background-image: url(../img/1.jpg);">
+          	<div class="paranja">
+      			</div>
+          <div class="text-item text-item-left">
+          	<h2>wish family space</h2>
+          	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="text-item text-item-right">
+          </div>
+          </div>
+          <div class="top-slider-item item2"
+          style="background-image: url(../img/2.png);">
+          	<div class="paranja">
+      			</div>
+          	<div class="text-item text-item-left">
+          	<h2>wish family space</h2>
+          	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          	</div>
+          	<div class="text-item text-item-right">
+          </div>
+          </div>
+          <div class="top-slider-item item3"
+          style="background-image: url(../img/116677_or.jpg);">
+          	<div class="paranja">
+      			</div>
+          	<div class="text-item text-item-left">
+          	<h2>wish family space</h2>
+          	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          	</div>
+          	<div class="text-item text-item-right">
+          </div>
         </div>
       </div>
 
@@ -145,7 +233,7 @@
       </div>
     </footer>
     <script src="js/libs.min.js"></script>
-    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/scripts.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0glCrusqOLJBZeHpiPjBOBgWRcj2UAKU&callback=initMap">
     </script>
