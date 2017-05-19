@@ -65,24 +65,11 @@
   src: url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"); }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-family: "MuseoSansRegular", sans-serif;
   font-size: 14px;
   color: #000000;
   margin: 0;
   padding-left: 50px; }
-
-main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
 
 .container {
   max-width: 90%;
@@ -550,29 +537,47 @@ th {
     -webkit-filter: grayscale(0.6);
             filter: grayscale(0.6); }
 
-footer .flex-row-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-footer .flex-col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-footer .footer-contacts-wrapper .flex-row-wrapper {
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+footer {
+  margin-top: 35px; }
+  footer .flex-row-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  footer .flex-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    footer .flex-col .flex-col-text,
+    footer .flex-col .flex-col-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    footer .flex-col .flex-col-text {
+      padding-left: 30px;
+      text-align: left;
+      font-family: "MuseoSansRegular";
+      font-size: 18px;
+      font-weight: 500; }
+  footer .footer-contacts-wrapper .flex-row-wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 .footer-bottom {
   padding: 35px 0;
@@ -1106,3 +1111,141 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   position: relative;
   margin-left: 0px;
   margin-top: 11px; }
+
+.main-benefits-wrapper {
+  padding: 150px 0;
+  background-image: url("../img/main/back-main-ben.png");
+  background-size: cover;
+  background-position: center center; }
+  .main-benefits-wrapper .main-benefits-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .main-benefits-wrapper .main-benefits-list .main-benefits-list-item {
+      width: 335px;
+      height: 335px;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 4px 13px 45px rgba(0, 0, 0, 0.33);
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      transition: all .2s; }
+      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item:hover {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+        transition: all .2s; }
+      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-img {
+        display: inline-block;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 65%);
+                transform: translate(-50%, 65%); }
+      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        border-radius: 50%; }
+        .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-title {
+          text-transform: uppercase;
+          font-family: "MuseoSansRegular";
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 24px;
+          margin-top: 15px; }
+        .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-content-text {
+          font-family: RalewayRegular;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 26px; }
+          .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-content-text p {
+            padding: 20px;
+            margin: 0; }
+
+#portfolio .slider-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#portfolio .slider-bottom .left-nav, #portfolio .slider-bottom .right-nav {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+#portfolio .slider-bottom .img-nav {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  position: relative; }
+
+#portfolio .slider-bottom .img-nav:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: .5s;
+  cursor: pointer; }
+
+#portfolio .slider-bottom .img-nav.active-nav:after {
+  opacity: 0; }
+
+#portfolio .slider-bottom .img-nav img {
+  width: 100%;
+  height: auto; }
+
+#portfolio .slider-bottom .block img {
+  width: 100%;
+  height: 100%; }
+
+#portfolio .slider-bottom .block .controls {
+  height: 0; }
+
+#portfolio .slider-bottom .block .left, #portfolio .slider-bottom .block .right {
+  position: absolute;
+  right: 0;
+  top: 350px;
+  z-index: 2;
+  background-image: url(../img/icons.png);
+  background-position: -192px -55px;
+  width: 39px;
+  height: 68px;
+  cursor: pointer;
+  margin: 0 8px;
+  opacity: .5;
+  transition: .5s; }
+
+#portfolio .slider-bottom .block .left:hover, #portfolio .slider-bottom .block .right:hover {
+  opacity: 1; }
+
+#portfolio .slider-bottom .block .left {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+#portfolio .slide-bottom-item {
+  height: 0; }
+  #portfolio .slide-bottom-item.active {
+    height: auto; }
+    #portfolio .slide-bottom-item.active img {
+      width: 100%;
+      height: auto; }

@@ -82,14 +82,28 @@
 // footer grid
 
 footer{
+  margin-top: 35px;
   .flex-row-wrapper{
     display: flex;
     justify-content: space-between;
   }
   .flex-col{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    .flex-col-text,
+    .flex-col-img{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .flex-col-text{
+      padding-left: 30px;
+      text-align: left;
+      font-family: "MuseoSansRegular";
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
   .footer-contacts-wrapper{
     .flex-row-wrapper{
