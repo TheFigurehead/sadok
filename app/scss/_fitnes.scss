@@ -1,5 +1,9 @@
+#header .relative{
+	position: relative;
+}
+
 #main {
-	padding-top: 115px;
+	// padding-top: 115px;
 }
 
 #main .fitnes {
@@ -10,11 +14,73 @@
 	display: flex;
 }
 
-#main .fitnes .content_fitnes .first_group_fitnes {
+#main .content_fitnes .first_group_fitnes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
-#main .content_fitnes .first_group_fitnes .block {
+#main .first_group_fitnes{
+	width: 1400px;
+	margin: auto;
+}
+
+#main .first_group_fitnes.two{
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	.block_item{
+		width: 615px;
+		height: 385px;
+		overflow: hidden;
+		margin-top: 30px;
+	}
+}
+
+#main .first_group_fitnes .block_item {
 	width: 380px;
-	height: 465px;
-	background-image: url(../img/1.png);
+	position: relative;
+	.block_item_link{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 80px;
+		background-color: rgba(255, 255, 255, 0.6);
+		line-height: 80px;
+		a{
+			font-family: "MuseoSansRegular";
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: uppercase;
+			padding: 0 20px;
+			position: relative;
+			display: block;
+			&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 15px;
+				bottom: 20px;
+				width: 52px;
+				height: 3px;
+				background-image: linear-gradient(96deg, #cf1520 0%, #e40254 100%);
+			}
+			&::before{
+				content: '▶';
+				width: 30px;
+				font-size: 30px;
+				line-height: 30px;
+				width: 40px;
+				text-align: center;
+				display: block;
+				position: absolute;
+				right: 10px;
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+		}
+	}
+	img{
+		width: 100%;
+	}
 }

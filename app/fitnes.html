@@ -8,7 +8,7 @@
     <script src="https://use.fontawesome.com/f011440108.js"></script>
   </head>
   <body>
-  <header>
+  <header id="header">
     <nav class="main_nav">
       <ul class="main_head">
         <li><a href="#">Про комплекс</a></li>
@@ -33,7 +33,7 @@
         </li>
       </ul>
     </nav>
-    <nav class="secondary_nav">
+    <nav class="secondary_nav relative">
       <ul class="secondary_head">
         <li class="logo">
           <a href="#">
@@ -47,74 +47,92 @@
       </ul>
     </nav>
   </header>
-    <main id="main">
-      <div class="menu fitnes">
-      <div class="nav_menu">
-        <div class="nav_menu_wrapper">
-          <div class="breadcrumbs">
-            <ul>
-              <li>
-                <a href="#">Головна</a>
-              </li>
-              <li>
-                <a href="#">Ресторан</a>
-              </li>
-            </ul>
-          </div>
-          <div class="title-block-wrapper">
-            <div class="title-block">
-              <span>Фітнес</span>
-            </div>
+  <main id="main">
+    <div class="nav_menu">
+      <div class="nav_menu_wrapper">
+        <div class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">Головна</a>
+            </li>
+            <li>
+              <a href="#">Ресторан</a>
+            </li>
+          </ul>
+        </div>
+        <div class="title-block-wrapper">
+          <div class="title-block">
+            <span>Фітнес</span>
           </div>
         </div>
       </div>
     </div>
     <div class="content_fitnes">
       <div class="first_group_fitnes">
-        <div class="block">
-          <p>
+        <div class="block_item">
+          <div class="block_item_img">
+            <img src="img/fitness-block1.png" alt="">
+          </div>
+          <div class="block_item_link">
             <a href="#">Детальніше</a>
-          </p>
+          </div>
         </div>
-        <div class="block">
-          <p>
+        <div class="block_item">
+          <div class="block_item_img">
+            <img src="img/fitness-block2.png" alt="">
+          </div>
+          <div class="block_item_link">
             <a href="#">Детальніше</a>
-          </p>
+          </div>
         </div>
-        <div class="block">
-          <p>
-            <a href="#">Детальніше</a>
-          </p>
-        </div>
-      </div>
-      <div class="second_group_fitnes">
-        <div class="block">
-          <p>
-            <a href="#">Детальніше</a>
-          </p>
-        </div>
-        <div class="block">
-          <p>
-            <a href="#">Детальніше</a>
-          </p>
+        <div class="block_item">
+          <div class="block_item_img">
+            <img src="img/fitness-block3.png" alt="">
+          </div>
+          <div class="block_item_link">
+            <a href="#"><span>Детальніше</span></a>
+          </div>
         </div>
       </div>
-      <div class="third_group_fitnes">
-        <div class="block">
-          <p>
+    </div>
+    <div class="content_fitnes">
+      <div class="first_group_fitnes two">
+        <div class="block_item">
+          <div class="block_item_img">
+            <img src="img/f21.png" alt="">
+          </div>
+          <div class="block_item_link">
             <a href="#">Детальніше</a>
-          </p>
+          </div>
         </div>
-        <div class="block">
-          <p>
+        <div class="block_item">
+          <div class="block_item_img">
+            <img src="img/f22.png" alt="">
+          </div>
+          <div class="block_item_link">
             <a href="#">Детальніше</a>
-          </p>
+          </div>
+        </div>
+        <div class="block_item">
+          <div class="block_item_img">
+            <img src="img/f23.png" alt="">
+          </div>
+          <div class="block_item_link">
+            <a href="#"><span>Детальніше</span></a>
+          </div>
+        </div>
+        <div class="block_item">
+          <div class="block_item_img">
+            <img src="img/f24.png" alt="">
+          </div>
+          <div class="block_item_link">
+            <a href="#"><span>Детальніше</span></a>
+          </div>
         </div>
       </div>
     </div>
     </main>
     <footer>
-    
       <div class="footer-contacts-wrapper">
         <div class="footer-contacts-wrapper-title">
           <span>Контакты</span>
@@ -122,21 +140,25 @@
         <div class="footer-contacts-wrapper-content">
           <div class="container">
             <div class="flex-row-wrapper">
-              <div class="flex-col">
-                <div class="footer-contacts-text numbers">
-                  <div class="footer-contacts-text-title">Клуб:</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
+              <div class="flex-col cont">
+                <div class="flex-col-img">
+                  <img src="img/footer-col-1.png" alt="">
+                </div>
+                <div class="flex-col-text">
+                  вул. Набережна 29, с. Вишеньки, «Вишневе мiстечко» <br>
+                  Бориспiльський р-н, Київська обл., 08341
                 </div>
               </div>
-              <div class="flex-col">
-                <div class="footer-contacts-text numbers">
-                  <div class="footer-contacts-text-title">Готель:</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
+              <div class="flex-col cont">
+                <div class="flex-col-img">
+                  <img src="img/footer-col-2.png" alt="">
+                </div>
+                <div class="flex-col-text">
+                  <!-- +38(093)000-00-00<br> -->
+                  +38 (044) 58-58-777
                 </div>
               </div>
-              <div class="flex-col">
+              <!-- <div class="flex-col">
                 <div class="footer-contacts-text numbers">
                   <div class="footer-contacts-text-title">Ресторан:</div>
                   <div class="footer-contacts-text-number">+38(093)000-00-00</div>
@@ -149,7 +171,7 @@
                   <div class="footer-contacts-text-number">+38(093)000-00-00</div>
                   <div class="footer-contacts-text-number">+38(093)000-00-00</div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -166,9 +188,9 @@
             </div>
             <div class="flex-col">
               <div class="footer-address">
-                <div class="footer-country">УКРАЇНА</div>
-                <div class="footer-city">С. ВИШЕНЬКИ</div>
-                <div class="footer-street">ВУЛ. НАБЕРЕЖНА 29</div>
+                <div class="footer-country">«Вишневе мiстечко»</div>
+                <div class="footer-city">c. Вишеньки</div>
+                <div class="footer-street">вул. Набережна 29</div>
               </div>
             </div>
             <div class="flex-col">
@@ -178,8 +200,8 @@
             </div>
             <div class="flex-col">
               <div class="footer-numbers-wrapper">
-                <div class="footer-number"><a href="tel:123456789">+38(093)000-00-00</a></div>
-                <div class="footer-number"><a href="tel:123456789">+38(093)000-00-00</a></div>
+                <div class="footer-number"><a href="tel:+380445858777">+38 (044) 585-87-77</a></div>
+                <!-- <div class="footer-number"><a href="tel:123456789">+38(093)000-00-00</a></div> -->
               </div>
             </div>
             <div class="flex-col">
