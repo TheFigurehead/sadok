@@ -1,37 +1,36 @@
-
-.trenazherna-zala-page {
+.dlya-chogo-kartka-page {
   background-size: cover;
     background-position: 0% 50%;
     background-repeat: no-repeat;
     background: url(../img/trenazherna-zala1.png) 50% 100% no-repeat;
 }
 
-.trenazherna-blocks-wrapper{
+.dlya-chogo-kartka-blocks-wrapper{
   margin: 20px auto 50px auto;
-  .trenazherna-flex-row{
+  .dlya-chogo-kartka-flex-row{
     display: flex;
     justify-content: space-around;
-    .trenazherna-flex-col{
+    .dlya-chogo-kartka-flex-col{
       max-width: 360px;
-      .trenazherna-col-img{
+      .dlya-chogo-kartka-col-img{
         img{
           width: 100%;
         }
       }
-      .trenazherna-col-content{
-        .trenazherna-col-content-title {
+      .dlya-chogo-kartka-col-content{
+        .dlya-chogo-kartka-col-content-title {
           font-size: 24px;
           font-weight: 500;
           line-height: 26px;
           text-transform: uppercase;
         }
-        .trenazherna-col-content-text{
+        .dlya-chogo-kartka-col-content-text{
           font-size: 18px;
           font-weight: 400;
           line-height: 20px;
 
         }
-        .trenazherna-col-content-link{
+        .dlya-chogo-kartka-col-content-link{
           a{
             color: #363636;
             font-size: 14px;
@@ -46,23 +45,29 @@
   }
 }
 
-.trenazherna-col-content-text{
-  width: 50%;
-  float: left;
-      margin: 65px 0px;
-      text-align: left;
+.dlya-chogo-kartka-col-content-text{
 
 }
 
-.trenazherna-col-content-text p{
-  padding: 0px 60px;
+.dlya-chogo-kartka-content-text{
+  width: 54%;
+  float: right;
+  text-align: left;
+  margin-top: 41px;
+}
+
+.dlya-chogo-kartka-content-text p{
   font-family: "MuseoSansRegular";
   font-weight: 300;
+  width: 610px;
+  height: 256px;
+  box-shadow: 2px 6px 43px 2px rgba(0, 0, 0, 0.33);
+  background-color: #ffffff;
 }
 
-.trenazherna-col-img{
-  width: 49%;
-  float: right;
+.dlya-chogo-kartka-col-img{
+  width: 46%;
+  float: left;
 }
 
 .what-are-you-waiting-for{
