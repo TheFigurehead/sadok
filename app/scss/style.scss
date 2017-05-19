@@ -77,6 +77,10 @@
   src: url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype");
 }
 
+// globals variable
+$greyColor: #747474;
+$colorButtonRed: #e40f20;
+
 body {
   display: flex;
   min-height: 100vh;
@@ -109,7 +113,15 @@ a{
   text-decoration: unset;
 }
 
+.slick-track {
+  height: 100vh
+}
+
 @import "normalize";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui";
 @import "footer";
 @import "header";
 @import "glavnaya";
+@import "otel";
+@import "popup";
+@import "klub3";

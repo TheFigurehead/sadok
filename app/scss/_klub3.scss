@@ -1,0 +1,43 @@
+#klub3 {
+	.klub3__menu {
+		text-align: center;
+	}
+	a.klub__menu-item {
+		display: inline-block;
+		padding: 50px 10%;
+		margin: 20px 0;
+		font-family: "MuseoSansRegular";
+		font-weight: 400;
+		font-size: 28pt;
+		text-transform: uppercase;
+		transition: border .3s;
+		border: solid 1px transparent;
+		h3 {
+			margin: 10px 0;
+		}
+		&:hover {
+			border: solid 1px $colorButtonRed;
+		}
+	}
+	.klub3__text {
+		display: flex;
+		.content {
+			padding: 100px;
+			box-sizing: border-box;
+			max-width: 40%;
+			background-image: url('../img/Рецепция 1.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: "MuseoSansRegular";
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 30px;
+		}
+		.side-img {
+			background-image: url('../img/бассейн 2.png');
+			width: 60%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+}
