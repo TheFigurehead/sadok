@@ -490,7 +490,7 @@ th {
         background-image: linear-gradient(96deg, #cf1520 0%, #e40254 100%);
         content: ''; }
   .footer-contacts-wrapper .footer-contacts-wrapper-content {
-    padding: 55px 0 85px 0; }
+    padding: 20px 0 50px 0; }
     .footer-contacts-wrapper .footer-contacts-wrapper-content .footer-contacts-text {
       display: inline-block;
       text-align: left;
@@ -550,13 +550,18 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    footer .flex-col.cont {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
     footer .flex-col .flex-col-text,
     footer .flex-col .flex-col-img {
       display: -webkit-box;
@@ -1116,7 +1121,7 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   padding: 150px 0;
   background-image: url("../img/main/back-main-ben.png");
   background-size: cover;
-  background-position: center center; }
+  background-position: center bottom; }
   .main-benefits-wrapper .main-benefits-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1179,7 +1184,8 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 #portfolio .slider-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: 720px; }
 
 #portfolio .slider-bottom .left-nav, #portfolio .slider-bottom .right-nav {
   width: 25%;
@@ -1190,6 +1196,7 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
       flex-wrap: wrap; }
 
 #portfolio .slider-bottom .img-nav {
+  height: 25%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   position: relative; }
@@ -1211,7 +1218,10 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 
 #portfolio .slider-bottom .img-nav img {
   width: 100%;
-  height: auto; }
+  height: 100%; }
+
+#portfolio .slider-bottom .block {
+  position: relative; }
 
 #portfolio .slider-bottom .block img {
   width: 100%;
@@ -1248,4 +1258,4 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
     height: auto; }
     #portfolio .slide-bottom-item.active img {
       width: 100%;
-      height: auto; }
+      height: 100%; }

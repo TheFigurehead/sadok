@@ -25,7 +25,7 @@
     }
   }
   .footer-contacts-wrapper-content{
-    padding: 55px 0 85px 0;
+    padding: 20px 0 50px 0;
     .footer-contacts-text{
       display: inline-block;
       text-align: left;
@@ -88,8 +88,11 @@ footer{
     justify-content: space-between;
   }
   .flex-col{
+    &.cont{
+      flex-direction: row;
+    }
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     .flex-col-text,
     .flex-col-img{
