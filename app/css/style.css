@@ -1797,67 +1797,62 @@ header .secondary_nav .secondary_head li:not(.logo):hover:before,
 header .secondary_nav .secondary_head li:not(.logo):active:before {
   opacity: 1; }
 
-#main .top-slider-wrapper {
+main .top-slider-wrapper {
+  overflow: hidden;
+  height: 100%;
   height: 100vh;
-  min-height: 100%;
   position: relative; }
 
-#main .top-slider-wrapper .top-slider .top-slider-item {
+main .top-slider-wrapper .top-slider .top-slider-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
-#main .top-slider-wrapper .top-slider {
-  position: relative;
-  overflow: hidden; }
+main .top-slider-wrapper .top-slider {
+  position: relative; }
 
-#main .top-slider-wrapper .top-slider .slick-dots {
+main .top-slider-wrapper .top-slider .slick-dots {
   position: absolute;
   z-index: 30;
   bottom: 30px; }
 
-#main .top-slider-wrapper .top-slider .slick-dots li button:before {
+main .top-slider-wrapper .top-slider .slick-dots li button:before {
   color: #ffffff;
   font-size: 20px; }
 
-#main .top-slider-wrapper .paranja {
+main .top-slider-wrapper .paranja {
   z-index: 5;
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3); }
 
-#main .top-slider-wrapper .top-slider .top-slider-item .text-item {
+main .top-slider-wrapper .top-slider .top-slider-item .text-item {
   position: absolute;
   z-index: 25;
   color: #ffffff;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 550px;
-  padding: 25px;
-  background-color: rgba(0, 0, 0, 0.3); }
+  width: 500px; }
 
-#main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
+main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 29px; }
 
-#main .top-slider-wrapper .top-slider .top-slider-item .text-item p {
+main .top-slider-wrapper .top-slider .top-slider-item .text-item p {
   font-size: 24px;
   line-height: 26px;
   font-weight: 100;
   margin: 0; }
 
-#main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
+main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
   left: 225px; }
 
-#main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
+main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   right: 225px; }
-
-#main .top-slider .slick-initialized .slick-slider {
-  margin-bottom: 0; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -2207,6 +2202,9 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
   display: flex;
   height: 720px; }
 
+#portfolio .content {
+  height: 100%; }
+
 #portfolio .slider-bottom .left-nav, #portfolio .slider-bottom .right-nav {
   width: 25%;
   display: -webkit-box;
@@ -2469,15 +2467,16 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 #header .relative {
   position: relative; }
 
-#main .fitnes {
+main .fitnes {
   background: none; }
 
-#main .fitnes .content_fitnes {
+main .content_fitnes {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 50px 0; }
 
-#main .content_fitnes .first_group_fitnes {
+main .content_fitnes .first_group_fitnes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2488,24 +2487,24 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-#main .first_group_fitnes {
+main .first_group_fitnes {
   width: 1400px;
   margin: auto; }
 
-#main .first_group_fitnes.two {
+main .first_group_fitnes.two {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px; }
-  #main .first_group_fitnes.two .block_item {
+  main .first_group_fitnes.two .block_item {
     width: 615px;
     height: 385px;
     overflow: hidden;
     margin-top: 30px; }
 
-#main .first_group_fitnes .block_item {
+main .first_group_fitnes .block_item {
   width: 380px;
   position: relative; }
-  #main .first_group_fitnes .block_item .block_item_link {
+  main .first_group_fitnes .block_item .block_item_link {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -2513,15 +2512,39 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
     height: 80px;
     background-color: rgba(255, 255, 255, 0.6);
     line-height: 80px; }
-    #main .first_group_fitnes .block_item .block_item_link a {
+    main .first_group_fitnes .block_item .block_item_link:hover {
+      height: 100%; }
+      main .first_group_fitnes .block_item .block_item_link:hover a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        line-height: 100%;
+        padding: 0;
+        transition: all .2s; }
+        main .first_group_fitnes .block_item .block_item_link:hover a span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          color: #fff;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          background-color: rgba(0, 0, 0, 0.4);
+          padding: 10px;
+          transition: all .2s; }
+        main .first_group_fitnes .block_item .block_item_link:hover a::after, main .first_group_fitnes .block_item .block_item_link:hover a::before {
+          content: unset; }
+    main .first_group_fitnes .block_item .block_item_link a {
       font-family: "MuseoSansRegular";
       font-size: 24px;
       font-weight: 300;
       text-transform: uppercase;
       padding: 0 20px;
       position: relative;
-      display: block; }
-      #main .first_group_fitnes .block_item .block_item_link a::after {
+      display: block;
+      transition: all .2s; }
+      main .first_group_fitnes .block_item .block_item_link a::after {
         content: '';
         display: block;
         position: absolute;
@@ -2530,7 +2553,7 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
         width: 52px;
         height: 3px;
         background-image: linear-gradient(96deg, #cf1520 0%, #e40254 100%); }
-      #main .first_group_fitnes .block_item .block_item_link a::before {
+      main .first_group_fitnes .block_item .block_item_link a::before {
         content: '▶';
         width: 30px;
         font-size: 30px;
@@ -2543,7 +2566,7 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
         top: 50%;
         -webkit-transform: translate(0, -50%);
                 transform: translate(0, -50%); }
-  #main .first_group_fitnes .block_item img {
+  main .first_group_fitnes .block_item img {
     width: 100%; }
 
 #hotel {
@@ -2812,7 +2835,8 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 #klub3 .klub3__text {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 75px; }
   #klub3 .klub3__text .content {
     padding: 100px;
     box-sizing: border-box;
@@ -2832,3 +2856,6 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 
 .slick-track {
   height: 100vh; }
+
+#hotel .top-slider-wrapper .slick-arrow {
+  display: none; }

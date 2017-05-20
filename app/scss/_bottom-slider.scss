@@ -3,6 +3,9 @@
   display: flex;
   height: 720px;
 }
+#portfolio .content{
+  height: 100%;
+}
   #portfolio .slider-bottom .left-nav, #portfolio .slider-bottom .right-nav {
     width: 25%;
     display: -webkit-box;

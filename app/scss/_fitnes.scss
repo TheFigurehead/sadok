@@ -6,26 +6,27 @@
 	// padding-top: 115px;
 }
 
-#main .fitnes {
+main .fitnes {
 	background:  none;
 }
 
-#main .fitnes .content_fitnes {
+main .content_fitnes {
 	display: flex;
+	margin: 50px 0;
 }
 
-#main .content_fitnes .first_group_fitnes {
+main .content_fitnes .first_group_fitnes {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
-#main .first_group_fitnes{
+main .first_group_fitnes{
 	width: 1400px;
 	margin: auto;
 }
 
-#main .first_group_fitnes.two{
+main .first_group_fitnes.two{
 	flex-wrap: wrap;
 	margin-bottom: 40px;
 	.block_item{
@@ -36,7 +37,7 @@
 	}
 }
 
-#main .first_group_fitnes .block_item {
+main .first_group_fitnes .block_item {
 	width: 380px;
 	position: relative;
 	.block_item_link{
@@ -47,6 +48,32 @@
 		height: 80px;
 		background-color: rgba(255, 255, 255, 0.6);
 		line-height: 80px;
+		&:hover{
+			height: 100%;
+			a{
+				position: absolute;
+				top:0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				line-height: 100%;
+				padding: 0;
+				transition: all .2s;
+				span{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					color: #fff;
+					transform: translate(-50%, -50%);
+					background-color: rgba(0,0,0,0.4);
+					padding: 10px;
+					transition: all .2s;
+				}
+				&::after, &::before{
+					content: unset;
+				}
+			}
+		}
 		a{
 			font-family: "MuseoSansRegular";
 			font-size: 24px;
@@ -55,6 +82,7 @@
 			padding: 0 20px;
 			position: relative;
 			display: block;
+			transition: all .2s;
 			&::after{
 				content: '';
 				display: block;
