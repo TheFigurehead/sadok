@@ -1,23 +1,25 @@
 .dlya-chogo-kartka-page {
   background-size: cover;
-    background-position: 0% 50%;
-    background-repeat: no-repeat;
-    background: url(../img/normB.png) 50% 100% no-repeat;
-    padding-bottom: 50px;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/normB.png);
+  padding-bottom: 50px;
 }
 
 .dlya-chogo-kartka-blocks-wrapper{
   margin: 20px auto 50px auto;
+  position: relative;
+  height: 365px;
   .dlya-chogo-kartka-flex-row{
     display: flex;
     justify-content: space-around;
-    .dlya-chogo-kartka-flex-col{
-      max-width: 360px;
-      .dlya-chogo-kartka-col-img{
-        img{
-          width: 100%;
-        }
-      }
+    // .dlya-chogo-kartka-flex-col{
+    //   max-width: 360px;
+    //   .dlya-chogo-kartka-col-img{
+    //     img{
+    //       width: 100%;
+    //     }
+    //   }
       .dlya-chogo-kartka-col-content{
         .dlya-chogo-kartka-col-content-title {
           font-size: 24px;
@@ -44,33 +46,36 @@
       }
     }
   }
-}
+// }
 
 .dlya-chogo-kartka-col-content-text{
 
 }
 
 .dlya-chogo-kartka-content-text{
-  width: 54%;
-  float: right;
-  text-align: left;
-  margin-top: 41px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translateY(-50%);
 }
 
 .dlya-chogo-kartka-content-text p{
   font-family: "MuseoSansRegular";
   font-weight: 300;
   width: 610px;
-  height: 190px;
   box-shadow: 2px 6px 43px 2px rgba(0, 0, 0, 0.33);
   background-color: #ffffff;
   padding: 30px;
-
+  font-size: 20px;
+  line-height: 24px;
 }
 
-.dlya-chogo-kartka-col-img{
-  width: 46%;
-  float: left;
+.dlya-chogo-kartka-col-img img{
+  display: block;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  height: 100%;
 }
 
 .how-to-get{
@@ -79,7 +84,7 @@
   background-size: cover;
   background-position: 0% 50%;
   background-repeat: no-repeat;
-  background: url(../img/how-to-get2.png) 50% 0% no-repeat;
+  background-image: url(../img/how-to-get2.png);
   position: relative;
     h1{
       text-transform: uppercase;
@@ -158,8 +163,10 @@
       left: 50%;
       transform: translate(-50%, 0);
       color: #ffffff;
+      transition: all .2s;
         &:hover{
-          box-shadow: 2px 6px 20px 25px rgba(255, 255, 255, 0.33);
+          box-shadow: 1px 3px 15px 5px rgba(255, 255, 255, 0.33);
+          transition: all .2s;
         }
     }
 
