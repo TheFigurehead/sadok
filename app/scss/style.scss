@@ -110,12 +110,37 @@ a{
   text-decoration: unset;
 }
 
+button {
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
+  border: none;
+  a {
+    color: #fefefe;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
 @import "normalize";
 @import "common";
 @import "footer";
 @import "header";
 @import "glavnaya";
+<<<<<<< HEAD
 @import "fitness";
 @import "menu";
 @import "main";
 @import "bottom-slider";
+=======
+@import "breadCrumbs";
+@import "restoran";
+@import "common";
+@import "fitnes";
+>>>>>>> ann
