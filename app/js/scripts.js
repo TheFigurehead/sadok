@@ -204,4 +204,41 @@ $('#main .nav_menu .nav-menu-block-wrapper ul .banquet').click(function() {
 // *End restaurant menu**
 // ---------------
 
+// ---------------
+// **hotel page***
+// ---------------
+
+var hotelPage = document.getElementById('hotel');
+
+if (hotelPage) {
+  $('.room button').on('click', popUpShow);
+}
+
+// ----------------
+// *end hotel page*
+// ----------------
+
+// -----------
+// ***popup***
+// -----------
+
+$('.popup-container').hide();
+
+$('.popup-overflow').on('click', popUpHide);
+
+$('.popup-container .fa-times').on('click', popUpHide);
+
+function popUpShow(e) {
+  e.stopPropagation();
+  $('.popup-container').show(300);
+}
+
+function popUpHide(e) {
+  $('.popup-container').hide(300);
+}
+
+// -----------
+// *end popup*
+// -----------
+
 });

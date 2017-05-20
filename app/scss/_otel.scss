@@ -1,0 +1,177 @@
+#hotel {
+	background-color: #fbfbfb;
+	.reservation-wrapper {
+		text-align: center;
+	}
+	.reservation {
+		display: inline-flex;
+		font-family: "MuseoSansRegular";
+		font-weight: 300;
+		justify-content: center;
+		background-color: #fff;
+		position: relative;
+		text-align: left;
+		z-index: 40;
+		top: -100px;
+		box-shadow: 7.718px 26.915px 49.59px 7.41px rgba(0, 0, 0, 0.35);
+		.fa-calendar {
+			margin-left: 20px;
+		}
+		.fa-angle-down {
+			position: absolute;
+		    right: 30px;
+		    bottom: 45px;
+			font-size: 30px;
+		}
+		.title {
+			color: $greyColor;
+			text-transform: uppercase;
+			font-size: 14pt;
+			margin: 0;
+		}
+		.number {
+			font-size: 60pt;
+			// for input
+			border: none;
+			outline: none;
+			width: 120px;			
+		}
+		.month {
+			font-size: 14pt;
+			//for select
+			border: none;
+			outline: none;
+			appearance: none;
+		}
+		.arrival-date, .departure-date, .guests, .booking-button-block {
+			cursor: pointer;
+			position: relative;
+			padding: 30px;
+		}
+		.arrival-date, .departure-date {
+			&:after {
+				content: '';
+				position: absolute;
+				right: 0;
+				width: 1px;
+				background-color: $greyColor;
+				height: 80px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+		.booking-button-block {
+			cursor: default;
+			background-color: #dfdfdf;
+			display: flex;
+			align-items: center;
+			button {
+				font-size: 16pt;
+			}
+		}
+	}
+	button {
+		cursor: pointer;
+		border-radius: 5px;
+		padding: 10px 20px;
+		background: $colorButtonRed;
+		border: none;
+		outline: none;			
+		color: #fefefe;
+		&:hover {
+			background: rgb(228,15,32);
+			background: -moz-linear-gradient(left, rgba(228,15,32,1) 0%, rgba(228,2,84,1) 100%);
+			background: -webkit-linear-gradient(left, rgba(228,15,32,1) 0%,rgba(228,2,84,1) 100%);
+			background: linear-gradient(to right, rgba(228,15,32,1) 0%,rgba(228,2,84,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e40f20', endColorstr='#e40254',GradientType=1 );
+		}
+	}
+	.hotel-rooms {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		font-family: "RalewayRegular";
+		font-weight: 300;
+		.advantage {
+			vertical-align: top;
+		}
+		.advantage {
+			display: inline-flex;
+			vertical-align: middle;
+			align-items: center;
+			justify-content: center;
+			margin-right: 10px;
+			width: 30px;
+			height: 30px;
+			border-radius: 5px;
+			background: rgb(228,15,32);
+			background: -moz-linear-gradient(left, rgba(228,15,32,1) 0%, rgba(228,2,84,1) 100%);
+			background: -webkit-linear-gradient(left, rgba(228,15,32,1) 0%,rgba(228,2,84,1) 100%);
+			background: linear-gradient(to right, rgba(228,15,32,1) 0%,rgba(228,2,84,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e40f20', endColorstr='#e40254',GradientType=1 );
+		}
+		.text {
+			font-family: "RalewayRegular";
+			font-weight: 300;
+			font-size: 12pt;
+			line-height: 26pt;
+		}
+		.room {
+			width: 45%;
+		}
+		.price {
+			display: inline-block;
+			font-family: "RalewayRegular";
+			font-weight: 400;
+			font-size: 14pt;
+			color: #636363;
+			span {
+				font-size: 30pt;
+				color: $colorButtonRed;
+			}
+		}
+		.info {
+			padding: 30px;
+			background-color: #fff;
+			margin-top: -6px;
+			color: #363636;
+			margin-bottom: 40px;
+			.farther {
+				font-family: "MuseoSansRegular";
+				font-weight: 700;
+				font-size: 12pt;
+			}
+			.price, button {
+				margin-top: 30px;
+				margin-left: 30px;
+			}
+		}
+		.room-img {
+			position: relative;
+			display: block;
+			font-family: "MuseoSansRegular";
+			font-weight: 400;
+			font-size: 24pt;
+			color: #fff;
+			img {
+				width: 100%;
+			}
+			.room-name {
+				position: absolute;
+				left: 0;
+				bottom: 8px;
+				padding: 20px 30px;
+				text-transform: uppercase;
+				background-color: rgba(0, 0, 0, 0.5);
+				transition: background-color .3s;
+			}
+			&:hover {
+				.room-name {
+					background-color: rgba(0, 0, 0, 1);
+				}
+			}
+		}
+	}
+}
+
+
