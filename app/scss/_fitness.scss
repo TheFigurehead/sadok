@@ -1,0 +1,39 @@
+.fitness-blocks-wrapper{
+  width: 1420px;
+  margin: 20px auto 50px auto;
+  .fitness-flex-row{
+    display: flex;
+    justify-content: space-around;
+    .fitness-flex-col{
+      max-width: 360px;
+      .fitness-col-img{
+        img{
+          width: 100%;
+        }
+      }
+      .fitness-col-content{
+        .fintess-col-content-title{
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 26px;
+          text-transform: uppercase;
+        }
+        .fintess-col-content-text{
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        .fitness-col-content-link{
+          a{
+            color: #363636;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 26px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

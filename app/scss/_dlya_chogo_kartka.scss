@@ -1,0 +1,171 @@
+.dlya-chogo-kartka-page {
+  background-size: cover;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background: url(../img/normB.png) 50% 100% no-repeat;
+    padding-bottom: 50px;
+}
+
+.dlya-chogo-kartka-blocks-wrapper{
+  margin: 20px auto 50px auto;
+  .dlya-chogo-kartka-flex-row{
+    display: flex;
+    justify-content: space-around;
+    .dlya-chogo-kartka-flex-col{
+      max-width: 360px;
+      .dlya-chogo-kartka-col-img{
+        img{
+          width: 100%;
+        }
+      }
+      .dlya-chogo-kartka-col-content{
+        .dlya-chogo-kartka-col-content-title {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 26px;
+          text-transform: uppercase;
+        }
+        .dlya-chogo-kartka-col-content-text{
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20px;
+
+        }
+        .dlya-chogo-kartka-col-content-link{
+          a{
+            color: #363636;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 26px;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dlya-chogo-kartka-col-content-text{
+
+}
+
+.dlya-chogo-kartka-content-text{
+  width: 54%;
+  float: right;
+  text-align: left;
+  margin-top: 41px;
+}
+
+.dlya-chogo-kartka-content-text p{
+  font-family: "MuseoSansRegular";
+  font-weight: 300;
+  width: 610px;
+  height: 190px;
+  box-shadow: 2px 6px 43px 2px rgba(0, 0, 0, 0.33);
+  background-color: #ffffff;
+  padding: 30px;
+
+}
+
+.dlya-chogo-kartka-col-img{
+  width: 46%;
+  float: left;
+}
+
+.how-to-get{
+  width: 100%;
+  height: 491px;
+  background-size: cover;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background: url(../img/how-to-get2.png) 50% 0% no-repeat;
+  position: relative;
+    h1{
+      text-transform: uppercase;
+      width: 788px;
+      height: 27px;
+      color: #ffffff;
+      font-family: "Museo Sans Cyrl" sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 24px;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .how-to-get-blocks-wrapper{
+      // width: 1420px;
+      margin: 20px auto 50px auto;
+      .how-to-get-flex-row{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 150px;
+        .how-to-get-flex-col{
+          max-width: 360px;
+          color: #fff;
+          .how-to-get-col-img{
+            img{
+              width: 100%;
+            }
+          }
+          .how-to-get-col-content{
+            .how-to-get-col-content-title{
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 62px;
+              text-transform: uppercase;
+              border: 3px solid;
+              border-radius: 50%;
+              width: 62px;
+              height: 62px;
+              text-align: center;
+              float: left;
+              margin-right: 27px;
+            }
+            .how-to-get-col-content-text{
+              font-size: 18px;
+              font-weight: 200;
+              line-height: 20px;
+            }
+            .how-to-get-col-content-text p{
+              width: 400px;
+            }
+            .how-to-get-col-content-link{
+              a{
+                color: #363636;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 26px;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    button{
+      width: 308px;
+      height: 55px;
+      border-radius: 5px;
+      background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
+      position: absolute;
+      top: 333px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      color: #ffffff;
+        &:hover{
+          box-shadow: 2px 6px 20px 25px rgba(255, 255, 255, 0.33);
+        }
+    }
+
+  &::after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+}

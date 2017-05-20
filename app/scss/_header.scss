@@ -1,10 +1,12 @@
+header{
+	z-index: 9999;
+}
 header .main_nav,
 header .secondary_nav {
 	height: 30px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	background-color: #fff;
 }
 
 header .main_nav .main_head,
@@ -32,10 +34,13 @@ header .secondary_nav .secondary_head li a {
 }
 
 header .main_nav .main_head li:not(.phone):not(.language):hover a,
-header .main_nav .main_head li:not(.phone):not(.language):active a,
-header .secondary_nav .secondary_head li:not(.logo):not(.language):hover a,
-header .secondary_nav .secondary_head li:not(.logo):not(.language):active a {
+header .main_nav .main_head li:not(.phone):not(.language):active a {
 	color: #e40254;
+	cursor: pointer;
+}
+
+header .secondary_nav .secondary_head li:not(.logo):not(.language):hover,
+header .secondary_nav .secondary_head li:not(.logo):not(.language):active {
 	cursor: pointer;
 }
 
@@ -72,7 +77,7 @@ header .main_nav .main_head li .hidden {
 	flex-direction: column;
 	align-items: flex-start;
 	color: #fff;
-	z-index: 10;
+	z-index: 20;
 }
 
 header .main_nav .main_head li .hidden2 {
@@ -90,6 +95,11 @@ header .secondary_nav {
 	justify-content: flex-start;
 	background-color: #000000;
 	opacity: 0.75;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
 }
 
 header .secondary_nav .secondary_head {
@@ -104,9 +114,6 @@ header .secondary_nav .secondary_head li a {
 	position: relative;
 }
 
-header .secondary_nav .secondary_head li {
-}
-
 header .secondary_nav .secondary_head li:not(.logo):before {
 	content: "";
 	display: block;
@@ -117,4 +124,9 @@ header .secondary_nav .secondary_head li:not(.logo):before {
 	left: -70px;
 	border: 3px solid #fff;
 	opacity: 0.4;
+}
+
+header .secondary_nav .secondary_head li:not(.logo):hover:before,
+header .secondary_nav .secondary_head li:not(.logo):active:before {
+	opacity: 1;
 }
