@@ -87,6 +87,11 @@ body {
   margin: 0;
   padding-left: 50px;
 }
+
+#glavnaya{
+  padding-left: 0;
+}
+
 // main {
 //   flex: 1 0 auto;
 // }
@@ -133,14 +138,10 @@ button:hover {
 @import "footer";
 @import "header";
 @import "glavnaya";
-<<<<<<< HEAD
 @import "fitness";
 @import "menu";
 @import "main";
 @import "bottom-slider";
-=======
 @import "breadCrumbs";
 @import "restoran";
-@import "common";
 @import "fitnes";
->>>>>>> ann

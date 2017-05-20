@@ -4,11 +4,11 @@
 }
 
 #main .nav_menu {
-	height: 370px;
+	// height: 370px;
 }
 
 #main .menu {
-	background: 
+	background:
   	url(../img/32.png) 0% 0% no-repeat,
   	url(../img/31.png)  0% 505% no-repeat;
   background-size: cover;
@@ -152,4 +152,8 @@
 
 #main .restaurant_order .order2 {
 	background-image: url(../img/37.png)
+}
+
+.nav-menu-block-wrapper{
+	margin-bottom: 25px;
 }
