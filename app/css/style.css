@@ -1780,7 +1780,8 @@ header .secondary_nav .secondary_head li a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 300;
-  position: relative; }
+  position: relative;
+  text-shadow: 1px 1px 9px #000; }
 
 header .secondary_nav .secondary_head li:not(.logo):before {
   content: "";
@@ -1834,7 +1835,9 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 500px; }
+  width: 550px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.3); }
 
 main .top-slider-wrapper .top-slider .top-slider-item .text-item h2 {
   font-size: 36px;
@@ -2862,6 +2865,10 @@ main .first_group_fitnes .block_item {
 
 .trenazherna-blocks-wrapper {
   margin: 20px auto 50px auto; }
+  .trenazherna-blocks-wrapper::after {
+    content: '';
+    clear: both;
+    display: table; }
   .trenazherna-blocks-wrapper .trenazherna-flex-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2911,10 +2918,10 @@ main .first_group_fitnes .block_item {
   background-position: 0% 50%;
   background-repeat: no-repeat;
   background-image: url(../img/trenazerni3.png);
-  position: relative; }
+  position: relative;
+  background-color: #444; }
   .what-are-you-waiting-for h1 {
     text-transform: uppercase;
-    width: 516px;
     height: 36px;
     color: #ffffff;
     font-family: "Museo Sans Cyrl";
@@ -2925,8 +2932,7 @@ main .first_group_fitnes .block_item {
     top: 30px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    color: red; }
+            transform: translate(-50%, 0); }
   .what-are-you-waiting-for button {
     width: 308px;
     height: 55px;
@@ -3085,8 +3091,18 @@ main .first_group_fitnes .block_item {
     clear: both;
     display: table; }
 
+#main .child-full-wrapper .content_menu .content-menu-block-wrapper {
+  height: auto; }
+
 .slick-track {
   height: 100vh; }
 
 #hotel .top-slider-wrapper .slick-arrow {
   display: none; }
+
+#under_const {
+  height: 700px;
+  background-image: url(../img/under_const.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left bottom; }

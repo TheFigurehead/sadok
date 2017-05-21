@@ -141,7 +141,9 @@ Portfolio.prototype.setSlider = function(slider, auto, num) {
 var slider = new Portfolio();
 
 window.addEventListener('load', function() {
-  slider.setSlider(document.getElementById('portfolio').getElementsByClassName('slider-bottom')[0]);
+  if(document.getElementById('portfolio')){
+    slider.setSlider(document.getElementById('portfolio').getElementsByClassName('slider-bottom')[0]);
+  }
 });
 
 $(document).ready(function(){
@@ -199,6 +201,13 @@ $('#main .nav_menu .nav-menu-block-wrapper ul .banquet').click(function() {
   $('#main .nav_menu .nav-menu-block-wrapper ul li').removeClass('active_li');
   $('#main .nav_menu .nav-menu-block-wrapper ul .banquet').addClass('active_li');
 })
+
+$('.list-items .list-item').click(function(){
+  $('.child-full-wrapper .active').removeClass('active');
+  var new_active = $(this).data('block');
+  $('.child-full-wrapper .'+ new_active).addClass('active');
+  return false;
+});
 
 // ---------------
 // *End restaurant menu**

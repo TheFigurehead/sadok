@@ -8,6 +8,11 @@
 
 .trenazherna-blocks-wrapper{
   margin: 20px auto 50px auto;
+  &::after{
+    content: '';
+    clear: both;
+    display: table;
+  }
   .trenazherna-flex-row{
     display: flex;
     justify-content: space-around;
@@ -73,9 +78,10 @@
   background-repeat: no-repeat;
   background-image: url(../img/trenazerni3.png);
   position: relative;
+  background-color: #444;
     h1{
       text-transform: uppercase;
-      width: 516px;
+      // width: 516px;
       height: 36px;
       color: #ffffff;
       font-family: "Museo Sans Cyrl";
@@ -86,7 +92,6 @@
       top: 30px;
       left: 50%;
       transform: translate(-50%, 0);
-      color: red;
     }
     button{
       width: 308px;

@@ -154,6 +154,7 @@ $colorButtonRed: #e40f20;
 @import "klub3";
 @import "trenazherna_zala";
 @import "dlya_chogo_kartka";
+@import "children";
 
 .slick-track {
   height: 100vh
@@ -161,4 +162,12 @@ $colorButtonRed: #e40f20;
 
 #hotel .top-slider-wrapper .slick-arrow{
   display: none;
+}
+
+#under_const{
+  height: 700px;
+  background-image: url(../img/under_const.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
