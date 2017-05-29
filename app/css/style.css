@@ -3094,6 +3094,74 @@ main .first_group_fitnes .block_item {
 #main .child-full-wrapper .content_menu .content-menu-block-wrapper {
   height: auto; }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 115px; }
+  .contacts .contacts-text-item {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    padding-right: 30px;
+    padding-left: 100px; }
+    .contacts .contacts-text-item .wish-family-space h2 {
+      position: relative; }
+      .contacts .contacts-text-item .wish-family-space h2 span {
+        z-index: 1;
+        position: relative;
+        background-color: #fff;
+        display: inline-block; }
+      .contacts .contacts-text-item .wish-family-space h2:before {
+        content: "";
+        position: absolute;
+        width: 117px;
+        height: 117px;
+        border: 1px solid red;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: -15px;
+        z-index: 0; }
+    .contacts .contacts-text-item .address h2,
+    .contacts .contacts-text-item .contact h2 {
+      font-size: 24px; }
+    .contacts .contacts-text-item .address p,
+    .contacts .contacts-text-item .contact p {
+      font-size: 18px; }
+    .contacts .contacts-text-item .social-networks div {
+      display: inline-block;
+      width: 46px;
+      height: 46px; }
+    .contacts .contacts-text-item .social-networks .facebook {
+      background-image: url(../img/icons/fb2.png);
+      margin-right: 30px; }
+    .contacts .contacts-text-item .social-networks .instagram {
+      background-image: url(../img/icons/inst2.png); }
+    .contacts .contacts-text-item div {
+      margin-bottom: 50px; }
+  .contacts .contacts-map-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background-color: #a09d98; }
+    .contacts .contacts-map-item .footer-map-wrapper {
+      height: 100%; }
+      .contacts .contacts-map-item .footer-map-wrapper #contact-map {
+        border-radius: 0;
+        border: none;
+        opacity: 0.6;
+        height: 100%; }
+
+.contacts + footer {
+  margin-top: 0; }
+
+#common {
+  padding-left: 0; }
+
 .slick-track {
   height: 100vh; }
 
