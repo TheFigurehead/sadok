@@ -2343,9 +2343,6 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   border: 1px solid #e40254;
   cursor: pointer; }
 
-.active_li {
-  border: 1px solid #e40254; }
-
 #main .nav_menu .nav-menu-block-wrapper ul li .img {
   height: 120px;
   width: 100%;
@@ -2366,11 +2363,6 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
       -ms-flex-pack: end;
           justify-content: flex-end;
   display: none; }
-
-#main .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 #main .content_menu .content-menu-block-wrapper {
   margin-top: 5%;
@@ -2466,6 +2458,14 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 
 .nav-menu-block-wrapper {
   margin-bottom: 25px; }
+
+.menu .active_li {
+  border: 1px solid #e40254; }
+
+#main .content_menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 #header .relative {
   position: relative; }
@@ -2816,6 +2816,15 @@ main .first_group_fitnes .block_item {
     right: 20px;
     font-size: 30px;
     cursor: pointer; }
+
+.popup-overflow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 #klub3 .klub3__menu {
   text-align: center; }

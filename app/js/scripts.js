@@ -183,40 +183,18 @@ $('#panel-toggle').click(function() {
 // ***restaurant menu****
 // ---------------
 
-$('#main .nav_menu .nav-menu-block-wrapper ul .europe').click(function() {
-  $('#main .content_menu').removeClass('active');
-  $('#main .europe_content').addClass('active');
-  $('#main .nav_menu .nav-menu-block-wrapper ul li').removeClass('active_li');
-  $('#main .nav_menu .nav-menu-block-wrapper ul .europe').addClass('active_li');
-})
-
-$('#main .nav_menu .nav-menu-block-wrapper ul .asia').click(function() {
-  $('#main .content_menu').removeClass('active');
-  $('#main .asia_content').addClass('active');
-  $('#main .nav_menu .nav-menu-block-wrapper ul li').removeClass('active_li');
-  $('#main .nav_menu .nav-menu-block-wrapper ul .asia').addClass('active_li');
-})
-
-$('#main .nav_menu .nav-menu-block-wrapper ul .bar').click(function() {
-  $('#main .content_menu').removeClass('active');
-  $('#main .bar_content').addClass('active');
-  $('#main .nav_menu .nav-menu-block-wrapper ul li').removeClass('active_li');
-  $('#main .nav_menu .nav-menu-block-wrapper ul .bar').addClass('active_li');
-})
-
-$('#main .nav_menu .nav-menu-block-wrapper ul .child').click(function() {
-  $('#main .content_menu').removeClass('active');
-  $('#main .child_content').addClass('active');
-  $('#main .nav_menu .nav-menu-block-wrapper ul li').removeClass('active_li');
-  $('#main .nav_menu .nav-menu-block-wrapper ul .child').addClass('active_li');
-})
-
-$('#main .nav_menu .nav-menu-block-wrapper ul .banquet').click(function() {
-  $('#main .content_menu').removeClass('active');
-  $('#main .banquet_content').addClass('active');
-  $('#main .nav_menu .nav-menu-block-wrapper ul li').removeClass('active_li');
-  $('#main .nav_menu .nav-menu-block-wrapper ul .banquet').addClass('active_li');
-})
+    $('.menu .nav-menu-block-wrapper ul li').eq(0).addClass("active_li");
+    $('.menu .content_menu').eq(0).addClass("active");
+  $('.menu .nav-menu-block-wrapper ul li').click(function(){
+    if(!$(this).hasClass( "active_li" )) {
+      var index = $(this).index();
+      $('.menu .nav-menu-block-wrapper ul li').removeClass("active_li");
+      $(this).addClass("active_li");
+      $('.menu .content_menu.active').removeClass("active");
+      $('.menu .content_menu').eq(index).addClass("active");
+      return false;
+    }
+  });
 
 $('.list-items .list-item').click(function(){
   $('.child-full-wrapper .active').removeClass('active');
@@ -249,17 +227,19 @@ if (hotelPage) {
 
 $('.popup-container').hide();
 
-$('body').on('click', popUpHide);
+$('.popup-overflow').on('click', popUpHide);
 
 $('.popup-container .fa-times').on('click', popUpHide);
 
 function popUpShow(e) {
   e.stopPropagation();
   $('.popup-container').show(300);
+  $(".popup-overflow").css('display', 'block');
 }
 
 function popUpHide(e) {
   $('.popup-container').hide(300);
+  $(".popup-overflow").css('display', 'none');
 }
 
 // -----------
