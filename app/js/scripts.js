@@ -249,7 +249,7 @@ if (hotelPage) {
 
 $('.popup-container').hide();
 
-$('.popup-overflow').on('click', popUpHide);
+$('body').on('click', popUpHide);
 
 $('.popup-container .fa-times').on('click', popUpHide);
 

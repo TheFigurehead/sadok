@@ -3146,14 +3146,12 @@ main .first_group_fitnes .block_item {
   .contacts .contacts-map-item {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1;
-    background-color: #a09d98; }
+            flex-grow: 1; }
     .contacts .contacts-map-item .footer-map-wrapper {
       height: 100%; }
       .contacts .contacts-map-item .footer-map-wrapper #contact-map {
         border-radius: 0;
         border: none;
-        opacity: 0.6;
         height: 100%; }
 
 .contacts + footer {
@@ -3174,3 +3172,18 @@ main .first_group_fitnes .block_item {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: left bottom; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }

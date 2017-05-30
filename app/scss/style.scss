@@ -172,3 +172,14 @@ $colorButtonRed: #e40f20;
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
