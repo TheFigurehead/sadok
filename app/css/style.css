@@ -3169,6 +3169,128 @@ main .first_group_fitnes .block_item {
 #common {
   padding-left: 0; }
 
+#news .bacground-wrapper {
+  background-color: #dcdcdc;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0 75px; }
+  #news .bacground-wrapper img {
+    width: 100%; }
+
+#news .container2 {
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto; }
+  #news .container2 p {
+    color: #061e28;
+    font-family: "Museo Sans Cyrl";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px; }
+
+#news .bacground-wrapper .title-block-wrapper + .data {
+  color: #061e28;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center; }
+
+#news .button-details {
+  width: 55%;
+  height: 3em;
+  top: 50%;
+  right: 50%;
+  position: absolute;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 3em;
+  display: none; }
+
+#news .multiple-slider-wrapper {
+  position: relative; }
+  #news .multiple-slider-wrapper .multiple-items .multiple-slider-item {
+    margin: 0 20px;
+    height: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer; }
+    #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content {
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all .3s; }
+    #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .title-block-wrapper {
+      display: none; }
+    #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .icon {
+      display: none; }
+    #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .button-details {
+      display: block; }
+    #news .multiple-slider-wrapper .multiple-items .multiple-slider-item img {
+      max-width: 100%;
+      border-radius: 2%; }
+    #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 3%; }
+      #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon {
+        width: 35%;
+        height: 35%;
+        top: 50%;
+        right: 50%;
+        position: absolute;
+        -webkit-transform: translate(50%, -50%);
+                transform: translate(50%, -50%);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-fit {
+        background-image: url(../img/icons/fitnes.png); }
+      #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-wel {
+        background-image: url(../img/icons/WELNESS.png); }
+      #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-child {
+        background-image: url(../img/icons/child.png); }
+      #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper {
+        margin-top: 40px; }
+        #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 700; }
+          #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span:after {
+            width: 50%; }
+  #news .multiple-slider-wrapper .multiple-items button.slick-arrow {
+    width: 35px;
+    height: 65px; }
+    #news .multiple-slider-wrapper .multiple-items button.slick-arrow:before {
+      content: none; }
+  #news .multiple-slider-wrapper .multiple-items .slick-prev {
+    background-image: url(../img/icons/arr.left.png);
+    left: -60px; }
+  #news .multiple-slider-wrapper .multiple-items .slick-next {
+    background-image: url(../img/icons/arr.right.png);
+    right: -60px; }
+
+#news .slick-track {
+  height: auto; }
+
+.line {
+  display: block;
+  width: 550px;
+  height: 2px;
+  background-color: #696969;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 60px; }
+
 .slick-track {
   height: 100vh; }
 
