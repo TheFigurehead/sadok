@@ -77,6 +77,10 @@
   src: url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   // display: flex;
   // min-height: 100vh;
@@ -88,7 +92,9 @@ body {
   padding-left: 50px;
 }
 
-#glavnaya{
+#glavnaya,
+#news,
+#main_news {
   padding-left: 0;
 }
 
@@ -157,6 +163,8 @@ $colorButtonRed: #e40f20;
 @import "children";
 @import "contacts";
 @import "news";
+@import "bootstrap";
+@import "main_news";
 
 .slick-track {
   height: 100vh
