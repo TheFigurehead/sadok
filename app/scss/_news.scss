@@ -1,3 +1,4 @@
+#text .bacground-wrapper,
 #news .bacground-wrapper {
 	background-color: #dcdcdc;
 	width: 100%;
@@ -11,7 +12,7 @@
 #news .container2 {
 	p {
 		color: #061e28;
-		font-family: "Museo Sans Cyrl";
+		font-family: "MuseoSansRegular";
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 30px;
@@ -26,6 +27,7 @@
 	text-align: center;
 }
 
+#text .button-details,
 #club .button-details,
 #news .button-details {
 	width: 55%;
@@ -50,7 +52,7 @@
 		transition: all .3s;
 	}
 }
-
+#text .multiple-slider-wrapper,
 #club .multiple-slider-wrapper,
 #news .multiple-slider-wrapper {
 	position: relative;
@@ -137,6 +139,8 @@
 		}
 		}
 	}
+
+#text .slick-track,
 #club .slick-track,
 #news .slick-track {
 	height: auto;
@@ -151,6 +155,7 @@
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
+#text .container,
 #club .container,
 #news .container {
   padding: 0;

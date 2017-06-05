@@ -91,7 +91,7 @@ body {
   margin: 0;
   padding-left: 50px;
 }
-
+#text,
 #glavnaya,
 #news,
 #main_news,
@@ -173,6 +173,7 @@ $colorButtonRed: #e40f20;
 @import "bootstrap";
 @import "main_news";
 @import "club";
+@import "text";
 
 .slick-track {
   height: 100vh
