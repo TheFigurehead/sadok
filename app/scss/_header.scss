@@ -9,6 +9,8 @@ header .secondary_nav {
 	align-items: center;
 }
 
+header .main_nav .main_
+
 header .main_nav .main_head,
 header .secondary_nav .secondary_head {
 	padding: 0;
@@ -69,7 +71,7 @@ header .main_nav .main_head li .fa-phone {
 
 header .main_nav .main_head li .hidden {
 	margin: 0;
-	opacity: 0;
+	display: none;
 	position: absolute;
 	min-width: 100%;
 	transition: all .2s;
@@ -86,8 +88,8 @@ header .main_nav .main_head li .hidden2 {
 
 header .main_nav .main_head .phone:hover .hidden,
 header .main_nav .main_head .language:hover .hidden {
-	opacity: 1;
 	transition: all .2s;
+	display: block;
 }
 
 header .secondary_nav {
@@ -130,4 +132,76 @@ header .secondary_nav .secondary_head li:not(.logo):before {
 header .secondary_nav .secondary_head li:not(.logo):hover:before,
 header .secondary_nav .secondary_head li:not(.logo):active:before {
 	opacity: 1;
+}
+
+
+@media screen and (max-width: 780px) {
+
+	header .main_nav {
+		display: block;
+		height: auto;
+	}
+	header .main_nav {
+		padding: 20px;
+	}
+	header .main_nav .main_head {
+		display: inline-block;
+		margin: 0;
+		text-align: center;
+	}
+	header .main_nav .main_head,
+	header .main_nav .main_nav_sandwich .fa-window-close {
+		display: none;
+	}
+	header .main_nav .main_head li,
+	header .secondary_nav .secondary_head li {
+		padding-bottom: 10px;
+	}
+	header .main_nav .main_head li .hidden {
+		margin: 0;
+		display: none;
+		position: static;
+		min-width: 100%;
+		transition: all .2s;
+		padding: 0;
+		padding-top: 10px;
+		color: #000;
+	}
+	header .main_nav .main_head li .fa {
+		content: "";
+		display: block;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: -5px;
+		left: -180px;
+		font-size: 25px;
+	}
+	header .main_nav .main_head li .fa-angle-down {
+		left: 120px;
+	}
+	header .main_nav .main_nav_sandwich .fa-bars,
+	header .main_nav .main_nav_sandwich .fa-window-close {
+		margin-right: 0;
+		font-size: 20px;
+		position: absolute;
+		top: 10px;
+		&:hover {
+			cursor: pointer;
+			color: #e40254;
+		}
+	}
+
+	header .secondary_nav .secondary_head {
+		flex-wrap: wrap;
+	}
+
+	header .secondary_nav .secondary_head .logo  {
+		width: 100%;
+		text-align: center;
+		height: 75px;
+	}
+	
+	header .secondary_nav .secondary_head li:not(.logo):before {
+		content: none;
+	}
 }

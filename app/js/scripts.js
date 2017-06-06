@@ -245,7 +245,22 @@ function popUpHide(e) {
 // -----------
 // *end popup*
 // -----------
-
+// -----------
+// ***main-nav***
+// -----------
+$('.main_nav_sandwich .fa-bars').click(function(){
+  	$('header .main_nav .main_head').css('display', 'block');
+  	$('header .main_nav .main_nav_sandwich .fa-window-close').css('display', 'block');
+  	$('header .main_nav .main_nav_sandwich .fa-bars').css('display', 'none');
+});
+$('.main_nav_sandwich .fa-window-close').click(function(){
+  	$('header .main_nav .main_head').css('display', 'none');
+  	$('header .main_nav .main_nav_sandwich .fa-window-close').css('display', 'none');
+  	$('header .main_nav .main_nav_sandwich .fa-bars').css('display', 'block');
+});
+// -----------
+// ***end of main-nav***
+// -----------
 });
 
 $(document).ready(function() {
