@@ -94,6 +94,7 @@ body {
 #text,
 #glavnaya,
 #news,
+#stock,
 #main_news,
 #club {
   padding-left: 0;
@@ -174,6 +175,7 @@ $colorButtonRed: #e40f20;
 @import "main_news";
 @import "club";
 @import "text";
+@import "stock";
 
 .slick-track {
   height: 100vh
