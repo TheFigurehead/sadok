@@ -9,8 +9,6 @@ header .secondary_nav {
 	align-items: center;
 }
 
-header .main_nav .main_
-
 header .main_nav .main_head,
 header .secondary_nav .secondary_head {
 	padding: 0;
@@ -134,19 +132,26 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 	opacity: 1;
 }
 
+header .main_nav .main_nav_sandwich {
+	display: none;
+}
 
 @media screen and (max-width: 780px) {
 
 	header .main_nav {
 		display: block;
 		height: auto;
-	}
-	header .main_nav {
 		padding: 20px;
 	}
+
+	header .main_nav .main_nav_sandwich {
+		display: block;
+	}
+
 	header .main_nav .main_head {
 		display: inline-block;
 		margin: 0;
+		padding: 0;
 		text-align: center;
 	}
 	header .main_nav .main_head,
@@ -185,12 +190,12 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 		font-size: 20px;
 		position: absolute;
 		top: 10px;
+		left: 10px;
 		&:hover {
 			cursor: pointer;
 			color: #e40254;
 		}
 	}
-
 	header .secondary_nav .secondary_head {
 		flex-wrap: wrap;
 	}
@@ -199,6 +204,13 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 		width: 100%;
 		text-align: center;
 		height: 75px;
+		margin: 10px 0;
+	}
+
+	header .secondary_nav .secondary_head li {
+		&:hover a {
+			color: #e40254;
+		}
 	}
 	
 	header .secondary_nav .secondary_head li:not(.logo):before {
