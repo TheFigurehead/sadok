@@ -1,0 +1,49 @@
+.delivery-wrapper {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 3px solid #e40254;
+    padding-bottom: 90px;
+    position: relative;
+    margin-bottom: 40px;
+    	&::after {
+    		content: "";
+    		width: 46px;
+    		height: 46px;
+    		background-image: url(../img/icons/moto.png);
+    		position: absolute;
+    		bottom: 0;
+    		right: 100px;
+    	}
+        .delivery-text-item {
+			padding: 0 90px;
+    	width: 50%;
+    	.delivery-list {
+    		li {
+				font-size: 24px;
+				font-weight: 300;
+				line-height: 30px;
+				text-align: justify;
+    		}
+    	}
+    	.title-block-wrapper {
+    		.title-block {
+    			text-align: left;
+    			padding: 60px 0;
+    			padding-left: 40px;
+    			font-weight: 700;
+    		}
+    	}
+    }
+    	.delivery-map-item {
+    		width: 50%;
+    		.delivery-map-wrapper {
+    			height: 100%;
+    			#delivery-map {
+					border-radius: 0;
+					border: none;
+					height: 100%;
+    		}
+    	}
+    }
+}

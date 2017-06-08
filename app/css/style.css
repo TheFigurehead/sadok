@@ -4554,6 +4554,48 @@ main .first_group_fitnes .block_item {
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); } }
 
+.delivery-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 3px solid #e40254;
+  padding-bottom: 90px;
+  position: relative;
+  margin-bottom: 40px; }
+  .delivery-wrapper::after {
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/icons/moto.png);
+    position: absolute;
+    bottom: 0;
+    right: 100px; }
+  .delivery-wrapper .delivery-text-item {
+    padding: 0 90px;
+    width: 50%; }
+    .delivery-wrapper .delivery-text-item .delivery-list li {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 30px;
+      text-align: justify; }
+    .delivery-wrapper .delivery-text-item .title-block-wrapper .title-block {
+      text-align: left;
+      padding: 60px 0;
+      padding-left: 40px;
+      font-weight: 700; }
+  .delivery-wrapper .delivery-map-item {
+    width: 50%; }
+    .delivery-wrapper .delivery-map-item .delivery-map-wrapper {
+      height: 100%; }
+      .delivery-wrapper .delivery-map-item .delivery-map-wrapper #delivery-map {
+        border-radius: 0;
+        border: none;
+        height: 100%; }
+
 .slick-track {
   height: 100vh; }
 

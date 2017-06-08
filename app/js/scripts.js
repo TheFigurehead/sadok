@@ -1,5 +1,6 @@
 function initMap() {
 	if (document.getElementById('footer-map')) {
+// footer
   var uluru = {lat: 50.340931, lng: 30.326125};
   var map = new google.maps.Map(document.getElementById('footer-map'), {
     zoom: 15,
@@ -11,7 +12,21 @@ function initMap() {
     map: map
   });
   }
-  else {
+  	if (document.getElementById('delivery-map')) {
+ // delivery
+  var uluru_con = {lat: 50.340931, lng: 30.326125};
+  var map_con = new google.maps.Map(document.getElementById('delivery-map'), {
+    zoom: 15,
+    center: uluru_con,
+    scrollwheel: false
+  });
+  var marker2 = new google.maps.Marker({
+    position: uluru_con,
+    map: map_con,
+    icon: '../img/icons/wish.png'
+  });
+  }
+  	if (document.getElementById('contact-map')) {
 // contacts
   var uluru_con = {lat: 50.340931, lng: 30.326125};
   var map_con = new google.maps.Map(document.getElementById('contact-map'), {
@@ -19,7 +34,7 @@ function initMap() {
     center: uluru_con,
     scrollwheel: false
   });
-  var marker2 = new google.maps.Marker({
+  var marker3 = new google.maps.Marker({
     position: uluru_con,
     map: map_con,
     icon: '../img/icons/wish.png'
