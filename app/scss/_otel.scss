@@ -174,4 +174,28 @@
 	}
 }
 
+#hotel {
+	.container {
+		.content-wrapper {
+			text-align: center;
+			margin-bottom: 100px;
+			.title-block  {
+				span {
+					font-size: 24px;
+				}
+			}
+			p {
+				font-size: 24px;
+				font-weight: 300;
+				line-height: 30px;
+				text-align: justify;
+			}
+			a {
+				font-size: 18px;
+				font-weight: 700;
+				text-decoration: underline;
+			}
+		}
+	}
+}
 

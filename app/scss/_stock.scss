@@ -49,7 +49,7 @@
 				font-weight: 200;
 				text-align: center;
 				margin: 0;
-				display: none;
+				display: block;
 				}
 			.button {
 				color: #ffffff;
@@ -64,6 +64,10 @@
 				text-transform: uppercase;
 				border-radius: 10px;
 				display: none;
+/*				display: block;*/
+/*				visibility: hidden;*/
+				opacity:0;
+
 			}
 			.circle::before {
 				content: '';
@@ -87,15 +91,6 @@
 				transform: translate(-50%,-50%);
 			}
 		}
-		&:hover .stock-wrapper p {
-			display: block;
-		}
-		&:hover .stock-wrapper .button {
-			display: block;
-		}
-		&:hover .stock-wrapper .square::before {
-			content: none;
-		}
 	}
 }
 
@@ -103,11 +98,31 @@
 	height: 150vh; 
 	.stock-grid {
 		.stock-wrapper {
+			p {
+			display: none;
+			opacity:0;
+/*			visibility: hidden;*/
+			}
 			.stock {
 				font-size: 30px;
 				font-weight: 700;
 				text-transform: uppercase;
 			}
+		}
+		&:hover .stock-wrapper p {
+			display: block;
+			opacity:1;
+/*			visibility: visible;*/
+			transition: opacity 0.5s linear;
+		}
+		&:hover .stock-wrapper .button {
+			display: block;
+			opacity:1;
+/*			visibility: visible;*/
+			transition: opacity 0.5s linear;
+		}
+		&:hover .stock-wrapper .square::before {
+			content: none;
 		}
 	}
 }

@@ -2946,6 +2946,21 @@ main .first_group_fitnes .block_item {
       #hotel .hotel-rooms .room-img:hover .room-name {
         background-color: black; }
 
+#hotel .container .content-wrapper {
+  text-align: center;
+  margin-bottom: 100px; }
+  #hotel .container .content-wrapper .title-block span {
+    font-size: 24px; }
+  #hotel .container .content-wrapper p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify; }
+  #hotel .container .content-wrapper a {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline; }
+
 .popup-container {
   position: fixed;
   background-color: #fff;
@@ -4412,7 +4427,7 @@ main .first_group_fitnes .block_item {
         font-weight: 200;
         text-align: center;
         margin: 0;
-        display: none; }
+        display: block; }
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .button,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .button {
         color: #ffffff;
@@ -4426,7 +4441,10 @@ main .first_group_fitnes .block_item {
         font-weight: 500;
         text-transform: uppercase;
         border-radius: 10px;
-        display: none; }
+        display: none;
+        /*				display: block;*/
+        /*				visibility: hidden;*/
+        opacity: 0; }
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before {
         content: '';
@@ -4450,22 +4468,29 @@ main .first_group_fitnes .block_item {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
-    #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper p,
-    #stock .stock-grid-wrapper .stock-grid:hover .stock-wrapper p {
-      display: block; }
-    #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper .button,
-    #stock .stock-grid-wrapper .stock-grid:hover .stock-wrapper .button {
-      display: block; }
-    #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper .square::before,
-    #stock .stock-grid-wrapper .stock-grid:hover .stock-wrapper .square::before {
-      content: none; }
 
 #hotel .stock-grid-wrapper {
   height: 150vh; }
+  #hotel .stock-grid-wrapper .stock-grid .stock-wrapper p {
+    display: none;
+    opacity: 0;
+    /*			visibility: hidden;*/ }
   #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .stock {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase; }
+  #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper p {
+    display: block;
+    opacity: 1;
+    /*			visibility: visible;*/
+    transition: opacity 0.5s linear; }
+  #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper .button {
+    display: block;
+    opacity: 1;
+    /*			visibility: visible;*/
+    transition: opacity 0.5s linear; }
+  #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper .square::before {
+    content: none; }
 
 @media screen and (max-width: 1280px) {
   #hotel .stock-grid-wrapper .stock-grid,
