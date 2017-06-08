@@ -1,7 +1,9 @@
+#hotel,
 #stock {
 	overflow-x:  hidden;
 }
 
+#hotel .stock-grid-wrapper,
 #stock .stock-grid-wrapper  {
 	display: flex;
 	justify-content: space-between;
@@ -14,6 +16,7 @@
 		background-position: 100% 100%;
 		position: relative;
 		transition: all 0.3s;
+		display: block;
 		&:hover {
 			z-index: 100;
 			transform: scale(1.1,1.1);
@@ -43,10 +46,25 @@
 			p {
 				color: #ffffff;
 				font-size: 18px;
-				font-weight: 500;
+				font-weight: 200;
 				text-align: center;
 				margin: 0;
+				display: none;
 				}
+			.button {
+				color: #ffffff;
+				text-align: center;
+				border: 1px solid #fff;
+				width: 60%;
+				padding: 15px 0;
+				margin: 0 auto;
+				margin-top: 40px;
+				font-size: 18px;
+				font-weight: 500;
+				text-transform: uppercase;
+				border-radius: 10px;
+				display: none;
+			}
 			.circle::before {
 				content: '';
 				width: 160px;
@@ -69,10 +87,33 @@
 				transform: translate(-50%,-50%);
 			}
 		}
+		&:hover .stock-wrapper p {
+			display: block;
+		}
+		&:hover .stock-wrapper .button {
+			display: block;
+		}
+		&:hover .stock-wrapper .square::before {
+			content: none;
+		}
+	}
+}
+
+#hotel .stock-grid-wrapper {
+	height: 150vh; 
+	.stock-grid {
+		.stock-wrapper {
+			.stock {
+				font-size: 30px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
 	}
 }
 
 @media screen and (max-width: 1280px) {
+	#hotel .stock-grid-wrapper,
     #stock .stock-grid-wrapper {
     	.stock-grid {
     		width: 50%;
@@ -80,6 +121,7 @@
     }
 }
 @media screen and (max-width: 1024px) {
+	#hotel .stock-grid-wrapper,
     #stock .stock-grid-wrapper {
     	height: 150vh;
     	.stock-grid {
@@ -99,6 +141,7 @@
     }
 }
 @media screen and (max-width: 720px) {
+	#hotel .stock-grid-wrapper,
     #stock .stock-grid-wrapper {
     	height: 200vh;
     	.stock-grid {
@@ -133,7 +176,7 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%,-50%);
-			}
+				}
     		}
     	}
     }
