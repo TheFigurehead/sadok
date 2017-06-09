@@ -82,7 +82,8 @@ body {
 #main_news,
 #club,
 #delivery,
-#сatering {
+#сatering,
+#fitness_new {
   padding-left: 0; }
 
 .container {
@@ -4664,6 +4665,140 @@ main .first_group_fitnes .block_item {
 #restoran_new .line {
   margin-top: 70px;
   margin-bottom: 70px; }
+
+#fitness_new .bacground-wrapper {
+  width: 100%;
+  padding: 50px 0 75px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0% -14%; }
+  #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items {
+    height: 150vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between; }
+    #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      width: 30%;
+      height: 40%;
+      border-radius: 2%; }
+      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img {
+        width: auto;
+        height: auto; }
+    #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item {
+      width: 100%;
+      height: 15%; }
+      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item img {
+        width: auto;
+        height: auto; }
+
+#fitness_new .button-details {
+  width: 55%;
+  height: 3em;
+  top: 50%;
+  right: 50%;
+  position: absolute;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 8%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 3em;
+  display: none;
+  transition: all .3s; }
+  #fitness_new .button-details:hover {
+    color: #e40254;
+    border: 2px solid #e40254;
+    transition: all .3s; }
+
+#fitness_new .multiple-slider-wrapper {
+  position: relative; }
+  #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
+    margin: 0 20px;
+    height: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer; }
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .content {
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all .3s; }
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .title-block-wrapper {
+      display: none; }
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .icon {
+      display: none; }
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .button-details {
+      display: block; }
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img {
+      max-width: 100%;
+      border-radius: 2%; }
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 3%; }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
+        width: 35%;
+        height: 35%;
+        top: 50%;
+        right: 50%;
+        position: absolute;
+        -webkit-transform: translate(50%, -50%);
+                transform: translate(50%, -50%);
+        background-size: contain;
+        background-repeat: no-repeat; }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-child {
+        background-image: url(../img/icons/child.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-dancer {
+        background-image: url(../img/icons/dancer-balance-posture-on-one-leg.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-fitnes {
+        background-image: url(../img/icons/fitnes.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-girl {
+        background-image: url(../img/icons/girl.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-pregnant {
+        background-image: url(../img/icons/pregnant-woman.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-swimming {
+        background-image: url(../img/icons/swimming-silhouette.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-tree {
+        background-image: url(../img/icons/tree.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-weightlifting {
+        background-image: url(../img/icons/weightlifting.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-yoga {
+        background-image: url(../img/icons/yoga-posture.png); }
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper {
+        margin-top: 40px; }
+        #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 700; }
+          #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span:after {
+            width: 50%; }
+
+#fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .button-details {
+  width: 30%; }
+
+#fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .content .icon {
+  width: 115px;
+  margin-top: 20px; }
+
+#fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .title-block-wrapper {
+  margin-top: 10px; }
 
 .slick-track {
   height: 100vh; }

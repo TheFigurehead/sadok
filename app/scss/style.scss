@@ -98,7 +98,8 @@ body {
 #main_news,
 #club,
 #delivery,
-#сatering {
+#сatering,
+#fitness_new {
   padding-left: 0;
 }
 
@@ -172,14 +173,15 @@ $colorButtonRed: #e40f20;
 @import "dlya_chogo_kartka";
 @import "children";
 @import "contacts";
-@import "news";
+@import "news+text+club";
 @import "bootstrap";
 @import "main_news";
 @import "club";
 @import "text";
-@import "stock+hotel";
+@import "stock+hotel+restoran";
 @import "restaurant_delivery";
 @import "restoran_new";
+@import "fitness_new";
 
 .slick-track {
   height: 100vh
