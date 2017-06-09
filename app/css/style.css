@@ -4369,10 +4369,12 @@ main .first_group_fitnes .block_item {
   margin-top: 60px;
   margin-bottom: 60px; }
 
+#restoran_new,
 #hotel,
 #stock {
   overflow-x: hidden; }
 
+#restoran_new .stock-grid-wrapper,
 #hotel .stock-grid-wrapper,
 #stock .stock-grid-wrapper {
   display: -webkit-box;
@@ -4385,6 +4387,7 @@ main .first_group_fitnes .block_item {
       flex-wrap: wrap;
   height: 100vh;
   overflow: hidden; }
+  #restoran_new .stock-grid-wrapper .stock-grid,
   #hotel .stock-grid-wrapper .stock-grid,
   #stock .stock-grid-wrapper .stock-grid {
     width: 50%;
@@ -4393,12 +4396,14 @@ main .first_group_fitnes .block_item {
     position: relative;
     transition: all 0.3s;
     display: block; }
+    #restoran_new .stock-grid-wrapper .stock-grid:hover,
     #hotel .stock-grid-wrapper .stock-grid:hover,
     #stock .stock-grid-wrapper .stock-grid:hover {
       z-index: 100;
       -webkit-transform: scale(1.1, 1.1);
               transform: scale(1.1, 1.1);
       transition: all 0.3s; }
+    #restoran_new .stock-grid-wrapper .stock-grid::before,
     #hotel .stock-grid-wrapper .stock-grid::before,
     #stock .stock-grid-wrapper .stock-grid::before {
       content: "";
@@ -4406,6 +4411,7 @@ main .first_group_fitnes .block_item {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); }
+    #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper,
     #hotel .stock-grid-wrapper .stock-grid .stock-wrapper,
     #stock .stock-grid-wrapper .stock-grid .stock-wrapper {
       position: absolute;
@@ -4413,6 +4419,7 @@ main .first_group_fitnes .block_item {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+      #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .stock,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .stock,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .stock {
         text-align: center;
@@ -4422,6 +4429,7 @@ main .first_group_fitnes .block_item {
         margin-bottom: 100px;
         width: auto;
         position: relative; }
+      #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper p,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper p,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper p {
         color: #ffffff;
@@ -4430,6 +4438,7 @@ main .first_group_fitnes .block_item {
         text-align: center;
         margin: 0;
         display: block; }
+      #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .button,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .button,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .button {
         color: #ffffff;
@@ -4447,6 +4456,7 @@ main .first_group_fitnes .block_item {
         /*				display: block;*/
         /*				visibility: hidden;*/
         opacity: 0; }
+      #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before {
         content: '';
@@ -4459,6 +4469,7 @@ main .first_group_fitnes .block_item {
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
+      #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .square::before,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .square::before,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
         content: '';
@@ -4632,6 +4643,27 @@ main .first_group_fitnes .block_item {
       right: 0;
       bottom: 0;
       left: 0; }
+
+#restoran_new .title-block-wrapper .title-block span {
+  font-weight: 700; }
+
+#restoran_new .stock-grid-wrapper .stock-grid {
+  width: 33.33%; }
+
+#restoran_new .stock-grid-wrapper-special {
+  height: 50vh; }
+  #restoran_new .stock-grid-wrapper-special .stock-grid {
+    width: 50%; }
+    #restoran_new .stock-grid-wrapper-special .stock-grid .icon {
+      width: 194px;
+      height: 194px;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+
+#restoran_new .line {
+  margin-top: 70px;
+  margin-bottom: 70px; }
 
 .slick-track {
   height: 100vh; }

@@ -1,8 +1,10 @@
+#restoran_new,
 #hotel,
 #stock {
 	overflow-x:  hidden;
 }
 
+#restoran_new .stock-grid-wrapper,
 #hotel .stock-grid-wrapper,
 #stock .stock-grid-wrapper  {
 	display: flex;

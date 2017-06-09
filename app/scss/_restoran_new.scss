@@ -1,0 +1,31 @@
+#restoran_new {
+	.title-block-wrapper {
+		.title-block {
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+	.stock-grid-wrapper {
+		.stock-grid  {
+		width: 33.33%;
+		}
+	}
+	.stock-grid-wrapper-special {
+		height: 50vh;
+		.stock-grid  {
+		width: 50%;
+		.icon {
+			width: 194px;
+			height: 194px;
+			background-repeat: no-repeat;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			}
+		}
+	}
+	.line {
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+}
