@@ -80,7 +80,9 @@ body {
 #news,
 #stock,
 #main_news,
-#club {
+#club,
+#delivery,
+#сatering {
   padding-left: 0; }
 
 .container {
@@ -4595,6 +4597,41 @@ main .first_group_fitnes .block_item {
         border-radius: 0;
         border: none;
         height: 100%; }
+
+.сatering-wrapper {
+  border-bottom: none; }
+  .сatering-wrapper::after {
+    content: none; }
+
+#сatering .button-order {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  background-image: none;
+  background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
+  text-align: center;
+  line-height: 46px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px;
+  border-radius: 5px; }
+  #сatering .button-order:hover {
+    opacity: 0.6; }
+
+#сatering .popup-container {
+  width: 35%; }
+  #сatering .popup-container h5 {
+    text-align: center; }
+  #сatering .popup-container .right {
+    position: relative; }
+    #сatering .popup-container .right textarea {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
 
 .slick-track {
   height: 100vh; }

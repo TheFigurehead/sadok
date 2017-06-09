@@ -47,3 +47,47 @@
     	}
     }
 }
+
+.сatering-wrapper {
+	border-bottom: none;
+	&::after {
+		content: none;
+	}
+}
+
+#сatering {
+	.button-order {
+		width: 20%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+    	background-image: none;
+    	background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
+    	text-align: center;
+    	line-height: 46px;
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 700;
+		padding: 15px;
+		border-radius: 5px;
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	.popup-container {
+		width: 35%;
+		h5 {
+			text-align: center;
+		}
+		.right {
+			position: relative;
+			textarea {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+}

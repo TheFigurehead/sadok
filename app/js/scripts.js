@@ -222,23 +222,20 @@ $('.list-items .list-item').click(function(){
 // *End restaurant menu**
 // ---------------
 
-// ---------------
-// **hotel page***
-// ---------------
+// -----------
+// ***popup***
+// -----------
 
 var hotelPage = document.getElementById('hotel');
+var сateringPage = document.getElementById('сatering');
 
 if (hotelPage) {
   $('.room button').on('click', popUpShow);
 }
 
-// ----------------
-// *end hotel page*
-// ----------------
-
-// -----------
-// ***popup***
-// -----------
+if (сateringPage) {
+  $('.button-order').on('click', popUpShow);
+}
 
 $('.popup-container').hide();
 
