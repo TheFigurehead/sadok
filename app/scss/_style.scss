@@ -81,6 +81,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   // display: flex;
   // min-height: 100vh;
@@ -90,15 +92,13 @@ body {
   color: #000000;
   margin: 0;
   padding-left: 50px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
-#glavnaya,
-#news,
-#main_news,
-#club {
+#glavnaya, #news, #main_news, #basket, #club {
   padding-left: 0;
 }
-
 // main {
 //   flex: 1 0 auto;
 // }
@@ -167,6 +167,7 @@ $colorButtonRed: #e40f20;
 @import "bootstrap";
 @import "main_news";
 @import "club";
+@import "order_basket";
 
 .slick-track {
   height: 100vh
@@ -184,13 +185,7 @@ $colorButtonRed: #e40f20;
   background-position: left bottom;
 }
 
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
 main {
   flex: 1 0 auto;
 }
+

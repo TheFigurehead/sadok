@@ -99,6 +99,7 @@ body {
 #club,
 #delivery,
 #сatering,
+#basket,
 #fitness_new {
   padding-left: 0;
 }
@@ -182,6 +183,8 @@ $colorButtonRed: #e40f20;
 @import "restaurant_delivery";
 @import "restoran_new";
 @import "fitness_new";
+@import "order_basket";
+@import "order-form";
 
 .slick-track {
   height: 100vh

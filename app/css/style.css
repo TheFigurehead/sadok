@@ -83,6 +83,7 @@ body {
 #club,
 #delivery,
 #сatering,
+#basket,
 #fitness_new {
   padding-left: 0; }
 
@@ -4799,6 +4800,247 @@ main .first_group_fitnes .block_item {
 
 #fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .title-block-wrapper {
   margin-top: 10px; }
+
+.basket {
+  margin-top: 115px; }
+  .basket .container2 .title-block-wrapper .title-block {
+    text-align: left; }
+    .basket .container2 .title-block-wrapper .title-block span {
+      text-transform: none;
+      font-weight: 700; }
+  .basket .container2 .order-form .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px; }
+    .basket .container2 .order-form .top h4 {
+      font-size: 25px;
+      font-weight: 500;
+      width: 100%; }
+    .basket .container2 .order-form .top ol {
+      width: 100%;
+      counter-reset: myCounter; }
+      .basket .container2 .order-form .top ol li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #b8b8b8;
+        list-style: none; }
+        .basket .container2 .order-form .top ol li .left {
+          width: 70%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .basket .container2 .order-form .top ol li .left .img {
+            width: 115px;
+            height: 85px;
+            background-color: #b2d179;
+            margin-right: 30px; }
+          .basket .container2 .order-form .top ol li .left .name {
+            font-size: 25px;
+            font-weight: 500; }
+            .basket .container2 .order-form .top ol li .left .name h5 {
+              margin: 0 0 20px 0; }
+          .basket .container2 .order-form .top ol li .left .number::before {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #000;
+            content: "-";
+            display: inline-block;
+            margin-right: 20px; }
+            .basket .container2 .order-form .top ol li .left .number::before:hover {
+              cursor: pointer; }
+          .basket .container2 .order-form .top ol li .left .number::after {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #000;
+            content: "+";
+            display: inline-block;
+            margin-left: 20px; }
+            .basket .container2 .order-form .top ol li .left .number::after:hover {
+              cursor: pointer; }
+          .basket .container2 .order-form .top ol li .left::before {
+            counter-increment: myCounter;
+            content: counter(myCounter);
+            color: #000;
+            display: inline-block;
+            text-align: center;
+            margin: 5px 10px;
+            font-size: 25px;
+            font-weight: 500; }
+        .basket .container2 .order-form .top ol li .right {
+          width: 30%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          border-left: 1px solid #b8b8b8; }
+          .basket .container2 .order-form .top ol li .right .price {
+            font-size: 24px;
+            font-weight: 300; }
+    .basket .container2 .order-form .top .total-price {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 25px;
+      font-weight: 700; }
+      .basket .container2 .order-form .top .total-price .text {
+        margin-right: 50px; }
+
+.order-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .order-form .left, .order-form .right {
+    width: 50%;
+    box-sizing: border-box; }
+  .order-form .left {
+    padding-right: 20px;
+    width: 50%; }
+  .order-form .right {
+    padding-left: 20px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .order-form .top,
+  .order-form .bottom {
+    width: 100%;
+    text-align: center; }
+  .order-form input,
+  .order-form select {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: background-color .3s; }
+    .order-form input:hover, .order-form input:focus,
+    .order-form select:hover,
+    .order-form select:focus {
+      background-color: #c8c8c8; }
+  .order-form textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #e5e5e5;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: background-color .3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    .order-form textarea:hover, .order-form textarea:focus {
+      background-color: #c8c8c8; }
+  .order-form button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #e40f20;
+    border: none;
+    outline: none;
+    color: #fefefe;
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 50px; }
+    .order-form button:hover {
+      background: #e40f20;
+      background: linear-gradient(to right, #e40f20 0%, #e40254 100%);
+      background: linear-gradient(to right, #e40f20 0%, #e40254 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e40f20', endColorstr='#e40254',GradientType=1 ); }
+  .order-form p {
+    font-family: "MuseoSansRegular";
+    font-size: 19px;
+    font-weight: 300; }
+    .order-form p input[type="radio"] {
+      width: auto; }
+    .order-form p .radio {
+      vertical-align: top;
+      width: 12px;
+      height: 12px;
+      margin: 0 3px 0 0; }
+    .order-form p .radio + label {
+      cursor: pointer; }
+    .order-form p .radio:not(checked) {
+      position: absolute;
+      opacity: 0; }
+    .order-form p .radio:not(checked) + label {
+      position: relative;
+      padding: 0 0 0 35px;
+      margin: 0 0 0 20px; }
+    .order-form p .radio:not(checked) + label:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 0;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #CDD1DA;
+      border-radius: 50%; }
+    .order-form p .radio:not(checked) + label:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      left: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ff000c;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: all .2s; }
+    .order-form p .radio:checked + label:after {
+      opacity: 1; }
 
 .slick-track {
   height: 100vh; }
