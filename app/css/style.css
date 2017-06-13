@@ -73,7 +73,8 @@ body {
   font-size: 14px;
   color: #000000;
   margin: 0;
-  padding-left: 50px; }
+  padding-left: 50px;
+  overflow-x: hidden; }
 
 #text,
 #glavnaya,
@@ -84,6 +85,7 @@ body {
 #delivery,
 #сatering,
 #basket,
+#specific-number,
 #fitness_new {
   padding-left: 0; }
 
@@ -3403,6 +3405,7 @@ main .first_group_fitnes .block_item {
   padding-left: 0; }
 
 #text .bacground-wrapper,
+#specific-number .bacground-wrapper,
 #news .bacground-wrapper {
   background-color: #dcdcdc;
   width: 100%;
@@ -3411,6 +3414,7 @@ main .first_group_fitnes .block_item {
   display: flex;
   padding: 50px 0 75px; }
   #text .bacground-wrapper img,
+  #specific-number .bacground-wrapper img,
   #news .bacground-wrapper img {
     width: 100%; }
 
@@ -3429,6 +3433,7 @@ main .first_group_fitnes .block_item {
   text-align: center; }
 
 #text .button-details,
+#specific-number .button-details,
 #club .button-details,
 #news .button-details {
   width: 55%;
@@ -3449,6 +3454,7 @@ main .first_group_fitnes .block_item {
   display: none;
   transition: all .3s; }
   #text .button-details:hover,
+  #specific-number .button-details:hover,
   #club .button-details:hover,
   #news .button-details:hover {
     color: #e40254;
@@ -3456,10 +3462,12 @@ main .first_group_fitnes .block_item {
     transition: all .3s; }
 
 #text .multiple-slider-wrapper,
+#specific-number .multiple-slider-wrapper,
 #club .multiple-slider-wrapper,
 #news .multiple-slider-wrapper {
   position: relative; }
   #text .multiple-slider-wrapper .multiple-items .multiple-slider-item,
+  #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item,
   #club .multiple-slider-wrapper .multiple-items .multiple-slider-item,
   #news .multiple-slider-wrapper .multiple-items .multiple-slider-item {
     margin: 0 20px;
@@ -3468,28 +3476,34 @@ main .first_group_fitnes .block_item {
     position: relative;
     cursor: pointer; }
     #text .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content,
+    #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content,
     #club .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content,
     #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content {
       background-color: rgba(0, 0, 0, 0.7);
       transition: all .3s; }
     #text .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .title-block-wrapper,
+    #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .title-block-wrapper,
     #club .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .title-block-wrapper,
     #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .title-block-wrapper {
       display: none; }
     #text .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .icon,
+    #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .icon,
     #club .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .icon,
     #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .icon {
       display: none; }
     #text .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .button-details,
+    #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .button-details,
     #club .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .button-details,
     #news .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .button-details {
       display: block; }
     #text .multiple-slider-wrapper .multiple-items .multiple-slider-item img,
+    #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item img,
     #club .multiple-slider-wrapper .multiple-items .multiple-slider-item img,
     #news .multiple-slider-wrapper .multiple-items .multiple-slider-item img {
       max-width: 100%;
       border-radius: 2%; }
     #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content,
+    #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content,
     #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content,
     #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content {
       background-color: rgba(0, 0, 0, 0.3);
@@ -3500,6 +3514,7 @@ main .first_group_fitnes .block_item {
       right: 0;
       border-radius: 3%; }
       #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon,
+      #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon,
       #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon,
       #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon {
         width: 35%;
@@ -3512,51 +3527,62 @@ main .first_group_fitnes .block_item {
         background-size: contain;
         background-repeat: no-repeat; }
       #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-fit,
+      #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-fit,
       #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-fit,
       #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-fit {
         background-image: url(../img/icons/fitnes.png); }
       #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-wel,
+      #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-wel,
       #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-wel,
       #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-wel {
         background-image: url(../img/icons/WELNESS.png); }
       #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-child,
+      #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-child,
       #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-child,
       #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .icon-child {
         background-image: url(../img/icons/child.png); }
       #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper,
+      #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper,
       #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper,
       #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper {
         margin-top: 40px; }
         #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span,
+        #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span,
         #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span,
         #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span {
           color: #fff;
           font-size: 24px;
           font-weight: 700; }
           #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span:after,
+          #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span:after,
           #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span:after,
           #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper .title-block span:after {
             width: 50%; }
   #text .multiple-slider-wrapper .multiple-items button.slick-arrow,
+  #specific-number .multiple-slider-wrapper .multiple-items button.slick-arrow,
   #club .multiple-slider-wrapper .multiple-items button.slick-arrow,
   #news .multiple-slider-wrapper .multiple-items button.slick-arrow {
     width: 35px;
     height: 65px; }
     #text .multiple-slider-wrapper .multiple-items button.slick-arrow:before,
+    #specific-number .multiple-slider-wrapper .multiple-items button.slick-arrow:before,
     #club .multiple-slider-wrapper .multiple-items button.slick-arrow:before,
     #news .multiple-slider-wrapper .multiple-items button.slick-arrow:before {
       content: none; }
   #text .multiple-slider-wrapper .multiple-items .slick-prev,
+  #specific-number .multiple-slider-wrapper .multiple-items .slick-prev,
   #club .multiple-slider-wrapper .multiple-items .slick-prev,
   #news .multiple-slider-wrapper .multiple-items .slick-prev {
     background-image: url(../img/icons/arr.left.png);
     left: -60px; }
   #text .multiple-slider-wrapper .multiple-items .slick-next,
+  #specific-number .multiple-slider-wrapper .multiple-items .slick-next,
   #club .multiple-slider-wrapper .multiple-items .slick-next,
   #news .multiple-slider-wrapper .multiple-items .slick-next {
     background-image: url(../img/icons/arr.right.png);
     right: -60px; }
 
+#specific-number .slick-track,
 #text .slick-track,
 #club .slick-track,
 #news .slick-track {
@@ -3571,6 +3597,7 @@ main .first_group_fitnes .block_item {
   margin-bottom: 30px;
   margin-top: 30px; }
 
+#specific-number .container,
 #text .container,
 #club .container,
 #news .container {
@@ -5041,6 +5068,185 @@ main .first_group_fitnes .block_item {
       transition: all .2s; }
     .order-form p .radio:checked + label:after {
       opacity: 1; }
+
+#specific-number .container2 .title-block-wrapper .main-title {
+  text-align: left; }
+
+#specific-number .center-slider-wrapper {
+  margin-bottom: 75px;
+  position: relative;
+  height: auto; }
+  #specific-number .center-slider-wrapper .center-items .slick-slide {
+    height: auto;
+    position: relative;
+    -webkit-filter: contrast(50%);
+    /*				transition: all 0.3s;*/
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  #specific-number .center-slider-wrapper .center-items .slide-active {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: contrast(100%);
+    z-index: 100;
+    /*				transition: all 0.3s;*/ }
+    #specific-number .center-slider-wrapper .center-items .slide-active img {
+      position: absolute;
+      left: -249px; }
+  #specific-number .center-slider-wrapper .center-items button.slick-arrow {
+    width: 32px;
+    height: 65px;
+    z-index: 110; }
+    #specific-number .center-slider-wrapper .center-items button.slick-arrow:before {
+      content: none; }
+  #specific-number .center-slider-wrapper .center-items .slick-prev {
+    background-image: url(../img/icons/arr.left.fff.png);
+    background-repeat: no-repeat;
+    left: 20%; }
+  #specific-number .center-slider-wrapper .center-items .slick-next {
+    background-image: url(../img/icons/arr.right.fff.png);
+    right: 20%;
+    background-repeat: no-repeat; }
+
+#specific-number .content-wrapper {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px; }
+  #specific-number .content-wrapper .container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #specific-number .content-wrapper .container2 .left {
+      width: 70%; }
+      #specific-number .content-wrapper .container2 .left .service {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style-type: none;
+        margin-top: 70px; }
+        #specific-number .content-wrapper .container2 .left .service .left {
+          width: 50%; }
+        #specific-number .content-wrapper .container2 .left .service .right {
+          width: 50%; }
+        #specific-number .content-wrapper .container2 .left .service li {
+          position: relative;
+          margin-bottom: 45px; }
+          #specific-number .content-wrapper .container2 .left .service li::before {
+            content: "";
+            display: block;
+            width: 26px;
+            height: 26px;
+            background-image: url(../img/icons/checkbox.png);
+            position: absolute;
+            left: -40px; }
+        #specific-number .content-wrapper .container2 .left .service .kind {
+          font-weight: 700; }
+      #specific-number .content-wrapper .container2 .left .qualities {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        padding: 0 0 85px 40px;
+        border-bottom: 2px solid #e40254;
+        border-left: 2px solid #e40254; }
+        #specific-number .content-wrapper .container2 .left .qualities h5 {
+          width: 100%;
+          text-transform: uppercase;
+          font-size: 24px;
+          font-weight: 700; }
+        #specific-number .content-wrapper .container2 .left .qualities li {
+          width: 33.33%;
+          padding-right: 60px; }
+    #specific-number .content-wrapper .container2 .right {
+      width: 30%; }
+      #specific-number .content-wrapper .container2 .right .reservation {
+        background-color: #ebe4dc;
+        height: auto;
+        margin: 60px 0 0 60px;
+        padding: 220px 60px 60px 60px;
+        height: 80%;
+        position: relative; }
+        #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          height: 100%;
+          /*.arrival,
+						.departure,
+						.guests {
+							margin-bottom: 55px;
+						}*/ }
+          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper .title {
+            color: #747474;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 14pt;
+            margin: 0; }
+          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper .number {
+            font-size: 60pt;
+            border: none;
+            outline: none;
+            width: 120px;
+            background-color: #ebe4dc; }
+          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper .month {
+            font-size: 14pt;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            margin-right: 20px;
+            background-color: #ebe4dc; }
+          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper select {
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 20px; }
+          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper button {
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
+            border: none;
+            outline: none;
+            color: #fefefe; }
+            #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper button:hover {
+              background: #e40f20;
+              background: linear-gradient(to right, #e40f20 0%, #e40254 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e40f20', endColorstr='#e40254',GradientType=1 ); }
+        #specific-number .content-wrapper .container2 .right .reservation .price {
+          position: absolute;
+          width: 220px;
+          height: 220px;
+          background-color: #292929;
+          top: -30px;
+          left: -30px; }
+          #specific-number .content-wrapper .container2 .right .reservation .price .price-wrapper {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%); }
+            #specific-number .content-wrapper .container2 .right .reservation .price .price-wrapper span {
+              color: #ffffff;
+              font-family: "MuseoSansRegular";
+              font-weight: 700;
+              font-size: 18px; }
+            #specific-number .content-wrapper .container2 .right .reservation .price .price-wrapper .num {
+              font-size: 48px; }
 
 .slick-track {
   height: 100vh; }

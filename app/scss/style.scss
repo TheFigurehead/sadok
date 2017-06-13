@@ -90,6 +90,7 @@ body {
   color: #000000;
   margin: 0;
   padding-left: 50px;
+  overflow-x: hidden;
 }
 #text,
 #glavnaya,
@@ -100,6 +101,7 @@ body {
 #delivery,
 #сatering,
 #basket,
+#specific-number,
 #fitness_new {
   padding-left: 0;
 }
@@ -185,6 +187,7 @@ $colorButtonRed: #e40f20;
 @import "fitness_new";
 @import "order_basket";
 @import "order-form";
+@import "specific_number";
 
 .slick-track {
   height: 100vh
