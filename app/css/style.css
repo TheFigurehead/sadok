@@ -5042,6 +5042,13 @@ main .first_group_fitnes .block_item {
     .order-form p .radio:checked + label:after {
       opacity: 1; }
 
+.number_lux {
+  margin-top: 115px; }
+  .number_lux .container2 .title-block-wrapper .title-block {
+    text-align: left; }
+  .number_lux .container2 .order-form .right button {
+    width: 341px; }
+
 .slick-track {
   height: 100vh; }
 
