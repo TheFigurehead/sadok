@@ -87,6 +87,7 @@ body {
 #basket,
 #specific-number,
 #fitness_new,
+#menu-category,
 #restoran_menu {
   padding-left: 0; }
 
@@ -4280,7 +4281,7 @@ main .first_group_fitnes .block_item {
 #main_news footer {
   margin-top: 0; }
 
-.main-news .container .pagination {
+.pagination {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -4293,21 +4294,21 @@ main .first_group_fitnes .block_item {
           justify-content: center;
   background-color: transparent;
   transition: all 0.3s; }
-  .main-news .container .pagination li {
+  .pagination li {
     width: 27px;
     height: 27px;
     margin-right: 5px;
     text-align: center; }
-    .main-news .container .pagination li a {
+    .pagination li a {
       font-size: 14px;
       font-weight: 700;
       line-height: 27px;
       width: 100%; }
-    .main-news .container .pagination li:hover {
+    .pagination li:hover {
       background-color: #f7b3bf;
       transition: all 0.3s; }
-    .main-news .container .pagination li:last-child a,
-    .main-news .container .pagination li:first-child a {
+    .pagination li:last-child a,
+    .pagination li:first-child a {
       color: #717171; }
 
 /*#text .container2 .content-wrapper,*/
@@ -4400,12 +4401,14 @@ main .first_group_fitnes .block_item {
   margin-bottom: 60px; }
 
 #restoran_new,
+.menu-category,
 .restoran_menu,
 #hotel,
 #stock {
   overflow-x: hidden; }
 
 #restoran_new .stock-grid-wrapper,
+.menu-category .stock-grid-wrapper,
 .restoran_menu .stock-grid-wrapper,
 #hotel .stock-grid-wrapper,
 #stock .stock-grid-wrapper {
@@ -4420,6 +4423,7 @@ main .first_group_fitnes .block_item {
   height: 100vh;
   overflow: hidden; }
   #restoran_new .stock-grid-wrapper .stock-grid,
+  .menu-category .stock-grid-wrapper .stock-grid,
   .restoran_menu .stock-grid-wrapper .stock-grid,
   #hotel .stock-grid-wrapper .stock-grid,
   #stock .stock-grid-wrapper .stock-grid {
@@ -4430,6 +4434,7 @@ main .first_group_fitnes .block_item {
     transition: all 0.3s;
     display: block; }
     #restoran_new .stock-grid-wrapper .stock-grid:hover,
+    .menu-category .stock-grid-wrapper .stock-grid:hover,
     .restoran_menu .stock-grid-wrapper .stock-grid:hover,
     #hotel .stock-grid-wrapper .stock-grid:hover,
     #stock .stock-grid-wrapper .stock-grid:hover {
@@ -4438,6 +4443,7 @@ main .first_group_fitnes .block_item {
               transform: scale(1.1, 1.1);
       transition: all 0.3s; }
     #restoran_new .stock-grid-wrapper .stock-grid::before,
+    .menu-category .stock-grid-wrapper .stock-grid::before,
     .restoran_menu .stock-grid-wrapper .stock-grid::before,
     #hotel .stock-grid-wrapper .stock-grid::before,
     #stock .stock-grid-wrapper .stock-grid::before {
@@ -4447,6 +4453,7 @@ main .first_group_fitnes .block_item {
       height: 100%;
       background: rgba(0, 0, 0, 0.5); }
     #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper,
+    .menu-category .stock-grid-wrapper .stock-grid .stock-wrapper,
     .restoran_menu .stock-grid-wrapper .stock-grid .stock-wrapper,
     #hotel .stock-grid-wrapper .stock-grid .stock-wrapper,
     #stock .stock-grid-wrapper .stock-grid .stock-wrapper {
@@ -4456,6 +4463,7 @@ main .first_group_fitnes .block_item {
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
       #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .stock,
+      .menu-category .stock-grid-wrapper .stock-grid .stock-wrapper .stock,
       .restoran_menu .stock-grid-wrapper .stock-grid .stock-wrapper .stock,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .stock,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .stock {
@@ -4467,6 +4475,7 @@ main .first_group_fitnes .block_item {
         width: auto;
         position: relative; }
       #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper p,
+      .menu-category .stock-grid-wrapper .stock-grid .stock-wrapper p,
       .restoran_menu .stock-grid-wrapper .stock-grid .stock-wrapper p,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper p,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper p {
@@ -4477,6 +4486,7 @@ main .first_group_fitnes .block_item {
         margin: 0;
         display: block; }
       #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .button,
+      .menu-category .stock-grid-wrapper .stock-grid .stock-wrapper .button,
       .restoran_menu .stock-grid-wrapper .stock-grid .stock-wrapper .button,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .button,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .button {
@@ -4496,6 +4506,7 @@ main .first_group_fitnes .block_item {
         /*				visibility: hidden;*/
         opacity: 0; }
       #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before,
+      .menu-category .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before,
       .restoran_menu .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before {
@@ -4510,6 +4521,7 @@ main .first_group_fitnes .block_item {
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
       #restoran_new .stock-grid-wrapper .stock-grid .stock-wrapper .square::before,
+      .menu-category .stock-grid-wrapper .stock-grid .stock-wrapper .square::before,
       .restoran_menu .stock-grid-wrapper .stock-grid .stock-wrapper .square::before,
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .square::before,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
@@ -4686,20 +4698,25 @@ main .first_group_fitnes .block_item {
       left: 0; }
 
 #restoran_new .title-block-wrapper .title-block span,
+.menu-category .title-block-wrapper .title-block span,
 .restoran_menu .title-block-wrapper .title-block span {
   font-weight: 700; }
 
 #restoran_new .stock-grid-wrapper .stock-grid,
+.menu-category .stock-grid-wrapper .stock-grid,
 .restoran_menu .stock-grid-wrapper .stock-grid {
   width: 33.33%; }
 
 #restoran_new .stock-grid-wrapper-special,
+.menu-category .stock-grid-wrapper-special,
 .restoran_menu .stock-grid-wrapper-special {
   height: 50vh; }
   #restoran_new .stock-grid-wrapper-special .stock-grid,
+  .menu-category .stock-grid-wrapper-special .stock-grid,
   .restoran_menu .stock-grid-wrapper-special .stock-grid {
     width: 50%; }
     #restoran_new .stock-grid-wrapper-special .stock-grid .icon,
+    .menu-category .stock-grid-wrapper-special .stock-grid .icon,
     .restoran_menu .stock-grid-wrapper-special .stock-grid .icon {
       width: 194px;
       height: 194px;
@@ -4708,6 +4725,7 @@ main .first_group_fitnes .block_item {
       margin-bottom: 30px; }
 
 #restoran_new .line,
+.menu-category .line,
 .restoran_menu .line {
   margin-top: 70px;
   margin-bottom: 70px; }
@@ -5266,41 +5284,53 @@ main .first_group_fitnes .block_item {
             #specific-number .content-wrapper .container2 .right .reservation .price .price-wrapper .num {
               font-size: 48px; }
 
-#restoran_menu .restoran_menu {
+#restoran_menu .restoran_menu,
+#menu-category .restoran_menu {
   margin-top: 115px; }
-  #restoran_menu .restoran_menu .title-block-wrapper .main-title {
+  #restoran_menu .restoran_menu .title-block-wrapper .main-title,
+  #menu-category .restoran_menu .title-block-wrapper .main-title {
     font-size: 36px;
     font-weight: 700; }
-  #restoran_menu .restoran_menu .kind-of {
+  #restoran_menu .restoran_menu .kind-of,
+  #menu-category .restoran_menu .kind-of {
     display: none; }
-    #restoran_menu .restoran_menu .kind-of span::after {
+    #restoran_menu .restoran_menu .kind-of span::after,
+    #menu-category .restoran_menu .kind-of span::after {
       content: none; }
-  #restoran_menu .restoran_menu .active-title {
+  #restoran_menu .restoran_menu .active-title,
+  #menu-category .restoran_menu .active-title {
     display: block; }
-  #restoran_menu .restoran_menu .stock-grid-wrapper {
+  #restoran_menu .restoran_menu .stock-grid-wrapper,
+  #menu-category .restoran_menu .stock-grid-wrapper {
     display: none; }
-    #restoran_menu .restoran_menu .stock-grid-wrapper .stock-grid {
+    #restoran_menu .restoran_menu .stock-grid-wrapper .stock-grid,
+    #menu-category .restoran_menu .stock-grid-wrapper .stock-grid {
       width: 47%;
       height: 45%; }
-  #restoran_menu .restoran_menu .active {
+  #restoran_menu .restoran_menu .active,
+  #menu-category .restoran_menu .active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-  #restoran_menu .restoran_menu .stock-grid-wrapper-special {
+  #restoran_menu .restoran_menu .stock-grid-wrapper-special,
+  #menu-category .restoran_menu .stock-grid-wrapper-special {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 50vh; }
-    #restoran_menu .restoran_menu .stock-grid-wrapper-special .stock-grid {
+    #restoran_menu .restoran_menu .stock-grid-wrapper-special .stock-grid,
+    #menu-category .restoran_menu .stock-grid-wrapper-special .stock-grid {
       width: 50%;
       height: 100%; }
-      #restoran_menu .restoran_menu .stock-grid-wrapper-special .stock-grid .icon {
+      #restoran_menu .restoran_menu .stock-grid-wrapper-special .stock-grid .icon,
+      #menu-category .restoran_menu .stock-grid-wrapper-special .stock-grid .icon {
         width: 194px;
         height: 194px;
         background-repeat: no-repeat;
         margin: 0 auto;
         margin-bottom: 30px; }
-  #restoran_menu .restoran_menu .menu-nav-items {
+  #restoran_menu .restoran_menu .menu-nav-items,
+  #menu-category .restoran_menu .menu-nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5308,7 +5338,8 @@ main .first_group_fitnes .block_item {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 30px; }
-    #restoran_menu .restoran_menu .menu-nav-items .menu-item {
+    #restoran_menu .restoran_menu .menu-nav-items .menu-item,
+    #menu-category .restoran_menu .menu-nav-items .menu-item {
       width: 170px;
       height: 85px;
       border: 2px solid #999999;
@@ -5319,7 +5350,8 @@ main .first_group_fitnes .block_item {
       text-transform: uppercase;
       text-align: center;
       position: relative; }
-      #restoran_menu .restoran_menu .menu-nav-items .menu-item::after {
+      #restoran_menu .restoran_menu .menu-nav-items .menu-item::after,
+      #menu-category .restoran_menu .menu-nav-items .menu-item::after {
         content: '';
         position: absolute;
         border: 30px solid transparent;
@@ -5329,16 +5361,145 @@ main .first_group_fitnes .block_item {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
         display: none; }
-      #restoran_menu .restoran_menu .menu-nav-items .menu-item:hover {
+      #restoran_menu .restoran_menu .menu-nav-items .menu-item:hover,
+      #menu-category .restoran_menu .menu-nav-items .menu-item:hover {
         background-color: #da828d;
         border: 2px solid #da828d; }
-      #restoran_menu .restoran_menu .menu-nav-items .menu-item:hover::after {
+      #restoran_menu .restoran_menu .menu-nav-items .menu-item:hover::after,
+      #menu-category .restoran_menu .menu-nav-items .menu-item:hover::after {
         display: block; }
-    #restoran_menu .restoran_menu .menu-nav-items .active_a {
+    #restoran_menu .restoran_menu .menu-nav-items .active_a,
+    #menu-category .restoran_menu .menu-nav-items .active_a {
       background-color: #da828d;
       border: 2px solid #da828d; }
-      #restoran_menu .restoran_menu .menu-nav-items .active_a::after {
+      #restoran_menu .restoran_menu .menu-nav-items .active_a::after,
+      #menu-category .restoran_menu .menu-nav-items .active_a::after {
         display: block; }
+
+#menu-category .menu-category {
+  margin-top: 115px; }
+  #menu-category .menu-category .title-block-wrapper .main-title {
+    font-size: 36px;
+    font-weight: 700; }
+  #menu-category .menu-category .kind-of span::after {
+    content: none; }
+  #menu-category .menu-category .stock-grid-wrapper {
+    height: 30vh;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    #menu-category .menu-category .stock-grid-wrapper .stock-grid {
+      width: 47%;
+      height: 45%;
+      background-position: 50% 50%;
+      -webkit-transform: scale(0.9, 0.9);
+              transform: scale(0.9, 0.9); }
+      #menu-category .menu-category .stock-grid-wrapper .stock-grid:hover {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1);
+        box-shadow: 10px 10px 3px 0px #f9828a; }
+      #menu-category .menu-category .stock-grid-wrapper .stock-grid .stock-wrapper .stock {
+        margin-bottom: 0;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase; }
+  #menu-category .menu-category .stock-grid-wrapper-special {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50vh; }
+    #menu-category .menu-category .stock-grid-wrapper-special .stock-grid {
+      width: 50%;
+      height: 100%;
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1); }
+      #menu-category .menu-category .stock-grid-wrapper-special .stock-grid:hover {
+        box-shadow: none; }
+      #menu-category .menu-category .stock-grid-wrapper-special .stock-grid .stock-wrapper .stock {
+        font-size: 30px; }
+      #menu-category .menu-category .stock-grid-wrapper-special .stock-grid .stock-wrapper .icon {
+        width: 194px;
+        height: 194px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-bottom: 30px; }
+  #menu-category .menu-category .food {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px; }
+    #menu-category .menu-category .food .left {
+      width: 15%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      font-size: 18px;
+      font-weight: 300; }
+      #menu-category .menu-category .food .left > div {
+        margin-bottom: 30px; }
+      #menu-category .menu-category .food .left h6 {
+        font-size: 18px;
+        font-weight: 500;
+        border-top: 1px solid #c9c9c9;
+        border-bottom: 1px solid #c9c9c9;
+        margin: 0;
+        padding: 20px 0; }
+      #menu-category .menu-category .food .left .inputs .input {
+        margin-top: 20px; }
+    #menu-category .menu-category .food .right {
+      width: 83%; }
+      #menu-category .menu-category .food .right .filter {
+        font-size: 18px;
+        font-weight: 500;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        border-top: 1px solid #c9c9c9;
+        border-bottom: 1px solid #c9c9c9;
+        padding: 20px 0; }
+        #menu-category .menu-category .food .right .filter a {
+          padding: 10px; }
+          #menu-category .menu-category .food .right .filter a:hover {
+            color: #fb002c;
+            border: 1px solid #fb002c; }
+        #menu-category .menu-category .food .right .filter .sort i {
+          color: #a2a2a2;
+          padding: 10px 15px;
+          border: 1px solid #a2a2a2; }
+          #menu-category .menu-category .food .right .filter .sort i:hover {
+            color: #fb002c;
+            border: 1px solid #fb002c; }
+      #menu-category .menu-category .food .right .content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        #menu-category .menu-category .food .right .content .content-item {
+          width: 30%;
+          margin-top: 35px; }
+          #menu-category .menu-category .food .right .content .content-item img {
+            width: 100%; }
+          #menu-category .menu-category .food .right .content .content-item a {
+            display: block;
+            text-align: center; }
+          #menu-category .menu-category .food .right .content .content-item .specifications {
+            text-align: center; }
 
 .slick-track {
   height: 100vh; }

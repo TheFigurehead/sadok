@@ -102,7 +102,8 @@ body {
 #сatering,
 #basket,
 #specific-number,
-#fitness_new, 
+#fitness_new,
+#menu-category, 
 #restoran_menu {
   padding-left: 0;
 }
@@ -190,6 +191,7 @@ $colorButtonRed: #e40f20;
 @import "order-form";
 @import "specific_number";
 @import "restoran_menu";
+@import "menu-category";
 
 .slick-track {
   height: 100vh
