@@ -287,6 +287,31 @@ $('footer .flex-row-wrapper .contact-open-button').click(function(){
 // -----------
 // ***end of footer mobile***
 // -----------
+
+// ---------------
+// ***menu tabulation****
+// ---------------
+    $('#restoran_menu .menu-nav-items .menu-item').eq(0).addClass("active_a");
+    $('#restoran_menu .stock-grid-wrapper').eq(0).addClass("active");
+    $('#restoran_menu .restoran_menu .kind-of').eq(0).addClass("active-title");
+  $('#restoran_menu .menu-nav-items .menu-item').click(function(){
+    if(!$(this).hasClass( "active_a" )) {
+      var index = $(this).index();
+      $('#restoran_menu .menu-nav-items .menu-item').removeClass("active_a");
+      $(this).addClass("active_a");
+      $('#restoran_menu .stock-grid-wrapper.active').removeClass("active");
+      $('#restoran_menu .stock-grid-wrapper').eq(index).addClass("active");
+
+      $('#restoran_menu .restoran_menu .kind-of.active-title').removeClass("active-title");
+      $('#restoran_menu .restoran_menu .kind-of').eq(index).addClass("active-title");
+      return false;
+    }
+  });
+
+// ---------------
+// ***End menu tabulation****
+// ---------------
+
 });
 
 $(document).ready(function() {
