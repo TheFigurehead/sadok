@@ -5046,8 +5046,95 @@ main .first_group_fitnes .block_item {
   margin-top: 115px; }
   .number_lux .container2 .title-block-wrapper .title-block {
     text-align: left; }
-  .number_lux .container2 .order-form .right button {
-    width: 341px; }
+  .number_lux .container2 .order-form .left {
+    width: 40%; }
+  .number_lux .container2 .order-form .right {
+    width: 60%;
+    background-color: #f2ede8; }
+    .number_lux .container2 .order-form .right button {
+      width: 341px; }
+    .number_lux .container2 .order-form .right .reservation {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      font-family: "MuseoSansRegular";
+      font-weight: 300;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: transparent;
+      position: relative;
+      text-align: left;
+      z-index: 40; }
+      .number_lux .container2 .order-form .right .reservation input {
+        background-color: transparent;
+        border-radius: 0px;
+        margin-bottom: 0px;
+        width: auto;
+        outline: none;
+        border: none;
+        padding: 0px;
+        box-sizing: border-box;
+        transition: background-color .3s; }
+      .number_lux .container2 .order-form .right .reservation select {
+        background-color: transparent;
+        border-radius: 0px;
+        margin-bottom: 0px;
+        width: auto;
+        outline: none;
+        border: none;
+        padding: 0px;
+        box-sizing: border-box;
+        transition: background-color .3s; }
+      .number_lux .container2 .order-form .right .reservation .fa-calendar {
+        margin-left: 20px; }
+      .number_lux .container2 .order-form .right .reservation .fa-angle-down {
+        position: absolute;
+        right: 30px;
+        bottom: 45px;
+        font-size: 30px; }
+      .number_lux .container2 .order-form .right .reservation .title {
+        color: #747474;
+        text-transform: uppercase;
+        font-size: 14pt;
+        margin: 0; }
+      .number_lux .container2 .order-form .right .reservation .number {
+        font-size: 60pt;
+        border: none;
+        outline: none;
+        width: 93px; }
+      .number_lux .container2 .order-form .right .reservation .month {
+        font-size: 14pt;
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none; }
+      .number_lux .container2 .order-form .right .reservation .arrival-date, .number_lux .container2 .order-form .right .reservation .departure-date, .number_lux .container2 .order-form .right .reservation .guests, .number_lux .container2 .order-form .right .reservation .booking-button-block {
+        cursor: pointer;
+        position: relative;
+        padding: 30px; }
+      .number_lux .container2 .order-form .right .reservation .arrival-date:after, .number_lux .container2 .order-form .right .reservation .departure-date:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1px;
+        background-color: #747474;
+        height: 80px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+      .number_lux .container2 .order-form .right .reservation .booking-button-block {
+        cursor: default;
+        background-color: #dfdfdf;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .number_lux .container2 .order-form .right .reservation .booking-button-block button {
+          font-size: 16pt; }
 
 .slick-track {
   height: 100vh; }
