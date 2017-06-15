@@ -5464,6 +5464,35 @@ main .first_group_fitnes .block_item {
             z-index: 100; }
         #menu-category .menu-category .food .left .inputs .input input[type="checkbox"]:checked + label span::before {
           display: block; }
+      #menu-category .menu-category .food .left .price #input-number {
+        padding: 7px;
+        margin: 15px 5px 5px;
+        width: 70px;
+        margin-top: 36px; }
+      #menu-category .menu-category .food .left .price #html5 {
+        height: 10px;
+        background-color: #c0c0c0;
+        border: none;
+        box-shadow: none;
+        border-radius: 0; }
+        #menu-category .menu-category .food .left .price #html5 .noUi-base {
+          position: relative; }
+          #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-connect {
+            background-color: #ff000c; }
+          #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle {
+            position: absolute;
+            box-shadow: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            border: none;
+            background-color: #ff000c;
+            opacity: 0.8;
+            bottom: 0; }
+            #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle::before {
+              content: none; }
+            #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle::after {
+              content: none; }
     #menu-category .menu-category .food .right {
       width: 83%; }
       #menu-category .menu-category .food .right .filter {
@@ -5559,11 +5588,6 @@ main .first_group_fitnes .block_item {
             color: #030303;
             font-size: 24px;
             font-weight: 500; }
-
-#menu-category #input-number {
-  padding: 7px;
-  margin: 15px 5px 5px;
-  width: 70px; }
 
 .slick-track {
   height: 100vh; }
