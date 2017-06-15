@@ -90,6 +90,7 @@ body {
   color: #000000;
   margin: 0;
   padding-left: 50px;
+  overflow-x: hidden;
 }
 #text,
 #glavnaya,
@@ -100,7 +101,10 @@ body {
 #delivery,
 #сatering,
 #basket,
-#fitness_new {
+#specific-number,
+#fitness_new,
+#menu-category, 
+#restoran_menu {
   padding-left: 0;
 }
 
@@ -179,13 +183,17 @@ $colorButtonRed: #e40f20;
 @import "main_news";
 @import "club";
 @import "text";
-@import "stock+hotel+restoran";
+@import "stock+hotel+restoran+menu";
 @import "restaurant_delivery";
-@import "restoran_new";
+@import "restoran_new+menu";
 @import "fitness_new";
 @import "order_basket";
 @import "order-form";
 @import "number_lux";
+@import "specific_number";
+@import "restoran_menu";
+@import "menu-category";
+
 
 .slick-track {
   height: 100vh

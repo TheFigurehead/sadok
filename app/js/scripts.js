@@ -287,15 +287,71 @@ $('footer .flex-row-wrapper .contact-open-button').click(function(){
 // -----------
 // ***end of footer mobile***
 // -----------
+
+// ---------------
+// ***menu tabulation****
+// ---------------
+    $('#restoran_menu .menu-nav-items .menu-item').eq(0).addClass("active_a");
+    $('#restoran_menu .stock-grid-wrapper').eq(0).addClass("active");
+    $('#restoran_menu .restoran_menu .kind-of').eq(0).addClass("active-title");
+  $('#restoran_menu .menu-nav-items .menu-item').click(function(){
+    if(!$(this).hasClass( "active_a" )) {
+      var index = $(this).index();
+      $('#restoran_menu .menu-nav-items .menu-item').removeClass("active_a");
+      $(this).addClass("active_a");
+      $('#restoran_menu .stock-grid-wrapper.active').removeClass("active");
+      $('#restoran_menu .stock-grid-wrapper').eq(index).addClass("active");
+
+      $('#restoran_menu .restoran_menu .kind-of.active-title').removeClass("active-title");
+      $('#restoran_menu .restoran_menu .kind-of').eq(index).addClass("active-title");
+      return false;
+    }
+  });
+
+// ---------------
+// ***End menu tabulation****
+// ---------------
+
 });
 
 $(document).ready(function() {
   $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
-    // variableWidth: true,
+    slidesToScroll: 1
 	});
+
+$('.center-items').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+$('.center-items').on('afterChange', function(event, slick, currentSlide) {
+	$('.center-slider-item').removeClass('slide-active');
+  	$('.slick-center').addClass('slide-active');
+});
+	
 });
 
 $(window).on('orientationchange', function() {

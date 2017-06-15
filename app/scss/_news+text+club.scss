@@ -1,4 +1,5 @@
 #text .bacground-wrapper,
+#specific-number .bacground-wrapper,
 #news .bacground-wrapper {
 	background-color: #dcdcdc;
 	width: 100%;
@@ -28,6 +29,7 @@
 }
 
 #text .button-details,
+#specific-number .button-details,
 #club .button-details,
 #news .button-details {
 	width: 55%;
@@ -53,6 +55,7 @@
 	}
 }
 #text .multiple-slider-wrapper,
+#specific-number .multiple-slider-wrapper,
 #club .multiple-slider-wrapper,
 #news .multiple-slider-wrapper {
 	position: relative;
@@ -140,6 +143,7 @@
 		}
 	}
 
+#specific-number .slick-track,
 #text .slick-track,
 #club .slick-track,
 #news .slick-track {
@@ -155,6 +159,7 @@
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
+#specific-number .container,
 #text .container,
 #club .container,
 #news .container {

@@ -1,10 +1,14 @@
 #restoran_new,
+.menu-category,
+.restoran_menu,
 #hotel,
 #stock {
 	overflow-x:  hidden;
 }
 
 #restoran_new .stock-grid-wrapper,
+.menu-category .stock-grid-wrapper,
+.restoran_menu .stock-grid-wrapper,
 #hotel .stock-grid-wrapper,
 #stock .stock-grid-wrapper  {
 	display: flex;
