@@ -351,6 +351,46 @@ $('.center-items').on('afterChange', function(event, slick, currentSlide) {
 	$('.center-slider-item').removeClass('slide-active');
   	$('.slick-center').addClass('slide-active');
 });
+
+// ---------------
+// ***noUiSlider****
+// ---------------
+
+var html5Slider = document.getElementById('html5');
+
+noUiSlider.create(html5Slider, {
+  start: [ 1, 140 ],
+  connect: true,
+  range: {
+    'min': 0,
+    'max': 140
+  }
+});
+
+var inputNumber = document.getElementById('input-number');
+
+html5Slider.noUiSlider.on('update', function( values, handle ) {
+
+  var value = values[handle];
+
+  if ( handle ) {
+    inputNumber.value = value;
+  } else {
+    select.value = Math.round(value);
+  }
+});
+
+select.addEventListener('change', function(){
+  html5Slider.noUiSlider.set([this.value, null]);
+});
+
+inputNumber.addEventListener('change', function(){
+  html5Slider.noUiSlider.set([null, this.value]);
+});
+
+// ---------------
+// ***End of noUiSlider****
+// ---------------
 	
 });
 
