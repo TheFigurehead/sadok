@@ -5540,7 +5540,7 @@ main .first_group_fitnes .block_item {
                   width: 42px;
                   height: 42px;
                   background-image: url(../img/icons/22.png);
-                  display: inline-block;
+                  display: block;
                   background-position: 100% 100%;
                   background-repeat: no-repeat; }
             #menu-category .menu-category .food .right .content .content-item .img-wrapper:hover .hidden-content-item {
