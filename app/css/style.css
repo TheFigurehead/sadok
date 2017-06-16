@@ -1800,6 +1800,10 @@ header .secondary_nav .secondary_head li a {
   color: #000000;
   font-weight: 700; }
 
+header .secondary_nav .secondary_head .phone .static,
+header .secondary_nav .secondary_head .language .static {
+  position: static; }
+
 header .main_nav .main_head li:not(.phone):not(.language):hover a,
 header .main_nav .main_head li:not(.phone):not(.language):active a {
   color: #e40254;
@@ -1829,13 +1833,14 @@ header .main_nav .main_head li .fa-phone {
   font-size: 15px;
   top: 0; }
 
-header .main_nav .main_head li .hidden {
+header .main_nav .main_head .phone .hidden,
+header .main_nav .main_head .language .hidden {
   margin: 0;
   display: none;
   position: absolute;
-  min-width: 100%;
+  min-width: 120%;
   transition: all .2s;
-  padding: 10px 0;
+  padding: 20px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1843,11 +1848,15 @@ header .main_nav .main_head li .hidden {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: #fff;
+  height: auto;
+  color: red;
   z-index: 20; }
 
+header .main_nav .main_head li .hidden1 {
+  top: 10px; }
+
 header .main_nav .main_head li .hidden2 {
-  top: 40px; }
+  top: 30px; }
 
 header .main_nav .main_head .phone:hover .hidden,
 header .main_nav .main_head .language:hover .hidden {
@@ -4404,7 +4413,6 @@ main .first_group_fitnes .block_item {
 #restoran_new,
 .menu-category,
 .restoran_menu,
-#hotel,
 #stock {
   overflow-x: hidden; }
 

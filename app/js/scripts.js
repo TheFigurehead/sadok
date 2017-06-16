@@ -355,7 +355,9 @@ $('.center-items').on('afterChange', function(event, slick, currentSlide) {
 // ---------------
 // ***noUiSlider****
 // ---------------
+var menuCategory = document.getElementById('menu-category');
 
+ if (menuCategory) {
 var html5Slider = document.getElementById('html5');
 
 noUiSlider.create(html5Slider, {
@@ -367,8 +369,8 @@ noUiSlider.create(html5Slider, {
   }
 });
 
-var inputNumber = document.getElementById('input-number');
-var inputNumber2 = document.getElementById('input-number2');
+  var inputNumber = document.getElementById('input-number');
+  var inputNumber2 = document.getElementById('input-number2');
 
 html5Slider.noUiSlider.on('update', function( values, handle ) {
 
@@ -386,9 +388,24 @@ inputNumber.addEventListener('change', function(){
 inputNumber2.addEventListener('change', function(){
   html5Slider.noUiSlider.set([null, this.value]);
 });
-
+} 
 // ---------------
 // ***End of noUiSlider****
+// ---------------
+
+
+
+// ---------------
+// ***hidden header****
+// ---------------
+  $('header .main_nav .main_head .wrapper-phone a').click(function(){
+    $("header .main_nav .main_head .phone .wrapper-phone a").removeClass("static");
+    $("header .main_nav .main_head .phone .wrapper-phone a").addClass("hidden");
+    $(this).removeClass("hidden");
+    $(this).addClass("static");
+});
+// ---------------
+// ***End of hidden header****
 // ---------------
 	
 });
