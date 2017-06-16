@@ -5399,7 +5399,9 @@ main .first_group_fitnes .block_item {
       -webkit-transform: scale(1, 1);
               transform: scale(1, 1); }
       #menu-category .menu-category .stock-grid-wrapper-special .stock-grid:hover {
-        box-shadow: none; }
+        box-shadow: none;
+        -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1); }
       #menu-category .menu-category .stock-grid-wrapper-special .stock-grid .stock-wrapper .stock {
         font-size: 30px; }
       #menu-category .menu-category .stock-grid-wrapper-special .stock-grid .stock-wrapper .icon {
@@ -5464,35 +5466,38 @@ main .first_group_fitnes .block_item {
             z-index: 100; }
         #menu-category .menu-category .food .left .inputs .input input[type="checkbox"]:checked + label span::before {
           display: block; }
-      #menu-category .menu-category .food .left .price #input-number {
+      #menu-category .menu-category .food .left .price #input-number,
+      #menu-category .menu-category .food .left .price #input-number2 {
         padding: 7px;
         margin: 15px 5px 5px;
         width: 70px;
-        margin-top: 36px; }
+        margin-top: 36px;
+        background-color: #c0c0c0;
+        box-shadow: none;
+        border: none; }
+      #menu-category .menu-category .food .left .price label {
+        font-weight: 500; }
       #menu-category .menu-category .food .left .price #html5 {
         height: 10px;
         background-color: #c0c0c0;
         border: none;
         box-shadow: none;
         border-radius: 0; }
-        #menu-category .menu-category .food .left .price #html5 .noUi-base {
-          position: relative; }
-          #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-connect {
-            background-color: #ff000c; }
-          #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle {
-            position: absolute;
-            box-shadow: none;
-            border-radius: 50%;
-            width: 36px;
-            height: 36px;
-            border: none;
-            background-color: #ff000c;
-            opacity: 0.8;
-            bottom: 0; }
-            #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle::before {
-              content: none; }
-            #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle::after {
-              content: none; }
+        #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-connect {
+          background-color: #ff000c; }
+        #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle {
+          top: -13px;
+          box-shadow: none;
+          border-radius: 50%;
+          width: 36px;
+          height: 36px;
+          border: none;
+          background-color: #ff000c;
+          opacity: 0.8; }
+          #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle::before {
+            content: none; }
+          #menu-category .menu-category .food .left .price #html5 .noUi-base .noUi-origin .noUi-handle::after {
+            content: none; }
     #menu-category .menu-category .food .right {
       width: 83%; }
       #menu-category .menu-category .food .right .filter {
@@ -5506,22 +5511,31 @@ main .first_group_fitnes .block_item {
                 justify-content: space-between;
         border-top: 1px solid #c9c9c9;
         border-bottom: 1px solid #c9c9c9;
-        padding-top: 20px; }
+        padding: 20px 0; }
         #menu-category .menu-category .food .right .filter a {
           padding: 10px; }
           #menu-category .menu-category .food .right .filter a:hover {
             color: #fb002c;
             border: 1px solid #fb002c; }
-        #menu-category .menu-category .food .right .filter .sort i {
-          color: #a2a2a2;
-          padding: 10px 15px;
-          border: 1px solid #a2a2a2;
-          margin-right: 10px; }
-          #menu-category .menu-category .food .right .filter .sort i:hover {
-            color: #fb002c;
-            border: 1px solid #fb002c; }
-          #menu-category .menu-category .food .right .filter .sort i:last-child {
-            margin-right: 0; }
+        #menu-category .menu-category .food .right .filter .sort {
+          position: relative; }
+          #menu-category .menu-category .food .right .filter .sort i {
+            position: absolute;
+            color: #a2a2a2;
+            padding: 10px 15px;
+            border: 1px solid #a2a2a2;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+            border: 1px solid transparent;
+            transition: all 0.3s; }
+            #menu-category .menu-category .food .right .filter .sort i:hover {
+              color: #fb002c;
+              border: 1px solid #fb002c;
+              transition: all 0.3s; }
+            #menu-category .menu-category .food .right .filter .sort i:first-child {
+              right: 50px; }
       #menu-category .menu-category .food .right .content {
         display: -webkit-box;
         display: -ms-flexbox;

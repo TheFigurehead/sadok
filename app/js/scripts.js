@@ -359,7 +359,7 @@ $('.center-items').on('afterChange', function(event, slick, currentSlide) {
 var html5Slider = document.getElementById('html5');
 
 noUiSlider.create(html5Slider, {
-  start: [ 1, 140 ],
+  start: [ 20, 120 ],
   connect: true,
   range: {
     'min': 0,
@@ -368,23 +368,22 @@ noUiSlider.create(html5Slider, {
 });
 
 var inputNumber = document.getElementById('input-number');
+var inputNumber2 = document.getElementById('input-number2');
 
 html5Slider.noUiSlider.on('update', function( values, handle ) {
 
-  var value = values[handle];
-
   if ( handle ) {
-    inputNumber.value = value;
-  } else {
-    select.value = Math.round(value);
+    inputNumber2.value = Math.round(values[1]);
+  }else{
+    inputNumber.value = Math.round(values[0]);
   }
 });
 
-select.addEventListener('change', function(){
+inputNumber.addEventListener('change', function(){
   html5Slider.noUiSlider.set([this.value, null]);
 });
 
-inputNumber.addEventListener('change', function(){
+inputNumber2.addEventListener('change', function(){
   html5Slider.noUiSlider.set([null, this.value]);
 });
 

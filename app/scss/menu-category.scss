@@ -49,6 +49,7 @@
 				transform: scale(1.0,1.0);
 				&:hover {
 					box-shadow: none;
+					transform: scale(1.1,1.1);
 				}
 				.stock-wrapper {
 					.stock {
@@ -122,11 +123,18 @@
 					}
 				}
 	.price {
-		#input-number {
+		#input-number,
+		#input-number2 {
 			padding: 7px;
 			margin: 15px 5px 5px;
 			width: 70px;
 			margin-top: 36px;
+			background-color: #c0c0c0;
+			box-shadow: none;
+			border: none;
+		}
+		label {
+			font-weight: 500;
 		}
 		#html5 {
 			height: 10px;
@@ -135,13 +143,12 @@
 			box-shadow: none;
 			border-radius: 0;
 			.noUi-base {
-				position: relative;
 				.noUi-connect {
 					background-color: #ff000c;
 				}
 				.noUi-origin {
 					.noUi-handle {
-						position: absolute;
+						top: -13px;
 						box-shadow: none;
 						border-radius: 50%;
 						width: 36px;
@@ -149,8 +156,6 @@
 						border: none;
 						background-color: #ff000c;
 						opacity: 0.8;
-						bottom: 0;
-						
 						&::before {
 							content: none;
 						}
@@ -172,7 +177,7 @@
 					justify-content: space-between;
 					border-top: 1px solid #c9c9c9;
 					border-bottom: 1px solid #c9c9c9;
-					padding-top: 20px;
+					padding: 20px 0;
 					a {
 						padding: 10px;
 						&:hover {
@@ -181,17 +186,24 @@
 						}
 					}
 					.sort {
+						position: relative;
 						i {
+							position: absolute;
 							color: #a2a2a2;
 							padding: 10px 15px;
 							border: 1px solid #a2a2a2;
-							margin-right: 10px;
+							right: 0;
+							top: 50%;
+							transform: translateY(-50%);
+							border: 1px solid transparent;
+							transition: all 0.3s;
 							&:hover {
 								color: #fb002c;
 								border: 1px solid #fb002c;
+								transition: all 0.3s;
 							}
-							&:last-child {
-								margin-right: 0;
+							&:first-child {
+								right: 50px;
 							}
 						}
 					}
