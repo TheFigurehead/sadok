@@ -4750,7 +4750,7 @@ main .first_group_fitnes .block_item {
   margin: 15px 5px 5px;
   width: 70px; }
 
-.slick-track {
+.slick-track, #club .slick-slide {
   height: 100vh; }
 
 #hotel .top-slider-wrapper .slick-arrow {

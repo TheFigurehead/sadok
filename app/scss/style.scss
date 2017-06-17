@@ -198,7 +198,7 @@ $colorButtonRed: #e40f20;
 @import "restoran_menu";
 @import "menu-category";
 
-.slick-track {
+.slick-track, #club .slick-slide {
   height: 100vh
 }
 
