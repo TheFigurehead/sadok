@@ -2166,7 +2166,10 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
         bottom: 100%;
         left: 50%;
         -webkit-transform: translate(-50%, 65%);
-                transform: translate(-50%, 65%); }
+                transform: translate(-50%, 65%);
+        text-align: center; }
+        .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-img img {
+          max-width: 90px; }
       .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content {
         position: absolute;
         width: 100%;
@@ -2374,7 +2377,7 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 
 #main .content_menu .content-menu-block-wrapper {
   margin-top: 5%;
-  height: 200px;
+  height: 350px;
   width: 45%;
   padding: 0 3%;
   display: -webkit-box;
@@ -2488,89 +2491,94 @@ main .content_fitnes .first_group_fitnes {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 main .first_group_fitnes {
   width: 1400px;
   margin: auto; }
 
-main .first_group_fitnes.two {
+main .first_group_fitnes {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px; }
-  main .first_group_fitnes.two .block_item {
+  main .first_group_fitnes .block_item {
     width: 615px;
     height: 385px;
     overflow: hidden;
-    margin-top: 30px; }
+    margin-top: 30px;
+    position: relative; }
+    main .first_group_fitnes .block_item .block_item_link {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.6);
+      line-height: 80px; }
+      main .first_group_fitnes .block_item .block_item_link:hover {
+        height: 100%; }
+        main .first_group_fitnes .block_item .block_item_link:hover a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          line-height: 100%;
+          padding: 0;
+          transition: all .2s; }
+          main .first_group_fitnes .block_item .block_item_link:hover a span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            transition: all .2s; }
+          main .first_group_fitnes .block_item .block_item_link:hover a::after, main .first_group_fitnes .block_item .block_item_link:hover a::before {
+            content: unset; }
+      main .first_group_fitnes .block_item .block_item_link a {
+        font-family: "MuseoSansRegular";
+        font-size: 24px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 0 20px;
+        position: relative;
+        display: block;
+        transition: all .2s; }
+        main .first_group_fitnes .block_item .block_item_link a::after {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 15px;
+          bottom: 20px;
+          width: 52px;
+          height: 3px;
+          background-image: linear-gradient(96deg, #cf1520 0%, #e40254 100%); }
+        main .first_group_fitnes .block_item .block_item_link a::before {
+          content: '▶';
+          width: 30px;
+          font-size: 30px;
+          line-height: 30px;
+          width: 40px;
+          text-align: center;
+          display: block;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+                  transform: translate(0, -50%); }
+    main .first_group_fitnes .block_item img {
+      width: 100%; }
 
-main .first_group_fitnes .block_item {
+main .first_group_fitnes .block_item:nth-child(1),
+main .first_group_fitnes .block_item:nth-child(2),
+main .first_group_fitnes .block_item:nth-child(3) {
   width: 380px;
   position: relative; }
-  main .first_group_fitnes .block_item .block_item_link {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 80px;
-    background-color: rgba(255, 255, 255, 0.6);
-    line-height: 80px; }
-    main .first_group_fitnes .block_item .block_item_link:hover {
-      height: 100%; }
-      main .first_group_fitnes .block_item .block_item_link:hover a {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        line-height: 100%;
-        padding: 0;
-        transition: all .2s; }
-        main .first_group_fitnes .block_item .block_item_link:hover a span {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          color: #fff;
-          -webkit-transform: translate(-50%, -50%);
-                  transform: translate(-50%, -50%);
-          background-color: rgba(0, 0, 0, 0.4);
-          padding: 10px;
-          transition: all .2s; }
-        main .first_group_fitnes .block_item .block_item_link:hover a::after, main .first_group_fitnes .block_item .block_item_link:hover a::before {
-          content: unset; }
-    main .first_group_fitnes .block_item .block_item_link a {
-      font-family: "MuseoSansRegular";
-      font-size: 24px;
-      font-weight: 300;
-      text-transform: uppercase;
-      padding: 0 20px;
-      position: relative;
-      display: block;
-      transition: all .2s; }
-      main .first_group_fitnes .block_item .block_item_link a::after {
-        content: '';
-        display: block;
-        position: absolute;
-        left: 15px;
-        bottom: 20px;
-        width: 52px;
-        height: 3px;
-        background-image: linear-gradient(96deg, #cf1520 0%, #e40254 100%); }
-      main .first_group_fitnes .block_item .block_item_link a::before {
-        content: '▶';
-        width: 30px;
-        font-size: 30px;
-        line-height: 30px;
-        width: 40px;
-        text-align: center;
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-                transform: translate(0, -50%); }
-  main .first_group_fitnes .block_item img {
-    width: 100%; }
 
 #hotel {
   background-color: #fbfbfb; }
