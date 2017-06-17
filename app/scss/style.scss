@@ -160,7 +160,11 @@ $greyColor: #747474;
 $colorButtonRed: #e40f20;
 
 @import "normalize";
-@import "../libs/jquery-ui-1.12.1.custom/jquery-ui";
+@import "../slick/slick.scss";
+@import "../slick/slick-theme.scss";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.min.css";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css";
 @import "../libs/noUiSlider.10.0.0/nouislider.min.css";
 @import "common";
 @import "footer";

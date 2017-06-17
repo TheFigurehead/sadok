@@ -5,8 +5,6 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <script src="https://use.fontawesome.com/f011440108.js"></script>
 </head>
 <body>
@@ -107,31 +105,26 @@
   <div class="reservation">
     <div class="arrival-date">
       <h4 class="title">ДАТА ЗАЇЗДУ</h4>
-      <input type="number" class="number" value="13"><!-- 13</span> -->
-      <!-- <span class="month"> / червень</span> -->
-      <span class="month"> / </span>
-      <select class="month">
-        <option value="1">червень</option>
-        <option value="2">липень</option>
-        <option value="3">серпень</option>
-      </select>
+      <span class="number">11</span>
+      <span class="month"> / червень</span>
       <i class="fa fa-calendar" aria-hidden="true"></i>
+      <input type="text" id="arrival-date">
     </div>
     <div class="departure-date">
       <h4 class="title">ДАТА ВИЇЗДУ</h4>
-      <input type="number" class="number" value="14"><!-- 14</span> -->
-      <!-- <span class="month"> / червень</span> -->
-      <span class="month"> / </span>
-      <select class="month">
-        <option value="1">червень</option>
-        <option value="2">липень</option>
-        <option value="3">серпень</option>
-      </select>
+      <span class="number">11</span>
+      <span class="month"> / червень</span>
       <i class="fa fa-calendar" aria-hidden="true"></i>
+      <input type="text" id="departure-date">
     </div>
     <div class="guests">
       <h4 class="title">КІЛЬКІСТЬ ГОСТЕЙ</h4>
-      <input type="number" class="number" value="3"><!-- 3</span> -->
+      <select class="number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
       <i class="fa fa-angle-down" aria-hidden="true"></i>
     </div>
     <div class="booking-button-block">

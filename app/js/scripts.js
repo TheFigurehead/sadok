@@ -177,7 +177,7 @@ window.addEventListener('load', function() {
   }
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
   $('.top-slider').slick({
   dots: true,
   infinite: true,
@@ -321,76 +321,113 @@ $(document).ready(function() {
     slidesToScroll: 1
 	});
 
-$('.center-items').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+  $('.center-items').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+    ]
+  });
+  $('.center-items').on('afterChange', function(event, slick, currentSlide) {
+  	$('.center-slider-item').removeClass('slide-active');
+    	$('.slick-center').addClass('slide-active');
+  });
+
+  // ---------------
+  // ***noUiSlider****
+  // ---------------
+
+  var html5Slider = document.getElementById('html5');
+
+  if (html5Slider) {
+    noUiSlider.create(html5Slider, {
+      start: [ 1, 140 ],
+      connect: true,
+      range: {
+        'min': 0,
+        'max': 140
       }
-    }
-  ]
-});
-$('.center-items').on('afterChange', function(event, slick, currentSlide) {
-	$('.center-slider-item').removeClass('slide-active');
-  	$('.slick-center').addClass('slide-active');
-});
+    });
 
-// ---------------
-// ***noUiSlider****
-// ---------------
+    var inputNumber = document.getElementById('input-number');
 
-var html5Slider = document.getElementById('html5');
+    html5Slider.noUiSlider.on('update', function( values, handle ) {
 
-noUiSlider.create(html5Slider, {
-  start: [ 1, 140 ],
-  connect: true,
-  range: {
-    'min': 0,
-    'max': 140
+      var value = values[handle];
+
+      if ( handle ) {
+        inputNumber.value = value;
+      } else {
+        select.value = Math.round(value);
+      }
+    });
+
+    select.addEventListener('change', function(){
+      html5Slider.noUiSlider.set([this.value, null]);
+    });
+
+    inputNumber.addEventListener('change', function(){
+      html5Slider.noUiSlider.set([null, this.value]);
+    });
   }
-});
 
-var inputNumber = document.getElementById('input-number');
 
-html5Slider.noUiSlider.on('update', function( values, handle ) {
+  // ---------------
+  // ***End of noUiSlider****
+  // ---------------
 
-  var value = values[handle];
+  // datepicker hotel
+  var arrivalDate, departureDate,
+  monthes = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-  if ( handle ) {
-    inputNumber.value = value;
-  } else {
-    select.value = Math.round(value);
+  $('#arrival-date').datepicker({
+    minDate: 0,
+    dateFormat: "m/dd/yy"
+  }).on('change', function() {
+    var arrivalDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
+
+    dateOnclick.bind(this)(arrivalDate);
+    $('#departure-date').datepicker('option', 'minDate', new Date(arrivalDate[2], arrivalDate[0] - 1, +arrivalDate[1] + 1))
+  });
+
+  $('#departure-date').datepicker({
+    minDate: 0,
+    dateFormat: "m/dd/yy"
+  }).on('change', function() {
+    var departureDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
+
+    dateOnclick.bind(this)(departureDate);
+  });
+
+
+  function dateOnclick(date) {
+    var parent = $(this).parent();
+
+    month = monthes[+date[0] - 1];
+
+    $('.number', parent).text(date[1]);
+    $('.month', parent).text(' / ' + monthes[+date[0] - 1]);
   }
-});
-
-select.addEventListener('change', function(){
-  html5Slider.noUiSlider.set([this.value, null]);
-});
-
-inputNumber.addEventListener('change', function(){
-  html5Slider.noUiSlider.set([null, this.value]);
-});
-
-// ---------------
-// ***End of noUiSlider****
-// ---------------
+  // end datepicker hotel
 	
 });
 
