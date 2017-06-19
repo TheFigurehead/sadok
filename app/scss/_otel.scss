@@ -30,28 +30,45 @@
 			margin: 0;
 		}
 		.number {
-			font-size: 60pt;
-			// for input
-			border: none;
-			outline: none;
-			width: 120px;	
+			font-size: 60pt;	
 		}
-		select.number {
-			appearance: none;
-			option {
-				font-size: 20px;
-			}
-		}	
 		.month {
 			font-size: 14pt;
-			//for select
-			border: none;
-			outline: none;
-			appearance: none;
 		}
 		.arrival-date, .departure-date, .guests, .booking-button-block {
 			position: relative;
 			padding: 30px;
+		}
+		.guests {
+			cursor: pointer;
+			.dropdown {
+				display: none;
+				position: absolute;
+				top: 90%;
+				left: 20px;
+				background-color: rgb(232, 232, 232);
+				border-radius: 5px;
+				padding: 20px;
+				white-space: nowrap;
+				z-index: 1;
+				select {
+					border-radius: 5px;
+					background-color: rgb(255, 255, 255);
+					box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+					padding: 10px;
+					margin-right: 10px;
+					border: 1px solid transparent;
+					&:focus {
+						border-color: rgb(140, 140, 140);
+						outline: none;
+					}
+				}
+			}
+			&:hover {
+				.dropdown {
+					display: block;
+				}
+			}
 		}
 		#arrival-date, #departure-date {
 			position: absolute;

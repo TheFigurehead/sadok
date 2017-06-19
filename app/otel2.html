@@ -119,13 +119,21 @@
     </div>
     <div class="guests">
       <h4 class="title">КІЛЬКІСТЬ ГОСТЕЙ</h4>
-      <select class="number">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
+      <span class="number">1</span>
       <i class="fa fa-angle-down" aria-hidden="true"></i>
+      <div class="dropdown">
+        <select name="adults" id="adults">
+          <option value="1" selected>1 дорослий</option>
+          <option value="2">2 дорослих</option>
+          <option value="3">3 дорослих</option>
+          <option value="4">4 дорослих</option>
+        </select>
+        <select name="children" id="children">
+          <option value="0" selected>Без дiтей</option>
+          <option value="1">1 дитина</option>
+          <option value="2">2 дитини</option>
+        </select>
+      </div>
     </div>
     <div class="booking-button-block">
       <button>Забронювати</button>

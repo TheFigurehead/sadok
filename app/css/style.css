@@ -1999,26 +1999,36 @@ main .first_group_fitnes .block_item {
       font-size: 14pt;
       margin: 0; }
     #hotel .reservation .number {
-      font-size: 60pt;
-      border: none;
-      outline: none;
-      width: 120px; }
-    #hotel .reservation select.number {
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none; }
-      #hotel .reservation select.number option {
-        font-size: 20px; }
+      font-size: 60pt; }
     #hotel .reservation .month {
-      font-size: 14pt;
-      border: none;
-      outline: none;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none; }
+      font-size: 14pt; }
     #hotel .reservation .arrival-date, #hotel .reservation .departure-date, #hotel .reservation .guests, #hotel .reservation .booking-button-block {
       position: relative;
       padding: 30px; }
+    #hotel .reservation .guests {
+      cursor: pointer; }
+      #hotel .reservation .guests .dropdown {
+        display: none;
+        position: absolute;
+        top: 90%;
+        left: 20px;
+        background-color: #e8e8e8;
+        border-radius: 5px;
+        padding: 20px;
+        white-space: nowrap;
+        z-index: 1; }
+        #hotel .reservation .guests .dropdown select {
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+          padding: 10px;
+          margin-right: 10px;
+          border: 1px solid transparent; }
+          #hotel .reservation .guests .dropdown select:focus {
+            border-color: #8c8c8c;
+            outline: none; }
+      #hotel .reservation .guests:hover .dropdown {
+        display: block; }
     #hotel .reservation #arrival-date, #hotel .reservation #departure-date {
       position: absolute;
       top: 0;
@@ -3589,7 +3599,6 @@ main .first_group_fitnes .block_item {
 #restoran_new,
 .menu-category,
 .restoran_menu,
-#hotel,
 #stock {
   overflow-x: hidden; }
 
@@ -3606,8 +3615,7 @@ main .first_group_fitnes .block_item {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
-  overflow: hidden; }
+  height: 100vh; }
   #restoran_new .stock-grid-wrapper .stock-grid,
   .menu-category .stock-grid-wrapper .stock-grid,
   .restoran_menu .stock-grid-wrapper .stock-grid,
@@ -4749,6 +4757,62 @@ main .first_group_fitnes .block_item {
   padding: 7px;
   margin: 15px 5px 5px;
   width: 70px; }
+
+.ui-widget {
+  font-family: "MuseoSansRegular"; }
+
+.ui-widget.ui-widget-content {
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.35); }
+
+.ui-datepicker {
+  padding: 20px;
+  width: auto; }
+
+.ui-widget-header {
+  font-weight: 500;
+  border: none;
+  background: #fff;
+  color: #888888;
+  font-size: 18px; }
+
+.ui-datepicker th {
+  font-size: 14px;
+  font-weight: 300;
+  color: #888; }
+  .ui-datepicker th.ui-datepicker-week-end {
+    color: red; }
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 80px; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: 1; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #fff;
+  background: #e8e8e8;
+  font-weight: 300;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  padding-top: 7px;
+  color: #000; }
+
+.ui-state-disabled .ui-state-default {
+  color: #9a9a9a; }
+
+.ui-state-active, .ui-widget-content .ui-state-active {
+  color: #fff;
+  background: #000 !important; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover {
+  background: #d6d6d6; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+  border: 1px solid #000; }
 
 .slick-track, #club .slick-slide {
   height: 100vh; }

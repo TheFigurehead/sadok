@@ -396,36 +396,89 @@ $(document).ready(function() {
   // ---------------
 
   // datepicker hotel
-  var arrivalDate, departureDate,
-  monthes = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+  var arrivalDateInput = $('#arrival-date');
 
-  $('#arrival-date').datepicker({
-    minDate: 0,
-    dateFormat: "m/dd/yy"
-  }).on('change', function() {
-    var arrivalDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
+  if (arrivalDateInput.length > 0) {
+    var arrivalDate, 
+    departureDate,
+    monthes = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+    departureDateInput = $('#departure-date'),
+    dateNow = new Date();
 
-    dateOnclick.bind(this)(arrivalDate);
-    $('#departure-date').datepicker('option', 'minDate', new Date(arrivalDate[2], arrivalDate[0] - 1, +arrivalDate[1] + 1))
-  });
+    arrivalDateInput.datepicker({
+      minDate: 0,
+      dateFormat: "m/d/yy"
+    }).on('change', function() {
+      arrivalDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
 
-  $('#departure-date').datepicker({
-    minDate: 0,
-    dateFormat: "m/dd/yy"
-  }).on('change', function() {
-    var departureDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
+      dateOnclick.bind(this)(arrivalDate);
+      var dateForDepartureDate = new Date(arrivalDate[2], arrivalDate[0] - 1, +arrivalDate[1] + 1)
+      departureDateInput.datepicker('option', 'minDate', dateForDepartureDate);
 
-    dateOnclick.bind(this)(departureDate);
-  });
+      
 
+      if (!departureDate || +arrivalDate[0] > +departureDate[0] || (+arrivalDate[1] >= +departureDate[1] && +arrivalDate[0] >= +departureDate[0]) || +arrivalDate[2] > +departureDate[2]) 
+        departureDateInput.val((dateForDepartureDate.getMonth() + 1) + '/' + dateForDepartureDate.getDate() + '/' + dateForDepartureDate.getFullYear()).trigger('change');
+    });
 
-  function dateOnclick(date) {
-    var parent = $(this).parent();
+    departureDateInput.datepicker({
+      minDate: 0,
+      dateFormat: "m/d/yy"
+    }).on('change', function() {
+      departureDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
 
-    month = monthes[+date[0] - 1];
+      dateOnclick.bind(this)(departureDate);
+    });
 
-    $('.number', parent).text(date[1]);
-    $('.month', parent).text(' / ' + monthes[+date[0] - 1]);
+    arrivalDateInput.val((dateNow.getMonth() + 1) + '/' + dateNow.getDate() + '/' + dateNow.getFullYear()).trigger('change');
+
+    function dateOnclick(date) {
+      var parent = $(this).parent();
+
+      month = monthes[+date[0] - 1];
+
+      $('.number', parent).text(date[1]);
+      $('.month', parent).text(' / ' + monthes[+date[0] - 1]);
+    }
+
+    var adults = 1,
+    children = 0,
+    adultsSelect = $('#adults'),
+    childrenSelect = $('#children'),
+    guestsNumberBlock = $('.guests .number');
+
+    adultsSelect.on('change', function() {
+      adults = +adultsSelect.val();
+      guestsNumberBlock.text(children + adults);
+    })
+
+    childrenSelect.on('change', function() {
+      children = +childrenSelect.val();
+      guestsNumberBlock.text(children + adults);
+    })
+
+    var bookingSubmit = $('.booking-button-block button');
+
+    bookingSubmit.on('click', function() {
+      var bookingData = {
+        arrivalDate: {
+          day: +arrivalDate[1],
+          month: +arrivalDate[0],
+          year: +arrivalDate[2]
+        },
+        departureDate: {
+          day: +departureDate[1],
+          month: +departureDate[0],
+          year: +departureDate[2]
+        },
+        guests: {
+          adults: adults,
+          children: children
+        }
+      }
+
+      console.log(bookingData);
+    })
   }
   // end datepicker hotel
 	
