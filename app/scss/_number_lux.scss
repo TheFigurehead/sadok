@@ -1,25 +1,88 @@
 .number_lux{
     margin-top: 115px;
     
-    .container2{
+    
+    
+    .container_number_lux{
+        text-align: justify;
+        width: 100%;
+        margin: 0 auto;
+        
+        .breadcrumbs{
+            padding-left: 115px;
+        }
         
         .title-block-wrapper{
+            padding-left: 115px;
             
             .title-block{
                 text-align: left;
+                
+                span{
+                    font-weight: 700;
+                }
             }
         }
         
         .order-form {
             
+            textarea{
+                height: 174px;
+            }
+            
+            button{
+                background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%); 
+            }
+            
             .left{
-                width: 40%;
+                width: 34%;
+                background-image: url(../img/number_lux_image.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                position: relative;
+                
+                .reservation{
+                   
+                    .price{
+                        /* Style for "Прямоуголь" */
+                    width: 220px;
+                    height: 216px;
+                    background-color: #2d2d2d;
+                    top: 410px;
+                    left: 327px;
+                    position: absolute;
+                        
+                        .price-wrapper{
+                                width: auto;
+                                height: auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                -webkit-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%);   
+                            
+                            
+                            .num{
+                                color: #ffffff;
+                                font-size: 48px;
+                            }
+                            .curr{
+                                color: #ffffff;
+                                font-family: "MuseoSansRegular";
+                                font-weight: 700;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
             }
             
             .right{
                 
-                width: 60%;
+                width: 66%;
                 background-color: #f2ede8;
+                padding: 50px 85px 54px 127px;;
                 
                 
                 button {
