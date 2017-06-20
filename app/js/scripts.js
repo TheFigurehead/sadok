@@ -178,14 +178,16 @@ window.addEventListener('load', function() {
 });
 
 $(document).ready(function() {
-  $('.top-slider').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear',
-  autoplay: true
-  });
+  if ($('.top-slider').length) {
+    $('.top-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true
+    });
+  }
 
   // menu serg
 
@@ -315,42 +317,44 @@ $('footer .flex-row-wrapper .contact-open-button').click(function(){
 });
 
 $(document).ready(function() {
-  $('.multiple-items').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1
-	});
+  if ($('.multiple-items').length) {
+    $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1
+  	});
 
-  $('.center-items').slick({
-    centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+    $('.center-items').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
         }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-  $('.center-items').on('afterChange', function(event, slick, currentSlide) {
-  	$('.center-slider-item').removeClass('slide-active');
-    	$('.slick-center').addClass('slide-active');
-  });
+      ]
+    });
+    $('.center-items').on('afterChange', function(event, slick, currentSlide) {
+    	$('.center-slider-item').removeClass('slide-active');
+      	$('.slick-center').addClass('slide-active');
+    });
+  }
 
   // ---------------
   // ***noUiSlider****
@@ -407,7 +411,9 @@ $(document).ready(function() {
 
     arrivalDateInput.datepicker({
       minDate: 0,
-      dateFormat: "m/d/yy"
+      dateFormat: "m/d/yy",
+      firstDay: 1,
+      monthNames: monthes
     }).on('change', function() {
       arrivalDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
 
@@ -423,7 +429,9 @@ $(document).ready(function() {
 
     departureDateInput.datepicker({
       minDate: 0,
-      dateFormat: "m/d/yy"
+      dateFormat: "m/d/yy",
+      firstDay: 1,
+      monthNames: monthes
     }).on('change', function() {
       departureDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
 
@@ -481,7 +489,61 @@ $(document).ready(function() {
     })
   }
   // end datepicker hotel
-	
+
+  // timetable page
+  var timetablePage = document.getElementById('timetable');
+
+  if (timetablePage) {
+    var days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"],
+    dayBlock =  $('.current-date .day'),
+    dateBlock = $('.current-date .date'),
+    dateSelected = new Date();
+
+    dayBlock.text(days[dateSelected.getDay()]);
+    dateBlock.text(dateSelected.getDate());
+
+    $('#timetable-datepicker').datepicker({
+      firstDay: 1,
+      onSelect: function(dateText, inst) {
+        dateSelected = $(this).datepicker( "getDate" );
+
+        var day = days[dateSelected.getDay()],
+        date = dateSelected.getDate();
+
+        dayBlock.text(day);
+        dateBlock.text(date);
+      }
+    });
+
+    $('.datepicker-wrapper .prev').on('click', function() {
+      $('.ui-datepicker-prev.ui-corner-all').trigger('click');
+    });
+
+    $('.datepicker-wrapper .next').on('click', function() {
+      $('.ui-datepicker-next.ui-corner-all').trigger('click');
+    });
+
+    // timeline
+    var timeTd = $('td.time'),
+    timeLine = $('.timeline');
+
+    function reloadTimeLine() {
+      var dateNow = new Date(),
+      hours = dateNow.getHours(),
+      minutes = dateNow.getMinutes();
+      
+      if (hours > 9 && hours < 22) {
+        currentBlock = timeTd.eq(hours - 9);
+
+        timeLine.css({top: (currentBlock.position().top + currentBlock.outerHeight(true) / 60 * minutes) + 'px'});
+      } else timeLine.css({top: '52px'})
+    }
+
+    reloadTimeLine();
+    setInterval(reloadTimeLine, 60000);
+    // end timeline
+  }
+  // end timetable page	
 });
 
 $(window).on('orientationchange', function() {
