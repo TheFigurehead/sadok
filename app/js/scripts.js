@@ -398,12 +398,27 @@ inputNumber2.addEventListener('change', function(){
 // ---------------
 // ***hidden header****
 // ---------------
-  $('header .main_nav .main_head .wrapper-phone a').click(function(){
-    $("header .main_nav .main_head .phone .wrapper-phone a").removeClass("static");
-    $("header .main_nav .main_head .phone .wrapper-phone a").addClass("hidden");
+  $(".static").next().addClass("hidden1");
+  $('header .main_nav .main_head .wrapper-hidden a').click(function(){
+    $("header .main_nav .main_head .wrapper-hidden a").removeClass("static");
+    $("header .main_nav .main_head .wrapper-hidden a").addClass("hidden");
+    $("header .main_nav .main_head .wrapper-hidden a").removeClass("hidden1");
     $(this).removeClass("hidden");
     $(this).addClass("static");
+    var func = function() {
+      if ($(".static").prev("a")) 
+        $(".static").prev().addClass("hidden1");
+      else 
+        $(".static + a").addClass("hidden1");
+    }
+    func();
 });
+
+ // $('header .main_nav .main_head .wrapper-hidden a').click(function(){ 
+ //  $(".static").text(function($(this)) {
+ //  });
+ // });
+
 // ---------------
 // ***End of hidden header****
 // ---------------
