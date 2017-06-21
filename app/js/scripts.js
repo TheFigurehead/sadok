@@ -4,12 +4,13 @@ function initMap() {
   var uluru = {lat: 50.340931, lng: 30.326125};
   var map = new google.maps.Map(document.getElementById('footer-map'), {
     zoom: 15,
-    center: uluru,
+    center: {lat: 50.319500, lng: 30.326125},
     scrollwheel: false
   });
   var marker = new google.maps.Marker({
     position: uluru,
-    map: map
+    map: map,
+    icon: '../img/icons/wish.png'
   });
   }
   	if (document.getElementById('delivery-map')) {
