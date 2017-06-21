@@ -3084,7 +3084,9 @@ header .secondary_nav .secondary_head li a {
   font-size: 16px;
   font-weight: 300;
   position: relative;
-  text-shadow: 1px 1px 9px #000; }
+  text-shadow: 1px 1px 9px #000;
+  background-color: black;
+  padding: 5px 0; }
 
 header .secondary_nav .secondary_head li:not(.logo):before {
   content: "";
@@ -3341,7 +3343,23 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 
 #panel nav ul li {
   display: block;
-  line-height: 3em; }
+  line-height: 2em; }
+  #panel nav ul li .plus {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    cursor: pointer; }
+  #panel nav ul li .dropdown {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s; }
+    #panel nav ul li .dropdown a {
+      font-size: 1em;
+      color: gray; }
+  #panel nav ul li.active > .dropdown {
+    max-height: 500px;
+    opacity: 1; }
 
 #panel nav ul li a {
   margin-left: 20px;
@@ -3458,10 +3476,6 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
-
-#panel nav ul li {
-  display: block;
-  line-height: 3em; }
 
 #panel nav ul li a {
   margin-left: 20px;
@@ -7110,10 +7124,12 @@ main .first_group_fitnes .block_item {
   #welness .welness-picture {
     width: 50%;
     float: left; }
+    #welness .welness-picture img {
+      width: 95%; }
   #welness .welness-content {
     width: 50%;
     border-right: 2px solid #e40254;
-    padding-right: 20px;
+    padding: 0 20px;
     float: right;
     text-align: justify;
     font-family: "MuseoSansRegular";

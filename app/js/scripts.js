@@ -600,7 +600,13 @@ $(document).ready(function() {
   // end scale-slider
 
   // verification for mobile panel
-  if (document.getElementById('panel')) $('body').css({paddingLeft: '50px'});
+  if (document.getElementById('panel')) {
+    $('body').css({paddingLeft: '50px'});
+
+    $('#panel .plus').on('click', function() {
+      $(this).parent().toggleClass('active');
+    })
+  };
   // end verification for mobile panel
 });
 
