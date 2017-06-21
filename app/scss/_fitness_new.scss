@@ -23,13 +23,13 @@
 					width: auto;
 					height: auto;
 				}
-			}
-			.gym-slider-item {
-				width: 100%;
-				height: 250px;
-				img {
-					width: auto;
-					height: auto;
+				&:first-child {
+					width: 100%;
+					height: 250px;
+					img {
+						width: auto;
+						height: auto;
+					}
 				}
 			}
 		}

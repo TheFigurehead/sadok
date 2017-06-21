@@ -1,0 +1,22 @@
+#welness {
+	padding-top: 110px;
+	.welness {
+		&-wrapper {
+			width: 100%;
+		}
+		&-picture {
+			width: 50%;
+			float: left;
+		}
+		&-content {
+			width: 50%;
+			border-right: 2px solid rgb(228,2,84);
+			float: right;
+			text-align: justify;
+			font-family: "MuseoSansRegular";
+			font-weight: 300;
+			line-height: 1.25;
+			font-size: 24px;
+		}
+	}
+}
