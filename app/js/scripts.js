@@ -597,6 +597,10 @@ $(document).ready(function() {
     })
   }
   // end scale-slider
+
+  // verification for mobile panel
+  if (document.getElementById('panel')) $('body').css({paddingLeft: '50px'});
+  // end verification for mobile panel
 });
 
 $(window).on('orientationchange', function() {
