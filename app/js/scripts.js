@@ -603,6 +603,10 @@ $(document).ready(function() {
   if (document.getElementById('panel')) {
     $('body').css({paddingLeft: '50px'});
 
+    $.each($('#panel .plus'), function(i, item) {
+      if (!$('.dropdown', $(item).parent()).length) $(item).remove()
+    })
+
     $('#panel .plus').on('click', function() {
       $(this).parent().toggleClass('active');
     })

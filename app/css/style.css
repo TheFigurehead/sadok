@@ -3362,7 +3362,6 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
     opacity: 1; }
 
 #panel nav ul li a {
-  margin-left: 20px;
   color: #fff;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -3478,7 +3477,6 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
           transform: translateY(-50%); }
 
 #panel nav ul li a {
-  margin-left: 20px;
   color: #fff;
   font-size: 1.2em;
   text-transform: uppercase;
