@@ -314,11 +314,24 @@ $('footer .flex-row-wrapper .contact-open-button').click(function(){
 
 });
 
+// ---------------
+// ***slick sliders****
+// ---------------
+
 $(document).ready(function() {
   $('.multiple-items').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+      responsive: [
+    {
+      breakpoint: 870,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 	});
 
   $('.center-items').slick({
@@ -351,7 +364,9 @@ $(document).ready(function() {
   	$('.center-slider-item').removeClass('slide-active');
     	$('.slick-center').addClass('slide-active');
   });
-
+// ---------------
+// ***End slick sliders****
+// ---------------
   // ---------------
   // ***noUiSlider****
   // ---------------

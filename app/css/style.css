@@ -899,7 +899,7 @@ footer {
     footer .footer-bottom .container .flex-row-wrapper .contacts .footer-address,
     footer .footer-bottom .container .flex-row-wrapper .contacts .footer-email,
     footer .footer-bottom .container .flex-row-wrapper .contacts .footer-numbers-wrapper {
-      background-position: 30% 50%;
+      background-image: none;
       padding: 0; }
       footer .footer-bottom .container .flex-row-wrapper .contacts .footer-address::after,
       footer .footer-bottom .container .flex-row-wrapper .contacts .footer-email::after,
@@ -1038,7 +1038,6 @@ header .secondary_nav {
   background-color: #000000;
   opacity: 0.75;
   position: absolute;
-  top: 30px;
   left: 0;
   width: 100%;
   z-index: 10; }
@@ -1251,6 +1250,87 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 
 .slick-dotted.slick-slider {
   margin-bottom: 0; }
+
+.main-benefits-wrapper {
+  padding: 150px 0;
+  background-image: url("../img/main/back-main-ben.png");
+  background-size: cover;
+  background-position: center bottom; }
+  .main-benefits-wrapper .main-benefits-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .main-benefits-wrapper .main-benefits-list .main-benefits-list-item {
+      width: 335px;
+      height: 335px;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 4px 13px 45px rgba(0, 0, 0, 0.33);
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      transition: all .2s; }
+      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item:hover {
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+        transition: all .2s; }
+      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-img {
+        display: inline-block;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 65%);
+                transform: translate(-50%, 65%); }
+      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        border-radius: 50%; }
+        .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-title {
+          text-transform: uppercase;
+          font-family: "MuseoSansRegular";
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 24px;
+          margin-top: 15px; }
+        .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-content-text {
+          font-family: RalewayRegular;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 26px; }
+          .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-content-text p {
+            padding: 20px;
+            margin: 0; }
+
+@media screen and (max-width: 870px) {
+  main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
+    left: 50px; }
+    main .top-slider-wrapper .top-slider .top-slider-item .text-item-left p {
+      font-size: 26px; }
+  main .main-benefits-wrapper .main-benefits-list {
+    height: 100vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media screen and (max-width: 580px) {
+  main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
+    left: 0;
+    width: 100%; }
+  main .main-benefits-wrapper .main-benefits-list {
+    height: 200vh; } }
 
 @-webkit-keyframes pulse {
   0% {
@@ -1530,69 +1610,16 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   margin-left: 0px;
   margin-top: 11px; }
 
-.main-benefits-wrapper {
-  padding: 150px 0;
-  background-image: url("../img/main/back-main-ben.png");
-  background-size: cover;
-  background-position: center bottom; }
-  .main-benefits-wrapper .main-benefits-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .main-benefits-wrapper .main-benefits-list .main-benefits-list-item {
-      width: 335px;
-      height: 335px;
-      border-radius: 50%;
-      text-align: center;
-      box-shadow: 4px 13px 45px rgba(0, 0, 0, 0.33);
-      position: relative;
-      background-color: rgba(255, 255, 255, 0.8);
-      cursor: pointer;
-      transition: all .2s; }
-      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item:hover {
-        -webkit-transform: scale(1.05);
-                transform: scale(1.05);
-        transition: all .2s; }
-      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-img {
-        display: inline-block;
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        -webkit-transform: translate(-50%, 65%);
-                transform: translate(-50%, 65%); }
-      .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        border-radius: 50%; }
-        .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-title {
-          text-transform: uppercase;
-          font-family: "MuseoSansRegular";
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 24px;
-          margin-top: 15px; }
-        .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-content-text {
-          font-family: RalewayRegular;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 26px; }
-          .main-benefits-wrapper .main-benefits-list .main-benefits-list-item .main-benefits-list-content .main-benefits-list-content-text p {
-            padding: 20px;
-            margin: 0; }
+@media screen and (max-width: 870px) {
+  body #panel {
+    left: -290px; } }
+
+@media screen and (max-width: 580px) {
+  body #panel {
+    width: 100%;
+    left: -100%; }
+  body main .bacground-wrapper .title-block-wrapper .title-block span {
+    display: inline; } }
 
 #portfolio .slider-bottom {
   display: -webkit-box;
@@ -2542,8 +2569,7 @@ main .first_group_fitnes .block_item {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 115px; }
+          justify-content: space-between; }
   .contacts .contacts-text-item {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -2601,6 +2627,26 @@ main .first_group_fitnes .block_item {
 
 #common {
   padding-left: 0; }
+
+@media screen and (max-width: 870px) {
+  .contacts .contacts-text-item {
+    padding: 0 30px; } }
+
+@media screen and (max-width: 580px) {
+  .contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .contacts .contacts-text-item {
+      width: 100%;
+      padding-right: 30px;
+      padding-left: 100px; }
+    .contacts .contacts-map-item {
+      width: 100%;
+      height: 100vh; } }
+
+@media screen and (max-width: 420px) {
+  .contacts .contacts-text-item {
+    padding: 0 30px; } }
 
 #text .bacground-wrapper,
 #specific-number .bacground-wrapper,
@@ -2800,6 +2846,30 @@ main .first_group_fitnes .block_item {
 #club .container,
 #news .container {
   padding: 0; }
+
+@media screen and (max-width: 1024px) {
+  #text .multiple-slider-wrapper,
+  #specific-number .multiple-slider-wrapper,
+  #club .multiple-slider-wrapper,
+  #news .multiple-slider-wrapper {
+    position: relative; }
+    #text .multiple-slider-wrapper .multiple-items .slick-prev,
+    #specific-number .multiple-slider-wrapper .multiple-items .slick-prev,
+    #club .multiple-slider-wrapper .multiple-items .slick-prev,
+    #news .multiple-slider-wrapper .multiple-items .slick-prev {
+      background-image: url(../img/icons/arr.left.png);
+      left: -30px; }
+    #text .multiple-slider-wrapper .multiple-items .slick-next,
+    #specific-number .multiple-slider-wrapper .multiple-items .slick-next,
+    #club .multiple-slider-wrapper .multiple-items .slick-next,
+    #news .multiple-slider-wrapper .multiple-items .slick-next {
+      background-image: url(../img/icons/arr.right.png);
+      right: -30px; }
+    #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper,
+    #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper,
+    #club .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper,
+    #news .multiple-slider-wrapper .multiple-items .multiple-slider-item .content .title-block-wrapper {
+      margin-top: 10px; } }
 
 /*.container {
   margin-right: auto;
@@ -3552,6 +3622,21 @@ main .first_group_fitnes .block_item {
       #club .club__text .content-wrapper .content h2 {
         text-transform: uppercase; }
 
+@media screen and (max-width: 1200px) {
+  #club .club__text .content-wrapper .content {
+    max-width: 80%; } }
+
+@media screen and (max-width: 1024px) {
+  #club .club__text .content-wrapper .content {
+    padding: 40px; } }
+
+@media screen and (max-width: 870px) {
+  #club .club__text {
+    background-image: none; }
+    #club .club__text .content-wrapper .content {
+      max-width: 100%;
+      padding: 20px 0; } }
+
 .text-content-wrapper {
   text-align: justify;
   color: #000000;
@@ -3929,7 +4014,8 @@ main .first_group_fitnes .block_item {
   padding: 50px 0 75px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0% -14%; }
+  background-position: 0% -14%;
+  background-image: url(../img/gum/9.png); }
   #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items {
     height: 150vh;
     display: -webkit-box;
@@ -3986,7 +4072,6 @@ main .first_group_fitnes .block_item {
 #fitness_new .multiple-slider-wrapper {
   position: relative; }
   #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
-    margin: 0 20px;
     height: auto;
     background-repeat: no-repeat;
     position: relative;
@@ -4012,8 +4097,8 @@ main .first_group_fitnes .block_item {
       right: 0;
       border-radius: 3%; }
       #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
-        width: 35%;
-        height: 35%;
+        width: 150px;
+        height: 150px;
         top: 50%;
         right: 50%;
         position: absolute;
@@ -4053,10 +4138,64 @@ main .first_group_fitnes .block_item {
 
 #fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .content .icon {
   width: 115px;
+  height: 115px;
   margin-top: 20px; }
 
 #fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .title-block-wrapper {
-  margin-top: 10px; }
+  margin-top: 0; }
+
+@media screen and (max-width: 1024px) {
+  #fitness_new .bacground-wrapper {
+    background-image: none; }
+    #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items {
+      height: 85vh; }
+      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
+        height: 30vh; }
+        #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content {
+          margin: 0; }
+          #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
+            width: 115px;
+            height: 115px;
+            margin-top: 30px; }
+      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item {
+        height: 15vh; }
+        #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .title-block-wrapper {
+          margin-top: 0; }
+        #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .content .icon {
+          width: 80px;
+          height: 80px;
+          margin-top: 20px; } }
+
+@media screen and (max-width: 870px) {
+  #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
+    width: 80px;
+    height: 80px; }
+  #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block span {
+    display: inline; }
+  #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .button-details {
+    width: auto; }
+  #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .content .icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px; } }
+
+@media screen and (max-width: 570px) {
+  #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items {
+    height: 120vh; }
+    #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
+      width: 48%; }
+      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper {
+        margin: 0; }
+        #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block {
+          padding: 20px 0; }
+          #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span {
+            font-size: 18px; }
+      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
+        margin-top: 20px; }
+    #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item {
+      width: 100%; }
+      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .content .title-block-wrapper .title-block {
+        padding: 10px 0; } }
 
 .basket {
   margin-top: 115px; }

@@ -4,6 +4,7 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: 0% -14%;
+	background-image: url(../img/gum/9.png);
 	.container2 {
 	.multiple-slider-wrapper {
 		.multiple-fitness-items {
@@ -66,7 +67,6 @@
 	position: relative;
 	.multiple-fitness-items {
 		.multiple-slider-item {
-			margin: 0 20px;
 			height: auto;
 			background-repeat: no-repeat;
 			position: relative;
@@ -97,8 +97,8 @@
 				right: 0;
 				border-radius: 3%;
 				.icon {
-					width: 35%;
-					height: 35%;
+					width: 150px;
+					height: 150px;
 					top: 50%;
 					right: 50%;
 					position: absolute;
@@ -160,14 +160,142 @@
 				.content {
 					.icon {
 						width: 115px;
+						height: 115px;
 						margin-top: 20px;
 					}
 				}
 				.title-block-wrapper {
-					margin-top: 10px;
+					margin-top: 0;
 						.title-block {
 					}
 				}
 			}
 		}
 	}
+
+
+@media screen and (max-width: 1024px) {
+	#fitness_new {
+		.bacground-wrapper {
+			background-image: none;
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						height: 85vh;
+						.multiple-slider-item {
+							height: 30vh;
+							.content {
+								.title-block-wrapper { }
+									margin: 0;
+								.icon {
+								width: 115px;
+								height: 115px;
+								margin-top: 30px;
+								}
+							}
+						}
+						.gym-slider-item {
+							height: 15vh;
+							.title-block-wrapper {
+								margin-top: 0;
+								.title-block {
+								}
+							}
+							.content {
+								.icon {
+								width: 80px;
+								height: 80px;
+								margin-top: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 870px) {
+	#fitness_new {
+		.bacground-wrapper {
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						.multiple-slider-item {
+							.content {
+								.title-block-wrapper {  }
+								.icon {
+								width: 80px;
+								height: 80px;
+								}
+								.title-block {
+									span {
+									display: inline;
+									}
+								}
+								.button-details {
+									width: auto;
+								}
+							}
+						}
+						.gym-slider-item {
+							.title-block-wrapper {
+								.title-block {
+								}
+							}
+							.content {
+								.icon {
+								width: 60px;
+								height: 60px;
+								margin-top: 30px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	#fitness_new {
+		.bacground-wrapper {
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						height: 120vh;
+						.multiple-slider-item {
+							width: 48%;
+							.content {
+								.title-block-wrapper {  
+									margin: 0;
+									.title-block {
+										padding: 20px 0;
+										span {
+											font-size: 18px;
+										}
+									}
+								}
+								.icon {
+									margin-top: 20px;
+								}
+							}
+						}
+						.gym-slider-item {
+							width: 100%;
+							.content {
+								.title-block-wrapper {  
+									.title-block {
+										padding: 10px 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
