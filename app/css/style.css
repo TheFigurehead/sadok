@@ -5955,42 +5955,50 @@ main .first_group_fitnes .block_item {
   margin-top: 70px;
   margin-bottom: 70px; }
 
-#fitness_new .bacground-wrapper {
+#fitness_new .bacground-wrapper, #welness .bacground-wrapper {
   width: 100%;
   padding: 50px 0 75px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0% -14%; }
-  #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-line-pack: justify;
-        align-content: space-between; }
-    #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-      width: 30%;
-      height: 400px;
-      border-radius: 2%; }
-      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img {
-        width: auto;
-        height: auto; }
-    #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item {
+
+#fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between; }
+  #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 30%;
+    height: 400px;
+    border-radius: 2%; }
+    #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img {
+      width: auto;
+      height: auto; }
+    #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child {
       width: 100%;
       height: 250px; }
-      #fitness_new .bacground-wrapper .container2 .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item img {
+      #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child img, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child img {
         width: auto;
         height: auto; }
+      #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child .button-details, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child .button-details {
+        width: 30%; }
+      #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child .content .icon, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child .content .icon {
+        width: 87px;
+        margin-top: 20px; }
+      #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child .title-block-wrapper, #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child .title-block-wrapper {
+        margin-top: 10px; }
 
-#fitness_new .button-details {
+#fitness_new .button-details, #welness .button-details {
   width: 55%;
   height: 3em;
   top: 50%;
@@ -6008,32 +6016,32 @@ main .first_group_fitnes .block_item {
   line-height: 3em;
   display: none;
   transition: all .3s; }
-  #fitness_new .button-details:hover {
+  #fitness_new .button-details:hover, #welness .button-details:hover {
     color: #e40254;
     border: 2px solid #e40254;
     transition: all .3s; }
 
-#fitness_new .multiple-slider-wrapper {
+#fitness_new .multiple-slider-wrapper, #welness .multiple-slider-wrapper {
   position: relative; }
-  #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
+  #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item {
     margin: 20px 0;
     height: auto;
     background-repeat: no-repeat;
     position: relative;
     cursor: pointer; }
-    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .content {
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .content, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .content {
       background-color: rgba(0, 0, 0, 0.7);
       transition: all .3s; }
-    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .title-block-wrapper {
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .title-block-wrapper, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .title-block-wrapper {
       display: none; }
-    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .icon {
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .icon, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .icon {
       display: none; }
-    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .button-details {
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .button-details, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:hover .button-details {
       display: block; }
-    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img {
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item img {
       max-width: 100%;
       border-radius: 2%; }
-    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content {
+    #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content {
       background-color: rgba(0, 0, 0, 0.3);
       position: absolute;
       top: 0;
@@ -6041,7 +6049,7 @@ main .first_group_fitnes .block_item {
       left: 0;
       right: 0;
       border-radius: 3%; }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
         width: 35%;
         height: 35%;
         top: 50%;
@@ -6051,42 +6059,32 @@ main .first_group_fitnes .block_item {
                 transform: translate(50%, -50%);
         background-size: contain;
         background-repeat: no-repeat; }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-child {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-child, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-child {
         background-image: url(../img/icons/child.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-dancer {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-dancer, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-dancer {
         background-image: url(../img/icons/dancer-balance-posture-on-one-leg.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-fitnes {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-fitnes, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-fitnes {
         background-image: url(../img/icons/fitnes.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-girl {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-girl, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-girl {
         background-image: url(../img/icons/girl.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-pregnant {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-pregnant, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-pregnant {
         background-image: url(../img/icons/pregnant-woman.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-swimming {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-swimming, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-swimming {
         background-image: url(../img/icons/swimming-silhouette.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-tree {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-tree, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-tree {
         background-image: url(../img/icons/tree.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-weightlifting {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-weightlifting, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-weightlifting {
         background-image: url(../img/icons/weightlifting.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-yoga {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-yoga, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon-yoga {
         background-image: url(../img/icons/yoga-posture.png); }
-      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper {
+      #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper {
         margin-top: 40px; }
-        #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span {
+        #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span {
           color: #fff;
-          font-size: 24px;
+          font-size: 22px;
           font-weight: 700; }
-          #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span:after {
+          #fitness_new .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span:after, #welness .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .title-block-wrapper .title-block span:after {
             width: 50%; }
-
-#fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .button-details {
-  width: 30%; }
-
-#fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .content .icon {
-  width: 115px;
-  margin-top: 20px; }
-
-#fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper .multiple-fitness-items .gym-slider-item .title-block-wrapper {
-  margin-top: 10px; }
 
 .basket {
   margin-top: 115px; }
@@ -7076,6 +7074,48 @@ main .first_group_fitnes .block_item {
       text-align: center;
       text-decoration: underline;
       padding: 20px 0; }
+
+#welness {
+  padding-top: 110px; }
+  #welness .welness-wrapper {
+    width: 100%;
+    margin-bottom: 50px; }
+  #welness .welness-picture {
+    width: 50%;
+    float: left; }
+  #welness .welness-content {
+    width: 50%;
+    border-right: 2px solid #e40254;
+    padding-right: 20px;
+    float: right;
+    text-align: justify;
+    font-family: "MuseoSansRegular";
+    font-weight: 300;
+    line-height: 1.25;
+    font-size: 22px;
+    position: relative; }
+    #welness .welness-content:after {
+      content: "";
+      position: absolute;
+      width: 130%;
+      height: 2px;
+      background-color: #e40254;
+      right: 0;
+      bottom: 0; }
+  #welness .welness-text {
+    margin-top: 50px;
+    font-family: "MuseoSansRegular"; }
+    #welness .welness-text p {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.25;
+      text-align: justify; }
+    #welness .welness-text .read-more {
+      text-align: center;
+      text-decoration: underline;
+      padding: 20px 0;
+      font-size: 18px;
+      font-weight: 700; }
 
 .slick-track, #club .slick-slide {
   height: 100vh; }

@@ -1,0 +1,51 @@
+#welness {
+	padding-top: 110px;
+	.welness {
+		&-wrapper {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		&-picture {
+			width: 50%;
+			float: left;
+		}
+		&-content {
+			width: 50%;
+			border-right: 2px solid rgb(228,2,84);
+			padding-right: 20px;
+			float: right;
+			text-align: justify;
+			font-family: "MuseoSansRegular";
+			font-weight: 300;
+			line-height: 1.25;
+			font-size: 22px;
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 130%;
+				height: 2px;
+				background-color: rgb(228,2,84);
+				right: 0;
+				bottom: 0;
+			}
+		}
+		&-text {
+			margin-top: 50px;
+			font-family: "MuseoSansRegular";
+			p {
+				font-size: 24px;				
+				font-weight: 300;
+			  line-height: 1.25;
+			  text-align: justify;
+			}
+			.read-more {
+				text-align: center;
+				text-decoration: underline;
+				padding: 20px 0;
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+	}
+}
