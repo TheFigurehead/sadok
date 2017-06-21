@@ -1,172 +1,171 @@
-#fitness_new .bacground-wrapper {
-	width: 100%;
-	padding: 50px 0 75px;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: 0% -14%;
+#fitness_new, #welness {
+	.bacground-wrapper {
+		width: 100%;
+		padding: 50px 0 75px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 0% -14%;
+	}
 	.container2 {
-	.multiple-slider-wrapper {
-		.multiple-fitness-items {
-			display: flex;
-			flex-wrap: wrap;
-			width: 100%;
-			justify-content: space-between;
-			align-content: space-between;
-			.multiple-slider-item {
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: 50% 50%;
-				width: 30%;
-				height: 400px;
-				border-radius: 2%;
-				img {
-					width: auto;
-					height: auto;
-				}
-				&:first-child {
-					width: 100%;
-					height: 250px;
+		.multiple-slider-wrapper {
+			.multiple-fitness-items {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				justify-content: space-between;
+				align-content: space-between;
+				.multiple-slider-item {
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: 50% 50%;
+					width: 30%;
+					height: 400px;
+					border-radius: 2%;
 					img {
 						width: auto;
 						height: auto;
 					}
-				}
-			}
-		}
-	}
-}
-}
-
-#fitness_new .button-details {
-	width: 55%;
-	height: 3em;
-	top: 50%;
-	right: 50%;
-	position: absolute;
-	transform: translate(50%, -50%);
-	color: #ffffff;
-	border: 2px solid #ffffff;
-	border-radius: 8%;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 3em;
-	display: none;
-	transition: all .3s;
-	&:hover {
-		color: #e40254;
-		border: 2px solid #e40254;
-		transition: all .3s;
-	}
-}
-
-#fitness_new .multiple-slider-wrapper {
-	position: relative;
-	.multiple-fitness-items {
-		.multiple-slider-item {
-			margin: 20px 0;
-			height: auto;
-			background-repeat: no-repeat;
-			position: relative;
-			cursor: pointer;
-			&:hover .content {
-				background-color: rgba(0,0,0,0.7);
-				transition: all .3s;
-			}
-			&:hover .title-block-wrapper {
-				display: none;
-			}
-			&:hover .icon {
-				display: none;
-			}
-			&:hover .button-details {
-				display: block;
-			}
-			img{
-				max-width: 100%;
-				border-radius: 2%;
-				}
-			.content {
-				background-color: rgba(0,0,0,0.3);
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				border-radius: 3%;
-				.icon {
-					width: 35%;
-					height: 35%;
-					top: 50%;
-					right: 50%;
-					position: absolute;
-					transform: translate(50%, -50%);
-					background-size: contain;
-					background-repeat: no-repeat;
-				}
-				.icon-child {
-					background-image: url(../img/icons/child.png);
-				}
-				.icon-dancer {
-					background-image: url(../img/icons/dancer-balance-posture-on-one-leg.png);
-				}
-				.icon-fitnes {
-					background-image: url(../img/icons/fitnes.png);
-				}
-				.icon-girl {
-					background-image: url(../img/icons/girl.png);
-				}
-				.icon-pregnant {
-					background-image: url(../img/icons/pregnant-woman.png);
-				}
-				.icon-swimming {
-					background-image: url(../img/icons/swimming-silhouette.png);
-				}
-				.icon-tree {
-					background-image: url(../img/icons/tree.png);
-				}
-				.icon-weightlifting {
-					background-image: url(../img/icons/weightlifting.png);
-				}
-				.icon-yoga {
-					background-image: url(../img/icons/yoga-posture.png);
-				}
-				.title-block-wrapper {
-					margin-top: 40px;
-					.title-block {
-						span {
-							color: #fff;
-							font-size: 24px;
-							font-weight: 700;
-							&:after {
-								width: 50%;
+					&:first-child {
+						width: 100%;
+						height: 250px;
+						img {
+							width: auto;
+							height: auto;
+						}
+						.button-details {
+							width: 30%;
+						}
+						.content {
+							.icon {
+								width: 87px;
+								margin-top: 20px;
+							}
+						}
+						.title-block-wrapper {
+							margin-top: 10px;
+								.title-block {
 							}
 						}
 					}
 				}
 			}
-			}
 		}
 	}
+}
 
-#fitness_new .fitness_new .bacground-wrapper .multiple-slider-wrapper {
-	.multiple-fitness-items {
-		.gym-slider-item {
-				.button-details {
-					width: 30%;
+#fitness_new, #welness {
+	.button-details {
+		width: 55%;
+		height: 3em;
+		top: 50%;
+		right: 50%;
+		position: absolute;
+		transform: translate(50%, -50%);
+		color: #ffffff;
+		border: 2px solid #ffffff;
+		border-radius: 8%;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 3em;
+		display: none;
+		transition: all .3s;
+		&:hover {
+			color: #e40254;
+			border: 2px solid #e40254;
+			transition: all .3s;
+		}
+	}
+}
+
+#fitness_new, #welness {
+	.multiple-slider-wrapper {
+		position: relative;
+		.multiple-fitness-items {
+			.multiple-slider-item {
+				margin: 20px 0;
+				height: auto;
+				background-repeat: no-repeat;
+				position: relative;
+				cursor: pointer;
+				&:hover .content {
+					background-color: rgba(0,0,0,0.7);
+					transition: all .3s;
 				}
-				.content {
-					.icon {
-						width: 115px;
-						margin-top: 20px;
+				&:hover .title-block-wrapper {
+					display: none;
+				}
+				&:hover .icon {
+					display: none;
+				}
+				&:hover .button-details {
+					display: block;
+				}
+				img{
+					max-width: 100%;
+					border-radius: 2%;
 					}
-				}
-				.title-block-wrapper {
-					margin-top: 10px;
+				.content {
+					background-color: rgba(0,0,0,0.3);
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					border-radius: 3%;
+					.icon {
+						width: 35%;
+						height: 35%;
+						top: 50%;
+						right: 50%;
+						position: absolute;
+						transform: translate(50%, -50%);
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+					.icon-child {
+						background-image: url(../img/icons/child.png);
+					}
+					.icon-dancer {
+						background-image: url(../img/icons/dancer-balance-posture-on-one-leg.png);
+					}
+					.icon-fitnes {
+						background-image: url(../img/icons/fitnes.png);
+					}
+					.icon-girl {
+						background-image: url(../img/icons/girl.png);
+					}
+					.icon-pregnant {
+						background-image: url(../img/icons/pregnant-woman.png);
+					}
+					.icon-swimming {
+						background-image: url(../img/icons/swimming-silhouette.png);
+					}
+					.icon-tree {
+						background-image: url(../img/icons/tree.png);
+					}
+					.icon-weightlifting {
+						background-image: url(../img/icons/weightlifting.png);
+					}
+					.icon-yoga {
+						background-image: url(../img/icons/yoga-posture.png);
+					}
+					.title-block-wrapper {
+						margin-top: 40px;
 						.title-block {
+							span {
+								color: #fff;
+								font-size: 22px;
+								font-weight: 700;
+								&:after {
+									width: 50%;
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 	}
+}
