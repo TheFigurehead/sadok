@@ -544,6 +544,59 @@ $(document).ready(function() {
     // end timeline
   }
   // end timetable page	
+
+  // scale-slider
+  var scaleSlider = $('.scale-slider');
+
+  if (scaleSlider.length) {
+    var slides = $('.scale-slider-slide', scaleSlider),
+    slideTrack =$('.scale-slider-track', scaleSlider),
+    maxHeight = 0,
+    arrowPrev = $('.arrow-left', scaleSlider),
+    arrowNext = $('.arrow-right', scaleSlider),
+    slideWidth = slides.eq(0).outerWidth(),
+    trackPosition = 0;
+    minLeftTrack = 0;
+    maxLeftTrack = -(slides.length - 1) * slideWidth,
+    activeSlide = 2;
+
+
+    $.each(slides, function(i, item) {
+      maxHeight = $(item).outerHeight() > maxHeight ? $(item).outerHeight() : maxHeight;
+    })
+
+    slides.height(maxHeight);
+    $('img', slides).css({height: '100%'});
+    slides.eq(1).addClass('active');
+
+    slideTrack.append(slides.eq(0).clone());
+    slideTrack.prepend(slides.eq(slides.length - 1).clone());
+    
+    trackPosition -= slideWidth
+    slideTrack.css({left: trackPosition + 'px'});
+    slides = $('.scale-slider-slide', scaleSlider);
+
+    arrowPrev.on('click', function() {
+      if (trackPosition < minLeftTrack - 10) {
+        trackPosition += slideWidth
+        slideTrack.animate({left: trackPosition + 'px'}, 300);
+        slides.removeClass('active');
+        activeSlide--;
+        slides.eq(activeSlide).addClass('active');
+      }
+    })
+
+    arrowNext.on('click', function() {
+      if (trackPosition > maxLeftTrack + 10) {
+        trackPosition -= slideWidth
+        slideTrack.stop().animate({left: trackPosition + 'px'}, 300);
+        slides.removeClass('active');
+        activeSlide++;
+        slides.eq(activeSlide).addClass('active');
+      }
+    })
+  }
+  // end scale-slider
 });
 
 $(window).on('orientationchange', function() {
