@@ -96,7 +96,6 @@ header .secondary_nav {
 	background-color: #000000;
 	opacity: 0.75;
 	position: absolute;
-	top: 30px;
 	left: 0;
 	width: 100%;
 	z-index: 10;
@@ -136,6 +135,11 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 
 header .main_nav .main_nav_sandwich {
 	display: none;
+}
+
+@media screen and (max-width: 780px) {
+
+
 }
 
 @media screen and (max-width: 780px) {

@@ -165,3 +165,32 @@
 #news .container {
   padding: 0;
 }
+
+
+@media screen and (max-width: 1024px) {
+ 	#text,
+	#specific-number,
+	#club,
+	#news {
+		.multiple-slider-wrapper {
+			position: relative;
+			.multiple-items {
+				.slick-prev {
+					background-image: url(../img/icons/arr.left.png);
+					left: -30px;
+				}
+				.slick-next {
+					background-image: url(../img/icons/arr.right.png);
+					right: -30px;
+				}
+				.multiple-slider-item {
+					.content {
+						.title-block-wrapper {
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

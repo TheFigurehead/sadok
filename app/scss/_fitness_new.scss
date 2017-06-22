@@ -5,6 +5,7 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: 0% -14%;
+		background-image: url(../img/gum/9.png);
 	}
 	.container2 {
 		.multiple-slider-wrapper {
@@ -15,6 +16,7 @@
 				justify-content: space-between;
 				align-content: space-between;
 				.multiple-slider-item {
+					margin-top: 30px;
 					background-repeat: no-repeat;
 					background-size: cover;
 					background-position: 50% 50%;
@@ -38,13 +40,11 @@
 						.content {
 							.icon {
 								width: 87px;
-								margin-top: 20px;
+								margin-top: 50px;
 							}
 						}
 						.title-block-wrapper {
 							margin-top: 10px;
-								.title-block {
-							}
 						}
 					}
 				}
@@ -84,7 +84,6 @@
 		position: relative;
 		.multiple-fitness-items {
 			.multiple-slider-item {
-				margin: 20px 0;
 				height: auto;
 				background-repeat: no-repeat;
 				position: relative;
@@ -102,10 +101,10 @@
 				&:hover .button-details {
 					display: block;
 				}
-				img{
+				img {
 					max-width: 100%;
 					border-radius: 2%;
-					}
+				}
 				.content {
 					background-color: rgba(0,0,0,0.3);
 					position: absolute;
@@ -115,8 +114,8 @@
 					right: 0;
 					border-radius: 3%;
 					.icon {
-						width: 35%;
-						height: 35%;
+						width: 150px;
+						height: 150px;
 						top: 50%;
 						right: 50%;
 						position: absolute;
@@ -124,42 +123,144 @@
 						background-size: contain;
 						background-repeat: no-repeat;
 					}
-					.icon-child {
-						background-image: url(../img/icons/child.png);
+				}
+				.title-block-wrapper {
+					margin: 0 auto;
+					margin-top: 20px;
+					.title-block {
+						padding: 30px 20px; 
+						span {
+							color: #fff;
+							font-size: 22px;
+							font-weight: 700;
+							&:after {
+								width: 50%;
+							}
+						}
 					}
-					.icon-dancer {
-						background-image: url(../img/icons/dancer-balance-posture-on-one-leg.png);
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	#fitness_new {
+		.bacground-wrapper {
+			background-image: none;
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						height: 85vh;
+						.multiple-slider-item {
+							height: 30vh;
+							.content {
+								.title-block-wrapper { }
+									margin: 0;
+								.icon {
+								width: 115px;
+								height: 115px;
+								margin-top: 30px;
+								}
+							}
+						}
+						.gym-slider-item {
+							height: 15vh;
+							.title-block-wrapper {
+								margin-top: 0;
+								.title-block {
+								}
+							}
+							.content {
+								.icon {
+								width: 80px;
+								height: 80px;
+								margin-top: 20px;
+								}
+							}
+						}
 					}
-					.icon-fitnes {
-						background-image: url(../img/icons/fitnes.png);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 870px) {
+	#fitness_new {
+		.bacground-wrapper {
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						.multiple-slider-item {
+							.content {
+								.title-block-wrapper {  }
+								.icon {
+								width: 80px;
+								height: 80px;
+								}
+								.title-block {
+									span {
+									display: inline;
+									}
+								}
+								.button-details {
+									width: auto;
+								}
+							}
+						}
+						.gym-slider-item {
+							.title-block-wrapper {
+								.title-block {
+								}
+							}
+							.content {
+								.icon {
+								width: 60px;
+								height: 60px;
+								margin-top: 30px;
+								}
+							}
+						}
 					}
-					.icon-girl {
-						background-image: url(../img/icons/girl.png);
-					}
-					.icon-pregnant {
-						background-image: url(../img/icons/pregnant-woman.png);
-					}
-					.icon-swimming {
-						background-image: url(../img/icons/swimming-silhouette.png);
-					}
-					.icon-tree {
-						background-image: url(../img/icons/tree.png);
-					}
-					.icon-weightlifting {
-						background-image: url(../img/icons/weightlifting.png);
-					}
-					.icon-yoga {
-						background-image: url(../img/icons/yoga-posture.png);
-					}
-					.title-block-wrapper {
-						margin-top: 40px;
-						.title-block {
-							span {
-								color: #fff;
-								font-size: 22px;
-								font-weight: 700;
-								&:after {
-									width: 50%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	#fitness_new {
+		.bacground-wrapper {
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						height: 120vh;
+						.multiple-slider-item {
+							width: 48%;
+							.content {
+								.title-block-wrapper {  
+									margin: 0;
+									.title-block {
+										padding: 20px 0;
+										span {
+											font-size: 18px;
+										}
+									}
+								}
+								.icon {
+									margin-top: 20px;
+								}
+							}
+						}
+						.gym-slider-item {
+							width: 100%;
+							.content {
+								.title-block-wrapper {  
+									.title-block {
+										padding: 10px 0;
+									}
 								}
 							}
 						}

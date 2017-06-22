@@ -331,3 +331,36 @@
     margin-left: 0px;
     margin-top: 11px;
 }
+
+@media screen and (max-width: 870px) {
+  body {
+    #panel {
+      left: -290px;
+      #panel-toggle {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+   body {
+    #panel {
+      width: 100%;
+      left: -100%;
+      #panel-toggle {
+        
+      }
+    }
+    main {
+      .bacground-wrapper {
+        .title-block-wrapper {
+          .title-block {
+            span {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

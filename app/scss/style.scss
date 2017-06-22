@@ -104,7 +104,8 @@ body {
 #specific-number,
 #fitness_new,
 #menu-category, 
-#restoran_menu {
+#restoran_menu, 
+#WISH_cards  {
   padding-left: 0;
 }
 
@@ -171,7 +172,6 @@ $colorButtonRed: #e40f20;
 @import "header";
 @import "glavnaya";
 @import "menu";
-@import "main";
 @import "bottom-slider";
 @import "breadCrumbs";
 @import "restoran";
@@ -200,6 +200,7 @@ $colorButtonRed: #e40f20;
 @import "datepicker";
 @import "timetable";
 @import "welness";
+@import "WISH_cards";
 
 .slick-track, #club .slick-slide {
   height: 100vh
