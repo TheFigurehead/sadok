@@ -88,7 +88,7 @@
 }
 #panel nav ul li a {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
@@ -222,13 +222,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-#panel nav ul li a {
-  color: #fff;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative;
 }
 #panel nav ul li a:after {
   content: ' ';

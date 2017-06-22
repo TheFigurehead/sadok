@@ -192,12 +192,33 @@ $(document).ready(function() {
     });
   }
 
-  // menu serg
+  // verification for mobile panel
+  if (document.getElementById('panel')) {
 
-$('#panel-toggle').click(function() {
-  $('#nav-icon').toggleClass('open');
-  $('#panel').toggleClass('open');
-});
+    $('body').css({paddingLeft: '50px'});
+
+    var pluses = $('#panel .plus');
+
+    $.each(pluses, function(i, item) {
+      if (!$('.dropdown', $(item).parent()).length) $(item).remove()
+    });
+
+    pluses = $('#panel .plus');
+
+    pluses.on('click', function() {
+      $(this).parent().toggleClass('active');
+    });
+
+    // menu serg
+    $('#panel-toggle').click(function() {
+      $('#nav-icon').toggleClass('open');
+      $('#panel').toggleClass('open');
+
+      pluses.parent().removeClass('active');
+    });
+    // end menu serg
+  };
+  // end verification for mobile panel
 
 // ---------------
 // ***restaurant menu****
@@ -600,20 +621,6 @@ $(document).ready(function() {
     })
   }
   // end scale-slider
-
-  // verification for mobile panel
-  if (document.getElementById('panel')) {
-    $('body').css({paddingLeft: '50px'});
-
-    $.each($('#panel .plus'), function(i, item) {
-      if (!$('.dropdown', $(item).parent()).length) $(item).remove()
-    })
-
-    $('#panel .plus').on('click', function() {
-      $(this).parent().toggleClass('active');
-    })
-  };
-  // end verification for mobile panel
 });
 
 $(window).on('orientationchange', function() {

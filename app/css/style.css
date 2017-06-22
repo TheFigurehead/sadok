@@ -3363,7 +3363,7 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 
 #panel nav ul li a {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
   text-decoration: none;
   position: relative; }
@@ -3475,13 +3475,6 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
-
-#panel nav ul li a {
-  color: #fff;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  text-decoration: none;
-  position: relative; }
 
 #panel nav ul li a:after {
   content: ' ';
