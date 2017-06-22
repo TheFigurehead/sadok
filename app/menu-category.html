@@ -2,9 +2,11 @@
 <head>
   <meta charset="utf-8" />
   <title>Main page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="libs/animate/animate.css"/>
 </head>
 <body id="menu-category">
   <header id="header">
@@ -204,10 +206,20 @@
           </div>
           <div class="price">
             <h6>Ціна (грн.)</h6>
-            <div id="html5">
+            <div class="html5-wrapper">
+              <div id="html5">
+              </div>
             </div>
-            <input type="number" id="input-number"></input>
-            <input type="number" id="input-number"></input>
+            <div class="grid-input-wrapper">
+              <div class="input-wrapper">
+                <label for="input-number">Від</label>
+                <input type="number" id="input-number"></input>
+              </div>
+              <div class="input-wrapper">
+                <label for="input-number2">До</label>
+                <input type="number" id="input-number2"></input>
+              </div>
+            </div>
           </div>
         </div>
         <div class="right">
@@ -226,7 +238,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -250,7 +262,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -274,7 +286,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -298,7 +310,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -322,7 +334,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -346,7 +358,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -370,7 +382,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -394,7 +406,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -418,7 +430,7 @@
             <div class="content-item">
               <div class="img-wrapper">
                 <img src="img/menu/55.png" alt="">
-                <div class="hidden-content-item">
+                <div class="hidden-content-item fadeInDown animated">
                   <a href="#">Грибной крем-суп</a>
                   <div class="specifications">
                     <span class="price">200 г</span>
@@ -477,139 +489,139 @@
 
   </main>
 
-<footer>
-  <div class="footer-contacts-wrapper">
-    <div class="line"></div>
-    <div class="footer-contacts-wrapper-title">
-      <span>Контакты</span>
+  <footer>
+    <div class="footer-contacts-wrapper">
+      <div class="line"></div>
+      <div class="footer-contacts-wrapper-title">
+        <span>Контакты</span>
+      </div>
+      <div class="footer-contacts-wrapper-content">
+        <div class="container">
+          <div class="flex-row-wrapper">
+            <div class="flex-col cont">
+              <div class="flex-col-img">
+                <img src="img/footer-col-1.png" alt="">
+              </div>
+              <div class="flex-col-text">
+                вул. Набережна 29, с. Вишеньки, «Вишневе мiстечко» <br>
+                Бориспiльський р-н, Київська обл., 08341
+              </div>
+            </div>
+            <div class="flex-col cont">
+              <div class="flex-col-img">
+                <img src="img/footer-col-2.png" alt="">
+              </div>
+              <div class="flex-col-text">
+                <!-- +38(093)000-00-00<br> -->
+                +38 (044) 58-58-777
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footer-contacts-wrapper-content">
+    <div class="footer-map-wrapper">
+      <div id="footer-map">
+      </div>
+    </div>
+    <div class="footer-bottom">
       <div class="container">
         <div class="flex-row-wrapper">
-          <div class="flex-col cont">
-            <div class="flex-col-img">
-              <img src="img/footer-col-1.png" alt="">
-            </div>
-            <div class="flex-col-text">
-              вул. Набережна 29, с. Вишеньки, «Вишневе мiстечко» <br>
-              Бориспiльський р-н, Київська обл., 08341
+          <div class="flex-col">
+            <a href="#"><img src="img/logo-white.png" alt="logo white"></a>
+          </div>
+          <a href="#" class="contact-open-button">
+            Контакты
+          </a>
+          <div class="flex-col contacts">
+            <div class="footer-address">
+              <div class="footer-country">«Вишневе мiстечко»</div>
+              <div class="footer-city">c. Вишеньки</div>
+              <div class="footer-street">вул. Набережна 29</div>
             </div>
           </div>
-          <div class="flex-col cont">
-            <div class="flex-col-img">
-              <img src="img/footer-col-2.png" alt="">
+          <div class="flex-col contacts">
+            <div class="footer-email">
+              <a href="mailto:random@mail.com">wishfamilyspace@</a>
             </div>
-            <div class="flex-col-text">
-              <!-- +38(093)000-00-00<br> -->
-              +38 (044) 58-58-777
+          </div>
+          <div class="flex-col contacts">
+            <div class="footer-numbers-wrapper">
+              <div class="footer-number"><a href="tel:+380445858777">+38 (044) 585-87-77</a></div>
+              <!-- <div class="footer-number"><a href="tel:123456789">+38(093)000-00-00</a></div> -->
+            </div>
+          </div>
+          <div class="flex-col">
+            <div class="footer-social">
+              <a href="#" class="footer-link-icon fb"></a>
+              <a href="#" class="footer-link-icon vk"></a>
+              <a href="#" class="footer-link-icon inst"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-map-wrapper">
-    <div id="footer-map">
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="flex-row-wrapper">
-        <div class="flex-col">
-          <a href="#"><img src="img/logo-white.png" alt="logo white"></a>
-        </div>
-        <a href="#" class="contact-open-button">
-          Контакты
-        </a>
-        <div class="flex-col contacts">
-          <div class="footer-address">
-            <div class="footer-country">«Вишневе мiстечко»</div>
-            <div class="footer-city">c. Вишеньки</div>
-            <div class="footer-street">вул. Набережна 29</div>
-          </div>
-        </div>
-        <div class="flex-col contacts">
-          <div class="footer-email">
-            <a href="mailto:random@mail.com">wishfamilyspace@</a>
-          </div>
-        </div>
-        <div class="flex-col contacts">
-          <div class="footer-numbers-wrapper">
-            <div class="footer-number"><a href="tel:+380445858777">+38 (044) 585-87-77</a></div>
-            <!-- <div class="footer-number"><a href="tel:123456789">+38(093)000-00-00</a></div> -->
-          </div>
-        </div>
-        <div class="flex-col">
-          <div class="footer-social">
-            <a href="#" class="footer-link-icon fb"></a>
-            <a href="#" class="footer-link-icon vk"></a>
-            <a href="#" class="footer-link-icon inst"></a>
-          </div>
-        </div>
+  </footer>
+
+  <div class="popup-container">
+    <h5>Інформація про резервування</h5>
+    <form action="" class="popup">
+      <div class="left">
+        <input type="text" placeholder="Дата" class="date" />
       </div>
-    </div>
+
+      <div class="right">
+        <select class="guests">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select class="days">
+          <option>Кiлькiсть днiв</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+
+      <div class="left">
+        <input type="text" placeholder="Имя" />
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Мобильный номер" />
+      </div>
+
+      <div class="right">
+        <textarea placeholder="Повiомлення"></textarea>
+      </div>
+
+      <button type="submit">Забронювати</button>
+    </form>
+
+    <i class="fa fa-times" aria-hidden="true"></i>
   </div>
-</footer>
 
-    <div class="popup-container">
-      <h5>Інформація про резервування</h5>
-      <form action="" class="popup">
-        <div class="left">
-          <input type="text" placeholder="Дата" class="date" />
-        </div>
+  <div class="popup-overflow">
+  </div>
 
-        <div class="right">
-          <select class="guests">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-          </select>
-
-          <select class="days">
-            <option>Кiлькiсть днiв</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-          </select>
-        </div>
-
-        <div class="left">
-          <input type="text" placeholder="Имя" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Мобильный номер" />
-        </div>
-
-        <div class="right">
-          <textarea placeholder="Повiомлення"></textarea>
-        </div>
-
-        <button type="submit">Забронювати</button>
-      </form>
-
-      <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-
-    <div class="popup-overflow">
-    </div>
-
-    <script src="js/libs.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="libs/noUiSlider.10.0.0/nouislider.min.js"></script>
-    <script src="https://use.fontawesome.com/f011440108.js"></script>
-    <script src="js/scripts.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0glCrusqOLJBZeHpiPjBOBgWRcj2UAKU&callback=initMap">
-    </script>
-  </body>
-  </html>
+  <script src="js/libs.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="libs/noUiSlider.10.0.0/nouislider.min.js"></script>
+  <script src="https://use.fontawesome.com/f011440108.js"></script>
+  <script src="js/scripts.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0glCrusqOLJBZeHpiPjBOBgWRcj2UAKU&callback=initMap">
+  </script>
+</body>
+</html>

@@ -367,48 +367,47 @@ $(document).ready(function() {
 // ---------------
 // ***End slick sliders****
 // ---------------
-  // ---------------
-  // ***noUiSlider****
-  // ---------------
 
-  var html5Slider = document.getElementById('html5');
+// ---------------
+// ***noUiSlider****
+// ---------------
+var menuCategory = document.getElementById('menu-category');
 
-  if (html5Slider) {
-    noUiSlider.create(html5Slider, {
-      start: [ 1, 140 ],
-      connect: true,
-      range: {
-        'min': 0,
-        'max': 140
-      }
-    });
+ if (menuCategory) {
+var html5Slider = document.getElementById('html5');
 
-    var inputNumber = document.getElementById('input-number');
-
-    html5Slider.noUiSlider.on('update', function( values, handle ) {
-
-      var value = values[handle];
-
-      if ( handle ) {
-        inputNumber.value = value;
-      } else {
-        select.value = Math.round(value);
-      }
-    });
-
-    select.addEventListener('change', function(){
-      html5Slider.noUiSlider.set([this.value, null]);
-    });
-
-    inputNumber.addEventListener('change', function(){
-      html5Slider.noUiSlider.set([null, this.value]);
-    });
+noUiSlider.create(html5Slider, {
+  start: [ 20, 120 ],
+  connect: true,
+  range: {
+    'min': 0,
+    'max': 140
   }
+});
 
+  var inputNumber = document.getElementById('input-number');
+  var inputNumber2 = document.getElementById('input-number2');
 
-  // ---------------
-  // ***End of noUiSlider****
-  // ---------------
+html5Slider.noUiSlider.on('update', function( values, handle ) {
+
+  if ( handle ) {
+    inputNumber2.value = Math.round(values[1]);
+  }else{
+    inputNumber.value = Math.round(values[0]);
+  }
+});
+
+inputNumber.addEventListener('change', function(){
+  html5Slider.noUiSlider.set([this.value, null]);
+});
+
+inputNumber2.addEventListener('change', function(){
+  html5Slider.noUiSlider.set([null, this.value]);
+});
+} 
+// ---------------
+// ***End of noUiSlider****
+// ---------------
 
   // datepicker hotel
   var arrivalDateInput = $('#arrival-date');
