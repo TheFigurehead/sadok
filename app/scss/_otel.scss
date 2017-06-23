@@ -2,7 +2,6 @@
 	background-color: #fbfbfb;
 	.reservation-wrapper {
 		text-align: center;
-	}
 	.reservation {
 		display: inline-flex;
 		font-family: "MuseoSansRegular";
@@ -38,6 +37,9 @@
 		.arrival-date, .departure-date, .guests, .booking-button-block {
 			position: relative;
 			padding: 30px;
+			button {
+				margin: 0 auto;
+			}
 		}
 		.guests {
 			cursor: pointer;
@@ -101,6 +103,7 @@
 			}
 		}
 	}
+}
 	button {
 		cursor: pointer;
 		border-radius: 5px;
@@ -228,5 +231,50 @@
 			}
 		}
 	}
+	.top-slider-wrapper .top-slider .slick-dots li button {
+	background-color: transparent;
+	}
+}
+
+
+@media screen and (max-width: 780px) {
+	#hotel {
+    	.reservation-wrapper {
+    		.reservation {
+    			flex-wrap: wrap;
+    		}
+    		.booking-button-block {
+    			width: 100%;
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 580px) {
+	#hotel {
+    	.reservation-wrapper {
+    		.reservation {
+    			.booking-button-block {
+    				button {
+    					font-size: 12px;
+    				}
+    			}
+    			&>div {
+				width: 100%;
+    			}
+    			.arrival-date:after, 
+				.departure-date:after {
+					content: none;
+				}
+    		}
+    	}
+    	.stock-grid-wrapper {
+    		.stock-grid {
+    			.stock-wrapper {
+
+    			}
+    		}
+    	}
+    }
 }
 

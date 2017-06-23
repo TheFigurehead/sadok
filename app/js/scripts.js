@@ -195,7 +195,7 @@ $(document).ready(function() {
   // verification for mobile panel
   if (document.getElementById('panel')) {
 
-    $('body').css({paddingLeft: '50px'});
+    if (window.matchMedia("(min-width=870px)").matches) $('body').css({paddingLeft: '50px'});
 
     var pluses = $('#panel .plus');
 

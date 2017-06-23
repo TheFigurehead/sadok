@@ -150,15 +150,6 @@
 	height: auto;
 }
 
-.line {
-	display: block;
-	width: 550px;
-	height: 1px;
-	background-color: #cbcbcb;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	margin-top: 30px;
-}
 #specific-number .container,
 #text .container,
 #club .container,
@@ -192,5 +183,11 @@
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.line {
+		width: 100%;
 	}
 }
