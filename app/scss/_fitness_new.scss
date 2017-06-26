@@ -208,6 +208,7 @@
 								}
 								.button-details {
 									width: auto;
+									padding: 0 10px;
 								}
 							}
 							&:first-child {
@@ -253,6 +254,10 @@
 								.icon {
 									margin-top: 20px;
 									width: 80px;
+								}
+								.button-details {
+									font-size: 15px;
+									padding: 0 10px;
 								}
 							}
 							&:first-child {

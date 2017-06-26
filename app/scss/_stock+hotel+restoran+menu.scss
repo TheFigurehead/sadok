@@ -110,20 +110,19 @@
 				text-transform: uppercase;
 			}
 		}
-		&:hover .stock-wrapper p {
-			display: block;
-			opacity: 1;
-/*			visibility: visible;*/
-			transition: opacity 0.5s linear;
-		}
+		&:hover .stock-wrapper p,
 		&:hover .stock-wrapper .button {
 			display: block;
-			opacity:1;
-/*			visibility: visible;*/
+			opacity: 1;
 			transition: opacity 0.5s linear;
 		}
 		&:hover .stock-wrapper .square::before {
 			content: none;
+		}
+		.active_elements {
+			display: block;
+			opacity: 1;
+			transition: opacity 0.5s linear;
 		}
 	}
 }
@@ -142,6 +141,9 @@
     	height: 150vh;
     	.stock-grid {
     		width: 100%;
+    		&:hover {
+			transform: scale(1.0,1.0);
+			}
     		  .stock-wrapper {
     			.stock {
 				font-size: 50px;
@@ -203,6 +205,7 @@
     	}
     	&:hover .stock-wrapper p {
     		width: 100%;
+    		font-size: 12px;
 			}
 		&:hover .stock {
 			font-size: 20px;

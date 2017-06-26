@@ -172,8 +172,12 @@
       .title-block {
         padding: 0 10px;
         margin-bottom: 10px;
+        text-align: center;
         span {
-          font-size: 40px;
+          font-size: 35px;
+          &:after {
+            content: none;
+          }
         }
       }
     }
@@ -181,6 +185,9 @@
       .item {
         width: 49%;
       }
+    }
+    .trenazherna-zala-page-text {
+      font-size: 18px;
     }
   }
 }

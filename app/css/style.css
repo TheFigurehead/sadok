@@ -2994,7 +2994,7 @@ header .secondary_nav .secondary_head {
   display: inline-flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 90%; }
+  width: 100%; }
 
 header .main_nav .main_head li,
 header .secondary_nav .secondary_head li {
@@ -3053,7 +3053,7 @@ header .main_nav .main_head li .hidden {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #fff;
-  z-index: 20; }
+  z-index: 100; }
 
 header .main_nav .main_head li .hidden2 {
   top: 40px; }
@@ -3076,7 +3076,7 @@ header .secondary_nav {
   z-index: 10; }
 
 header .secondary_nav .secondary_head {
-  width: 95%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -3108,21 +3108,41 @@ header .secondary_nav .secondary_head li:not(.logo):active:before {
 header .main_nav .main_nav_sandwich {
   display: none; }
 
+header .secondary_nav .delimiter .fa-circle {
+  font-size: 8px;
+  color: #fff; }
+
+header .secondary_nav .delimiter {
+  padding-bottom: 10px;
+  display: none; }
+
 @media screen and (max-width: 780px) {
   header .main_nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: auto;
-    padding: 20px; }
+    padding: 20px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   header .main_nav .main_nav_sandwich {
     display: block; }
   header .main_nav .main_head {
     display: inline-block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-align: center; }
-  header .main_nav .main_head,
-  header .main_nav .main_nav_sandwich .fa-window-close {
+  /*	header .main_nav .main_head,*/
+  header .main_nav .main_nav_sandwich .fa-window-close,
+  header .main_nav .main_head li {
     display: none; }
+  header .main_nav .main_head .phone {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px; }
   header .main_nav .main_head li,
   header .secondary_nav .secondary_head li {
     padding-bottom: 10px; }
@@ -3134,7 +3154,8 @@ header .main_nav .main_nav_sandwich {
     transition: all .2s;
     padding: 0;
     padding-top: 10px;
-    color: #000; }
+    color: #000;
+    z-index: 100; }
   header .main_nav .main_head li .fa {
     content: "";
     display: block;
@@ -3148,10 +3169,11 @@ header .main_nav .main_nav_sandwich {
   header .main_nav .main_nav_sandwich .fa-bars,
   header .main_nav .main_nav_sandwich .fa-window-close {
     margin-right: 0;
-    font-size: 20px;
+    font-size: 30px;
     position: absolute;
-    top: 10px;
-    left: 10px; }
+    top: 5px;
+    left: 10px;
+    z-index: 100; }
     header .main_nav .main_nav_sandwich .fa-bars:hover,
     header .main_nav .main_nav_sandwich .fa-window-close:hover {
       cursor: pointer;
@@ -3167,7 +3189,9 @@ header .main_nav .main_nav_sandwich {
   header .secondary_nav .secondary_head li:hover a {
     color: #e40254; }
   header .secondary_nav .secondary_head li:not(.logo):before {
-    content: none; } }
+    content: none; }
+  header .secondary_nav .delimiter {
+    display: block; } }
 
 main .top-slider-wrapper .top-slider .top-slider-item {
   background-size: cover;
@@ -3359,6 +3383,10 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
     left: 50px; }
     main .top-slider-wrapper .top-slider .top-slider-item .text-item-left p {
       font-size: 26px; }
+  main .top-slider-wrapper .top-slider .slick-dots {
+    bottom: 120px; }
+  main .top-slider-wrapper .top-slider .slick-arrow {
+    display: none; }
   main .main-benefits-wrapper .main-benefits-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -4222,7 +4250,8 @@ main .first_group_fitnes .block_item {
 
 #hotel .container .content-wrapper {
   text-align: center;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding: 0 20px; }
   #hotel .container .content-wrapper .title-block span {
     font-size: 24px; }
   #hotel .container .content-wrapper p {
@@ -4252,6 +4281,10 @@ main .first_group_fitnes .block_item {
     width: 100%; }
   #hotel .reservation-wrapper .reservation .arrival-date:after,
   #hotel .reservation-wrapper .reservation .departure-date:after {
+    content: none; }
+  #hotel .container .content-wrapper p {
+    font-size: 18px; }
+  #hotel .title-block-wrapper .title-block span:after {
     content: none; } }
 
 .popup-container {
@@ -4532,11 +4565,16 @@ main .first_group_fitnes .block_item {
     line-height: 45px; }
   .trenazherna-zala-page .title-block-wrapper .title-block {
     padding: 0 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-align: center; }
     .trenazherna-zala-page .title-block-wrapper .title-block span {
-      font-size: 40px; }
+      font-size: 35px; }
+      .trenazherna-zala-page .title-block-wrapper .title-block span:after {
+        content: none; }
   .trenazherna-zala-page .trenazherna-zala-page-icons .item {
-    width: 49%; } }
+    width: 49%; }
+  .trenazherna-zala-page .trenazherna-zala-page-text {
+    font-size: 18px; } }
 
 .dlya-chogo-kartka-page {
   background-size: cover;
@@ -5557,6 +5595,12 @@ main .first_group_fitnes .block_item {
       max-width: 100%;
       padding: 20px 0; } }
 
+@media screen and (max-width: 560px) {
+  #club .club__text {
+    background-image: none; }
+    #club .club__text .content-wrapper .content p {
+      font-size: 18px; } }
+
 .text-content-wrapper {
   text-align: justify;
   color: #000000;
@@ -5741,18 +5785,17 @@ main .first_group_fitnes .block_item {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase; }
-  #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper p {
-    display: block;
-    opacity: 1;
-    /*			visibility: visible;*/
-    transition: opacity 0.5s linear; }
+  #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper p,
   #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper .button {
     display: block;
     opacity: 1;
-    /*			visibility: visible;*/
     transition: opacity 0.5s linear; }
   #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper .square::before {
     content: none; }
+  #hotel .stock-grid-wrapper .stock-grid .active_elements {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s linear; }
 
 @media screen and (max-width: 1280px) {
   #hotel .stock-grid-wrapper .stock-grid,
@@ -5766,6 +5809,10 @@ main .first_group_fitnes .block_item {
     #hotel .stock-grid-wrapper .stock-grid,
     #stock .stock-grid-wrapper .stock-grid {
       width: 100%; }
+      #hotel .stock-grid-wrapper .stock-grid:hover,
+      #stock .stock-grid-wrapper .stock-grid:hover {
+        -webkit-transform: scale(1, 1);
+                transform: scale(1, 1); }
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper .stock,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .stock {
         font-size: 50px;
@@ -5812,7 +5859,8 @@ main .first_group_fitnes .block_item {
       margin-top: 20px;
       width: auto; }
     #hotel .stock-grid-wrapper .stock-grid:hover .stock-wrapper p {
-      width: 100%; }
+      width: 100%;
+      font-size: 12px; }
     #hotel .stock-grid-wrapper .stock-grid:hover .stock {
       font-size: 20px; } }
 
@@ -7080,6 +7128,10 @@ main .first_group_fitnes .block_item {
     #welness .welness-wrapper .container .welness-content {
       width: 100%; } }
 
+@media screen and (max-width: 560px) {
+  #welness .welness-text .container2 p {
+    font-size: 18px; } }
+
 #fitness_new .bacground-wrapper, #welness .bacground-wrapper {
   width: 100%;
   padding: 50px 0 75px;
@@ -7239,7 +7291,8 @@ main .first_group_fitnes .block_item {
       height: 80px; }
     #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .button-details,
     #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .button-details {
-      width: auto; }
+      width: auto;
+      padding: 0 10px; }
     #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child,
     #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child {
       height: 150px; }
@@ -7269,6 +7322,10 @@ main .first_group_fitnes .block_item {
     #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .icon {
       margin-top: 20px;
       width: 80px; }
+    #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .button-details,
+    #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .content .button-details {
+      font-size: 15px;
+      padding: 0 10px; }
     #fitness_new .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child,
     #welness .container2 .multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item:first-child {
       height: 100px; }
@@ -7732,7 +7789,11 @@ main .first_group_fitnes .block_item {
 
 @media screen and (max-width: 560px) {
   .line {
-    width: 100%; } }
+    width: 100%; }
+  #news .title-block-wrapper .title-block span:after {
+    content: none; }
+  #news .container2 p {
+    font-size: 18px; } }
 
 .slick-track, #club .slick-slide {
   height: 100vh; }

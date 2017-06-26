@@ -190,4 +190,20 @@
 	.line {
 		width: 100%;
 	}
+	#news {
+		.title-block-wrapper {
+			.title-block {
+				span {
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+		.container2 {
+			p {
+				font-size: 18px;
+			}
+		}
+	}
 }

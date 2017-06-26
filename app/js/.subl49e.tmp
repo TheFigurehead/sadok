@@ -284,44 +284,12 @@ function popUpHide(e) {
 // -----------
 // *end popup*
 // -----------
-
-// -----------
-// ***hover effect on mobile***
-// -----------
-if (document.getElementById('hotel')) {
-  $('.stock-grid-wrapper .stock-grid').click(function(){
-      var index = $(this).index();
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper p').removeClass("active_elements");
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper .button').removeClass("active_elements");
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper p').eq(index).addClass("active_elements");
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper .button').eq(index).addClass("active_elements");
-      return false;
-  });
-}
-
-if (document.getElementById('welness')||document.getElementById('fitness_new')) {
-  $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item').click(function(){
-      var index = $(this).index();
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .title-block-wrapper').css('display', 'block');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .icon').css('display', 'block');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .button-details').css('display', 'none');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .title-block-wrapper').eq(index).css('display', 'none');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .icon').eq(index).css('display', 'none');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .button-details').eq(index).css('display', 'block');
-      return false;
-  });
-}
-// -----------
-// ***End hover effect on mobile***
-// -----------
 // -----------
 // ***main-nav mobile***
 // -----------
 $('.main_nav_sandwich .fa-bars').click(function(){
   	$('header .main_nav .main_head li').css('display', 'block');
-    $('header .main_nav .main_head .phone').css('position', 'relative');
-    $('header .main_nav .main_head .phone').css('top', '0');
-    $('header .main_nav .main_head .phone').css('right', '0');
+    $('header .main_nav .main_head .phone').addClass('phone_active');
   	$('header .main_nav .main_nav_sandwich .fa-window-close').css('display', 'block');
   	$('header .main_nav .main_nav_sandwich .fa-bars').css('display', 'none');
   	return false;
