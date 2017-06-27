@@ -58,11 +58,13 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  max-width: 250px; 
 }
 
 #panel nav ul li {
   display: block;
-  line-height: 2em;
+  line-height: 1em;
+  position: relative;
   .plus {
     color: #fff;
     font-size: 22px;
@@ -77,6 +79,15 @@
     a {
       font-size: 1em;
       color: darken(#fff, 50%);
+      line-height: 17px;
+    }
+    ul li:before {
+      content: "\2022";
+      position: absolute;
+      right: 100%;
+      color: #fff;
+      font-size: 10px;
+      padding-right: 10px;
     }
   }
   &.active {
@@ -92,6 +103,8 @@
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 #panel nav ul li a:after {
   content: ' ';

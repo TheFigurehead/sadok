@@ -3422,11 +3422,13 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
+          transform: translateY(-50%);
+  max-width: 250px; }
 
 #panel nav ul li {
   display: block;
-  line-height: 2em; }
+  line-height: 1em;
+  position: relative; }
   #panel nav ul li .plus {
     color: #fff;
     font-size: 22px;
@@ -3439,7 +3441,15 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
     transition: all .5s; }
     #panel nav ul li .dropdown a {
       font-size: 1em;
-      color: gray; }
+      color: gray;
+      line-height: 17px; }
+    #panel nav ul li .dropdown ul li:before {
+      content: "\2022";
+      position: absolute;
+      right: 100%;
+      color: #fff;
+      font-size: 10px;
+      padding-right: 10px; }
   #panel nav ul li.active > .dropdown {
     max-height: 500px;
     opacity: 1; }
@@ -3449,7 +3459,9 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   font-size: 1em;
   text-transform: uppercase;
   text-decoration: none;
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px; }
 
 #panel nav ul li a:after {
   content: ' ';
