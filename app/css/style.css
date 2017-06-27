@@ -3126,7 +3126,8 @@ header .secondary_nav .delimiter {
     margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    background-color: #404040; }
   header .main_nav .main_nav_sandwich {
     display: block; }
   header .main_nav .main_head {
@@ -3163,7 +3164,8 @@ header .secondary_nav .delimiter {
     position: absolute;
     top: -5px;
     left: -180px;
-    font-size: 25px; }
+    font-size: 25px;
+    color: #fff; }
   header .main_nav .main_head li .fa-angle-down {
     left: 120px; }
   header .main_nav .main_nav_sandwich .fa-bars,
@@ -3173,7 +3175,8 @@ header .secondary_nav .delimiter {
     position: absolute;
     top: 5px;
     left: 10px;
-    z-index: 100; }
+    z-index: 100;
+    color: #fff; }
     header .main_nav .main_nav_sandwich .fa-bars:hover,
     header .main_nav .main_nav_sandwich .fa-window-close:hover {
       cursor: pointer;
@@ -3191,7 +3194,10 @@ header .secondary_nav .delimiter {
   header .secondary_nav .secondary_head li:not(.logo):before {
     content: none; }
   header .secondary_nav .delimiter {
-    display: block; } }
+    display: block; }
+  header .main_nav .main_head li a,
+  header .secondary_nav .secondary_head li a {
+    color: #fff; } }
 
 main .top-slider-wrapper .top-slider .top-slider-item {
   background-size: cover;

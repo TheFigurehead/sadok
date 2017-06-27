@@ -155,6 +155,7 @@ header .secondary_nav .delimiter {
 		padding: 20px;
 		margin: 0 auto;
 		justify-content: space-between;
+		background-color: #404040;
 	}
 
 	header .main_nav .main_nav_sandwich {
@@ -202,6 +203,7 @@ header .secondary_nav .delimiter {
 		top: -5px;
 		left: -180px;
 		font-size: 25px;
+		color: #fff;
 	}
 	header .main_nav .main_head li .fa-angle-down {
 		left: 120px;
@@ -214,6 +216,7 @@ header .secondary_nav .delimiter {
 		top: 5px;
 		left: 10px;
 		z-index: 100;
+		color: #fff;
 		&:hover {
 			cursor: pointer;
 			color: #e40254;
@@ -242,5 +245,10 @@ header .secondary_nav .delimiter {
 
 	header .secondary_nav .delimiter {
 		display: block;
+	}
+
+	header .main_nav .main_head li a,
+	header .secondary_nav .secondary_head li a {
+		color: #fff;
 	}
 }
