@@ -209,12 +209,13 @@
 
 @media screen and (max-width: 580px) {
   .main-news .wrapper-right {
-    width: 70%;
+    width: 100%;
 }
 
   .main-news .wrapper-left {
-    width: 30%;
+    width: 100%;
     padding: 0 10px;
+    text-align: center;
   }
 
   .main-news .container .grid_items .col-md-6 .item  {

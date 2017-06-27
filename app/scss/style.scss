@@ -89,7 +89,6 @@ body {
   font-size: 14px;
   color: #000000;
   margin: 0;
-  //padding-left: 50px;
   overflow-x: hidden;
 }
 #text,
@@ -183,7 +182,6 @@ $colorButtonRed: #e40f20;
 @import "dlya_chogo_kartka";
 @import "children";
 @import "contacts";
-@import "news+text+club";
 @import "bootstrap";
 @import "main_news";
 @import "club";
@@ -191,7 +189,6 @@ $colorButtonRed: #e40f20;
 @import "stock+hotel+restoran+menu";
 @import "restaurant_delivery";
 @import "restoran_new+menu";
-@import "fitness_new";
 @import "order_basket";
 @import "order-form";
 @import "specific_number";
@@ -200,7 +197,10 @@ $colorButtonRed: #e40f20;
 @import "datepicker";
 @import "timetable";
 @import "welness";
+@import "fitness_new";
 @import "WISH_cards";
+@import "news";
+@import "news+text+club";
 
 .slick-track, #club .slick-slide {
   height: 100vh

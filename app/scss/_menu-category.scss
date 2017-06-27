@@ -188,17 +188,20 @@
 					justify-content: space-between;
 					border-top: 1px solid #c9c9c9;
 					border-bottom: 1px solid #c9c9c9;
-					padding: 20px 0;
-					a {
-						padding: 10px;
-						&:hover {
-							color: #fb002c;
-							border: 1px solid #fb002c;
+					padding-top: 20px;
+					span {
+						a {
+							padding: 10px;
+							&:hover {
+								color: #fb002c;
+								border: 1px solid #fb002c;
+							}
 						}
 					}
 					.sort {
 						position: relative;
 						width: 80px;
+						height: 40px;
 						i {
 							position: absolute;
 							color: #a2a2a2;
@@ -310,6 +313,13 @@
 						.content-item {
 							width: 48%;
 							}
+						}
+					}
+					.filter {
+						flex-wrap: wrap;
+						padding: 0;
+						span {
+							margin: 10px 0;
 						}
 					}
 				}

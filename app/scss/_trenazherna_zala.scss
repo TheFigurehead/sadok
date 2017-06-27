@@ -102,7 +102,10 @@
   background-color: #444;
   h1 {
     text-transform: uppercase;
-    // width: 516px;
+/*    // width: 516px;*/
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
     height: 36px;
     color: #ffffff;
     font-family: "Museo Sans Cyrl";
@@ -132,5 +135,59 @@
     content: '';
     clear: both;
     display: table;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .trenazherna-zala-page {
+    .scale-slider {
+      padding: 100px 0;
+      .scale-slider-slide {
+          &.active {
+            transform: scale(1.8, 1.8);
+          }
+      }
+    }
+    .what-are-you-waiting-for {
+      h1 {
+        top: 20px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .trenazherna-zala-page {
+    .scale-slider {
+      padding: 50px 0;
+    }
+    .what-are-you-waiting-for {
+      h1 {
+        top: 15px;
+        line-height: 45px;
+      }
+    }
+    .title-block-wrapper {
+      .title-block {
+        padding: 0 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        span {
+          font-size: 35px;
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+    .trenazherna-zala-page-icons {
+      .item {
+        width: 49%;
+      }
+    }
+    .trenazherna-zala-page-text {
+      font-size: 18px;
+    }
   }
 }

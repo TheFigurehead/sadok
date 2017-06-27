@@ -78,7 +78,10 @@
 		.club__text {
 			.content-wrapper {
 				.content {
-					padding: 40px;
+					padding: 20px 40px;
+					h2 {
+						margin: 10px 0;
+					}
 				}
 			}
 		}
@@ -93,6 +96,21 @@
 				.content {
 					max-width: 100%;
 					padding: 20px 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 560px) {
+	#club {
+		.club__text {
+			background-image: none;
+			.content-wrapper {
+				.content {
+					p {
+						font-size: 18px;
+					}
 				}
 			}
 		}

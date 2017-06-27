@@ -21,7 +21,7 @@
 					background-size: cover;
 					background-position: 50% 50%;
 					width: 30%;
-					height: 400px;
+					height: 500px;
 					border-radius: 2%;
 					img {
 						width: auto;
@@ -146,124 +146,153 @@
 
 
 @media screen and (max-width: 1024px) {
-	#fitness_new {
-		.bacground-wrapper {
+	#fitness_new, 
+	#welness {
+		.bacground-wrapper {		
 			background-image: none;
+		}
 			.container2 {
 				.multiple-slider-wrapper {
 					.multiple-fitness-items {
-						height: 85vh;
 						.multiple-slider-item {
-							height: 30vh;
+							height: 300px;
 							.content {
-								.title-block-wrapper { }
-									margin: 0;
+								margin: 0;
+									.title-block-wrapper {
+										margin: 0;
+										.title-block {
+											padding: 20px;
+										}
+									}
 								.icon {
-								width: 115px;
-								height: 115px;
-								margin-top: 30px;
+									width: 115px;
+									height: 115px;
+									margin-top: 30px;
 								}
 							}
-						}
-						.gym-slider-item {
-							height: 15vh;
-							.title-block-wrapper {
-								margin-top: 0;
-								.title-block {
-								}
-							}
-							.content {
-								.icon {
-								width: 80px;
-								height: 80px;
-								margin-top: 20px;
+							&:first-child {
+								height: 150px;
+								.content {
+									.icon {
+										margin-top: 40px;
+									}
 								}
 							}
 						}
 					}
 				}
 			}
-		}
 	}
 }
 
 @media screen and (max-width: 870px) {
-	#fitness_new {
-		.bacground-wrapper {
+	#fitness_new, 
+	#welness {
 			.container2 {
 				.multiple-slider-wrapper {
 					.multiple-fitness-items {
 						.multiple-slider-item {
+							height: 250px;
 							.content {
-								.title-block-wrapper {  }
+								.title-block-wrapper {  
+								.title-block {
+									span {
+									display: inline;
+									font-size: 18px;
+									}
+								}
+								}
 								.icon {
 								width: 80px;
 								height: 80px;
 								}
-								.title-block {
-									span {
-									display: inline;
-									}
-								}
 								.button-details {
 									width: auto;
+									padding: 0 10px;
 								}
 							}
-						}
-						.gym-slider-item {
-							.title-block-wrapper {
-								.title-block {
-								}
-							}
-							.content {
-								.icon {
-								width: 60px;
-								height: 60px;
-								margin-top: 30px;
+							&:first-child {
+								height: 150px;
+								.content {
+									.icon {
+										width: 70px;
+										margin-top: 30px;
+									}
+									.title-block-wrapper {
+										margin: 0;
+										.title-block {
+										}
+									}
 								}
 							}
 						}
 					}
 				}
 			}
-		}
 	}
 }
 
 @media screen and (max-width: 570px) {
-	#fitness_new {
-		.bacground-wrapper {
+	#fitness_new, 
+	#welness {
 			.container2 {
 				.multiple-slider-wrapper {
 					.multiple-fitness-items {
-						height: 120vh;
 						.multiple-slider-item {
 							width: 48%;
+							height: 200px;
 							.content {
 								.title-block-wrapper {  
 									margin: 0;
 									.title-block {
 										padding: 20px 0;
 										span {
-											font-size: 18px;
+											font-size: 14px;
 										}
 									}
 								}
 								.icon {
 									margin-top: 20px;
+									width: 80px;
+								}
+								.button-details {
+									font-size: 15px;
+									padding: 0 10px;
+								}
+							}
+							&:first-child {
+								height: 100px;
+								.content {
+								.icon {
+									margin-top: 35px;
+									width: 50px;
+								}
 								}
 							}
 						}
-						.gym-slider-item {
-							width: 100%;
-							.content {
-								.title-block-wrapper {  
-									.title-block {
-										padding: 10px 0;
-									}
-								}
-							}
-						}
+					}
+				}
+			}
+		.welness-wrapper {
+			.container {
+				.welness-content {
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#fitness_new, 
+	#welness {
+		.welness-wrapper {
+			.container {
+				.welness-content {
+					p {
+						font-size: 12px;
 					}
 				}
 			}

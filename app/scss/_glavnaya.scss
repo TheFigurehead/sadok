@@ -21,6 +21,10 @@ main .top-slider-wrapper .top-slider .slick-dots {
  	bottom: 30px;
  }
 
+main .top-slider-wrapper .top-slider .slick-dots li button {
+	background-color: transparent;
+}
+
 main .top-slider-wrapper .top-slider .slick-dots li button:before {
  	color: #ffffff;
  	font-size: 20px;
@@ -103,6 +107,7 @@ main .top-slider-wrapper .paranja {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
+	top: 0;
 }
 
 main .top-slider-wrapper .top-slider .top-slider-item .text-item {
@@ -216,12 +221,20 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 					}
 				}
 			}
+		.slick-dots {
+			bottom: 120px;
+			}
+		.slick-arrow {
+			display: none;
+			}
 		}
 	}
 	.main-benefits-wrapper {
 		.main-benefits-list{
-			height: 100vh;
 			flex-wrap: wrap;
+				.main-benefits-list-item {
+					margin-top: 70px;
+				}
 			}
 		}
 	}
@@ -241,7 +254,6 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 		}
 	.main-benefits-wrapper {
 		.main-benefits-list{
-			height: 200vh;
 			}
 		}
 	}
