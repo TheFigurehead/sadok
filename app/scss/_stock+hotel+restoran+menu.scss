@@ -43,7 +43,6 @@
 				color: #ffffff;
 				font-size: 60px;
 				font-weight: 700;
-				margin-bottom: 100px;
 				width: auto;
 				position: relative;
 				}
@@ -68,8 +67,6 @@
 				text-transform: uppercase;
 				border-radius: 10px;
 				display: none;
-/*				display: block;*/
-/*				visibility: hidden;*/
 				opacity:0;
 
 			}
@@ -113,20 +110,19 @@
 				text-transform: uppercase;
 			}
 		}
-		&:hover .stock-wrapper p {
-			display: block;
-			opacity:1;
-/*			visibility: visible;*/
-			transition: opacity 0.5s linear;
-		}
+		&:hover .stock-wrapper p,
 		&:hover .stock-wrapper .button {
 			display: block;
-			opacity:1;
-/*			visibility: visible;*/
+			opacity: 1;
 			transition: opacity 0.5s linear;
 		}
 		&:hover .stock-wrapper .square::before {
 			content: none;
+		}
+		.active_elements {
+			display: block;
+			opacity: 1;
+			transition: opacity 0.5s linear;
 		}
 	}
 }
@@ -145,12 +141,13 @@
     	height: 150vh;
     	.stock-grid {
     		width: 100%;
+    		&:hover {
+			transform: scale(1.0,1.0);
+			}
     		  .stock-wrapper {
     			.stock {
 				font-size: 50px;
 				font-weight: 700;
-				margin-bottom: 50px;
-				margin-top: 20px;
 				}
 				p {
 				font-size: 16px;
@@ -159,7 +156,7 @@
     	}
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 780px) {
 	#hotel .stock-grid-wrapper,
     #stock .stock-grid-wrapper {
     	height: 200vh;
@@ -169,8 +166,6 @@
     			.stock {
 				font-size: 50px;
 				font-weight: 700;
-				margin-bottom: 50px;
-				margin-top: 10px;
 				}
 				p {
 				font-size: 16px;
@@ -179,24 +174,42 @@
 				content: '';
 				width: 130px;
 				height: 130px;
-				border-radius: 50%;
-				border: 1px dotted red;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);
 				}
 			.square::before {
 				content: '';
 				width: 300px;
 				height: 140px;
-				border: 1px dotted red;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);
 				}
     		}
     	}
+    }
+}
+
+@media screen and (max-width: 580px) {
+	#hotel .stock-grid-wrapper {
+		height: 300vh;
+    	.stock-grid {
+    		.stock-wrapper {
+    			.stock {
+				font-size: 40px;
+				.square::before {
+				content: '';
+				width: 250px;
+				height: 100px;
+				}
+    		}
+    		.button {
+				margin-top: 20px;
+				width: auto;
+			}
+    	}
+    	&:hover .stock-wrapper p {
+    		width: 100%;
+    		font-size: 12px;
+			}
+		&:hover .stock {
+			font-size: 20px;
+			}
+		}
     }
 }

@@ -140,23 +140,25 @@
 		}
 	}
 
+.line {
+	display: block;
+	height: 1px;
+	background-color: #cbcbcb;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	width: 550px;
+}
+
 #text .slick-track,
 #club .slick-track,
 #news .slick-track {
 	height: auto;
 }
 
-.line {
-	display: block;
-	width: 550px;
-	height: 1px;
-	background-color: #cbcbcb;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	margin-top: 30px;
-}
 #text .container,
 #club .container,
 #news .container {
   padding: 0;
 }
+

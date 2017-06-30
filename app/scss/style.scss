@@ -89,7 +89,6 @@ body {
   font-size: 14px;
   color: #000000;
   margin: 0;
-  padding-left: 50px;
   overflow-x: hidden;
 }
 #text,
@@ -104,7 +103,8 @@ body {
 #specific-number,
 #fitness_new,
 #menu-category, 
-#restoran_menu {
+#restoran_menu, 
+#WISH_cards  {
   padding-left: 0;
 }
 
@@ -162,16 +162,15 @@ $colorButtonRed: #e40f20;
 @import "normalize";
 @import "../slick/slick.scss";
 @import "../slick/slick-theme.scss";
-@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.min.css";
-@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css";
-@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css";
-@import "../libs/noUiSlider.10.0.0/nouislider.min.css";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.min.scss";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.structure.min.scss";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.theme.min.scss";
+@import "../libs/noUiSlider.10.0.0/nouislider.min.scss";
 @import "common";
 @import "footer";
 @import "header";
 @import "glavnaya";
 @import "menu";
-@import "main";
 @import "bottom-slider";
 @import "breadCrumbs";
 @import "restoran";
@@ -183,7 +182,6 @@ $colorButtonRed: #e40f20;
 @import "dlya_chogo_kartka";
 @import "children";
 @import "contacts";
-@import "news+text+club";
 @import "bootstrap";
 @import "main_news";
 @import "club";
@@ -191,7 +189,6 @@ $colorButtonRed: #e40f20;
 @import "stock+hotel+restoran+menu";
 @import "restaurant_delivery";
 @import "restoran_new+menu";
-@import "fitness_new";
 @import "order_basket";
 @import "order-form";
 @import "number_lux";
@@ -200,6 +197,12 @@ $colorButtonRed: #e40f20;
 @import "menu-category";
 @import "datepicker";
 @import "club_cards";
+@import "timetable";
+@import "welness";
+@import "fitness_new";
+@import "WISH_cards";
+@import "news";
+@import "news+text+club";
 
 
 .slick-track, #club .slick-slide {

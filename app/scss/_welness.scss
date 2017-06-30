@@ -1,0 +1,104 @@
+#welness {
+	padding-top: 110px;
+	.welness {
+		&-wrapper {
+			width: 100%;
+			margin-bottom: 50px;
+			.container {
+				position: relative;
+			}
+		}
+		&-picture {
+			width: 50%;
+			float: left;
+			img {
+				width: 95%;
+			}
+		}
+		&-content {
+			width: 50%;
+			border-right: 2px solid rgb(228,2,84);
+			padding: 0 20px;
+			float: right;
+			text-align: justify;
+			font-family: "MuseoSansRegular";
+			font-weight: 300;
+			line-height: 1.25;
+			font-size: 22px;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			&:after {
+				content: "";
+				position: absolute;
+				width: 130%;
+				height: 2px;
+				background-color: rgb(228,2,84);
+				right: 0;
+				bottom: 0;
+			}
+		}
+		&-text {
+			margin-top: 50px;
+			font-family: "MuseoSansRegular";
+			p {
+				font-size: 24px;
+				font-weight: 300;
+			  line-height: 1.25;
+			  text-align: justify;
+			}
+			.read-more {
+				text-align: center;
+				text-decoration: underline;
+				padding: 20px 0;
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	#welness {
+		.welness-wrapper {
+			.container {
+				.welness-content {
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 870px) {
+	#welness {
+		.welness-wrapper {
+			.welness-picture {
+				width: 100%;
+				text-align: center;
+			}
+			.container {
+				width: 100%;
+				background-color: rgba(255, 255, 255, 0.8);
+				.welness-content {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 560px) {
+	#welness {
+		.welness-text {
+			.container2 {
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+

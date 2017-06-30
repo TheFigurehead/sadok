@@ -60,9 +60,14 @@
 #news .multiple-slider-wrapper {
 	position: relative;
 	.multiple-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		.multiple-slider-item {
-			margin: 0 20px;
+			width: 30%;
 			height: auto;
+			margin: 0;
+			margin-bottom: 20px;
 			background-repeat: no-repeat;
 			position: relative;
 			cursor: pointer;
@@ -150,18 +155,60 @@
 	height: auto;
 }
 
-.line {
-	display: block;
-	width: 550px;
-	height: 1px;
-	background-color: #cbcbcb;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	margin-top: 30px;
-}
 #specific-number .container,
 #text .container,
 #club .container,
 #news .container {
   padding: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+ 	#text,
+	#specific-number,
+	#club,
+	#news {
+		.multiple-slider-wrapper {
+			position: relative;
+			.multiple-items {
+				.slick-prev {
+					background-image: url(../img/icons/arr.left.png);
+					left: -30px;
+				}
+				.slick-next {
+					background-image: url(../img/icons/arr.right.png);
+					right: -30px;
+				}
+				.multiple-slider-item {
+					.content {
+						.title-block-wrapper {
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.line {
+		width: 100%;
+	}
+	#news {
+		.title-block-wrapper {
+			.title-block {
+				span {
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+		.container2 {
+			p {
+				font-size: 18px;
+			}
+		}
+	}
 }

@@ -60,3 +60,59 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	#club {
+		.club__text {
+			.content-wrapper {
+				.content {
+					max-width: 80%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#club {
+		.club__text {
+			.content-wrapper {
+				.content {
+					padding: 20px 40px;
+					h2 {
+						margin: 10px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 870px) {
+	#club {
+		.club__text {
+			background-image: none;
+			.content-wrapper {
+				.content {
+					max-width: 100%;
+					padding: 20px 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 560px) {
+	#club {
+		.club__text {
+			background-image: none;
+			.content-wrapper {
+				.content {
+					p {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}
