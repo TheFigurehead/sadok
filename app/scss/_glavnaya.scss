@@ -1,8 +1,8 @@
-main .top-slider-wrapper {
- 	height: 100vh;
- 	min-height: 100%;
- 	position: relative;
- }
+// main .top-slider-wrapper {
+//  	height: 100vh;
+//  	min-height: 100%;
+//  	position: relative;
+//  }
 
 main .top-slider-wrapper .top-slider .top-slider-item {
  	background-size: cover;
@@ -72,9 +72,7 @@ main .top-slider .slick-initialized .slick-slider {
  }
 
 main .top-slider-wrapper {
-	overflow: hidden;
-	height: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	position: relative;
 }
 
@@ -138,4 +136,8 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-left {
 
 main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 	right: 225px;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
 }

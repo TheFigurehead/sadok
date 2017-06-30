@@ -177,7 +177,7 @@ window.addEventListener('load', function() {
   }
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
   $('.top-slider').slick({
   dots: true,
   infinite: true,
@@ -321,36 +321,166 @@ $(document).ready(function() {
     slidesToScroll: 1
 	});
 
-$('.center-items').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  adaptiveHeight: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+  $('.center-items').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
+    ]
+  });
+  $('.center-items').on('afterChange', function(event, slick, currentSlide) {
+  	$('.center-slider-item').removeClass('slide-active');
+    	$('.slick-center').addClass('slide-active');
+  });
+
+  // ---------------
+  // ***noUiSlider****
+  // ---------------
+
+  var html5Slider = document.getElementById('html5');
+
+  if (html5Slider) {
+    noUiSlider.create(html5Slider, {
+      start: [ 1, 140 ],
+      connect: true,
+      range: {
+        'min': 0,
+        'max': 140
       }
+    });
+
+    var inputNumber = document.getElementById('input-number');
+
+    html5Slider.noUiSlider.on('update', function( values, handle ) {
+
+      var value = values[handle];
+
+      if ( handle ) {
+        inputNumber.value = value;
+      } else {
+        select.value = Math.round(value);
+      }
+    });
+
+    select.addEventListener('change', function(){
+      html5Slider.noUiSlider.set([this.value, null]);
+    });
+
+    inputNumber.addEventListener('change', function(){
+      html5Slider.noUiSlider.set([null, this.value]);
+    });
+  }
+
+
+  // ---------------
+  // ***End of noUiSlider****
+  // ---------------
+
+  // datepicker hotel
+  var arrivalDateInput = $('#arrival-date');
+
+  if (arrivalDateInput.length > 0) {
+    var arrivalDate, 
+    departureDate,
+    monthes = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+    departureDateInput = $('#departure-date'),
+    dateNow = new Date();
+
+    arrivalDateInput.datepicker({
+      minDate: 0,
+      dateFormat: "m/d/yy"
+    }).on('change', function() {
+      arrivalDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
+
+      dateOnclick.bind(this)(arrivalDate);
+      var dateForDepartureDate = new Date(arrivalDate[2], arrivalDate[0] - 1, +arrivalDate[1] + 1)
+      departureDateInput.datepicker('option', 'minDate', dateForDepartureDate);
+
+      
+
+      if (!departureDate || +arrivalDate[0] > +departureDate[0] || (+arrivalDate[1] >= +departureDate[1] && +arrivalDate[0] >= +departureDate[0]) || +arrivalDate[2] > +departureDate[2]) 
+        departureDateInput.val((dateForDepartureDate.getMonth() + 1) + '/' + dateForDepartureDate.getDate() + '/' + dateForDepartureDate.getFullYear()).trigger('change');
+    });
+
+    departureDateInput.datepicker({
+      minDate: 0,
+      dateFormat: "m/d/yy"
+    }).on('change', function() {
+      departureDate = $(this).val().match(/(\d\d\d\d|\d\d|\d)/g);
+
+      dateOnclick.bind(this)(departureDate);
+    });
+
+    arrivalDateInput.val((dateNow.getMonth() + 1) + '/' + dateNow.getDate() + '/' + dateNow.getFullYear()).trigger('change');
+
+    function dateOnclick(date) {
+      var parent = $(this).parent();
+
+      month = monthes[+date[0] - 1];
+
+      $('.number', parent).text(date[1]);
+      $('.month', parent).text(' / ' + monthes[+date[0] - 1]);
     }
-  ]
-});
-$('.center-items').on('afterChange', function(event, slick, currentSlide) {
-	$('.center-slider-item').removeClass('slide-active');
-  	$('.slick-center').addClass('slide-active');
-});
+
+    var adults = 1,
+    children = 0,
+    adultsSelect = $('#adults'),
+    childrenSelect = $('#children'),
+    guestsNumberBlock = $('.guests .number');
+
+    adultsSelect.on('change', function() {
+      adults = +adultsSelect.val();
+      guestsNumberBlock.text(children + adults);
+    })
+
+    childrenSelect.on('change', function() {
+      children = +childrenSelect.val();
+      guestsNumberBlock.text(children + adults);
+    })
+
+    var bookingSubmit = $('.booking-button-block button');
+
+    bookingSubmit.on('click', function() {
+      var bookingData = {
+        arrivalDate: {
+          day: +arrivalDate[1],
+          month: +arrivalDate[0],
+          year: +arrivalDate[2]
+        },
+        departureDate: {
+          day: +departureDate[1],
+          month: +departureDate[0],
+          year: +departureDate[2]
+        },
+        guests: {
+          adults: adults,
+          children: children
+        }
+      }
+
+      console.log(bookingData);
+    })
+  }
+  // end datepicker hotel
 	
 });
 
