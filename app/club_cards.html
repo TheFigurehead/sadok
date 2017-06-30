@@ -49,112 +49,200 @@
   </header>
   
   <main class="club_cards">
-    <div class="container2">
-      <div class="breadcrumbs">
-        <ul>
-          <li>
-            <a href="#">Головна</a>
-          </li>
-          <li>
-            <a href="#">Клуб</a>
-          </li>
-          <li>
-            <a href="#">Клубні картки</a>
-          </li>
-          <li>
-            <a href="#">Клубні картки для дорослих</a>
-          </li>
-        </ul>
-      </div>
-      <div class="title-block-wrapper">
-        <div class="title-block">
-          <span>КЛУБНІ КАРТКИ</span>
-        </div>
-      </div>
-      <form action="#" class="order-form">
-        <div class="top">
-          <h4>Ваше замовлення:</h4>
-          <ol>
-            <li>
-              <div class="left">
-              <div class="img"></div>
-              <div class="name">
-                <h5>Страва 1</h5>
-                <div class="number">1</div>
-              </div>
-              </div>
-              <div class="right">
-              <div class="price">
-                <span class="num">49,5</span>
-                <span class="curr">uah</span>
-              </div>
-              </div>
-            </li>
-            <li>
-              <div class="left">
-              <div class="img"></div>
-              <div class="name">
-              <h5>Страва 2</h5>
-                <div class="number">1</div>
-              </div>
-              </div>
-              <div class="right">
-              <div class="price">
-                <span class="num">49,5</span>
-                <span class="curr">uah</span>
-              </div>
-              </div>
-            </li>
-            <li>
-              <div class="left">
-              <div class="img"></div>
-              <div class="name">
-                <h5>Страва 3</h5>
-                <div class="number">1</div>
-              </div>
-              </div>
-              <div class="right">
-              <div class="price">
-                <span class="num">49,5</span>
-                <span class="curr">uah</span>
-              </div>
-              </div>
-            </li>
-          </ol>
-          <div class="total-price">
-            <span class="text">Загальна сума:</span>
-            <span class="sum">
-              <span class="num">125,5</span>
-              <span class="curr">uah</span>
-            </span>
+    <div class="bacground-wrapper">
+      <div class="container2">
+        <div class="title-block-wrapper">
+          <div class="title-block">
+            <span>Клубні картки</span>
           </div>
         </div>
-        
-        <div class="left">
-          <input type="text" placeholder="ФІО" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Мобільный номер" />
-          <input type="tel" placeholder="Адреса доставки" />
-
-          <p>
-            <span>Спосіб оплати:</span>
-            <input type="radio" name="payment" id="cash" class="radio"> 
-            <label for="cash">готівкою</label>
-            <input type="radio" name="payment" id="card" class="radio"> 
-            <label for="card">карткою</label>
-          </p>
-        </div>
-        <div class="right">
-          <textarea placeholder="Коментар щодо доставки"></textarea>
-        </div>
-        <div class="bottom">
-          <button type="submit">Замовити</button>
-        </div>
-      </form>
+        <table>
+          <tr>
+            <td class="category main"><div class="for_Main">Клубні картки</div></td>
+            <td class="Comfort"><div class="for_Comfort">Comfort</div></td>
+            <td class="Premium"><div class="for_Premium">Premium</div></td>
+            <td class="Exclusive"><div class="for_Exclusive">Exclusive</div></td>
+          </tr>
+          <tr class="visit-line">
+            <td class="category top-table">Время посещения</td>
+            <td><div class="for_border visit-height">
+                    <div class="day-visit">Пн – Пт</div>
+                    <div class="time-visit">7:00 – 23:00</div>
+                    <div class="day-visit">Сб - Вс</div>
+                    <div class="time-visit">9:00 - 23:00</div>
+                </div>
+            </td>
+            <td><div class="for_border visit-height">
+                    <div class="day-visit">Пн – Пт</div>
+                    <div class="time-visit">7:00 – 23:00</div>
+                    <div class="day-visit">Сб - Вс</div>
+                    <div class="time-visit">9:00 - 23:00</div>
+                </div>
+            </td>
+            <td><div class="for_border visit-height">
+                    <div class="day-visit">Пн – Пт</div>
+                    <div class="time-visit">7:00 – 23:00</div>
+                    <div class="day-visit">Сб - Вс</div>
+                    <div class="time-visit">9:00 - 23:00</div>
+                </div>
+            </td>
+          </tr>  
+          <tr>
+            <td class="category">Консультация врача</td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">Консультация диетолога</td>
+                <td><div class="for_border"></div></td>
+                <td><div class="for_border"></div></td>
+                <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td>
+          </tr>
+          <tr>
+            <td class="category">Консультация косметолога</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">Вводный инструктаж</td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">Персональная тренировка:</td>
+            <td><div class="for_border"><b>6</b></div></td>
+            <td><div class="for_border"><b>9</b></div></td>
+            <td><div class="for_border"><b>21</b></div></td>
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">бассейн</td>
+            <td><div class="for_border">2</div></td>
+            <td><div class="for_border">3</div></td>
+            <td><div class="for_border">7</div></td>
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">тренажерный зал</td>
+            <td><div class="for_border">2</div></td>
+            <td><div class="for_border">3</div></td>
+            <td><div class="for_border">7</div></td>
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">аэробика</td>
+            <td><div class="for_border">2</div></td>
+            <td><div class="for_border">3</div></td>
+            <td><div class="for_border">7</div></td>
+          </tr>
+          <tr>
+            <td class="category">Массаж</td>
+            <td><div class="for_border"><b>2</b></div></td>
+            <td><div class="for_border"><b>5</b></div></td>
+            <td><div class="for_border"><b>10</b></div></td>
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">массаж спины</td>
+            <td><div class="for_border">1</div></td>
+            <td><div class="for_border">2</div></td>
+            <td><div class="for_border">5</div></td>
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">общий массаж</td>
+            <td><div class="for_border">1</div></td>
+            <td><div class="for_border">3</div></td>
+            <td><div class="for_border">5</div></td>
+          </tr>
+          <tr>
+            <td class="category">Раздевалка</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">стандарт</td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"></div></td>
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">VIP</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">индивидуальный шкафчик для хранения вещей</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr class="sub">
+            <td class="subcategory">индивидуальная раздевалка*</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border">3</div></td>
+          </tr>
+          <tr>
+            <td class="category">Банные принадлежности</td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">Косметический набор</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">Сейф</td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">VIP комната переговоров</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">VIP зоны SUMMER Club</td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"><i class="fa fa-check" aria-hidden="true"></i></div></td> 
+          </tr>
+          <tr>
+            <td class="category">Проживание в отеле <span>(1 сутки)*</span></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border"></div></td>
+            <td><div class="for_border">3</div></td>
+          </tr>
+          <tr>
+            <td class="category">Приостановление действия клубной карты, дней</td>
+            <td><div class="for_border"><b>30</b></div></td>
+            <td><div class="for_border"><b>45</b></div></td>
+            <td><div class="for_border"><b>60</b></div></td>
+          </tr>
+          <tr>
+            <td class="category">Гостевые визиты</td>
+            <td><div class="for_border"><b>5</b></div></td>
+            <td><div class="for_border"><b>10</b></div></td>
+            <td><div class="for_border"><b>15</b></div></td>
+          </tr>
+          <tr>
+            <td class="category bottom-table">Скидка на дополнительные услуги</td>
+            <td><div class="for_border"><b>5%</b></div></td>
+            <td><div class="for_border"><b>10%</b></div></td>
+            <td><div class="for_border"><b>15%</b></div></td>
+          </tr>
+        </table>
+        <p>*На выбор. Предварительная бронь обязательна. При наличии свободных мест.</p>
+      </div>
     </div>
+
   </main>
-
-
   <footer>
     <div class="footer-contacts-wrapper">
       <div class="footer-contacts-wrapper-title">

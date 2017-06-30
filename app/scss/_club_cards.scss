@@ -1,3 +1,126 @@
 .club_cards{
     padding-top: 140px;
+
+    .bacground-wrapper{
+        
+        .container2{
+            
+            
+            .title-block-wrapper{
+    
+            }
+            
+            table{
+                
+                tbody{
+                    
+                    tr{
+                        
+                        &:first-child td:first-child{
+                             padding: 15px 0px;
+                            background: white;
+                        }
+                        
+                        &:first-child td:nth-child(2){
+                             padding: 15px;
+                            color: white;
+                        }
+                        &:first-child td:nth-child(3){
+                             padding: 15px;
+                            color: white;
+                        }
+                        &:first-child td:nth-child(4){
+                             padding: 15px;
+                            color: white;
+                        }
+                        
+                        td{
+                            &:nth-child(1){
+                                background-color: #d1f08a;  
+                                padding: 15px;
+                            }
+                            
+                                .for_Main{
+                                border-radius: 10px;
+                                border: 1px dashed #000000;
+                                text-align: -webkit-center;
+                                padding: 24px;
+                                font-size: 24px;
+                                font-weight: 500;
+                                line-height: 18px;
+                                text-transform: uppercase;
+                            }
+                            
+                            
+                            .for_Comfort{
+                                border-radius: 10px;
+                                background-color: #ff000c;
+                                width: 210px;
+                                height: 70px;
+                                text-align: -webkit-center;
+                                line-height: 65px;
+                                font-size: 24px;
+                                font-weight: 500;
+                                line-height: 69px;
+                                text-transform: uppercase;
+                                
+                            }
+                            .for_Premium{
+                                border-radius: 10px;
+                                background-color: #696767;
+                                width: 210px;
+                                height: 70px;
+                                text-align: -webkit-center;
+                                line-height: 65px;
+                                font-size: 24px;
+                                font-weight: 500;
+                                line-height: 69px;
+                                text-transform: uppercase;
+                            }
+                            .for_Exclusive{
+                                border-radius: 10px;
+                                background-color: #000000;
+                                width: 210px;
+                                height: 70px;
+                                text-align: -webkit-center;
+                                line-height: 65px;
+                                font-size: 24px;
+                                font-weight: 500;
+                                line-height: 69px;
+                                text-transform: uppercase;
+                            }
+    
+                            
+                        }
+                        
+                        .top-table{
+                            border-radius: 5px 5px 0px 0px;
+                        }
+                        
+                        .bottom-table{
+                            border-radius: 0px 0px 5px 5px;
+                        }
+                       
+                        
+                        .for_border{
+                            height: 50px;
+                            border-radius: 10px;
+                            border: 1px dashed #4e4e4e;
+                            margin: 5px 15px;
+                            text-align: center;  
+                        }
+                        
+                        .for_border.visit-height{
+                            height: 100px;
+                        }
+                        
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
 }
+
+
