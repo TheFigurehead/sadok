@@ -3,21 +3,21 @@ function initMap() {
 
 	if (footerMap) {
 // footer
-  var uluru = {lat: 50.340931, lng: 30.326125};
+  var uluru = {lat: 50.290691, lng: 30.695672};
   var map = new google.maps.Map(footerMap, {
     zoom: 15,
-    center: {lat: 50.319500, lng: 30.326125},
+    center: uluru,
     scrollwheel: false
   });
   var marker = new google.maps.Marker({
     position: uluru,
     map: map,
-    icon: footerMap.dataset.marker
+    icon: 'http://www.wishspace.com.ua/wp-content/themes/wishplace/img/icons/wish.png'
   });
   }
   	if (document.getElementById('delivery-map')) {
  // delivery
-  var uluru_con = {lat: 50.340931, lng: 30.326125};
+  var uluru_con = {lat: 50.290691, lng: 30.695672};
   var map_con = new google.maps.Map(document.getElementById('delivery-map'), {
     zoom: 15,
     center: uluru_con,
@@ -26,12 +26,12 @@ function initMap() {
   var marker2 = new google.maps.Marker({
     position: uluru_con,
     map: map_con,
-    icon: '../img/icons/wish.png'
+    icon: 'http://www.wishspace.com.ua/wp-content/themes/wishplace/img/icons/wish.png'
   });
   }
   	if (document.getElementById('contact-map')) {
 // contacts
-  var uluru_con = {lat: 50.340931, lng: 30.326125};
+  var uluru_con = {lat: 50.290691, lng: 30.695672};
   var map_con = new google.maps.Map(document.getElementById('contact-map'), {
     zoom: 15,
     center: uluru_con,
@@ -40,7 +40,7 @@ function initMap() {
   var marker3 = new google.maps.Marker({
     position: uluru_con,
     map: map_con,
-    icon: '../img/icons/wish.png'
+    icon: 'http://www.wishspace.com.ua/wp-content/themes/wishplace/img/icons/wish.png'
   });
   }
 }

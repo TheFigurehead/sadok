@@ -3260,7 +3260,7 @@ main .top-slider .slick-initialized .slick-slider {
   margin-bottom: 0; }
 
 main .top-slider-wrapper {
-  min-height: 100vh;
+  min-height: 92vh;
   position: relative; }
 
 main .top-slider-wrapper .top-slider .top-slider-item {
@@ -7678,12 +7678,12 @@ main .first_group_fitnes .block_item:nth-child(3) {
     #club .multiple-slider-wrapper .multiple-items .multiple-slider-item,
     #news .multiple-slider-wrapper .multiple-items .multiple-slider-item {
       width: 30%;
-      height: 400px;
       margin: 0 1.5%;
       margin-bottom: 20px;
       background-repeat: no-repeat;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      line-height: 0; }
       #text .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content,
       #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content,
       #club .multiple-slider-wrapper .multiple-items .multiple-slider-item:hover .content,
@@ -7709,8 +7709,9 @@ main .first_group_fitnes .block_item:nth-child(3) {
       #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item img,
       #club .multiple-slider-wrapper .multiple-items .multiple-slider-item img,
       #news .multiple-slider-wrapper .multiple-items .multiple-slider-item img {
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
         border-radius: 2%; }
       #text .multiple-slider-wrapper .multiple-items .multiple-slider-item .content,
       #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item .content,
@@ -7837,7 +7838,7 @@ main .first_group_fitnes .block_item:nth-child(3) {
     font-size: 18px; } }
 
 .slick-track, #club .slick-slide {
-  height: 100vh; }
+  height: 90vh; }
 
 #hotel .top-slider-wrapper .slick-arrow {
   display: none; }
