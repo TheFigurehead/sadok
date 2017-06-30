@@ -4951,6 +4951,9 @@ main .first_group_fitnes .block_item {
 .ui-state-highlight, .ui-widget-content .ui-state-highlight {
   border: 1px solid #000; }
 
+.club_cards {
+  padding-top: 140px; }
+
 .slick-track, #club .slick-slide {
   height: 100vh; }
 
