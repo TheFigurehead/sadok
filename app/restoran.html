@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -25,8 +26,13 @@
           </div>
       </div>
   </section>
-  <header>
+
+  <header id="header">
     <nav class="main_nav">
+      <div class="main_nav_sandwich">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-window-close" aria-hidden="true"></i>
+      </div>
       <ul class="main_head">
         <li><a href="#">Про комплекс</a></li>
         <li><a href="#">Новини</a></li>
@@ -50,20 +56,24 @@
         </li>
       </ul>
     </nav>
-    <nav class="secondary_nav">
+    <nav class="secondary_nav relative">
       <ul class="secondary_head">
         <li class="logo">
           <a href="#">
             <img src="img/logo-white.png" alt="">
           </a>
         </li>
-        <a href="#"><li><a href="#">Клуб</a></li></a>
-        <a href="#"><li><a href="#">Ресторан</a></li></a>
-        <a href="#"><li><a href="#">Готель</a></li></a>
-        <a href="#"><li><a href="#">Заходи</a></li></a>
+        <li><a href="#">Клуб</a></li>
+        <span class="delimiter"><i class="fa fa-circle" aria-hidden="true"></i></span>
+        <li><a href="#">Ресторан</a></li>
+        <span class="delimiter"><i class="fa fa-circle" aria-hidden="true"></i></span>
+        <li><a href="#">Готель</a></li>
+        <span class="delimiter"><i class="fa fa-circle" aria-hidden="true"></i></span>
+        <li><a href="#">Заходи</a></li>
       </ul>
     </nav>
   </header>
+
     <main id="main">
       <div class="top-slider-wrapper top-slider-wrapper-restoran">
         	<div class="top-slider">
@@ -122,23 +132,23 @@
           </div>
           <div class="nav-menu-block-wrapper">
             <ul>
-              <li class="europe active_li">
+              <li class="active_li">
                 <div class="img img1" style="background-image: url(../img/europe.png);"></div>
                 <a href="#">Европейська кухня</a>
               </li>
-              <li class="asia">
+              <li class="">
                 <div class="img img2" style="background-image: url(../img/sushi.png);"></div>
                 <a href="#">Азіатська кухня</a>
               </li>
-              <li class="bar">
+              <li class="">
                 <div class="img img3" style="background-image: url(../img/coctail.png);"></div>
                 <a href="#">Барне меню</a>
               </li>
-              <li class="child">
+              <li class="">
                 <div class="img img4" style="background-image: url(../img/cake.png);"></div>
                 <a href="#">Дитяче меню</a>
               </li>
-              <li class="banquet">
+              <li class="">
                 <div class="img img5" style="background-image: url(../img/bar.png);"></div>
                 <a href="#">Банкетне меню</a>
               </li>
@@ -147,7 +157,7 @@
         </div>
       </div>
 
-      <div class="content_menu active europe_content" style="background-image: url(../img/Европейское_меню_6.jpg);">
+      <div class="content_menu active" style="background-image: url(../img/Европейское_меню_6.jpg);">
         <div class="content-menu-block-wrapper">
           <div class="content-top-block"><h2>Европейська кухня</h2>
           <button>
@@ -160,7 +170,7 @@
         </div>
       </div>
 
-      <div class="content_menu asia_content" style="background-image: url(../img/Азиатская_кухня_6.jpg);">
+      <div class="content_menu" style="background-image: url(../img/Азиатская_кухня_6.jpg);">
         <div class="content-menu-block-wrapper">
           <div class="content-top-block"><h2>Азіатська кухня</h2>
           <button>
@@ -173,7 +183,7 @@
         </div>
       </div>
 
-      <div class="content_menu bar_content" style="background-image: url(../img/Барное_меню_6.jpg);">
+      <div class="content_menu" style="background-image: url(../img/Барное_меню_6.jpg);">
         <div class="content-menu-block-wrapper">
         <div class="content-top-block">
           <h2>Барне меню</h2>
@@ -187,7 +197,7 @@
         </div>
       </div>
 
-      <div class="content_menu child_content" style="background-image: url(../img/Детское_меню_1.jpg);">
+      <div class="content_menu" style="background-image: url(../img/Детское_меню_1.jpg);">
         <div class="content-menu-block-wrapper">
           <div class="content-top-block"><h2>Дитяче меню</h2>
           <button>
@@ -200,7 +210,7 @@
         </div>
       </div>
 
-      <div class="content_menu banquet_content" style="background-image: url(../img/Банкетное_меню_6.jpg);">
+      <div class="content_menu" style="background-image: url(../img/Банкетное_меню_6.jpg);">
         <div class="content-menu-block-wrapper">
         <div class="content-top-block">
           <h2>Банкетне меню</h2>
@@ -244,89 +254,133 @@
         </div>
     </div>
     </main>
-    <footer>
-      <div class="footer-contacts-wrapper">
-        <div class="footer-contacts-wrapper-title">
-          <span>Контакты</span>
-        </div>
-        <div class="footer-contacts-wrapper-content">
-          <div class="container">
-            <div class="flex-row-wrapper">
-              <div class="flex-col cont">
-                <div class="flex-col-img">
-                  <img src="img/footer-col-1.png" alt="">
-                </div>
-                <div class="flex-col-text">
-                  вул. Набережна 29, с. Вишеньки, «Вишневе мiстечко» <br>
-                  Бориспiльський р-н, Київська обл., 08341
-                </div>
-              </div>
-              <div class="flex-col cont">
-                <div class="flex-col-img">
-                  <img src="img/footer-col-2.png" alt="">
-                </div>
-                <div class="flex-col-text">
-                  <!-- +38(093)000-00-00<br> -->
-                  +38 (044) 58-58-777
-                </div>
-              </div>
-              <!-- <div class="flex-col">
-                <div class="footer-contacts-text numbers">
-                  <div class="footer-contacts-text-title">Ресторан:</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
-                </div>
-              </div>
-              <div class="flex-col">
-                <div class="footer-contacts-text numbers">
-                  <div class="footer-contacts-text-title">Організація заходів:</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
-                  <div class="footer-contacts-text-number">+38(093)000-00-00</div>
-                </div>
-              </div> -->
+<footer>
+  <div class="footer-contacts-wrapper">
+    <div class="line"></div>
+    <div class="footer-contacts-wrapper-title">
+      <span>Контакты</span>
+    </div>
+    <div class="footer-contacts-wrapper-content">
+      <div class="container">
+        <div class="flex-row-wrapper">
+          <div class="flex-col cont">
+            <div class="flex-col-img">
+              <img src="img/footer-col-1.png" alt="">
+            </div>
+            <div class="flex-col-text">
+              вул. Набережна 29, с. Вишеньки, «Вишневе мiстечко» <br>
+              Бориспiльський р-н, Київська обл., 08341
+            </div>
+          </div>
+          <div class="flex-col cont">
+            <div class="flex-col-img">
+              <img src="img/footer-col-2.png" alt="">
+            </div>
+            <div class="flex-col-text">
+              <!-- +38(093)000-00-00<br> -->
+              +38 (044) 58-58-777
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-map-wrapper">
-        <div id="footer-map">
+    </div>
+  </div>
+  <div class="footer-map-wrapper">
+    <div id="footer-map">
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="flex-row-wrapper">
+        <div class="flex-col">
+          <a href="#"><img src="img/logo-white.png" alt="logo white"></a>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="flex-row-wrapper">
-            <div class="flex-col">
-              <a href="#"><img src="img/logo-white.png" alt="logo white"></a>
-            </div>
-            <div class="flex-col">
-              <div class="footer-address">
-                <div class="footer-country">«Вишневе мiстечко»</div>
-                <div class="footer-city">c. Вишеньки</div>
-                <div class="footer-street">вул. Набережна 29</div>
-              </div>
-            </div>
-            <div class="flex-col">
-              <div class="footer-email">
-                <a href="mailto:random@mail.com">wishfamilyspace@</a>
-              </div>
-            </div>
-            <div class="flex-col">
-              <div class="footer-numbers-wrapper">
-                <div class="footer-number"><a href="tel:+380445858777">+38 (044) 585-87-77</a></div>
-                <!-- <div class="footer-number"><a href="tel:123456789">+38(093)000-00-00</a></div> -->
-              </div>
-            </div>
-            <div class="flex-col">
-              <div class="footer-social">
-                <a href="#" class="footer-link-icon fb"></a>
-                <a href="#" class="footer-link-icon vk"></a>
-                <a href="#" class="footer-link-icon inst"></a>
-              </div>
-            </div>
+        <a href="#" class="contact-open-button">
+          Контакты
+        </a>
+        <div class="flex-col contacts">
+          <div class="footer-address">
+            <div class="footer-country">«Вишневе мiстечко»</div>
+            <div class="footer-city">c. Вишеньки</div>
+            <div class="footer-street">вул. Набережна 29</div>
+          </div>
+        </div>
+        <div class="flex-col contacts">
+          <div class="footer-email">
+            <a href="mailto:random@mail.com">wishfamilyspace@</a>
+          </div>
+        </div>
+        <div class="flex-col contacts">
+          <div class="footer-numbers-wrapper">
+            <div class="footer-number"><a href="tel:+380445858777">+38 (044) 585-87-77</a></div>
+            <!-- <div class="footer-number"><a href="tel:123456789">+38(093)000-00-00</a></div> -->
+          </div>
+        </div>
+        <div class="flex-col">
+          <div class="footer-social">
+            <a href="#" class="footer-link-icon fb"></a>
+            <a href="#" class="footer-link-icon vk"></a>
+            <a href="#" class="footer-link-icon inst"></a>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
+
+    <div class="popup-container">
+    <h5>Інформація про резервування</h5>
+    <form action="" class="popup">
+      <div class="left">
+        <input type="text" placeholder="Дата" class="date" />
+      </div>
+
+      <div class="right">
+        <select class="guests">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+
+        <select class="days">
+          <option>Кiлькiсть днiв</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>
+
+      <div class="left">
+        <input type="text" placeholder="Имя" />
+        <input type="email" placeholder="Email" />
+        <input type="tel" placeholder="Мобильный номер" />
+      </div>
+
+      <div class="right">
+        <textarea placeholder="Повiомлення"></textarea>
+      </div>
+
+      <button type="submit">Забронювати</button>
+    </form>
+
+    <i class="fa fa-times" aria-hidden="true"></i>
+  </div>
+
+  <div class="popup-overflow">
+  </div>
+
     <script src="js/libs.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/scripts.js"></script>

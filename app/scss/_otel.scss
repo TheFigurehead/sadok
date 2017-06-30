@@ -2,7 +2,6 @@
 	background-color: #fbfbfb;
 	.reservation-wrapper {
 		text-align: center;
-	}
 	.reservation {
 		display: inline-flex;
 		font-family: "MuseoSansRegular";
@@ -19,8 +18,8 @@
 		}
 		.fa-angle-down {
 			position: absolute;
-		    right: 30px;
-		    bottom: 45px;
+	    right: 30px;
+	    bottom: 45px;
 			font-size: 30px;
 		}
 		.title {
@@ -30,23 +29,57 @@
 			margin: 0;
 		}
 		.number {
-			font-size: 60pt;
-			// for input
-			border: none;
-			outline: none;
-			width: 120px;			
+			font-size: 60pt;	
 		}
 		.month {
 			font-size: 14pt;
-			//for select
-			border: none;
-			outline: none;
-			appearance: none;
 		}
 		.arrival-date, .departure-date, .guests, .booking-button-block {
-			cursor: pointer;
 			position: relative;
 			padding: 30px;
+			button {
+				margin: 0 auto;
+			}
+		}
+		.guests {
+			cursor: pointer;
+			.dropdown {
+				display: none;
+				position: absolute;
+				top: 90%;
+				left: 20px;
+				background-color: rgb(232, 232, 232);
+				border-radius: 5px;
+				padding: 20px;
+				white-space: nowrap;
+				z-index: 1;
+				select {
+					border-radius: 5px;
+					background-color: rgb(255, 255, 255);
+					box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+					padding: 10px;
+					margin-right: 10px;
+					border: 1px solid transparent;
+					&:focus {
+						border-color: rgb(140, 140, 140);
+						outline: none;
+					}
+				}
+			}
+			&:hover {
+				.dropdown {
+					display: block;
+				}
+			}
+		}
+		#arrival-date, #departure-date {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			cursor: pointer;
 		}
 		.arrival-date, .departure-date {
 			&:after {
@@ -70,6 +103,7 @@
 			}
 		}
 	}
+}
 	button {
 		cursor: pointer;
 		border-radius: 5px;
@@ -174,4 +208,90 @@
 	}
 }
 
+#hotel {
+	.container {
+		.content-wrapper {
+			text-align: center;
+			margin-bottom: 100px;
+			padding: 0 20px;
+			.title-block  {
+				span {
+					font-size: 24px;
+				}
+			}
+			p {
+				font-size: 24px;
+				font-weight: 300;
+				line-height: 30px;
+				text-align: justify;
+			}
+			a {
+				font-size: 18px;
+				font-weight: 700;
+				text-decoration: underline;
+			}
+		}
+	}
+	.top-slider-wrapper .top-slider .slick-dots li button {
+	background-color: transparent;
+	}
+}
+
+
+@media screen and (max-width: 780px) {
+	#hotel {
+    	.reservation-wrapper {
+    		.reservation {
+    			flex-wrap: wrap;
+    		}
+    		.booking-button-block {
+    			width: 100%;
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 580px) {
+	#hotel {
+    	.reservation-wrapper {
+    		.reservation {
+    			.booking-button-block {
+    				button {
+    					font-size: 12px;
+    				}
+    			}
+    			&>div {
+				width: 100%;
+    			}
+    			.arrival-date:after, 
+				.departure-date:after {
+					content: none;
+				}
+    		}
+    	}
+    	.stock-grid-wrapper {
+    		.stock-grid {
+    			.stock-wrapper {
+
+    			}
+    		}
+    	}
+    	.container {
+    		.content-wrapper {
+    			p {
+    				font-size: 18px;
+    			}
+    		}
+    	}
+    	.title-block-wrapper {
+    		.title-block {
+    			span {
+    				&:after {
+    					content: none;
+    				}
+    			}
+    		}
+    	}
+    }
+}
 

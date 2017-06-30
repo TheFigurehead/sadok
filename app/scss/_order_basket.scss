@@ -1,0 +1,113 @@
+.basket {
+	margin-top: 115px;
+	.container2 {
+	.title-block-wrapper {
+		.title-block {
+			text-align: left;
+			span {
+				text-transform: none;
+				font-weight: 700;
+			}
+		}
+	}
+	.order-form {
+		.top {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 40px;
+			h4 {
+				font-size: 25px;
+				font-weight: 500;
+				width: 100%;
+			}
+			ol {
+				width: 100%;
+				counter-reset: myCounter;
+				li {
+					display: flex;
+					padding: 20px 0 20px 0;
+					border-bottom: 1px solid #b8b8b8;
+					list-style: none;
+					.left {
+						width: 70%;
+						display: flex;
+						align-items: center;
+						.img {
+							width: 115px;
+							height: 85px;
+							background-color: #b2d179;
+							margin-right: 30px;
+						}
+						.name {
+							font-size: 25px;
+							font-weight: 500;
+							h5 {
+								margin: 0 0 20px 0;
+							}
+						}
+						.number {
+							&::before {
+								width: 35px;
+								height: 35px;
+								border: 1px solid #000;
+								content: "-";
+								display: inline-block;
+								margin-right: 20px;
+								&:hover {
+									cursor: pointer;
+								}
+							}
+							&::after {
+								width: 35px;
+								height: 35px;
+								border: 1px solid #000;
+								content: "+";
+								display: inline-block;
+								margin-left: 20px;
+								&:hover {
+									cursor: pointer;
+								}
+							}
+						}
+						&::before {
+								counter-increment: myCounter;
+								content:counter(myCounter);
+								color: #000;
+								display: inline-block;
+								text-align: center;
+								margin: 5px 10px;
+								font-size: 25px;
+								font-weight: 500;
+							}
+					}
+					.right {
+						width: 30%;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: flex-start;
+						border-left: 1px solid #b8b8b8;
+						.price {
+							font-size: 24px;
+							font-weight: 300;
+						}
+					}
+				}
+			}
+			.total-price {
+				width: 100%;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				font-size: 25px;
+				font-weight: 700;
+				.text {
+					margin-right: 50px;
+				}
+			}
+		}
+	}
+}
+}

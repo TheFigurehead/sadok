@@ -87,7 +87,11 @@ footer{
     display: flex;
     justify-content: space-between;
   }
+  .contact-open-button {
+    display: none;
+  }
   .flex-col{
+    margin: 0;
     &.cont{
       flex-direction: row;
     }
@@ -156,6 +160,115 @@ footer{
       }
       &.inst{
         background-image: url('../img/icons/inst.png');
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  footer {
+    .footer-contacts-wrapper-content {
+      .container {
+        .flex-row-wrapper {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+        .flex-col {
+          margin: 20px 20px;
+        .flex-col-img {
+            }
+          }
+        } 
+      }
+    }
+    .footer-bottom {
+      .container {
+        .flex-row-wrapper {
+          flex-wrap: wrap;
+          justify-content: center;
+          .flex-col {
+            width: 100%;
+            text-align:   center;
+          }
+          .contacts {
+            width: 30%;
+            padding: 20px 0;
+            .footer-address,
+            .footer-email,
+            .footer-numbers-wrapper {
+            background-position: 10% 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  footer {
+    .footer-bottom {
+      .container {
+        .flex-row-wrapper {
+          .contacts {
+            display: none;
+            width: 100%;
+            font-size: 16px;
+            position: relative;
+            .footer-address,
+            .footer-email,
+            .footer-numbers-wrapper {
+              background-image: none;
+              padding: 0;
+              &::after {
+                content: "";
+                width: 50%;
+                height: 1px;
+                display: block;
+                background-color: rgba(255,255,255,0.5);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+            .footer-numbers-wrapper {
+              padding: 0px;
+              padding-top: 10px;
+               &::after {
+                content: none;
+               }
+            }
+          }
+          .contact-open-button {
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #fff;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .footer-contacts-wrapper-content {
+      .container {
+        .flex-row-wrapper {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+        .flex-col {
+        .flex-col-img {
+            }
+          }
+        } 
+      }
+    }
+    .line {
+      width: 100%;
+    }
+    .footer-map-wrapper {
+      #footer-map{
+        border-radius: 45%;
       }
     }
   }

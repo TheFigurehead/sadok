@@ -1,116 +1,193 @@
 
 .trenazherna-zala-page {
-  background-size: cover;
-    background-position: 0% 50%;
-    background-repeat: no-repeat;
-    background: url(../img/trenazherna-zala1.png) 50% 100% no-repeat;
-}
-
-.trenazherna-blocks-wrapper{
-  margin: 20px auto 50px auto;
-  &::after{
-    content: '';
-    clear: both;
-    display: table;
+  .title-block {
+    text-align: left;
+    font-size: 48px;
+    font-weight: 700;
   }
-  .trenazherna-flex-row{
-    display: flex;
-    justify-content: space-around;
-    .trenazherna-flex-col{
-      max-width: 360px;
-      .trenazherna-col-img{
-        img{
-          width: 100%;
-        }
-      }
-      .trenazherna-col-content{
-        .trenazherna-col-content-title {
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 26px;
-          text-transform: uppercase;
-        }
-        .trenazherna-col-content-text{
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 20px;
-
-        }
-        .trenazherna-col-content-link{
-          a{
-            color: #363636;
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 26px;
-            text-decoration: underline;
-          }
-        }
-      }
+  &-text {
+    font-size: 24px;
+    text-align: justify;
+    line-height: 1.25;
+    font-weight: 300;
+    font-family: "MuseoSansRegular";
+    padding: 20px;
+    border-right: 2px solid #e03968;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 80%;
+      height: 2px;
+      background-color: #e03968;
+    }
+  }
+  &-icons {
+    text-align: center;
+    margin-top: 70px;
+    .item {
+      width: 23%;
+      display: inline-block;
+      vertical-align: top;
     }
   }
 }
 
-.trenazherna-col-content-text{
-  width: 50%;
-  float: left;
-      margin: 65px 0px;
-      text-align: left;
-
+.scale-slider {
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  overflow-x: hidden;
+  &-slide {
+    width: 33.33%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    user-select: none;
+    z-index: 0;
+    transition: all .3s;
+    img {
+      width: 100%;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(#000, 0.6);
+      transition: all .3s;
+    }
+    &.active {
+      transform: scale(1.2, 1.2);
+      z-index: 10;
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+      &:after {
+        background-color: rgba(#000, 0.0);
+      }
+    }
+  }
+  &-track {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+    line-height: 0;
+  }
+  .arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .arrow-left {
+    left: 10%;
+  }
+  .arrow-right {
+    right: 10%;
+  }
 }
 
-.trenazherna-col-content-text p{
-  padding: 0px 60px;
-  font-family: "MuseoSansRegular";
-  font-weight: 300;
-}
-
-.trenazherna-col-img{
-  width: 49%;
-  float: right;
-}
-
-.what-are-you-waiting-for{
+.what-are-you-waiting-for {
   width: 100%;
   height: 308px;
+  margin-top: 100px;
   background-size: cover;
   background-position: 0% 50%;
   background-repeat: no-repeat;
   background-image: url(../img/trenazerni3.png);
   position: relative;
   background-color: #444;
-    h1{
-      text-transform: uppercase;
-      // width: 516px;
-      height: 36px;
-      color: #ffffff;
-      font-family: "Museo Sans Cyrl";
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 24px;
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      transform: translate(-50%, 0);
+  h1 {
+    text-transform: uppercase;
+/*    // width: 516px;*/
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    height: 36px;
+    color: #ffffff;
+    font-family: "Museo Sans Cyrl";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 24px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  button {
+    width: 308px;
+    height: 55px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #ffffff;
+    &:hover{
+      opacity: 0.65;
     }
-    button{
-      width: 308px;
-      height: 55px;
-      border-radius: 5px;
-      background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
-      position: absolute;
-      top: 150px;
-      left: 50%;
-      transform: translate(-50%, 0);
-      color: #ffffff;
-        &:hover{
-          opacity: 0.65;
-        }
-    }
-
+  }
   &::after{
     content: '';
     clear: both;
     display: table;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .trenazherna-zala-page {
+    .scale-slider {
+      padding: 100px 0;
+      .scale-slider-slide {
+          &.active {
+            transform: scale(1.8, 1.8);
+          }
+      }
+    }
+    .what-are-you-waiting-for {
+      h1 {
+        top: 20px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .trenazherna-zala-page {
+    .scale-slider {
+      padding: 50px 0;
+    }
+    .what-are-you-waiting-for {
+      h1 {
+        top: 15px;
+        line-height: 45px;
+      }
+    }
+    .title-block-wrapper {
+      .title-block {
+        padding: 0 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        span {
+          font-size: 35px;
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+    .trenazherna-zala-page-icons {
+      .item {
+        width: 49%;
+      }
+    }
+    .trenazherna-zala-page-text {
+      font-size: 18px;
+    }
   }
 }

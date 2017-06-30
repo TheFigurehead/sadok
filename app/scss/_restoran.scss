@@ -44,10 +44,6 @@
 	cursor: pointer;
 }
 
-.active_li {
-	border: 1px solid #e40254;
-}
-
 #main .nav_menu .nav-menu-block-wrapper ul li .img {
 	height: 120px;
 	width: 100%;
@@ -68,10 +64,6 @@
 	background-repeat: no-repeat;
 	justify-content: flex-end;
 	display: none;
-}
-
-#main .active {
-	display: flex;
 }
 
 #main .content_menu .content-menu-block-wrapper {
@@ -156,4 +148,12 @@
 
 .nav-menu-block-wrapper{
 	margin-bottom: 25px;
+}
+
+.menu .active_li {
+	border: 1px solid #e40254;
+}
+
+#main .content_menu.active {
+	display: flex;
 }

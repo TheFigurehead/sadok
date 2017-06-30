@@ -77,6 +77,10 @@
   src: url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.eot") format("embedded-opentype"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/Raleway/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   // display: flex;
   // min-height: 100vh;
@@ -85,10 +89,22 @@ body {
   font-size: 14px;
   color: #000000;
   margin: 0;
-  padding-left: 50px;
+  overflow-x: hidden;
 }
-
-#glavnaya{
+#text,
+#glavnaya,
+#news,
+#stock,
+#main_news,
+#club,
+#delivery,
+#сatering,
+#basket,
+#specific-number,
+#fitness_new,
+#menu-category, 
+#restoran_menu, 
+#WISH_cards  {
   padding-left: 0;
 }
 
@@ -96,7 +112,7 @@ body {
 //   flex: 1 0 auto;
 // }
 .container{
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
 }
 .container-fluid{
@@ -107,6 +123,12 @@ body {
   display: table;
   content: '';
   clear: both;
+}
+
+.container2 {
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
 }
 
 //some kind of resets
@@ -138,13 +160,17 @@ $greyColor: #747474;
 $colorButtonRed: #e40f20;
 
 @import "normalize";
-@import "../libs/jquery-ui-1.12.1.custom/jquery-ui";
+@import "../slick/slick.scss";
+@import "../slick/slick-theme.scss";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.min.scss";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.structure.min.scss";
+@import "../libs/jquery-ui-1.12.1.custom/jquery-ui.theme.min.scss";
+@import "../libs/noUiSlider.10.0.0/nouislider.min.scss";
 @import "common";
 @import "footer";
 @import "header";
 @import "glavnaya";
 @import "menu";
-@import "main";
 @import "bottom-slider";
 @import "breadCrumbs";
 @import "restoran";
@@ -155,8 +181,28 @@ $colorButtonRed: #e40f20;
 @import "trenazherna_zala";
 @import "dlya_chogo_kartka";
 @import "children";
+@import "contacts";
+@import "bootstrap";
+@import "main_news";
+@import "club";
+@import "text";
+@import "stock+hotel+restoran+menu";
+@import "restaurant_delivery";
+@import "restoran_new+menu";
+@import "order_basket";
+@import "order-form";
+@import "specific_number";
+@import "restoran_menu";
+@import "menu-category";
+@import "datepicker";
+@import "timetable";
+@import "welness";
+@import "fitness_new";
+@import "WISH_cards";
+@import "news";
+@import "news+text+club";
 
-.slick-track {
+.slick-track, #club .slick-slide {
   height: 100vh
 }
 
@@ -170,4 +216,15 @@ $colorButtonRed: #e40f20;
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: left bottom;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }

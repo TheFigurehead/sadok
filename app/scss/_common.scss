@@ -12,7 +12,7 @@
     font-size: 30px;
     font-weight: 300;
     span{
-      display: inline-block;
+      display: inline;
       padding-bottom: 3px;
       position: relative;
       &::after{
@@ -20,7 +20,7 @@
         left: 0;
         bottom: -2px;
         width: 90px;
-        height: 2px;
+        height: 3px;
         display: block;
         background-image: linear-gradient(96deg, #cf1520 0%, #e40254 100%);
         content: '';

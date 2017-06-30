@@ -1,0 +1,301 @@
+#fitness_new, #welness {
+	.bacground-wrapper {
+		width: 100%;
+		padding: 50px 0 75px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 0% -14%;
+		background-image: url(../img/gum/9.png);
+	}
+	.container2 {
+		.multiple-slider-wrapper {
+			.multiple-fitness-items {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				justify-content: space-between;
+				align-content: space-between;
+				.multiple-slider-item {
+					margin-top: 30px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: 50% 50%;
+					width: 30%;
+					height: 500px;
+					border-radius: 2%;
+					img {
+						width: auto;
+						height: auto;
+					}
+					&:first-child {
+						width: 100%;
+						height: 250px;
+						img {
+							width: auto;
+							height: auto;
+						}
+						.button-details {
+							width: 30%;
+						}
+						.content {
+							.icon {
+								width: 87px;
+								margin-top: 50px;
+							}
+						}
+						.title-block-wrapper {
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#fitness_new, #welness {
+	.button-details {
+		width: 55%;
+		height: 3em;
+		top: 50%;
+		right: 50%;
+		position: absolute;
+		transform: translate(50%, -50%);
+		color: #ffffff;
+		border: 2px solid #ffffff;
+		border-radius: 8%;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 3em;
+		display: none;
+		transition: all .3s;
+		&:hover {
+			color: #e40254;
+			border: 2px solid #e40254;
+			transition: all .3s;
+		}
+	}
+}
+
+#fitness_new, #welness {
+	.multiple-slider-wrapper {
+		position: relative;
+		.multiple-fitness-items {
+			.multiple-slider-item {
+				height: auto;
+				background-repeat: no-repeat;
+				position: relative;
+				cursor: pointer;
+				&:hover .content {
+					background-color: rgba(0,0,0,0.7);
+					transition: all .3s;
+				}
+				&:hover .title-block-wrapper {
+					display: none;
+				}
+				&:hover .icon {
+					display: none;
+				}
+				&:hover .button-details {
+					display: block;
+				}
+				img {
+					max-width: 100%;
+					border-radius: 2%;
+				}
+				.content {
+					background-color: rgba(0,0,0,0.3);
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					border-radius: 3%;
+					.icon {
+						width: 150px;
+						height: 150px;
+						top: 50%;
+						right: 50%;
+						position: absolute;
+						transform: translate(50%, -50%);
+						background-size: contain;
+						background-repeat: no-repeat;
+					}
+				}
+				.title-block-wrapper {
+					margin: 0 auto;
+					margin-top: 20px;
+					.title-block {
+						padding: 30px 20px; 
+						span {
+							color: #fff;
+							font-size: 22px;
+							font-weight: 700;
+							&:after {
+								width: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	#fitness_new, 
+	#welness {
+		.bacground-wrapper {		
+			background-image: none;
+		}
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						.multiple-slider-item {
+							height: 300px;
+							.content {
+								margin: 0;
+									.title-block-wrapper {
+										margin: 0;
+										.title-block {
+											padding: 20px;
+										}
+									}
+								.icon {
+									width: 115px;
+									height: 115px;
+									margin-top: 30px;
+								}
+							}
+							&:first-child {
+								height: 150px;
+								.content {
+									.icon {
+										margin-top: 40px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+	}
+}
+
+@media screen and (max-width: 870px) {
+	#fitness_new, 
+	#welness {
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						.multiple-slider-item {
+							height: 250px;
+							.content {
+								.title-block-wrapper {  
+								.title-block {
+									span {
+									display: inline;
+									font-size: 18px;
+									}
+								}
+								}
+								.icon {
+								width: 80px;
+								height: 80px;
+								}
+								.button-details {
+									width: auto;
+									padding: 0 10px;
+								}
+							}
+							&:first-child {
+								height: 150px;
+								.content {
+									.icon {
+										width: 70px;
+										margin-top: 30px;
+									}
+									.title-block-wrapper {
+										margin: 0;
+										.title-block {
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	#fitness_new, 
+	#welness {
+			.container2 {
+				.multiple-slider-wrapper {
+					.multiple-fitness-items {
+						.multiple-slider-item {
+							width: 48%;
+							height: 200px;
+							.content {
+								.title-block-wrapper {  
+									margin: 0;
+									.title-block {
+										padding: 20px 0;
+										span {
+											font-size: 14px;
+										}
+									}
+								}
+								.icon {
+									margin-top: 20px;
+									width: 80px;
+								}
+								.button-details {
+									font-size: 15px;
+									padding: 0 10px;
+								}
+							}
+							&:first-child {
+								height: 100px;
+								.content {
+								.icon {
+									margin-top: 35px;
+									width: 50px;
+								}
+								}
+							}
+						}
+					}
+				}
+			}
+		.welness-wrapper {
+			.container {
+				.welness-content {
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#fitness_new, 
+	#welness {
+		.welness-wrapper {
+			.container {
+				.welness-content {
+					p {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
