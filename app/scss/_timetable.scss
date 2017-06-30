@@ -16,6 +16,7 @@
 			height: 50px;
 			width: 12.5%;
 			padding: 10px;
+			line-height: 0;
 		}
 		td:first-child {
 			text-align: center;
@@ -23,12 +24,21 @@
 		th {
 			border-top: 4px solid #000;
 		}
+		td.active {
+			background-color: #ececec;
+		}
+		th.active {
+			background-color: #c8e481;
+		}
 		[class^="training"] {
 			display: inline-block;
 			width: 30px;
 			height: 30px;
 			border-radius: 50%;
 			position: relative;
+			line-height: 1;
+	    margin-right: 5px;
+	    background-color: #b4b4b4;
 			&:after {
 				padding: 5px 10px;
 				position: absolute;
@@ -45,26 +55,26 @@
 				display: block;
 			}
 		}
-		.training {
-			&-1 {
-				background-color: red;
-				&:after {
-					content: "Занятие 1"
-				}
-			}
-			&-2 {
-				background-color: pink;
-				&:after {
-					content: "Занятие 2"
-				}
-			}
-			&-3 {
-				background-color: blue;
-				&:after {
-					content: "Занятие 3"
-				}
-			}
-		}
+		// .training {
+		// 	&-1 {
+		// 		background-color: red;
+		// 		&:after {
+		// 			content: "Занятие 1"
+		// 		}
+		// 	}
+		// 	&-2 {
+		// 		background-color: pink;
+		// 		&:after {
+		// 			content: "Занятие 2"
+		// 		}
+		// 	}
+		// 	&-3 {
+		// 		background-color: blue;
+		// 		&:after {
+		// 			content: "Занятие 3"
+		// 		}
+		// 	}
+		// }
 	}
 	.timeline {
 		position: absolute;
@@ -74,6 +84,7 @@
 		height: 1px;
 		background-color: red;
 		z-index: 1;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 		&:before {
 			content: "";
 			width: 0;
@@ -101,6 +112,7 @@
 		vertical-align: middle;
 		padding: 10px;
 		line-height: 20px;
+		min-width: 150px;
 		&:before {
 			content: "";
 			display: inline-block;
@@ -111,11 +123,11 @@
 			margin-right: 10px;
 			margin-bottom: 5px;
 		}
-		&:hover {
+		&:hover, &.active {
 			background-color: #ececec;
 		}
 	}
-	#training {
+	/* #training {
 		&-1:before {
 			background-color: red;
 		}
@@ -125,7 +137,7 @@
 		&-3:before {
 			background-color: blue;
 		}
-	}
+	} */
 	&-datepicker {
 		width: 50%;
 		font-family: "MuseoSansCyrl";

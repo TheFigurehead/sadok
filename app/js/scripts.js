@@ -288,35 +288,35 @@ function popUpHide(e) {
 // -----------
 // ***hover effect on mobile***
 // -----------
-if (document.getElementById('hotel')) {
-  $('.stock-grid-wrapper .stock-grid').click(function(){
-      var index = $(this).index();
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper p').removeClass("active_elements");
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper .button').removeClass("active_elements");
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper p').eq(index).addClass("active_elements");
-      $('.stock-grid-wrapper .stock-grid .stock-wrapper .button').eq(index).addClass("active_elements");
-      return false;
-  });
-}
+if (!window.matchMedia("(max-width=1024px)")) {
+  if (document.getElementById('hotel')) {
+    $('.stock-grid-wrapper .stock-grid').click(function(){
+        var index = $(this).index();
+        $('.stock-grid-wrapper .stock-grid .stock-wrapper p').removeClass("active_elements");
+        $('.stock-grid-wrapper .stock-grid .stock-wrapper .button').removeClass("active_elements");
+        $('.stock-grid-wrapper .stock-grid .stock-wrapper p').eq(index).addClass("active_elements");
+        $('.stock-grid-wrapper .stock-grid .stock-wrapper .button').eq(index).addClass("active_elements");
+    });
+  }
 
-if (document.getElementById('welness')||document.getElementById('fitness_new')) {
-  $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item').click(function(){
-      var index = $(this).index();
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .title-block-wrapper').css('display', 'block');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .icon').css('display', 'block');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .button-details').css('display', 'none');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .title-block-wrapper').eq(index).css('display', 'none');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .icon').eq(index).css('display', 'none');
-      $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .button-details').eq(index).css('display', 'block');
-      return false;
-  });
+  if (document.getElementById('welness')||document.getElementById('fitness_new')) {
+    $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item').click(function(){
+        var index = $(this).index();
+        $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .title-block-wrapper').css('display', 'block');
+        $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .icon').css('display', 'block');
+        $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .button-details').css('display', 'none');
+        $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .title-block-wrapper').eq(index).css('display', 'none');
+        $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .icon').eq(index).css('display', 'none');
+        $('.multiple-slider-wrapper .multiple-fitness-items .multiple-slider-item .button-details').eq(index).css('display', 'block');
+    });
+  }
 }
 // -----------
 // ***End hover effect on mobile***
 // -----------
 // -----------
 // ***main-nav mobile***
-// -----------
+// ----------- 
 $('.main_nav_sandwich .fa-bars').click(function(){
   	$('header .main_nav .main_head li').css('display', 'block');
     $('header .main_nav .main_head .phone').css('position', 'relative');
@@ -326,6 +326,7 @@ $('.main_nav_sandwich .fa-bars').click(function(){
   	$('header .main_nav .main_nav_sandwich .fa-bars').css('display', 'none');
   	return false;
 });
+
 $('.main_nav_sandwich .fa-window-close').click(function(){
   	$('header .main_nav .main_head li').css('display', 'none');
     $('header .main_nav .main_head .phone').css('position', 'absolute');
@@ -358,7 +359,7 @@ $('footer .flex-row-wrapper .contact-open-button').click(function(){
     $('#restoran_menu .menu-nav-items .menu-item').eq(0).addClass("active_a");
     $('#restoran_menu .stock-grid-wrapper').eq(0).addClass("active");
     $('#restoran_menu .restoran_menu .kind-of').eq(0).addClass("active-title");
-  $('#restoran_menu .menu-nav-items .menu-item').click(function(){
+  $('#restoran_menu .menu-nav-items .menu-item').click(function() {
     if(!$(this).hasClass( "active_a" )) {
       var index = $(this).index();
       $('#restoran_menu .menu-nav-items .menu-item').removeClass("active_a");
@@ -384,51 +385,51 @@ $('footer .flex-row-wrapper .contact-open-button').click(function(){
 
 $(document).ready(function() {
   if ($('.multiple-items').length) {
-    $('.multiple-items').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 870,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-  	});
+   //  $('.multiple-items').slick({
+   //    infinite: true,
+   //    slidesToShow: 3,
+   //    slidesToScroll: 1,
+   //    responsive: [
+   //      {
+   //        breakpoint: 870,
+   //        settings: {
+   //          slidesToShow: 1,
+   //          slidesToScroll: 1
+   //        }
+   //      }
+   //    ]
+	// });
 
-    $('.center-items').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-    $('.center-items').on('afterChange', function(event, slick, currentSlide) {
-    	$('.center-slider-item').removeClass('slide-active');
-      	$('.slick-center').addClass('slide-active');
-    });
+   //  $('.center-items').slick({
+   //    centerMode: true,
+   //    centerPadding: '60px',
+   //    slidesToShow: 3,
+   //    adaptiveHeight: true,
+   //    responsive: [
+   //      {
+   //        breakpoint: 768,
+   //        settings: {
+   //          arrows: false,
+   //          centerMode: true,
+   //          centerPadding: '40px',
+   //          slidesToShow: 3
+   //        }
+   //      },
+   //      {
+   //        breakpoint: 480,
+   //        settings: {
+   //          arrows: false,
+   //          centerMode: true,
+   //          centerPadding: '40px',
+   //          slidesToShow: 1
+   //        }
+   //      }
+   //    ]
+   //  });
+   //  $('.center-items').on('afterChange', function(event, slick, currentSlide) {
+   //  	$('.center-slider-item').removeClass('slide-active');
+   //    	$('.slick-center').addClass('slide-active');
+   //  });
   }
 // ---------------
 // ***End slick sliders****
@@ -570,24 +571,99 @@ inputNumber2.addEventListener('change', function(){
   var timetablePage = document.getElementById('timetable');
 
   if (timetablePage) {
+    // table inner
+    var training = {
+      "Пилатес": {
+        id: 0,
+        days: [[14], [11, 14]],
+        color: '#ef336a',
+        onHoverText: 'Пилатес'
+      },
+      "Йога": {
+        id: 1,
+        days: [[14], [11, 17, 20]],
+        color: '#fffb79',
+        onHoverText: 'Йога'
+      },
+      "Тайбо": {
+        id: 2,
+        days: [null, [11, 17, 20]],
+        color: '#a4dfd9',
+        onHoverText: 'Тайбо'
+      }
+    }
+
+    var allTrainingsBlock = $('.all-trainings'),
+    styles = '<style>\n',
+    td = $('#timetable-table tr:not(:first-of-type) td:not(:first-of-type)');
+
+    for (var key in training) {
+      var id = training[key].id,
+      color = training[key].color,
+      days = training[key].days;
+
+      allTrainingsBlock.append($('<div class="col"> \n\
+          <a href="#" id="training-' + id + '"><span>' + key + '</span></a> \n\
+        </div>'));
+
+      styles += '.training-' + id + '.active {\n\
+          background-color: ' + color + '!important;\n\
+        }\n\
+        .training-' + id + ':after {\n\
+          content: "' + training[key].onHoverText + '";\n\
+        }\n\
+        #training-' + id + ':before {\n\
+          background-color: ' + color + ';\n\
+        }'
+
+      for (var i = 0; i < days.length; i++)
+        if (days[i]) 
+          for (var j = 0; j < days[i].length; j++) {
+            td.eq((days[i][j] - 9) * 7 + i).append($('<a href="#" class="training-' + id + '"></a>'))
+          }
+
+      $('#training-' + id).on('click', function(event) {
+        event.preventDefault();
+
+        $('[id^="training"]').removeClass('active');
+        $(this).addClass('active');
+
+        $('[class^="training"]').removeClass('active');
+        $('.' + $(this).attr('id')).addClass('active');
+      })
+    }
+
+    styles += '</style>'
+
+    $('head').append($(styles));
+    $('[class^="training"]').addClass('active');
+    // end table inner
+
+    // datepicker
     var days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"],
     dayBlock =  $('.current-date .day'),
     dateBlock = $('.current-date .date'),
     dateSelected = new Date();
 
-    dayBlock.text(days[dateSelected.getDay()]);
+    dayBlock.text(days[dateSelected.getDay() - 1]);
     dateBlock.text(dateSelected.getDate());
 
     $('#timetable-datepicker').datepicker({
       firstDay: 1,
       onSelect: function(dateText, inst) {
-        dateSelected = $(this).datepicker( "getDate" );
+        dateSelected = $(this).datepicker("getDate");
 
-        var day = days[dateSelected.getDay()],
+        var day = days[dateSelected.getDay() - 1],
         date = dateSelected.getDate();
 
         dayBlock.text(day);
         dateBlock.text(date);
+
+        td.removeClass('active');
+        $('[class^="training"]').removeClass('active');
+        $('#timetable-table td:nth-of-type(' + (dateSelected.getDay() + 1) + ')').addClass('active').children().addClass('active');
+        $('#timetable-table th').removeClass('active');
+        $('#timetable-table th:nth-of-type(' + (dateSelected.getDay() + 1) + ')').addClass('active');
       }
     });
 
@@ -598,6 +674,7 @@ inputNumber2.addEventListener('change', function(){
     $('.datepicker-wrapper .next').on('click', function() {
       $('.ui-datepicker-next.ui-corner-all').trigger('click');
     });
+    // end datepicker
 
     // timeline
     var timeTd = $('td.time'),
