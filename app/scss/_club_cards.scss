@@ -3,7 +3,7 @@
 
     .bacground-wrapper{
         
-        .container2{
+        .container{
             
             
             .title-block-wrapper{
@@ -34,16 +34,33 @@
                             color: white;
                         }
                         
-                        &:hover{
-                                    //background-color: #ff0000;
-                                    opacity: 0.15;
+                        &:first-child:hover td:nth-child(1){
+                            background-color: white;
+                        }
+                        
+                        &:hover td:nth-child(1) {
+                                    background-color: rgba(210, 210, 210, 0.63);
+                                    //border: 0px;
+                                }
+                        
+                        &:hover td:nth-child(2) .for_border{
+                                    background-color: rgba(255, 0, 0, 0.15);
+                                    border: 0px;
+                                }
+                        &:hover td:nth-child(3) .for_border{
+                                    background-color: rgba(160, 160, 160, 0.15);
+                                    border: 0px;
+                                }
+                        &:hover td:nth-child(4) .for_border{
+                                    background-color: rgba(0, 0, 0, 0.15);
+                                    border: 0px;
                                 }
                             
                         
                         
                         td{
                             &:nth-child(1){
-                                background-color: #d1f08a;  
+                                background-color: rgba(209, 240, 138, 0.8);  
                                 padding: 15px;
                                 text-transform: uppercase;
                                 
@@ -59,7 +76,6 @@
                                 li:before {
                                     content: "•"; /* Insert content that looks like bullets */
                                     padding-right: 8px;
-                                    //color: blue; /* Or a color you prefer */
                                     font-size: 24px;
                                     color:#cf1520;
                                     opacity: 0.7;
@@ -144,8 +160,9 @@
                         }
                         
                         .for_border.visit-height{
-                            height: 100px;
-                            line-height: 24px;
+                            height: 155px;
+                            line-height: 33px;
+                            padding: 10px 0px;
                             
                             .fa.fa-clock-o{
                                 font-size: 20px;
@@ -161,6 +178,10 @@
                         
                     }
                 }
+            }
+            
+            .choose-from p{
+                text-transform: uppercase;
             }
         }
     }
