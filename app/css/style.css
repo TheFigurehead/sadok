@@ -7009,9 +7009,25 @@ main .first_group_fitnes .block_item:nth-child(3) {
   .club_cards .bacground-wrapper .container2 table tbody tr:first-child td:nth-child(4) {
     padding: 15px;
     color: white; }
+  .club_cards .bacground-wrapper .container2 table tbody tr:hover {
+    opacity: 0.15; }
   .club_cards .bacground-wrapper .container2 table tbody tr td:nth-child(1) {
     background-color: #d1f08a;
-    padding: 15px; }
+    padding: 15px;
+    text-transform: uppercase; }
+    .club_cards .bacground-wrapper .container2 table tbody tr td:nth-child(1) img {
+      vertical-align: middle;
+      padding-right: 24px; }
+    .club_cards .bacground-wrapper .container2 table tbody tr td:nth-child(1) li {
+      text-align: right;
+      list-style: none; }
+    .club_cards .bacground-wrapper .container2 table tbody tr td:nth-child(1) li:before {
+      content: "•";
+      /* Insert content that looks like bullets */
+      padding-right: 8px;
+      font-size: 24px;
+      color: #cf1520;
+      opacity: 0.7; }
   .club_cards .bacground-wrapper .container2 table tbody tr td .for_Main {
     border-radius: 10px;
     border: 1px dashed #000000;
@@ -7063,9 +7079,18 @@ main .first_group_fitnes .block_item:nth-child(3) {
     border-radius: 10px;
     border: 1px dashed #4e4e4e;
     margin: 5px 15px;
-    text-align: center; }
+    text-align: center;
+    line-height: 47px; }
+    .club_cards .bacground-wrapper .container2 table tbody tr .for_border img {
+      padding-top: 9px; }
   .club_cards .bacground-wrapper .container2 table tbody tr .for_border.visit-height {
-    height: 100px; }
+    height: 100px;
+    line-height: 24px; }
+    .club_cards .bacground-wrapper .container2 table tbody tr .for_border.visit-height .fa.fa-clock-o {
+      font-size: 20px;
+      padding-right: 10px; }
+    .club_cards .bacground-wrapper .container2 table tbody tr .for_border.visit-height .day-visit {
+      font-weight: bold; }
 
 #timetable {
   padding-top: 120px;

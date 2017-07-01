@@ -34,11 +34,39 @@
                             color: white;
                         }
                         
+                        &:hover{
+                                    //background-color: #ff0000;
+                                    opacity: 0.15;
+                                }
+                            
+                        
+                        
                         td{
                             &:nth-child(1){
                                 background-color: #d1f08a;  
                                 padding: 15px;
+                                text-transform: uppercase;
+                                
+                                img{
+                                    vertical-align: middle;
+                                    padding-right: 24px;
+                                }
+                                li{
+                                    text-align: right;
+                                    list-style: none;
+                                    
+                                 }
+                                li:before {
+                                    content: "•"; /* Insert content that looks like bullets */
+                                    padding-right: 8px;
+                                    //color: blue; /* Or a color you prefer */
+                                    font-size: 24px;
+                                    color:#cf1520;
+                                    opacity: 0.7;
+                                }
+                            
                             }
+                            
                             
                                 .for_Main{
                                 border-radius: 10px;
@@ -107,11 +135,26 @@
                             border-radius: 10px;
                             border: 1px dashed #4e4e4e;
                             margin: 5px 15px;
-                            text-align: center;  
+                            text-align: center;
+                            line-height: 47px;
+                            
+                            img{
+                                padding-top: 9px;
+                            }
                         }
                         
                         .for_border.visit-height{
                             height: 100px;
+                            line-height: 24px;
+                            
+                            .fa.fa-clock-o{
+                                font-size: 20px;
+                                padding-right: 10px;
+                            }
+                            
+                            .day-visit{
+                                font-weight: bold;
+                            }
                         }
                         
                         
