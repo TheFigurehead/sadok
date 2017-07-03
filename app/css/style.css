@@ -7014,7 +7014,7 @@ main .first_group_fitnes .block_item:nth-child(3) {
     .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child:hover td:nth-child(1) {
       background-color: white; }
     .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(1) {
-      background-color: rgba(210, 210, 210, 0.63); }
+      background-color: rgba(255, 0, 0, 0.15); }
     .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(2) .for_border {
       background-color: rgba(255, 0, 0, 0.15);
       border: 0px; }
@@ -7025,7 +7025,7 @@ main .first_group_fitnes .block_item:nth-child(3) {
       background-color: rgba(0, 0, 0, 0.15);
       border: 0px; }
     .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) {
-      background-color: rgba(209, 240, 138, 0.8);
+      background-color: rgba(232, 232, 232, 0.8);
       padding: 15px;
       text-transform: uppercase; }
       .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) img {
@@ -7077,7 +7077,7 @@ main .first_group_fitnes .block_item:nth-child(3) {
       background-color: #000000;
       width: 210px;
       height: 70px;
-      text-align: -webkit-center;
+      text-align: center;
       line-height: 65px;
       font-size: 24px;
       font-weight: 500;
@@ -7106,6 +7106,193 @@ main .first_group_fitnes .block_item:nth-child(3) {
       .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .day-visit {
         font-weight: bold; }
   .club_cards .bacground-wrapper .container .choose-from p {
+    text-transform: uppercase; }
+
+.child_club_cards {
+  padding-top: 140px; }
+  .child_club_cards .bacground-wrapper .container .visit-line:hover .visit-border {
+    background-color: rgba(255, 0, 0, 0.15);
+    border: 0px; }
+  .child_club_cards .bacground-wrapper .container .clubs-table-wrapper {
+    overflow-x: auto; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child {
+      color: white; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:first-child {
+      padding: 15px 0px;
+      background: white; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(2) {
+      padding: 0px;
+      color: white; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(3) {
+      padding: 0px;
+      color: white; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(4) {
+      padding: 0px;
+      color: white; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child:hover td:nth-child(1) {
+      background-color: white; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(1) {
+      background-color: rgba(255, 0, 0, 0.15); }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(2) .for_border {
+      background-color: rgba(255, 0, 0, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(3) .for_border {
+      background-color: rgba(255, 0, 0, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(4) .for_border {
+      background-color: rgba(255, 0, 0, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(5) .for_border {
+      background-color: rgba(255, 0, 0, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(6) .for_border {
+      background-color: rgba(160, 160, 160, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(7) .for_border {
+      background-color: rgba(160, 160, 160, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(8) .for_border {
+      background-color: rgba(160, 160, 160, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover .bottom-table-border {
+      background-color: rgba(255, 0, 0, 0.15);
+      border: 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) {
+      background-color: rgba(232, 232, 232, 0.8);
+      padding: 15px;
+      text-transform: uppercase; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) img {
+        vertical-align: middle;
+        padding-right: 24px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) li {
+        text-align: right;
+        list-style: none; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) li:before {
+        content: "•";
+        /* Insert content that looks like bullets */
+        padding-right: 8px;
+        font-size: 24px;
+        color: #cf1520;
+        opacity: 0.7; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) span {
+        font-size: 9px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Main {
+      border-radius: 10px;
+      border: 1px dashed #000000;
+      text-align: center;
+      padding: 24px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: black; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Comfort.first {
+      margin-left: 16px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Comfort {
+      border-radius: 10px;
+      background-color: #ff000c;
+      width: 94px;
+      height: 70px;
+      text-align: center;
+      line-height: 65px;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 69px;
+      text-transform: uppercase;
+      margin-left: 8px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Premium {
+      border-radius: 10px;
+      background-color: #696767;
+      width: 94px;
+      height: 70px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-left: 8px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Premium p {
+        margin: 0px 0px; }
+        .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Premium p:first-child {
+          padding-top: 8px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .visit-border-wrapper {
+      height: 127px;
+      position: relative;
+      padding-left: 15px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .visit-border {
+      height: 120px;
+      line-height: 33px;
+      padding: 10px 0px;
+      border: 1px dashed #4e4e4e;
+      border-radius: 10px;
+      width: 709px;
+      position: absolute;
+      top: 0px;
+      left: 17px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .visit-border .visit-border-container {
+        text-align: center;
+        padding-top: 11px; }
+        .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .visit-border .visit-border-container .left-week {
+          display: inline-block;
+          margin-right: 20px; }
+        .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .visit-border .visit-border-container .right-week {
+          display: inline-block;
+          margin-left: 20px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table-border-wrapper {
+      height: 72px;
+      position: relative;
+      padding-left: 15px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table-border {
+      height: 64px;
+      line-height: 12px;
+      padding: 10px 0px;
+      border: 2px dashed rgba(78, 78, 78, 0.5);
+      border-radius: 10px;
+      width: 709px;
+      position: absolute;
+      top: 0px;
+      left: 17px;
+      margin-top: 7px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table-border .bottom-table-border-container {
+        text-align: center; }
+        .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table-border .bottom-table-border-container .left-week {
+          display: inline-block;
+          margin-right: 20px; }
+        .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table-border .bottom-table-border-container .right-week {
+          display: inline-block;
+          margin-left: 20px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .top-table {
+      border-radius: 5px 5px 0px 0px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table {
+      border-radius: 0px 0px 5px 5px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border {
+      height: 50px;
+      border-radius: 10px;
+      border: 1px dashed #4e4e4e;
+      margin: 5px 5px;
+      text-align: center;
+      line-height: 47px;
+      margin-left: 16px;
+      margin-right: 0px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border .with-star {
+        width: 45px;
+        padding-top: 6px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border img {
+        padding-top: 9px;
+        width: 27px; }
+    .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height {
+      height: 155px;
+      line-height: 33px;
+      padding: 10px 0px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .fa.fa-clock-o {
+        font-size: 20px;
+        padding-right: 10px; }
+      .child_club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .day-visit {
+        font-weight: bold; }
+  .child_club_cards .bacground-wrapper .container .choose-from-child p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 7px;
     text-transform: uppercase; }
 
 #timetable {
