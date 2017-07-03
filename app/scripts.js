@@ -113,10 +113,6 @@ Slider.prototype.setSlider = function(slider, auto, num) {
 			, nextIndex = prevIndex - 1;
 		if (nextIndex === -1 ) {nextIndex += (_this.items.length - num)}
 		_this.changeActive(prevIndex, nextIndex);
-
-    //my
-   // _this.customChange();
-    //end my
 	}
 
 	if (this.left) {
@@ -128,10 +124,6 @@ Slider.prototype.setSlider = function(slider, auto, num) {
 				, nextIndex = prevIndex + 1;
 		if (nextIndex >= (_this.items.length - num) ) {nextIndex = 0}
 		_this.changeActive(prevIndex, nextIndex);
-
-    //my
-    //_this.customChange();
-    //end my
 	}
 
 	if (this.right) {
@@ -164,23 +156,14 @@ Slider.prototype.setSlider = function(slider, auto, num) {
 var Portfolio = function() {};
 Portfolio.prototype.setSlider = function(slider, auto, num) {
 	Slider.prototype.setSlider.call(this, slider, auto, num);
-  //my
-  this.customChange = function() {
-    $('.slide-bottom-item img').height(0);
-    $('.slide-bottom-item.active img').css({height: 'auto'});
-    var activeHeight = $('.slide-bottom-item.active img').height();
-    $('#portfolio .slider-bottom').css({maxHeight: activeHeight + 'px'});
-  }
-  var _this = this;
-  //end my
 	this.changeActive = function(prev, next) {
 		this.items[prev].classList.remove("active");
 		this.items[next].classList.add("active");
 		this.nav[prev].classList.remove('active-nav');
 		this.nav[next].classList.add('active-nav');
-    _this.customChange();
 	}
 	this.nav = slider.getElementsByClassName('img-nav');
+	var _this = this;
 	forEach(this.nav, function(el, i) {
 		el.setAttribute('data-id', i);
 		el.addEventListener('click', function() {
@@ -194,12 +177,8 @@ var slider = new Portfolio();
 window.addEventListener('load', function() {
   if(document.getElementById('portfolio')){
     slider.setSlider(document.getElementById('portfolio').getElementsByClassName('slider-bottom')[0]);
-    // my
-    slider.customChange();
-    // end my
   }
 });
-//end slider
 
 $(document).ready(function() {
   if ($('.top-slider').length) {

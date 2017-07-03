@@ -1,13 +1,15 @@
 #portfolio .slider-bottom {
   display: -webkit-box;
   display: flex;
-  height: 720px;
+  height: 100vh;
+  transition: all .5s;
+  overflow: hidden;
 }
 #portfolio .content{
   height: 100%;
 }
   #portfolio .slider-bottom .left-nav, #portfolio .slider-bottom .right-nav {
-    width: 25%;
+    width: 20%;
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap; }
@@ -36,6 +38,7 @@
   //   height: 100%; }
   #portfolio .slider-bottom .block{
     position: relative;
+    width: 60%; // my
   }
   #portfolio .slider-bottom .block img {
     width: 100%;
@@ -45,10 +48,11 @@
   #portfolio .slider-bottom .block .left, #portfolio .slider-bottom .block .right {
     position: absolute;
     right: 0;
-    top: 350px;
+    top: 50%;
     z-index: 2;
     background-image: url(../img/icons.png);
     background-position: -192px -55px;
+    transform: translateY(-50%);
     width: 39px;
     height: 68px;
     cursor: pointer;
@@ -60,8 +64,7 @@
       opacity: 1; }
   #portfolio .slider-bottom .block .left {
     left: 0;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
+    transform: translateY(-50%) rotate(180deg); }
 
 #portfolio .slide-bottom-item{
   height: 0;

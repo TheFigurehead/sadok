@@ -3166,8 +3166,6 @@ header .secondary_nav .delimiter {
     left: -180px;
     font-size: 25px;
     color: #fff; }
-  header .main_nav .main_head li .fa-map-marker {
-    left: -255px; }
   header .main_nav .main_head li .fa-angle-down {
     left: 120px; }
   header .main_nav .main_nav_sandwich .fa-bars,
@@ -3714,15 +3712,13 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  transition: all .5s;
-  overflow: hidden; }
+  height: 720px; }
 
 #portfolio .content {
   height: 100%; }
 
 #portfolio .slider-bottom .left-nav, #portfolio .slider-bottom .right-nav {
-  width: 20%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3755,8 +3751,7 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
   height: 100%; }
 
 #portfolio .slider-bottom .block {
-  position: relative;
-  width: 60%; }
+  position: relative; }
 
 #portfolio .slider-bottom .block img {
   width: 100%;
@@ -3768,12 +3763,10 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 #portfolio .slider-bottom .block .left, #portfolio .slider-bottom .block .right {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 350px;
   z-index: 2;
   background-image: url(../img/icons.png);
   background-position: -192px -55px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: 39px;
   height: 68px;
   cursor: pointer;
@@ -3786,8 +3779,8 @@ main .top-slider-wrapper .top-slider .top-slider-item .text-item-right {
 
 #portfolio .slider-bottom .block .left {
   left: 0;
-  -webkit-transform: translateY(-50%) rotate(180deg);
-          transform: translateY(-50%) rotate(180deg); }
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 #portfolio .slide-bottom-item {
   height: 0; }
@@ -6281,6 +6274,143 @@ main .first_group_fitnes .block_item:nth-child(3) {
     .order-form p .radio:checked + label:after {
       opacity: 1; }
 
+.number_lux {
+  margin-top: 115px; }
+  .number_lux .container_number_lux {
+    text-align: justify;
+    width: 100%;
+    margin: 0 auto; }
+    .number_lux .container_number_lux .breadcrumbs {
+      padding-left: 115px; }
+    .number_lux .container_number_lux .title-block-wrapper {
+      padding-left: 115px; }
+      .number_lux .container_number_lux .title-block-wrapper .title-block {
+        text-align: left; }
+        .number_lux .container_number_lux .title-block-wrapper .title-block span {
+          font-weight: 700; }
+    .number_lux .container_number_lux .order-form textarea {
+      height: 174px; }
+    .number_lux .container_number_lux .order-form button {
+      background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%); }
+    .number_lux .container_number_lux .order-form .left {
+      width: 34%;
+      background-image: url(../img/number_lux_image.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative; }
+      .number_lux .container_number_lux .order-form .left .reservation .price {
+        /* Style for "Прямоуголь" */
+        width: 220px;
+        height: 216px;
+        background-color: #2d2d2d;
+        top: 410px;
+        left: 327px;
+        position: absolute; }
+        .number_lux .container_number_lux .order-form .left .reservation .price .price-wrapper {
+          width: auto;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+          .number_lux .container_number_lux .order-form .left .reservation .price .price-wrapper .num {
+            color: #ffffff;
+            font-size: 48px; }
+          .number_lux .container_number_lux .order-form .left .reservation .price .price-wrapper .curr {
+            color: #ffffff;
+            font-family: "MuseoSansRegular";
+            font-weight: 700;
+            font-size: 18px; }
+    .number_lux .container_number_lux .order-form .right {
+      width: 66%;
+      background-color: #f2ede8;
+      padding: 50px 85px 54px 127px; }
+      .number_lux .container_number_lux .order-form .right button {
+        width: 341px; }
+      .number_lux .container_number_lux .order-form .right .reservation {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        font-family: "MuseoSansRegular";
+        font-weight: 300;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background-color: transparent;
+        position: relative;
+        text-align: left;
+        z-index: 40; }
+        .number_lux .container_number_lux .order-form .right .reservation input {
+          background-color: transparent;
+          border-radius: 0px;
+          margin-bottom: 0px;
+          width: auto;
+          outline: none;
+          border: none;
+          padding: 0px;
+          box-sizing: border-box;
+          transition: background-color .3s; }
+        .number_lux .container_number_lux .order-form .right .reservation select {
+          background-color: transparent;
+          border-radius: 0px;
+          margin-bottom: 0px;
+          width: auto;
+          outline: none;
+          border: none;
+          padding: 0px;
+          box-sizing: border-box;
+          transition: background-color .3s; }
+        .number_lux .container_number_lux .order-form .right .reservation .fa-calendar {
+          margin-left: 20px; }
+        .number_lux .container_number_lux .order-form .right .reservation .fa-angle-down {
+          position: absolute;
+          right: 30px;
+          bottom: 45px;
+          font-size: 30px; }
+        .number_lux .container_number_lux .order-form .right .reservation .title {
+          color: #747474;
+          text-transform: uppercase;
+          font-size: 14pt;
+          margin: 0; }
+        .number_lux .container_number_lux .order-form .right .reservation .number {
+          font-size: 60pt;
+          border: none;
+          outline: none;
+          width: 93px; }
+        .number_lux .container_number_lux .order-form .right .reservation .month {
+          font-size: 14pt;
+          border: none;
+          outline: none;
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none; }
+        .number_lux .container_number_lux .order-form .right .reservation .arrival-date, .number_lux .container_number_lux .order-form .right .reservation .departure-date, .number_lux .container_number_lux .order-form .right .reservation .guests, .number_lux .container_number_lux .order-form .right .reservation .booking-button-block {
+          cursor: pointer;
+          position: relative;
+          padding: 30px; }
+        .number_lux .container_number_lux .order-form .right .reservation .arrival-date:after, .number_lux .container_number_lux .order-form .right .reservation .departure-date:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          width: 1px;
+          background-color: #747474;
+          height: 80px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+        .number_lux .container_number_lux .order-form .right .reservation .booking-button-block {
+          cursor: default;
+          background-color: #dfdfdf;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .number_lux .container_number_lux .order-form .right .reservation .booking-button-block button {
+            font-size: 16pt; }
+
 #specific-number .container2 .title-block-wrapper .main-title {
   text-align: left; }
 
@@ -6864,6 +6994,118 @@ main .first_group_fitnes .block_item:nth-child(3) {
 
 .ui-state-highlight, .ui-widget-content .ui-state-highlight {
   border: 1px solid #000; }
+
+.club_cards .bacground-wrapper .container .clubs-table-wrapper {
+  overflow-x: auto; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:first-child {
+    padding: 15px 0px;
+    background: white; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(2) {
+    padding: 15px;
+    color: white; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(3) {
+    padding: 15px;
+    color: white; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(4) {
+    padding: 15px;
+    color: white; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child:hover td:nth-child(1) {
+    background-color: white; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(1) {
+    background-color: rgba(210, 210, 210, 0.63); }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(2) .for_border {
+    background-color: rgba(255, 0, 0, 0.15);
+    border: 0px; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(3) .for_border {
+    background-color: rgba(160, 160, 160, 0.15);
+    border: 0px; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(4) .for_border {
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 0px; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) {
+    background-color: rgba(209, 240, 138, 0.8);
+    padding: 15px;
+    text-transform: uppercase; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) img {
+      vertical-align: middle;
+      padding-right: 24px; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) li {
+      text-align: right;
+      list-style: none; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) li:before {
+      content: "•";
+      /* Insert content that looks like bullets */
+      padding-right: 8px;
+      font-size: 24px;
+      color: #cf1520;
+      opacity: 0.7; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Main {
+    border-radius: 10px;
+    border: 1px dashed #000000;
+    text-align: center;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 23px;
+    text-transform: uppercase; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Comfort {
+    border-radius: 10px;
+    background-color: #ff000c;
+    width: 210px;
+    height: 70px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 69px;
+    text-transform: uppercase; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Premium {
+    border-radius: 10px;
+    background-color: #696767;
+    width: 210px;
+    height: 70px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 69px;
+    text-transform: uppercase; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Exclusive {
+    border-radius: 10px;
+    background-color: #000000;
+    width: 210px;
+    height: 70px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 69px;
+    text-transform: uppercase; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .top-table {
+    border-radius: 5px 5px 0px 0px; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table {
+    border-radius: 0px 0px 5px 5px; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px dashed #4e4e4e;
+    margin: 5px 15px;
+    text-align: center;
+    line-height: 47px; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border img {
+      padding-top: 9px; }
+  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height {
+    height: 155px;
+    line-height: 33px;
+    padding: 10px 0px; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .fa.fa-clock-o {
+      font-size: 20px;
+      padding-right: 10px; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .day-visit {
+      font-weight: bold; }
+
+.club_cards .bacground-wrapper .container .choose-from p {
+  text-transform: uppercase; }
 
 #timetable {
   padding-top: 120px;
