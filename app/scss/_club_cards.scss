@@ -9,8 +9,10 @@
             .title-block-wrapper{
     
             }
-            
-            table{
+            .clubs-table-wrapper{
+                overflow-x: auto;
+                
+                table{
                 
                 tbody{
                     
@@ -87,11 +89,11 @@
                                 .for_Main{
                                 border-radius: 10px;
                                 border: 1px dashed #000000;
-                                text-align: -webkit-center;
+                                text-align: center;
                                 padding: 24px;
                                 font-size: 24px;
                                 font-weight: 500;
-                                line-height: 18px;
+                                line-height: 23px;
                                 text-transform: uppercase;
                             }
                             
@@ -101,7 +103,7 @@
                                 background-color: #ff000c;
                                 width: 210px;
                                 height: 70px;
-                                text-align: -webkit-center;
+                                text-align: center;
                                 line-height: 65px;
                                 font-size: 24px;
                                 font-weight: 500;
@@ -114,7 +116,7 @@
                                 background-color: #696767;
                                 width: 210px;
                                 height: 70px;
-                                text-align: -webkit-center;
+                                text-align: center;
                                 line-height: 65px;
                                 font-size: 24px;
                                 font-weight: 500;
@@ -179,7 +181,7 @@
                     }
                 }
             }
-            
+            }
             .choose-from p{
                 text-transform: uppercase;
             }
