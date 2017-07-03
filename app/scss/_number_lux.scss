@@ -1,0 +1,185 @@
+.number_lux{
+    margin-top: 115px;
+    
+    
+    
+    .container_number_lux{
+        text-align: justify;
+        width: 100%;
+        margin: 0 auto;
+        
+        .breadcrumbs{
+            padding-left: 115px;
+        }
+        
+        .title-block-wrapper{
+            padding-left: 115px;
+            
+            .title-block{
+                text-align: left;
+                
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+        
+        .order-form {
+            
+            textarea{
+                height: 174px;
+            }
+            
+            button{
+                background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%); 
+            }
+            
+            .left{
+                width: 34%;
+                background-image: url(../img/number_lux_image.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                position: relative;
+                
+                .reservation{
+                   
+                    .price{
+                        /* Style for "Прямоуголь" */
+                    width: 220px;
+                    height: 216px;
+                    background-color: #2d2d2d;
+                    top: 410px;
+                    left: 327px;
+                    position: absolute;
+                        
+                        .price-wrapper{
+                                width: auto;
+                                height: auto;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                -webkit-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%);   
+                            
+                            
+                            .num{
+                                color: #ffffff;
+                                font-size: 48px;
+                            }
+                            .curr{
+                                color: #ffffff;
+                                font-family: "MuseoSansRegular";
+                                font-weight: 700;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .right{
+                
+                width: 66%;
+                background-color: #f2ede8;
+                padding: 50px 85px 54px 127px;;
+                
+                
+                button {
+                    width: 341px;
+                }
+                .reservation {
+                    display: inline-flex;
+                    font-family: "MuseoSansRegular";
+                    font-weight: 300;
+                    justify-content: center;
+                    background-color: transparent;
+                    position: relative;
+                    text-align: left;
+                    z-index: 40;
+                    
+                    
+                    input{
+                        background-color: transparent;
+                        border-radius: 0px;
+                        margin-bottom: 0px;
+                        width:auto;
+                        outline: none;
+                        border: none;
+                        padding: 0px;
+                        box-sizing: border-box;
+                        transition: background-color .3s;
+                    }
+                    
+                    select{
+                        background-color: transparent;
+                        border-radius: 0px;
+                        margin-bottom: 0px;
+                        width: auto;
+                        outline: none;
+                        border: none;
+                        padding: 0px;
+                        box-sizing: border-box;
+                        transition: background-color .3s;
+                    }
+                    
+                    .fa-calendar {
+                        margin-left: 20px;
+                    }
+                    .fa-angle-down {
+                        position: absolute;
+                        right: 30px;
+                        bottom: 45px;
+                        font-size: 30px;
+                    }
+                    .title {
+                        color: $greyColor;
+                        text-transform: uppercase;
+                        font-size: 14pt;
+                        margin: 0;
+                    }
+                    .number {
+                        font-size: 60pt;
+                        // for input
+                        border: none;
+                        outline: none;
+                        width: 93px;			
+                    }
+                    .month {
+                        font-size: 14pt;
+                        //for select
+                        border: none;
+                        outline: none;
+                        appearance: none;
+                    }
+                    .arrival-date, .departure-date, .guests, .booking-button-block {
+                        cursor: pointer;
+                        position: relative;
+                        padding: 30px;
+                    }
+                    .arrival-date, .departure-date {
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            width: 1px;
+                            background-color: $greyColor;
+                            height: 80px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                    .booking-button-block {
+                        cursor: default;
+                        background-color: #dfdfdf;
+                        display: flex;
+                        align-items: center;
+                        button {
+                            font-size: 16pt;
+                        }
+                    }
+	           }
+            }
+        }
+    }
+}

@@ -191,16 +191,19 @@ $colorButtonRed: #e40f20;
 @import "restoran_new+menu";
 @import "order_basket";
 @import "order-form";
+@import "number_lux";
 @import "specific_number";
 @import "restoran_menu";
 @import "menu-category";
 @import "datepicker";
+@import "club_cards";
 @import "timetable";
 @import "welness";
 @import "fitness_new";
 @import "WISH_cards";
 @import "news";
 @import "news+text+club";
+
 
 .slick-track, #club .slick-slide {
   height: 90vh
