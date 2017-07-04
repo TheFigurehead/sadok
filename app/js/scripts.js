@@ -278,14 +278,12 @@ var hotelPage = document.getElementById('hotel');
 var сateringPage = document.getElementById('сatering');
 
 if (hotelPage) {
-  $('.room button').on('click', popUpShow);
+  $('.booking-button-block button').on('click', popUpShow);
 }
 
 if (сateringPage) {
   $('.button-order').on('click', popUpShow);
 }
-
-$('.popup-container').hide();
 
 $('.popup-overflow').on('click', popUpHide);
 
@@ -583,7 +581,14 @@ inputNumber2.addEventListener('change', function(){
         }
       }
 
-      console.log(bookingData);
+      $('#datepicker-popup input[name="arival-date"]').val(arrivalDate[1] + '/' + arrivalDate[0] + '/' + arrivalDate[2]);
+      $('#datepicker-popup input[name="departure-date"]').val(departureDate[1] + '/' + departureDate[0] + '/' + departureDate[2]);
+      $('#datepicker-popup input[name="adults"]').val(adults);
+      $('#datepicker-popup input[name="children"]').val(children);
+      $('#datepicker-popup form').on('submit', function(event) {
+        event.preventDefault();
+        console.log(this.elements['arival-date'].value);
+      })
     })
   }
   // end datepicker hotel
