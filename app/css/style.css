@@ -5683,8 +5683,7 @@ main .first_group_fitnes .block_item:nth-child(3) {
 
 #restoran_new,
 .menu-category,
-.restoran_menu,
-#stock {
+.restoran_menu {
   overflow-x: hidden; }
 
 #restoran_new .stock-grid-wrapper,
@@ -5833,6 +5832,22 @@ main .first_group_fitnes .block_item:nth-child(3) {
     opacity: 1;
     transition: opacity 0.5s linear; }
 
+#stock .stock-grid-wrapper {
+  height: auto; }
+
+#stock .stock-grid-wrapper .stock-grid {
+  height: 400px; }
+
+#stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
+  content: none; }
+
+#stock .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before {
+  content: none; }
+
+#stock .stock-grid-wrapper .stock-grid .stock-wrapper .stock {
+  line-height: 0.8;
+  margin-bottom: 10px; }
+
 @media screen and (max-width: 1280px) {
   #hotel .stock-grid-wrapper .stock-grid,
   #stock .stock-grid-wrapper .stock-grid {
@@ -5855,7 +5870,9 @@ main .first_group_fitnes .block_item:nth-child(3) {
         font-weight: 700; }
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper p,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper p {
-        font-size: 16px; } }
+        font-size: 16px; }
+  #stock .stock-grid-wrapper {
+    height: auto; } }
 
 @media screen and (max-width: 780px) {
   #hotel .stock-grid-wrapper,
@@ -5880,7 +5897,13 @@ main .first_group_fitnes .block_item:nth-child(3) {
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
         content: '';
         width: 300px;
-        height: 140px; } }
+        height: 140px; }
+  #stock .stock-grid-wrapper {
+    height: auto; }
+    #stock .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before {
+      content: none; }
+    #stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
+      content: none; } }
 
 @media screen and (max-width: 580px) {
   #hotel .stock-grid-wrapper {
