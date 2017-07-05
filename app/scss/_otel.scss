@@ -1,7 +1,5 @@
-#hotel {
-	background-color: #fbfbfb;
-	.reservation-wrapper {
-		text-align: center;
+.reservation-wrapper {
+	text-align: center;
 	.reservation {
 		display: inline-flex;
 		font-family: "MuseoSansRegular";
@@ -104,6 +102,9 @@
 		}
 	}
 }
+
+#hotel {
+	background-color: #fbfbfb;
 	button {
 		cursor: pointer;
 		border-radius: 5px;

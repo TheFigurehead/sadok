@@ -83,29 +83,35 @@
     </div>
   </div>
 
-  <div class="center-slider-wrapper">
-    <div class="center-items">
-      <div class="center-slider-item">
+  <div class="scale-slider">
+    <div class="scale-slider-track">
+      <div class="scale-slider-slide">
         <img src="img/slider-bot/1.jpg" alt="">
       </div>
-      <div class="center-slider-item">
+      <div class="scale-slider-slide">
         <img src="img/slider-bot/2.jpg" alt="">
       </div>
-      <div class="center-slider-item">
+      <div class="scale-slider-slide">
         <img src="img/slider-bot/3.jpg" alt="">
       </div>
-      <div class="center-slider-item">
+      <div class="scale-slider-slide">
         <img src="img/slider-bot/4.jpg" alt="">
       </div>
-      <div class="center-slider-item">
+      <div class="scale-slider-slide">
         <img src="img/slider-bot/5.jpg" alt="">
       </div>
-      <div class="center-slider-item">
+      <div class="scale-slider-slide">
         <img src="img/slider-bot/6.jpg" alt="">
       </div>
     </div>
-  </div>
 
+    <div class="arrow-left">
+      <img src="img/zal/назад.png" alt="">
+    </div>
+    <div class="arrow-right">
+      <img src="img/zal/вперед.png" alt="">
+    </div>
+  </div>
 
   <div class="content-wrapper">
     <div class="container2">
@@ -141,15 +147,9 @@
           </li>
         </div>
       </ul>
-      <ol class="qualities">
-        <h5>Особливості номеру</h5>
-        <li>Я хочу сказать одну важную вещь. Сейчас в людях сто идёт. Многие люди щас берут вместо того, чтобы резать например морковь, картофель или щас продается баклажаны, ножами скупают и начинают скупать миксеры.</li>
-        <li>Я хочу сказать одну важную вещь. Сейчас в людях сто идёт. Многие люди щас берут вместо того, чтобы резать например морковь, картофель или щас продается баклажаны, ножами скупают и начинают скупать миксеры.</li>
-        <li>Я хочу сказать одну важную вещь. Сейчас в людях сто идёт. Многие люди щас берут вместо того, чтобы резать например морковь, картофель или щас продается баклажаны, ножами скупают и начинают скупать миксеры.</li>
-      </ol>
       </div>
       <div class="right">
-        <div class="reservation">
+        <div class="reservation-wrapper">
           <div class="price">
             <div class="price-wrapper">
               <span class="num">3500</span>
@@ -157,50 +157,72 @@
               <span class="curr">грн/добу</span>
             </div>
           </div>
-          <div class="reservation-wrapper">
-            <div class="arrival">
-              <h4 class="title">ДАТА ЗАЇЗДУ</h4>
-              <input type="number" class="number" value="13"><!-- 13</span> -->
-              <!-- <span class="month"> / червень</span> -->
-              <span class="month"> / </span>
-              <select class="month">
-                <option value="1">червень</option>
-                <option value="2">липень</option>
-                <option value="3">серпень</option>
-              </select>
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+          <div class="price2">
+            <div class="price-wrapper">
+              <span class="num">4500</span>
+              <br>
+              <span class="curr">грн/добу</span>
             </div>
-            <div class="departure">
-              <h4 class="title">ДАТА ВИЇЗДУ</h4>
-              <input type="number" class="number" value="14"><!-- 14</span> -->
-              <!-- <span class="month"> / червень</span> -->
-              <span class="month"> / </span>
-              <select class="month">
-                <option value="1">червень</option>
-                <option value="2">липень</option>
-                <option value="3">серпень</option>
-              </select>
+          </div>
+          <div class="reservation">
+            <div class="arrival-date">
+              <h4 class="title">ДАТА ЗАЇЗДУ</h4>
+              <span class="number">11</span>
+              <span class="month"> / червень</span>
               <i class="fa fa-calendar" aria-hidden="true"></i>
+              <input type="text" id="arrival-date">
+            </div>
+            <div class="departure-date">
+              <h4 class="title">ДАТА ВИЇЗДУ</h4>
+              <span class="number">11</span>
+              <span class="month"> / червень</span>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <input type="text" id="departure-date">
             </div>
             <div class="guests">
-              <h4 class="title">КІЛЬКІСТЬ ЛЮДЕЙ</h4>
-              <select name="quantity" id="quan">
-                <option value="1">1 дорослий</option>
-                <option value="2" selected>2 дорослих</option>
-                <option value="3">3 дорослих</option>
-              </select>
-              <select name="children" id="child">
-                <option value="na" selected>Без дітей</option>
-                <option value="1">1 дитина</option>
-                <option value="2">2 дитини</option>
-                <option value="3">3 дитини</option>
-              </select>
+              <h4 class="title">КІЛЬКІСТЬ ГОСТЕЙ</h4>
+              <span class="number">1</span>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+              <div class="dropdown">
+                <select name="adults" id="adults">
+                  <option value="1" selected>1 дорослий</option>
+                  <option value="2">2 дорослих</option>
+                  <option value="3">3 дорослих</option>
+                  <option value="4">4 дорослих</option>
+                </select>
+                <select name="children" id="children">
+                  <option value="0" selected>Без дiтей</option>
+                  <option value="1">1 дитина</option>
+                  <option value="2">2 дитини</option>
+                </select>
+              </div>
             </div>
-            <button type="submit">Залишити заявку</button>
+            <div class="booking-button-block">
+              <button>Забронювати</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="popup-container" id="datepicker-popup" style="display: none; max-width: 320px">
+    <h5>Інформація про резервування</h5>
+    <form action="" class="popup">
+      <input type="text" name="name" placeholder="Имя *" required />
+      <input type="tel" name="phone"  placeholder="Мобильный номер *" required />
+      <input type="email" name="mail" placeholder="Email" />
+      <input type="text" name="arival-date" style="display: none;" />
+      <input type="text" name="departure-date" style="display: none;" />
+      <input type="text" name="adults" style="display: none;" />
+      <input type="text" name="children" style="display: none;" />
+      <button type="submit">Забронювати</button>
+    </form>
+
+    <i class="fa fa-times" aria-hidden="true"></i>
+  </div>
+
+  <div class="popup-overflow">
   </div>
 
   <div class="bacground-wrapper">
