@@ -53,3 +53,107 @@
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
+
+.gallery-content-wrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.gallery-content-wrapper-item {
+		width: 30%;
+		margin-bottom: 15px;
+		.gallery-content-wrapper-item-img {
+			width: 100%;
+			border: 2px solid #e3101d;
+			overflow: hidden;
+			position: relative;
+			img {
+				width: 100%;
+				transition: all .3s;
+			}
+			.button {
+				width: auto;
+				padding: 15px 30px;
+				border: 2px solid #fff;
+				border-radius: 15%;
+				color: #fff;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-transform: uppercase;
+				font-size: 20px;
+				transition: all .3s;
+				display: none;
+				&:hover {
+					color: #e3101d;
+					border: 2px solid #e3101d;
+					transition: all .3s;
+				}
+			}
+			&:hover img {
+				-webkit-filter: brightness(30%);
+				transition: all .3s;
+			}
+			&:hover .button {
+				display: block;
+				cursor: pointer;
+			}
+		}
+		.gallery-content-wrapper-item-text {
+			height: 100px;
+			overflow: hidden;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 10px;
+			line-height: 16px;
+			font-family: "MuseoSansRegular";
+			.title-block {
+				width: 100%;
+				display: flex;
+				.title {
+					width: 50%;
+					text-transform: uppercase;
+					font-size: 18px;
+					transition: all .3s;
+					&:hover {
+						cursor: pointer;
+						color: #e3101d;
+						transition: all .3s;
+					}
+				}
+				.title-date {
+					width: 50%;
+					text-align: right;
+					color: #e3101d;
+				}
+			}
+			.content-block {
+				width: 100%;
+				font-size: 16px;
+				position: relative;
+  				font-size: 14px;
+  				color: black;
+  				font-family: sans-serif;
+  				width: 100%; 
+  				.content-block-wrapper {
+  					height: 4em;
+  				}
+				p {
+					margin: 0;
+					&::after {
+  					content: "...";
+  					position: absolute;
+  					right: 0; 
+  					bottom: 22px;
+  					color: #000;
+  					font-size: 20px;
+  					background-color: #fff;
+  					padding: 0 10px;
+				}
+				}
+			}
+		}
+	}
+}

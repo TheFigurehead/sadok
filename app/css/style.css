@@ -5676,6 +5676,104 @@ main .first_group_fitnes .block_item:nth-child(3) {
   margin-top: 60px;
   margin-bottom: 60px; }
 
+.gallery-content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .gallery-content-wrapper .gallery-content-wrapper-item {
+    width: 30%;
+    margin-bottom: 15px; }
+    .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img {
+      width: 100%;
+      border: 2px solid #e3101d;
+      overflow: hidden;
+      position: relative; }
+      .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img img {
+        width: 100%;
+        transition: all .3s; }
+      .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img .button {
+        width: auto;
+        padding: 15px 30px;
+        border: 2px solid #fff;
+        border-radius: 15%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        font-size: 20px;
+        transition: all .3s;
+        display: none; }
+        .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img .button:hover {
+          color: #e3101d;
+          border: 2px solid #e3101d;
+          transition: all .3s; }
+      .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img:hover img {
+        -webkit-filter: brightness(30%);
+        transition: all .3s; }
+      .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img:hover .button {
+        display: block;
+        cursor: pointer; }
+    .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text {
+      height: 100px;
+      overflow: hidden;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-top: 10px;
+      line-height: 16px;
+      font-family: "MuseoSansRegular"; }
+      .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block .title {
+          width: 50%;
+          text-transform: uppercase;
+          font-size: 18px;
+          transition: all .3s; }
+          .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block .title:hover {
+            cursor: pointer;
+            color: #e3101d;
+            transition: all .3s; }
+        .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block .title-date {
+          width: 50%;
+          text-align: right;
+          color: #e3101d; }
+      .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .content-block {
+        width: 100%;
+        font-size: 16px;
+        position: relative;
+        font-size: 14px;
+        color: black;
+        font-family: sans-serif;
+        width: 100%; }
+        .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .content-block .content-block-wrapper {
+          height: 4em; }
+        .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .content-block p {
+          margin: 0; }
+          .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .content-block p::after {
+            content: "...";
+            position: absolute;
+            right: 0;
+            bottom: 22px;
+            color: #000;
+            font-size: 20px;
+            background-color: #fff;
+            padding: 0 10px; }
+
 #restoran_new,
 .menu-category,
 .restoran_menu,
@@ -7003,49 +7101,6 @@ main .first_group_fitnes .block_item:nth-child(3) {
 .ui-state-highlight, .ui-widget-content .ui-state-highlight {
   border: 1px solid #000; }
 
-<<<<<<< HEAD
-.club_cards .bacground-wrapper .container .clubs-table-wrapper {
-  overflow-x: auto; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:first-child {
-    padding: 15px 0px;
-    background: white; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(2) {
-    padding: 15px;
-    color: white; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(3) {
-    padding: 15px;
-    color: white; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child td:nth-child(4) {
-    padding: 15px;
-    color: white; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:first-child:hover td:nth-child(1) {
-    background-color: white; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(1) {
-    background-color: rgba(210, 210, 210, 0.63); }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(2) .for_border {
-    background-color: rgba(255, 0, 0, 0.15);
-    border: 0px; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(3) .for_border {
-    background-color: rgba(160, 160, 160, 0.15);
-    border: 0px; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr:hover td:nth-child(4) .for_border {
-    background-color: rgba(0, 0, 0, 0.15);
-    border: 0px; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) {
-    background-color: rgba(209, 240, 138, 0.8);
-    padding: 15px;
-    text-transform: uppercase; }
-    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) img {
-      vertical-align: middle;
-      padding-right: 24px; }
-    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) li {
-      text-align: right;
-      list-style: none; }
-    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) li:before {
-      content: "•";
-      /* Insert content that looks like bullets */
-      padding-right: 8px;
-=======
 .club_cards {
   padding-top: 140px; }
   .club_cards .bacground-wrapper .container .clubs-table-wrapper {
@@ -7130,77 +7185,34 @@ main .first_group_fitnes .block_item:nth-child(3) {
       height: 70px;
       text-align: center;
       line-height: 65px;
->>>>>>> 6df55b1b555b58695036505605e35bb7e25a0d56
       font-size: 24px;
-      color: #cf1520;
-      opacity: 0.7; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Main {
-    border-radius: 10px;
-    border: 1px dashed #000000;
-    text-align: center;
-    padding: 24px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 23px;
+      font-weight: 500;
+      line-height: 69px;
+      text-transform: uppercase; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .top-table {
+      border-radius: 5px 5px 0px 0px; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table {
+      border-radius: 0px 0px 5px 5px; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border {
+      height: 50px;
+      border-radius: 10px;
+      border: 1px dashed #4e4e4e;
+      margin: 5px 15px;
+      text-align: center;
+      line-height: 47px; }
+      .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border img {
+        padding-top: 9px; }
+    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height {
+      height: 155px;
+      line-height: 33px;
+      padding: 10px 0px; }
+      .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .fa.fa-clock-o {
+        font-size: 20px;
+        padding-right: 10px; }
+      .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .day-visit {
+        font-weight: bold; }
+  .club_cards .bacground-wrapper .container .choose-from p {
     text-transform: uppercase; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Comfort {
-    border-radius: 10px;
-    background-color: #ff000c;
-    width: 210px;
-    height: 70px;
-    text-align: center;
-    line-height: 65px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 69px;
-    text-transform: uppercase; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Premium {
-    border-radius: 10px;
-    background-color: #696767;
-    width: 210px;
-    height: 70px;
-    text-align: center;
-    line-height: 65px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 69px;
-    text-transform: uppercase; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td .for_Exclusive {
-    border-radius: 10px;
-    background-color: #000000;
-    width: 210px;
-    height: 70px;
-    text-align: center;
-    line-height: 65px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 69px;
-    text-transform: uppercase; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .top-table {
-    border-radius: 5px 5px 0px 0px; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .bottom-table {
-    border-radius: 0px 0px 5px 5px; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border {
-    height: 50px;
-    border-radius: 10px;
-    border: 1px dashed #4e4e4e;
-    margin: 5px 15px;
-    text-align: center;
-    line-height: 47px; }
-    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border img {
-      padding-top: 9px; }
-  .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height {
-    height: 155px;
-    line-height: 33px;
-    padding: 10px 0px; }
-    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .fa.fa-clock-o {
-      font-size: 20px;
-      padding-right: 10px; }
-    .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr .for_border.visit-height .day-visit {
-      font-weight: bold; }
-
-.club_cards .bacground-wrapper .container .choose-from p {
-  text-transform: uppercase; }
 
 @media screen and (max-width: 1199px) {
   .club_cards .bacground-wrapper .container .clubs-table-wrapper table tbody tr td:nth-child(1) {
@@ -8412,6 +8424,33 @@ main .first_group_fitnes .block_item:nth-child(3) {
     content: none; }
   #news .container2 p {
     font-size: 18px; } }
+
+.text_inside .text_inside_wrapper .text_inside_wrapper_text {
+  margin-bottom: 50px; }
+  .text_inside .text_inside_wrapper .text_inside_wrapper_text .text_block {
+    font-size: 16px; }
+
+.text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    transition: all .3s; }
+    .text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item:hover {
+      -webkit-transform: scale(1.1, 1.1);
+              transform: scale(1.1, 1.1);
+      transition: all .3s; }
+    .text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item img {
+      width: 100%; }
 
 .slick-track, #club .slick-slide {
   height: 90vh; }

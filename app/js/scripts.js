@@ -242,6 +242,10 @@ $(document).ready(function() {
   };
   // end verification for mobile panel
 
+// lightbox
+  var lightbox = new Lightbox();
+  lightbox.load();
+
 // ---------------
 // ***restaurant menu****
 // ---------------
@@ -776,6 +780,20 @@ inputNumber2.addEventListener('change', function(){
     })
   }
   // end scale-slider
+  // Ellipsis in paragraphs
+    function ellipsizeTextBox(className) {
+    var el = document.getElementsByClassName(className);
+    el.forEach = Array.prototype.forEach;
+    el.forEach(function(item) {
+      var wordArray = item.innerHTML.split(' ');
+      while(item.scrollHeight > item.offsetHeight) {
+        wordArray.pop();
+        item.innerHTML = wordArray.join(' ') + ' ...';
+      }
+    })
+  }
+  ellipsizeTextBox('content-block-wrapper');
+  // end Ellipsis in paragraphs
 });
 
 $(window).on('orientationchange', function() {
