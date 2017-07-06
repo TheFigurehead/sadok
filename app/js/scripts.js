@@ -282,8 +282,9 @@ $('.list-items .list-item').click(function(){
 
 var hotelPage = document.getElementById('hotel');
 var сateringPage = document.getElementById('сatering');
+var specificNumber = document.getElementById('specific-number');
 
-if (hotelPage) {
+if (hotelPage || specificNumber) {
   $('.booking-button-block button').on('click', popUpShow);
 }
 
@@ -626,8 +627,13 @@ inputNumber2.addEventListener('change', function(){
     }
 
     var allTrainingsBlock = $('.all-trainings'),
-    styles = '<style>\n',
-    td = $('#timetable-table tr:not(:first-of-type) td:not(:first-of-type)');
+    td = $('#timetable-table tr:not(:first-of-type) td:not(:first-of-type)'),
+    styles = '';
+
+    $('<style id="timetable-style"></style>').appendTo('head');
+    var timetableStyles = $('#timetable-style');
+
+    
 
     for (var key in training) {
       var id = training[key].id,
@@ -665,9 +671,7 @@ inputNumber2.addEventListener('change', function(){
       })
     }
 
-    styles += '</style>'
-
-    $('head').append($(styles));
+    timetableStyles.text(styles);
     $('[class^="training"]').addClass('active');
     // end table inner
 
@@ -745,7 +749,6 @@ inputNumber2.addEventListener('change', function(){
     maxLeftTrack = -(slides.length - 1) * slideWidth,
     activeSlide = 2;
 
-
     $.each(slides, function(i, item) {
       maxHeight = $(item).outerHeight() > maxHeight ? $(item).outerHeight() : maxHeight;
     })
@@ -768,6 +771,9 @@ inputNumber2.addEventListener('change', function(){
         slides.removeClass('active');
         activeSlide--;
         slides.eq(activeSlide).addClass('active');
+        arrowPrev.removeClass('inactive');
+        arrowNext.removeClass('inactive');
+        if (activeSlide == 1) $(this).addClass('inactive')
       }
     })
 
@@ -778,6 +784,9 @@ inputNumber2.addEventListener('change', function(){
         slides.removeClass('active');
         activeSlide++;
         slides.eq(activeSlide).addClass('active');
+        arrowPrev.removeClass('inactive');
+        arrowNext.removeClass('inactive');
+        if (slides.length - 2 == activeSlide) $(this).addClass('inactive')
       }
     })
   }

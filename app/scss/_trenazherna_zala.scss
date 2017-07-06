@@ -81,6 +81,10 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 20;
+    &.inactive {
+      filter: invert(50%);
+    }
   }
   .arrow-left {
     left: 10%;

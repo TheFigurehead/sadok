@@ -4093,99 +4093,100 @@ main .first_group_fitnes .block_item:nth-child(3) {
   width: 380px;
   position: relative; }
 
+.reservation-wrapper {
+  text-align: center; }
+  .reservation-wrapper .reservation {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-family: "MuseoSansRegular";
+    font-weight: 300;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+    z-index: 40;
+    top: -100px;
+    box-shadow: 7.718px 26.915px 49.59px 7.41px rgba(0, 0, 0, 0.35); }
+    .reservation-wrapper .reservation .fa-calendar {
+      margin-left: 20px; }
+    .reservation-wrapper .reservation .fa-angle-down {
+      position: absolute;
+      right: 30px;
+      bottom: 45px;
+      font-size: 30px; }
+    .reservation-wrapper .reservation .title {
+      color: #747474;
+      text-transform: uppercase;
+      font-size: 14pt;
+      margin: 0; }
+    .reservation-wrapper .reservation .number {
+      font-size: 60pt; }
+    .reservation-wrapper .reservation .month {
+      font-size: 14pt; }
+    .reservation-wrapper .reservation .arrival-date, .reservation-wrapper .reservation .departure-date, .reservation-wrapper .reservation .guests, .reservation-wrapper .reservation .booking-button-block {
+      position: relative;
+      padding: 30px; }
+      .reservation-wrapper .reservation .arrival-date button, .reservation-wrapper .reservation .departure-date button, .reservation-wrapper .reservation .guests button, .reservation-wrapper .reservation .booking-button-block button {
+        margin: 0 auto; }
+    .reservation-wrapper .reservation .guests {
+      cursor: pointer; }
+      .reservation-wrapper .reservation .guests .dropdown {
+        display: none;
+        position: absolute;
+        top: 90%;
+        left: 20px;
+        background-color: #e8e8e8;
+        border-radius: 5px;
+        padding: 20px;
+        white-space: nowrap;
+        z-index: 1; }
+        .reservation-wrapper .reservation .guests .dropdown select {
+          border-radius: 5px;
+          background-color: white;
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+          padding: 10px;
+          margin-right: 10px;
+          border: 1px solid transparent; }
+          .reservation-wrapper .reservation .guests .dropdown select:focus {
+            border-color: #8c8c8c;
+            outline: none; }
+      .reservation-wrapper .reservation .guests:hover .dropdown {
+        display: block; }
+    .reservation-wrapper .reservation #arrival-date, .reservation-wrapper .reservation #departure-date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer; }
+    .reservation-wrapper .reservation .arrival-date:after, .reservation-wrapper .reservation .departure-date:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 1px;
+      background-color: #747474;
+      height: 80px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .reservation-wrapper .reservation .booking-button-block {
+      cursor: default;
+      background-color: #dfdfdf;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .reservation-wrapper .reservation .booking-button-block button {
+        font-size: 16pt; }
+
 #hotel {
   background-color: #fbfbfb; }
-  #hotel .reservation-wrapper {
-    text-align: center; }
-    #hotel .reservation-wrapper .reservation {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      font-family: "MuseoSansRegular";
-      font-weight: 300;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      background-color: #fff;
-      position: relative;
-      text-align: left;
-      z-index: 40;
-      top: -100px;
-      box-shadow: 7.718px 26.915px 49.59px 7.41px rgba(0, 0, 0, 0.35); }
-      #hotel .reservation-wrapper .reservation .fa-calendar {
-        margin-left: 20px; }
-      #hotel .reservation-wrapper .reservation .fa-angle-down {
-        position: absolute;
-        right: 30px;
-        bottom: 45px;
-        font-size: 30px; }
-      #hotel .reservation-wrapper .reservation .title {
-        color: #747474;
-        text-transform: uppercase;
-        font-size: 14pt;
-        margin: 0; }
-      #hotel .reservation-wrapper .reservation .number {
-        font-size: 60pt; }
-      #hotel .reservation-wrapper .reservation .month {
-        font-size: 14pt; }
-      #hotel .reservation-wrapper .reservation .arrival-date, #hotel .reservation-wrapper .reservation .departure-date, #hotel .reservation-wrapper .reservation .guests, #hotel .reservation-wrapper .reservation .booking-button-block {
-        position: relative;
-        padding: 30px; }
-        #hotel .reservation-wrapper .reservation .arrival-date button, #hotel .reservation-wrapper .reservation .departure-date button, #hotel .reservation-wrapper .reservation .guests button, #hotel .reservation-wrapper .reservation .booking-button-block button {
-          margin: 0 auto; }
-      #hotel .reservation-wrapper .reservation .guests {
-        cursor: pointer; }
-        #hotel .reservation-wrapper .reservation .guests .dropdown {
-          display: none;
-          position: absolute;
-          top: 90%;
-          left: 20px;
-          background-color: #e8e8e8;
-          border-radius: 5px;
-          padding: 20px;
-          white-space: nowrap;
-          z-index: 1; }
-          #hotel .reservation-wrapper .reservation .guests .dropdown select {
-            border-radius: 5px;
-            background-color: white;
-            box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-            padding: 10px;
-            margin-right: 10px;
-            border: 1px solid transparent; }
-            #hotel .reservation-wrapper .reservation .guests .dropdown select:focus {
-              border-color: #8c8c8c;
-              outline: none; }
-        #hotel .reservation-wrapper .reservation .guests:hover .dropdown {
-          display: block; }
-      #hotel .reservation-wrapper .reservation #arrival-date, #hotel .reservation-wrapper .reservation #departure-date {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        cursor: pointer; }
-      #hotel .reservation-wrapper .reservation .arrival-date:after, #hotel .reservation-wrapper .reservation .departure-date:after {
-        content: '';
-        position: absolute;
-        right: 0;
-        width: 1px;
-        background-color: #747474;
-        height: 80px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); }
-      #hotel .reservation-wrapper .reservation .booking-button-block {
-        cursor: default;
-        background-color: #dfdfdf;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        #hotel .reservation-wrapper .reservation .booking-button-block button {
-          font-size: 16pt; }
   #hotel button {
     cursor: pointer;
     border-radius: 5px;
@@ -4527,7 +4528,11 @@ main .first_group_fitnes .block_item:nth-child(3) {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 20; }
+    .scale-slider .arrow-left.inactive, .scale-slider .arrow-right.inactive {
+      -webkit-filter: invert(50%);
+              filter: invert(50%); }
   .scale-slider .arrow-left {
     left: 10%; }
   .scale-slider .arrow-right {
@@ -5806,8 +5811,7 @@ main .first_group_fitnes .block_item:nth-child(3) {
 
 #restoran_new,
 .menu-category,
-.restoran_menu,
-#stock {
+.restoran_menu {
   overflow-x: hidden; }
 
 #restoran_new .stock-grid-wrapper,
@@ -5956,6 +5960,22 @@ main .first_group_fitnes .block_item:nth-child(3) {
     opacity: 1;
     transition: opacity 0.5s linear; }
 
+#stock .stock-grid-wrapper {
+  height: auto; }
+
+#stock .stock-grid-wrapper .stock-grid {
+  height: 400px; }
+
+#stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
+  content: none; }
+
+#stock .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before {
+  content: none; }
+
+#stock .stock-grid-wrapper .stock-grid .stock-wrapper .stock {
+  line-height: 0.8;
+  margin-bottom: 10px; }
+
 @media screen and (max-width: 1280px) {
   #hotel .stock-grid-wrapper .stock-grid,
   #stock .stock-grid-wrapper .stock-grid {
@@ -5978,7 +5998,9 @@ main .first_group_fitnes .block_item:nth-child(3) {
         font-weight: 700; }
       #hotel .stock-grid-wrapper .stock-grid .stock-wrapper p,
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper p {
-        font-size: 16px; } }
+        font-size: 16px; }
+  #stock .stock-grid-wrapper {
+    height: auto; } }
 
 @media screen and (max-width: 780px) {
   #hotel .stock-grid-wrapper,
@@ -6003,7 +6025,13 @@ main .first_group_fitnes .block_item:nth-child(3) {
       #stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
         content: '';
         width: 300px;
-        height: 140px; } }
+        height: 140px; }
+  #stock .stock-grid-wrapper {
+    height: auto; }
+    #stock .stock-grid-wrapper .stock-grid .stock-wrapper .circle::before {
+      content: none; }
+    #stock .stock-grid-wrapper .stock-grid .stock-wrapper .square::before {
+      content: none; } }
 
 @media screen and (max-width: 580px) {
   #hotel .stock-grid-wrapper {
@@ -6550,47 +6578,11 @@ main .first_group_fitnes .block_item:nth-child(3) {
 #specific-number .container2 .title-block-wrapper .main-title {
   text-align: left; }
 
-#specific-number .center-slider-wrapper {
-  margin-bottom: 75px;
-  position: relative;
-  height: auto; }
-  #specific-number .center-slider-wrapper .center-items .slick-slide {
-    height: auto;
-    position: relative;
-    -webkit-filter: contrast(50%);
-    /*				transition: all 0.3s;*/
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8); }
-  #specific-number .center-slider-wrapper .center-items .slide-active {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: contrast(100%);
-    z-index: 100;
-    /*				transition: all 0.3s;*/ }
-    #specific-number .center-slider-wrapper .center-items .slide-active img {
-      position: absolute;
-      left: -249px; }
-  #specific-number .center-slider-wrapper .center-items button.slick-arrow {
-    width: 32px;
-    height: 65px;
-    z-index: 110; }
-    #specific-number .center-slider-wrapper .center-items button.slick-arrow:before {
-      content: none; }
-  #specific-number .center-slider-wrapper .center-items .slick-prev {
-    background-image: url(../img/icons/arr.left.fff.png);
-    background-repeat: no-repeat;
-    left: 20%; }
-  #specific-number .center-slider-wrapper .center-items .slick-next {
-    background-image: url(../img/icons/arr.right.fff.png);
-    right: 20%;
-    background-repeat: no-repeat; }
-
 #specific-number .content-wrapper {
   font-size: 24px;
   font-weight: 300;
-  line-height: 30px; }
+  line-height: 30px;
+  padding-bottom: 50px; }
   #specific-number .content-wrapper .container2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6623,94 +6615,22 @@ main .first_group_fitnes .block_item:nth-child(3) {
             left: -40px; }
         #specific-number .content-wrapper .container2 .left .service .kind {
           font-weight: 700; }
-      #specific-number .content-wrapper .container2 .left .qualities {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        padding: 0 0 85px 40px;
-        border-bottom: 2px solid #e40254;
-        border-left: 2px solid #e40254; }
-        #specific-number .content-wrapper .container2 .left .qualities h5 {
-          width: 100%;
-          text-transform: uppercase;
-          font-size: 24px;
-          font-weight: 700; }
-        #specific-number .content-wrapper .container2 .left .qualities li {
-          width: 33.33%;
-          padding-right: 60px; }
     #specific-number .content-wrapper .container2 .right {
       width: 30%; }
-      #specific-number .content-wrapper .container2 .right .reservation {
+      #specific-number .content-wrapper .container2 .right .reservation-wrapper {
         background-color: #ebe4dc;
         height: auto;
         margin: 60px 0 0 60px;
-        padding: 220px 60px 60px 60px;
-        height: 80%;
+        padding: 220px 0 60px 0;
         position: relative; }
-        #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
-          height: 100%;
-          /*.arrival,
-						.departure,
-						.guests {
-							margin-bottom: 55px;
-						}*/ }
-          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper .title {
-            color: #747474;
-            text-transform: uppercase;
-            font-weight: 300;
-            font-size: 14pt;
-            margin: 0; }
-          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper .number {
-            font-size: 60pt;
-            border: none;
-            outline: none;
-            width: 120px;
-            background-color: #ebe4dc; }
-          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper .month {
-            font-size: 14pt;
-            border: none;
-            outline: none;
-            -webkit-appearance: none;
-               -moz-appearance: none;
-                    appearance: none;
-            margin-right: 20px;
-            background-color: #ebe4dc; }
-          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper select {
-            height: 40px;
-            border-radius: 5px;
-            margin-right: 20px; }
-          #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper button {
-            cursor: pointer;
-            border-radius: 5px;
-            padding: 10px 20px;
-            width: 100%;
-            background-image: linear-gradient(to right, #cf1520 0%, #e40254 100%);
-            border: none;
-            outline: none;
-            color: #fefefe; }
-            #specific-number .content-wrapper .container2 .right .reservation .reservation-wrapper button:hover {
-              background: #e40f20;
-              background: linear-gradient(to right, #e40f20 0%, #e40254 100%);
-              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e40f20', endColorstr='#e40254',GradientType=1 ); }
-        #specific-number .content-wrapper .container2 .right .reservation .price {
+        #specific-number .content-wrapper .container2 .right .reservation-wrapper .price, #specific-number .content-wrapper .container2 .right .reservation-wrapper .price2 {
           position: absolute;
           width: 220px;
-          height: 220px;
+          height: 110px;
           background-color: #292929;
           top: -30px;
           left: -30px; }
-          #specific-number .content-wrapper .container2 .right .reservation .price .price-wrapper {
+          #specific-number .content-wrapper .container2 .right .reservation-wrapper .price .price-wrapper, #specific-number .content-wrapper .container2 .right .reservation-wrapper .price2 .price-wrapper {
             width: auto;
             height: auto;
             position: absolute;
@@ -6718,13 +6638,69 @@ main .first_group_fitnes .block_item:nth-child(3) {
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%); }
-            #specific-number .content-wrapper .container2 .right .reservation .price .price-wrapper span {
+            #specific-number .content-wrapper .container2 .right .reservation-wrapper .price .price-wrapper span, #specific-number .content-wrapper .container2 .right .reservation-wrapper .price2 .price-wrapper span {
               color: #ffffff;
               font-family: "MuseoSansRegular";
               font-weight: 700;
               font-size: 18px; }
-            #specific-number .content-wrapper .container2 .right .reservation .price .price-wrapper .num {
+            #specific-number .content-wrapper .container2 .right .reservation-wrapper .price .price-wrapper .num, #specific-number .content-wrapper .container2 .right .reservation-wrapper .price2 .price-wrapper .num {
               font-size: 48px; }
+        #specific-number .content-wrapper .container2 .right .reservation-wrapper .price2 {
+          top: 81px; }
+        #specific-number .content-wrapper .container2 .right .reservation-wrapper .reservation {
+          background-color: transparent;
+          position: static;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          box-shadow: none;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start; }
+          #specific-number .content-wrapper .container2 .right .reservation-wrapper .reservation .title {
+            padding-bottom: 15px; }
+          #specific-number .content-wrapper .container2 .right .reservation-wrapper .reservation .number {
+            font-size: 34pt; }
+          #specific-number .content-wrapper .container2 .right .reservation-wrapper .reservation .departure-date:after, #specific-number .content-wrapper .container2 .right .reservation-wrapper .reservation .arrival-date:after {
+            content: none; }
+          #specific-number .content-wrapper .container2 .right .reservation-wrapper .reservation .booking-button-block {
+            color: #fff;
+            background-color: transparent; }
+          #specific-number .content-wrapper .container2 .right .reservation-wrapper .reservation .dropdown {
+            right: -20px;
+            left: auto; }
+
+@media (max-width: 1024px) {
+  #specific-number .content-wrapper .container2 {
+    display: block; }
+  #specific-number .content-wrapper .container2 .left {
+    width: 100%; }
+  #specific-number .content-wrapper .container2 .right {
+    width: 100%; } }
+
+@media (max-width: 780px) {
+  #specific-number .content-wrapper .container2 .left .service .left {
+    width: 100%; }
+  #specific-number .content-wrapper .container2 .left .service .right {
+    width: 100%; }
+  #specific-number .content-wrapper .container2 .left .service {
+    display: block; }
+  #text .multiple-slider-wrapper .multiple-items .multiple-slider-item, #specific-number .multiple-slider-wrapper .multiple-items .multiple-slider-item, #club .multiple-slider-wrapper .multiple-items .multiple-slider-item, #news .multiple-slider-wrapper .multiple-items .multiple-slider-item {
+    min-width: 100%; } }
+
+@media (max-width: 560px) {
+  #specific-number .content-wrapper .container2 .left p {
+    text-align: left;
+    font-size: 18px; } }
+
+@media (max-width: 420px) {
+  .scale-slider-slide.active {
+    -webkit-transform: scale(1.8, 1.8);
+            transform: scale(1.8, 1.8); }
+  .scale-slider .arrow-left, .scale-slider .arrow-right {
+    -webkit-transform: translateY(-50%) scale(0.5);
+            transform: translateY(-50%) scale(0.5); }
+  #specific-number .content-wrapper .container2 .right .reservation-wrapper {
+    margin: 60px 0 0 25px; } }
 
 #restoran_menu .restoran_menu {
   margin-top: 115px; }
