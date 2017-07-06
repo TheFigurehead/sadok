@@ -1,4 +1,4 @@
-.text_inside {
+#text_inside {
 	.text_inside_wrapper {
 		.text_inside_wrapper_text {
 			margin-bottom: 50px;
@@ -28,4 +28,105 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 1600px) {
+	#text_inside {
+    	.text_inside_wrapper {
+    		.text_inside_wrapper_gallery {
+    			.text_inside_wrapper_gallery_items {
+    				.text_inside_wrapper_gallery_item {
+    					height: 200px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 1380px) {
+	#text_inside {
+    	.text_inside_wrapper {
+    		.text_inside_wrapper_gallery {
+    			.text_inside_wrapper_gallery_items {
+    				.text_inside_wrapper_gallery_item {
+    					height: 180px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 1380px) {
+	#text_inside {
+    	.text_inside_wrapper {
+    		.text_inside_wrapper_gallery {
+    			.text_inside_wrapper_gallery_items {
+    				.text_inside_wrapper_gallery_item {
+    					width: 48%;
+						height: 250px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 1024px) {
+	#text_inside {
+    	.text_inside_wrapper {
+    		.text_inside_wrapper_gallery {
+    			.text_inside_wrapper_gallery_items {
+    				.text_inside_wrapper_gallery_item {
+						height: 200px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 780px) {
+	#text_inside {
+    	.text_inside_wrapper {
+    		.text_inside_wrapper_gallery {
+    			.text_inside_wrapper_gallery_items {
+    				.text_inside_wrapper_gallery_item {
+						height: 180px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 580px) {
+	#text_inside {
+    	.text_inside_wrapper {
+    		.text_inside_wrapper_gallery {
+    			.text_inside_wrapper_gallery_items {
+    				.text_inside_wrapper_gallery_item {
+						height: 100px;
+						margin-bottom: 20px;
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width: 420px) {
+	#text_inside {
+    	.text_inside_wrapper {
+    		.text_inside_wrapper_gallery {
+    			.text_inside_wrapper_gallery_items {
+    				.text_inside_wrapper_gallery_item {
+						height: 80px;
+						margin-bottom: 10px;
+    				}
+    			}
+    		}
+    	}
+    }
 }

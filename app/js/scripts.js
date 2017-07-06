@@ -243,8 +243,10 @@ $(document).ready(function() {
   // end verification for mobile panel
 
 // lightbox
+if (document.getElementById('text_inside')) {
   var lightbox = new Lightbox();
   lightbox.load();
+  };
 
 // ---------------
 // ***restaurant menu****

@@ -5774,6 +5774,36 @@ main .first_group_fitnes .block_item:nth-child(3) {
             background-color: #fff;
             padding: 0 10px; }
 
+@media screen and (max-width: 780px) {
+  .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block .title {
+    width: 60%;
+    font-size: 16px; }
+  .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block .title-date {
+    width: 40%;
+    font-size: 12px; }
+  .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img .button {
+    padding: 10px 20px;
+    font-size: 16px; } }
+
+@media screen and (max-width: 580px) {
+  .gallery-content-wrapper .gallery-content-wrapper-item {
+    width: 49%; }
+    .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block .title {
+      font-size: 14px; }
+    .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-text .title-block .title-date {
+      font-size: 10px; }
+    .gallery-content-wrapper .gallery-content-wrapper-item .gallery-content-wrapper-item-img .button {
+      padding: 5px 10px;
+      font-size: 14px; }
+  .text-content-wrapper {
+    font-size: 18px; }
+    .text-content-wrapper p {
+      font-size: 18px; }
+    .text-content-wrapper .title-wrapper h1 {
+      font-size: 30px; }
+    .text-content-wrapper .title-wrapper h2 {
+      font-size: 20px; } }
+
 #restoran_new,
 .menu-category,
 .restoran_menu,
@@ -8425,12 +8455,12 @@ main .first_group_fitnes .block_item:nth-child(3) {
   #news .container2 p {
     font-size: 18px; } }
 
-.text_inside .text_inside_wrapper .text_inside_wrapper_text {
+#text_inside .text_inside_wrapper .text_inside_wrapper_text {
   margin-bottom: 50px; }
-  .text_inside .text_inside_wrapper .text_inside_wrapper_text .text_block {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_text .text_block {
     font-size: 16px; }
 
-.text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items {
+#text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8439,18 +8469,49 @@ main .first_group_fitnes .block_item:nth-child(3) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
     width: 30%;
     height: 250px;
     overflow: hidden;
     margin-bottom: 50px;
     transition: all .3s; }
-    .text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item:hover {
+    #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item:hover {
       -webkit-transform: scale(1.1, 1.1);
               transform: scale(1.1, 1.1);
       transition: all .3s; }
-    .text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item img {
+    #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item img {
       width: 100%; }
+
+@media screen and (max-width: 1600px) {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    height: 200px; } }
+
+@media screen and (max-width: 1380px) {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    height: 180px; } }
+
+@media screen and (max-width: 1380px) {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    width: 48%;
+    height: 250px; } }
+
+@media screen and (max-width: 1024px) {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    height: 200px; } }
+
+@media screen and (max-width: 780px) {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    height: 180px; } }
+
+@media screen and (max-width: 580px) {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    height: 100px;
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 420px) {
+  #text_inside .text_inside_wrapper .text_inside_wrapper_gallery .text_inside_wrapper_gallery_items .text_inside_wrapper_gallery_item {
+    height: 80px;
+    margin-bottom: 10px; } }
 
 .slick-track, #club .slick-slide {
   height: 90vh; }
